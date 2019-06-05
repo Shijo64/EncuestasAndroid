@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:tools="http://schemas.android.com/tools"
+      tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+                android:id="@+id/nav_inicio"
+                android:title="Volver a inicio"/>
+        <item
+                android:id="@+id/nav_encuestas"
+                android:title="Ver tipos de encuestas"/>
+        <item
+                android:id="@+id/nav_sucursal"
+                android:title="Cambiar Sucursal"/>
+        <item
+                android:id="@+id/nav_configuracion"
+                android:title="Configuración"/>
+        <item
+                android:id="@+id/nav_acerca"
+                android:title="Acerca de"/>
+    </group>
+</menu>

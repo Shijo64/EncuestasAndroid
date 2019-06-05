@@ -1,0 +1,500 @@
+-- Merging decision tree log ---
+manifest
+ADDED from /Users/dario_leija/Documents/Proyectos_Documentos/MyApplication/app/src/main/AndroidManifest.xml:2:1-50:12
+INJECTED from /Users/dario_leija/Documents/Proyectos_Documentos/MyApplication/app/src/main/AndroidManifest.xml:2:1-50:12
+INJECTED from /Users/dario_leija/Documents/Proyectos_Documentos/MyApplication/app/src/main/AndroidManifest.xml:2:1-50:12
+INJECTED from /Users/dario_leija/Documents/Proyectos_Documentos/MyApplication/app/src/main/AndroidManifest.xml:2:1-50:12
+MERGED from [com.github.vicpinm:krealmextensions:2.5.0] /Users/dario_leija/.gradle/caches/transforms-2/files-2.1/eb6e7eff20b9770cc9d8180c4ba827f9/AndroidManifest.xml:2:1-14:12
+MERGED from [io.realm:realm-android-library:5.10.0] /Users/dario_leija/.gradle/caches/transforms-2/files-2.1/a07fa2d413e314bfe74ab06db5a0b991/AndroidManifest.xml:2:1-10:12
+MERGED from [io.realm:realm-android-kotlin-extensions:5.10.0] /Users/dario_leija/.gradle/caches/transforms-2/files-2.1/7100cad1a931dab5116f383674eeb041/AndroidManifest.xml:2:1-10:12
+MERGED from [com.android.support:design:28.0.0] /Users/dario_leija/.gradle/caches/transforms-2/files-2.1/eff492de11106720c7d0847479809bb0/AndroidManifest.xml:17:1-24:12
+MERGED from [com.android.support:preference-v7:28.0.0] /Users/dario_leija/.gradle/caches/transforms-2/files-2.1/ec76a5e905b75e4583e45cb31cad113f/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:appcompat-v7:28.0.0] /Users/dario_leija/.gradle/caches/transforms-2/files-2.1/62af9be9bfffc47b6dedc8878b976337/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support.constraint:constraint-layout:1.1.3] /Users/dario_leija/.gradle/caches/transforms-2/files-2.1/8f5f08eb55dd8e8a637248203e3f8f9c/AndroidManifest.xml:2:1-11:12
+MERGED from [com.android.support:support-v4:28.0.0] /Users/dario_leija/.gradle/caches/transforms-2/files-2.1/157ca6ea153d9e19afeb12ac9d2afcbb/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:animated-vector-drawable:28.0.0] /Users/dario_leija/.gradle/caches/transforms-2/files-2.1/be9bc1d5f523bacfbb5d9361ae495fa6/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-vector-drawable:28.0.0] /Users/dario_leija/.gradle/caches/transforms-2/files-2.1/f865128bd59938ab0889ff71f667d69c/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.volley:volley:1.1.1] /Users/dario_leija/.gradle/caches/transforms-2/files-2.1/ce28c018db536a356240cb67bca5cc65/AndroidManifest.xml:2:1-11:12
+MERGED from [org.jetbrains.anko:anko-commons:0.10.8] /Users/dario_leija/.gradle/caches/transforms-2/files-2.1/4a26d5bed0c4ac50c9bde67a8627ed7c/AndroidManifest.xml:2:1-13:12
+MERGED from [com.tarun0.zxing-standalone:zxing-standalone:1.0.0] /Users/dario_leija/.gradle/caches/transforms-2/files-2.1/430785a4f8c0062d1725195e5871d35d/AndroidManifest.xml:17:1-204:12
+MERGED from [io.reactivex.rxjava2:rxandroid:2.0.2] /Users/dario_leija/.gradle/caches/transforms-2/files-2.1/0d89245a7e2f6a719deccba9d2350965/AndroidManifest.xml:15:1-21:12
+MERGED from [com.android.support:recyclerview-v7:28.0.0] /Users/dario_leija/.gradle/caches/transforms-2/files-2.1/fb515312a8ca453b863b61a2e975e8cf/AndroidManifest.xml:17:1-22:12
+MERGED from [com.getkeepsafe.relinker:relinker:1.3.0] /Users/dario_leija/.gradle/caches/transforms-2/files-2.1/bd5ce6ee585fdd2fc421a499c9a06ff1/AndroidManifest.xml:2:1-7:12
+MERGED from [org.jetbrains.anko:commons-base:0.10.8] /Users/dario_leija/.gradle/caches/transforms-2/files-2.1/016d4a7edf60f6508e1d3c068bfd3c5f/AndroidManifest.xml:2:1-11:12
+MERGED from [com.android.support:support-fragment:28.0.0] /Users/dario_leija/.gradle/caches/transforms-2/files-2.1/e011d5ef6355e16746b8c97c9c7e7e09/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-core-ui:28.0.0] /Users/dario_leija/.gradle/caches/transforms-2/files-2.1/fc97bb417821b537befb6750b8e069f1/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-core-utils:28.0.0] /Users/dario_leija/.gradle/caches/transforms-2/files-2.1/1963b83f24e15659e90bca7780b89131/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:transition:28.0.0] /Users/dario_leija/.gradle/caches/transforms-2/files-2.1/857381db8973b178a4cd03f0364afa45/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-media-compat:28.0.0] /Users/dario_leija/.gradle/caches/transforms-2/files-2.1/44e50019d1fb1613d781f7e5fdbde937/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:loader:28.0.0] /Users/dario_leija/.gradle/caches/transforms-2/files-2.1/2ed80ab0527f7f6512ee93e8933ef428/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:viewpager:28.0.0] /Users/dario_leija/.gradle/caches/transforms-2/files-2.1/366724fdc7b49fabf632692605043fd8/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:coordinatorlayout:28.0.0] /Users/dario_leija/.gradle/caches/transforms-2/files-2.1/c23633b23a8dbe049894dfab11843cbc/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:drawerlayout:28.0.0] /Users/dario_leija/.gradle/caches/transforms-2/files-2.1/cc50cedb1907d3c8646050d93017a83c/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:slidingpanelayout:28.0.0] /Users/dario_leija/.gradle/caches/transforms-2/files-2.1/ba5d2a0a1f0976857ed4b14d799b7580/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:customview:28.0.0] /Users/dario_leija/.gradle/caches/transforms-2/files-2.1/dc47d39585252fb208d699c94f20785d/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:swiperefreshlayout:28.0.0] /Users/dario_leija/.gradle/caches/transforms-2/files-2.1/3adba093b8ffc9fb5d7fa7d5f2633c00/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:asynclayoutinflater:28.0.0] /Users/dario_leija/.gradle/caches/transforms-2/files-2.1/f5e144e7079bbbbcc9709e79cf3a962c/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-compat:28.0.0] /Users/dario_leija/.gradle/caches/transforms-2/files-2.1/28afac38fff2a38e42fa9fd8c4b03521/AndroidManifest.xml:17:1-24:12
+MERGED from [com.android.support:versionedparcelable:28.0.0] /Users/dario_leija/.gradle/caches/transforms-2/files-2.1/df84b6255eb80240f5c916a10f150766/AndroidManifest.xml:17:1-25:12
+MERGED from [com.android.support:cursoradapter:28.0.0] /Users/dario_leija/.gradle/caches/transforms-2/files-2.1/8a60363ebe4068b5f999e3c9cf502dcd/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:cardview-v7:28.0.0] /Users/dario_leija/.gradle/caches/transforms-2/files-2.1/7cd452fb110a58261e4ac3a39b684e95/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:runtime:1.1.1] /Users/dario_leija/.gradle/caches/transforms-2/files-2.1/86c0b61b96c99fd55a5520253a61b468/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:documentfile:28.0.0] /Users/dario_leija/.gradle/caches/transforms-2/files-2.1/508dc69f54a4beb21a642e24ca6afc27/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:localbroadcastmanager:28.0.0] /Users/dario_leija/.gradle/caches/transforms-2/files-2.1/318072b9a2c586c472de7f4ec0de7c3e/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:print:28.0.0] /Users/dario_leija/.gradle/caches/transforms-2/files-2.1/f338c8d1868ca61081e6eea2561d5eee/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:viewmodel:1.1.1] /Users/dario_leija/.gradle/caches/transforms-2/files-2.1/8b7d8e335e1cecd968504e84a50a0751/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:interpolator:28.0.0] /Users/dario_leija/.gradle/caches/transforms-2/files-2.1/8dfc3ed756adb917d397718010043c1f/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:livedata:1.1.1] /Users/dario_leija/.gradle/caches/transforms-2/files-2.1/17328f1157d52be124af667f9c5f9c83/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:livedata-core:1.1.1] /Users/dario_leija/.gradle/caches/transforms-2/files-2.1/9fe7b4ac189c1531b2eacb336be9c5e3/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.core:runtime:1.1.1] /Users/dario_leija/.gradle/caches/transforms-2/files-2.1/23f2a70b45af852b069a72dba6a48d07/AndroidManifest.xml:17:1-22:12
+INJECTED from /Users/dario_leija/Documents/Proyectos_Documentos/MyApplication/app/src/main/AndroidManifest.xml:2:1-50:12
+INJECTED from /Users/dario_leija/Documents/Proyectos_Documentos/MyApplication/app/src/main/AndroidManifest.xml:2:1-50:12
+INJECTED from /Users/dario_leija/Documents/Proyectos_Documentos/MyApplication/app/src/main/AndroidManifest.xml:2:1-50:12
+	package
+		ADDED from /Users/dario_leija/Documents/Proyectos_Documentos/MyApplication/app/src/main/AndroidManifest.xml:4:11-46
+		INJECTED from /Users/dario_leija/Documents/Proyectos_Documentos/MyApplication/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/dario_leija/Documents/Proyectos_Documentos/MyApplication/app/src/main/AndroidManifest.xml
+	android:versionName
+		INJECTED from /Users/dario_leija/Documents/Proyectos_Documentos/MyApplication/app/src/main/AndroidManifest.xml
+		ADDED from /Users/dario_leija/Documents/Proyectos_Documentos/MyApplication/app/src/main/AndroidManifest.xml:2:1-50:12
+		INJECTED from /Users/dario_leija/Documents/Proyectos_Documentos/MyApplication/app/src/main/AndroidManifest.xml
+	xmlns:tools
+		ADDED from /Users/dario_leija/Documents/Proyectos_Documentos/MyApplication/app/src/main/AndroidManifest.xml:3:11-57
+	android:versionCode
+		INJECTED from /Users/dario_leija/Documents/Proyectos_Documentos/MyApplication/app/src/main/AndroidManifest.xml
+		ADDED from /Users/dario_leija/Documents/Proyectos_Documentos/MyApplication/app/src/main/AndroidManifest.xml:2:1-50:12
+		INJECTED from /Users/dario_leija/Documents/Proyectos_Documentos/MyApplication/app/src/main/AndroidManifest.xml
+	xmlns:android
+		ADDED from /Users/dario_leija/Documents/Proyectos_Documentos/MyApplication/app/src/main/AndroidManifest.xml:2:11-69
+uses-permission#android.permission.GET_ACCOUNTS
+ADDED from /Users/dario_leija/Documents/Proyectos_Documentos/MyApplication/app/src/main/AndroidManifest.xml:6:5-70
+	android:name
+		ADDED from /Users/dario_leija/Documents/Proyectos_Documentos/MyApplication/app/src/main/AndroidManifest.xml:6:22-68
+uses-permission#android.permission.READ_PROFILE
+ADDED from /Users/dario_leija/Documents/Proyectos_Documentos/MyApplication/app/src/main/AndroidManifest.xml:7:5-70
+	android:name
+		ADDED from /Users/dario_leija/Documents/Proyectos_Documentos/MyApplication/app/src/main/AndroidManifest.xml:7:22-68
+uses-permission#android.permission.READ_CONTACTS
+ADDED from /Users/dario_leija/Documents/Proyectos_Documentos/MyApplication/app/src/main/AndroidManifest.xml:8:5-71
+MERGED from [com.tarun0.zxing-standalone:zxing-standalone:1.0.0] /Users/dario_leija/.gradle/caches/transforms-2/files-2.1/430785a4f8c0062d1725195e5871d35d/AndroidManifest.xml:31:5-72
+MERGED from [com.tarun0.zxing-standalone:zxing-standalone:1.0.0] /Users/dario_leija/.gradle/caches/transforms-2/files-2.1/430785a4f8c0062d1725195e5871d35d/AndroidManifest.xml:31:5-72
+	android:name
+		ADDED from /Users/dario_leija/Documents/Proyectos_Documentos/MyApplication/app/src/main/AndroidManifest.xml:8:22-69
+uses-permission#android.permission.ACCESS_NETWORK_STATE
+ADDED from /Users/dario_leija/Documents/Proyectos_Documentos/MyApplication/app/src/main/AndroidManifest.xml:9:5-78
+	android:name
+		ADDED from /Users/dario_leija/Documents/Proyectos_Documentos/MyApplication/app/src/main/AndroidManifest.xml:9:22-76
+uses-permission#android.permission.INTERNET
+ADDED from /Users/dario_leija/Documents/Proyectos_Documentos/MyApplication/app/src/main/AndroidManifest.xml:10:5-66
+MERGED from [com.tarun0.zxing-standalone:zxing-standalone:1.0.0] /Users/dario_leija/.gradle/caches/transforms-2/files-2.1/430785a4f8c0062d1725195e5871d35d/AndroidManifest.xml:28:5-67
+MERGED from [com.tarun0.zxing-standalone:zxing-standalone:1.0.0] /Users/dario_leija/.gradle/caches/transforms-2/files-2.1/430785a4f8c0062d1725195e5871d35d/AndroidManifest.xml:28:5-67
+	android:name
+		ADDED from /Users/dario_leija/Documents/Proyectos_Documentos/MyApplication/app/src/main/AndroidManifest.xml:10:22-64
+uses-permission#android.permission.CAMERA
+ADDED from /Users/dario_leija/Documents/Proyectos_Documentos/MyApplication/app/src/main/AndroidManifest.xml:11:5-64
+MERGED from [com.tarun0.zxing-standalone:zxing-standalone:1.0.0] /Users/dario_leija/.gradle/caches/transforms-2/files-2.1/430785a4f8c0062d1725195e5871d35d/AndroidManifest.xml:27:5-65
+MERGED from [com.tarun0.zxing-standalone:zxing-standalone:1.0.0] /Users/dario_leija/.gradle/caches/transforms-2/files-2.1/430785a4f8c0062d1725195e5871d35d/AndroidManifest.xml:27:5-65
+	android:name
+		ADDED from /Users/dario_leija/Documents/Proyectos_Documentos/MyApplication/app/src/main/AndroidManifest.xml:11:22-62
+application
+ADDED from /Users/dario_leija/Documents/Proyectos_Documentos/MyApplication/app/src/main/AndroidManifest.xml:13:5-48:19
+MERGED from [com.github.vicpinm:krealmextensions:2.5.0] /Users/dario_leija/.gradle/caches/transforms-2/files-2.1/eb6e7eff20b9770cc9d8180c4ba827f9/AndroidManifest.xml:11:5-12:19
+MERGED from [com.github.vicpinm:krealmextensions:2.5.0] /Users/dario_leija/.gradle/caches/transforms-2/files-2.1/eb6e7eff20b9770cc9d8180c4ba827f9/AndroidManifest.xml:11:5-12:19
+MERGED from [com.android.support:design:28.0.0] /Users/dario_leija/.gradle/caches/transforms-2/files-2.1/eff492de11106720c7d0847479809bb0/AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:design:28.0.0] /Users/dario_leija/.gradle/caches/transforms-2/files-2.1/eff492de11106720c7d0847479809bb0/AndroidManifest.xml:22:5-20
+MERGED from [com.android.support.constraint:constraint-layout:1.1.3] /Users/dario_leija/.gradle/caches/transforms-2/files-2.1/8f5f08eb55dd8e8a637248203e3f8f9c/AndroidManifest.xml:9:5-20
+MERGED from [com.android.support.constraint:constraint-layout:1.1.3] /Users/dario_leija/.gradle/caches/transforms-2/files-2.1/8f5f08eb55dd8e8a637248203e3f8f9c/AndroidManifest.xml:9:5-20
+MERGED from [com.android.volley:volley:1.1.1] /Users/dario_leija/.gradle/caches/transforms-2/files-2.1/ce28c018db536a356240cb67bca5cc65/AndroidManifest.xml:9:5-20
+MERGED from [com.android.volley:volley:1.1.1] /Users/dario_leija/.gradle/caches/transforms-2/files-2.1/ce28c018db536a356240cb67bca5cc65/AndroidManifest.xml:9:5-20
+MERGED from [org.jetbrains.anko:anko-commons:0.10.8] /Users/dario_leija/.gradle/caches/transforms-2/files-2.1/4a26d5bed0c4ac50c9bde67a8627ed7c/AndroidManifest.xml:11:5-20
+MERGED from [org.jetbrains.anko:anko-commons:0.10.8] /Users/dario_leija/.gradle/caches/transforms-2/files-2.1/4a26d5bed0c4ac50c9bde67a8627ed7c/AndroidManifest.xml:11:5-20
+MERGED from [com.tarun0.zxing-standalone:zxing-standalone:1.0.0] /Users/dario_leija/.gradle/caches/transforms-2/files-2.1/430785a4f8c0062d1725195e5871d35d/AndroidManifest.xml:68:5-202:19
+MERGED from [com.tarun0.zxing-standalone:zxing-standalone:1.0.0] /Users/dario_leija/.gradle/caches/transforms-2/files-2.1/430785a4f8c0062d1725195e5871d35d/AndroidManifest.xml:68:5-202:19
+MERGED from [com.android.support:support-compat:28.0.0] /Users/dario_leija/.gradle/caches/transforms-2/files-2.1/28afac38fff2a38e42fa9fd8c4b03521/AndroidManifest.xml:22:5-94
+MERGED from [com.android.support:support-compat:28.0.0] /Users/dario_leija/.gradle/caches/transforms-2/files-2.1/28afac38fff2a38e42fa9fd8c4b03521/AndroidManifest.xml:22:5-94
+MERGED from [com.android.support:versionedparcelable:28.0.0] /Users/dario_leija/.gradle/caches/transforms-2/files-2.1/df84b6255eb80240f5c916a10f150766/AndroidManifest.xml:22:5-23:19
+MERGED from [com.android.support:versionedparcelable:28.0.0] /Users/dario_leija/.gradle/caches/transforms-2/files-2.1/df84b6255eb80240f5c916a10f150766/AndroidManifest.xml:22:5-23:19
+	android:appComponentFactory
+		ADDED from [com.android.support:support-compat:28.0.0] /Users/dario_leija/.gradle/caches/transforms-2/files-2.1/28afac38fff2a38e42fa9fd8c4b03521/AndroidManifest.xml:22:18-91
+	android:supportsRtl
+		ADDED from /Users/dario_leija/Documents/Proyectos_Documentos/MyApplication/app/src/main/AndroidManifest.xml:18:13-39
+	android:label
+		ADDED from /Users/dario_leija/Documents/Proyectos_Documentos/MyApplication/app/src/main/AndroidManifest.xml:16:13-45
+	android:roundIcon
+		ADDED from /Users/dario_leija/Documents/Proyectos_Documentos/MyApplication/app/src/main/AndroidManifest.xml:17:13-58
+	android:icon
+		ADDED from /Users/dario_leija/Documents/Proyectos_Documentos/MyApplication/app/src/main/AndroidManifest.xml:15:13-47
+	android:allowBackup
+		ADDED from /Users/dario_leija/Documents/Proyectos_Documentos/MyApplication/app/src/main/AndroidManifest.xml:14:13-39
+	android:theme
+		ADDED from /Users/dario_leija/Documents/Proyectos_Documentos/MyApplication/app/src/main/AndroidManifest.xml:19:13-44
+activity#com.example.myapplication.ConfiguracionActivity
+ADDED from /Users/dario_leija/Documents/Proyectos_Documentos/MyApplication/app/src/main/AndroidManifest.xml:20:9-21:20
+	android:name
+		ADDED from /Users/dario_leija/Documents/Proyectos_Documentos/MyApplication/app/src/main/AndroidManifest.xml:20:19-56
+activity#com.example.myapplication.AcercaDeActivity
+ADDED from /Users/dario_leija/Documents/Proyectos_Documentos/MyApplication/app/src/main/AndroidManifest.xml:22:9-23:20
+	android:name
+		ADDED from /Users/dario_leija/Documents/Proyectos_Documentos/MyApplication/app/src/main/AndroidManifest.xml:22:19-51
+activity#com.example.myapplication.LoginActivity
+ADDED from /Users/dario_leija/Documents/Proyectos_Documentos/MyApplication/app/src/main/AndroidManifest.xml:24:9-25:20
+	android:name
+		ADDED from /Users/dario_leija/Documents/Proyectos_Documentos/MyApplication/app/src/main/AndroidManifest.xml:24:19-48
+activity#com.example.myapplication.ResultActivity
+ADDED from /Users/dario_leija/Documents/Proyectos_Documentos/MyApplication/app/src/main/AndroidManifest.xml:26:9-27:20
+	android:name
+		ADDED from /Users/dario_leija/Documents/Proyectos_Documentos/MyApplication/app/src/main/AndroidManifest.xml:26:19-49
+activity#com.example.myapplication.ResumenActivity
+ADDED from /Users/dario_leija/Documents/Proyectos_Documentos/MyApplication/app/src/main/AndroidManifest.xml:28:9-29:20
+	android:name
+		ADDED from /Users/dario_leija/Documents/Proyectos_Documentos/MyApplication/app/src/main/AndroidManifest.xml:28:19-50
+activity#com.example.myapplication.EncuestaActivity
+ADDED from /Users/dario_leija/Documents/Proyectos_Documentos/MyApplication/app/src/main/AndroidManifest.xml:30:9-31:20
+	android:name
+		ADDED from /Users/dario_leija/Documents/Proyectos_Documentos/MyApplication/app/src/main/AndroidManifest.xml:30:19-51
+activity#com.example.myapplication.EncuestasActivity
+ADDED from /Users/dario_leija/Documents/Proyectos_Documentos/MyApplication/app/src/main/AndroidManifest.xml:32:9-33:20
+	android:name
+		ADDED from /Users/dario_leija/Documents/Proyectos_Documentos/MyApplication/app/src/main/AndroidManifest.xml:32:19-52
+activity#com.example.myapplication.HomeActivity
+ADDED from /Users/dario_leija/Documents/Proyectos_Documentos/MyApplication/app/src/main/AndroidManifest.xml:34:9-38:20
+	android:label
+		ADDED from /Users/dario_leija/Documents/Proyectos_Documentos/MyApplication/app/src/main/AndroidManifest.xml:36:17-60
+	android:theme
+		ADDED from /Users/dario_leija/Documents/Proyectos_Documentos/MyApplication/app/src/main/AndroidManifest.xml:37:17-60
+	android:name
+		ADDED from /Users/dario_leija/Documents/Proyectos_Documentos/MyApplication/app/src/main/AndroidManifest.xml:35:17-45
+activity#com.example.myapplication.SplashActivity
+ADDED from /Users/dario_leija/Documents/Proyectos_Documentos/MyApplication/app/src/main/AndroidManifest.xml:39:9-47:20
+	android:label
+		ADDED from /Users/dario_leija/Documents/Proyectos_Documentos/MyApplication/app/src/main/AndroidManifest.xml:41:17-49
+	android:name
+		ADDED from /Users/dario_leija/Documents/Proyectos_Documentos/MyApplication/app/src/main/AndroidManifest.xml:40:17-47
+intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
+ADDED from /Users/dario_leija/Documents/Proyectos_Documentos/MyApplication/app/src/main/AndroidManifest.xml:42:13-46:29
+action#android.intent.action.MAIN
+ADDED from /Users/dario_leija/Documents/Proyectos_Documentos/MyApplication/app/src/main/AndroidManifest.xml:43:17-68
+	android:name
+		ADDED from /Users/dario_leija/Documents/Proyectos_Documentos/MyApplication/app/src/main/AndroidManifest.xml:43:25-66
+category#android.intent.category.LAUNCHER
+ADDED from /Users/dario_leija/Documents/Proyectos_Documentos/MyApplication/app/src/main/AndroidManifest.xml:45:17-76
+	android:name
+		ADDED from /Users/dario_leija/Documents/Proyectos_Documentos/MyApplication/app/src/main/AndroidManifest.xml:45:27-74
+uses-sdk
+INJECTED from /Users/dario_leija/Documents/Proyectos_Documentos/MyApplication/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from /Users/dario_leija/Documents/Proyectos_Documentos/MyApplication/app/src/main/AndroidManifest.xml
+INJECTED from /Users/dario_leija/Documents/Proyectos_Documentos/MyApplication/app/src/main/AndroidManifest.xml
+MERGED from [com.github.vicpinm:krealmextensions:2.5.0] /Users/dario_leija/.gradle/caches/transforms-2/files-2.1/eb6e7eff20b9770cc9d8180c4ba827f9/AndroidManifest.xml:7:5-9:41
+MERGED from [com.github.vicpinm:krealmextensions:2.5.0] /Users/dario_leija/.gradle/caches/transforms-2/files-2.1/eb6e7eff20b9770cc9d8180c4ba827f9/AndroidManifest.xml:7:5-9:41
+MERGED from [io.realm:realm-android-library:5.10.0] /Users/dario_leija/.gradle/caches/transforms-2/files-2.1/a07fa2d413e314bfe74ab06db5a0b991/AndroidManifest.xml:6:5-8:41
+MERGED from [io.realm:realm-android-library:5.10.0] /Users/dario_leija/.gradle/caches/transforms-2/files-2.1/a07fa2d413e314bfe74ab06db5a0b991/AndroidManifest.xml:6:5-8:41
+MERGED from [io.realm:realm-android-kotlin-extensions:5.10.0] /Users/dario_leija/.gradle/caches/transforms-2/files-2.1/7100cad1a931dab5116f383674eeb041/AndroidManifest.xml:6:5-8:41
+MERGED from [io.realm:realm-android-kotlin-extensions:5.10.0] /Users/dario_leija/.gradle/caches/transforms-2/files-2.1/7100cad1a931dab5116f383674eeb041/AndroidManifest.xml:6:5-8:41
+MERGED from [com.android.support:design:28.0.0] /Users/dario_leija/.gradle/caches/transforms-2/files-2.1/eff492de11106720c7d0847479809bb0/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:design:28.0.0] /Users/dario_leija/.gradle/caches/transforms-2/files-2.1/eff492de11106720c7d0847479809bb0/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:preference-v7:28.0.0] /Users/dario_leija/.gradle/caches/transforms-2/files-2.1/ec76a5e905b75e4583e45cb31cad113f/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:preference-v7:28.0.0] /Users/dario_leija/.gradle/caches/transforms-2/files-2.1/ec76a5e905b75e4583e45cb31cad113f/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:appcompat-v7:28.0.0] /Users/dario_leija/.gradle/caches/transforms-2/files-2.1/62af9be9bfffc47b6dedc8878b976337/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:appcompat-v7:28.0.0] /Users/dario_leija/.gradle/caches/transforms-2/files-2.1/62af9be9bfffc47b6dedc8878b976337/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support.constraint:constraint-layout:1.1.3] /Users/dario_leija/.gradle/caches/transforms-2/files-2.1/8f5f08eb55dd8e8a637248203e3f8f9c/AndroidManifest.xml:5:5-7:41
+MERGED from [com.android.support.constraint:constraint-layout:1.1.3] /Users/dario_leija/.gradle/caches/transforms-2/files-2.1/8f5f08eb55dd8e8a637248203e3f8f9c/AndroidManifest.xml:5:5-7:41
+MERGED from [com.android.support:support-v4:28.0.0] /Users/dario_leija/.gradle/caches/transforms-2/files-2.1/157ca6ea153d9e19afeb12ac9d2afcbb/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-v4:28.0.0] /Users/dario_leija/.gradle/caches/transforms-2/files-2.1/157ca6ea153d9e19afeb12ac9d2afcbb/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:28.0.0] /Users/dario_leija/.gradle/caches/transforms-2/files-2.1/be9bc1d5f523bacfbb5d9361ae495fa6/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:28.0.0] /Users/dario_leija/.gradle/caches/transforms-2/files-2.1/be9bc1d5f523bacfbb5d9361ae495fa6/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:28.0.0] /Users/dario_leija/.gradle/caches/transforms-2/files-2.1/f865128bd59938ab0889ff71f667d69c/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:28.0.0] /Users/dario_leija/.gradle/caches/transforms-2/files-2.1/f865128bd59938ab0889ff71f667d69c/AndroidManifest.xml:20:5-44
+MERGED from [com.android.volley:volley:1.1.1] /Users/dario_leija/.gradle/caches/transforms-2/files-2.1/ce28c018db536a356240cb67bca5cc65/AndroidManifest.xml:7:5-43
+MERGED from [com.android.volley:volley:1.1.1] /Users/dario_leija/.gradle/caches/transforms-2/files-2.1/ce28c018db536a356240cb67bca5cc65/AndroidManifest.xml:7:5-43
+MERGED from [org.jetbrains.anko:anko-commons:0.10.8] /Users/dario_leija/.gradle/caches/transforms-2/files-2.1/4a26d5bed0c4ac50c9bde67a8627ed7c/AndroidManifest.xml:7:5-9:41
+MERGED from [org.jetbrains.anko:anko-commons:0.10.8] /Users/dario_leija/.gradle/caches/transforms-2/files-2.1/4a26d5bed0c4ac50c9bde67a8627ed7c/AndroidManifest.xml:7:5-9:41
+MERGED from [com.tarun0.zxing-standalone:zxing-standalone:1.0.0] /Users/dario_leija/.gradle/caches/transforms-2/files-2.1/430785a4f8c0062d1725195e5871d35d/AndroidManifest.xml:23:5-25:41
+MERGED from [com.tarun0.zxing-standalone:zxing-standalone:1.0.0] /Users/dario_leija/.gradle/caches/transforms-2/files-2.1/430785a4f8c0062d1725195e5871d35d/AndroidManifest.xml:23:5-25:41
+MERGED from [io.reactivex.rxjava2:rxandroid:2.0.2] /Users/dario_leija/.gradle/caches/transforms-2/files-2.1/0d89245a7e2f6a719deccba9d2350965/AndroidManifest.xml:19:5-43
+MERGED from [io.reactivex.rxjava2:rxandroid:2.0.2] /Users/dario_leija/.gradle/caches/transforms-2/files-2.1/0d89245a7e2f6a719deccba9d2350965/AndroidManifest.xml:19:5-43
+MERGED from [com.android.support:recyclerview-v7:28.0.0] /Users/dario_leija/.gradle/caches/transforms-2/files-2.1/fb515312a8ca453b863b61a2e975e8cf/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:recyclerview-v7:28.0.0] /Users/dario_leija/.gradle/caches/transforms-2/files-2.1/fb515312a8ca453b863b61a2e975e8cf/AndroidManifest.xml:20:5-44
+MERGED from [com.getkeepsafe.relinker:relinker:1.3.0] /Users/dario_leija/.gradle/caches/transforms-2/files-2.1/bd5ce6ee585fdd2fc421a499c9a06ff1/AndroidManifest.xml:5:5-43
+MERGED from [com.getkeepsafe.relinker:relinker:1.3.0] /Users/dario_leija/.gradle/caches/transforms-2/files-2.1/bd5ce6ee585fdd2fc421a499c9a06ff1/AndroidManifest.xml:5:5-43
+MERGED from [org.jetbrains.anko:commons-base:0.10.8] /Users/dario_leija/.gradle/caches/transforms-2/files-2.1/016d4a7edf60f6508e1d3c068bfd3c5f/AndroidManifest.xml:7:5-9:41
+MERGED from [org.jetbrains.anko:commons-base:0.10.8] /Users/dario_leija/.gradle/caches/transforms-2/files-2.1/016d4a7edf60f6508e1d3c068bfd3c5f/AndroidManifest.xml:7:5-9:41
+MERGED from [com.android.support:support-fragment:28.0.0] /Users/dario_leija/.gradle/caches/transforms-2/files-2.1/e011d5ef6355e16746b8c97c9c7e7e09/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-fragment:28.0.0] /Users/dario_leija/.gradle/caches/transforms-2/files-2.1/e011d5ef6355e16746b8c97c9c7e7e09/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-ui:28.0.0] /Users/dario_leija/.gradle/caches/transforms-2/files-2.1/fc97bb417821b537befb6750b8e069f1/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-ui:28.0.0] /Users/dario_leija/.gradle/caches/transforms-2/files-2.1/fc97bb417821b537befb6750b8e069f1/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-utils:28.0.0] /Users/dario_leija/.gradle/caches/transforms-2/files-2.1/1963b83f24e15659e90bca7780b89131/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-utils:28.0.0] /Users/dario_leija/.gradle/caches/transforms-2/files-2.1/1963b83f24e15659e90bca7780b89131/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:transition:28.0.0] /Users/dario_leija/.gradle/caches/transforms-2/files-2.1/857381db8973b178a4cd03f0364afa45/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:transition:28.0.0] /Users/dario_leija/.gradle/caches/transforms-2/files-2.1/857381db8973b178a4cd03f0364afa45/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-media-compat:28.0.0] /Users/dario_leija/.gradle/caches/transforms-2/files-2.1/44e50019d1fb1613d781f7e5fdbde937/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-media-compat:28.0.0] /Users/dario_leija/.gradle/caches/transforms-2/files-2.1/44e50019d1fb1613d781f7e5fdbde937/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:loader:28.0.0] /Users/dario_leija/.gradle/caches/transforms-2/files-2.1/2ed80ab0527f7f6512ee93e8933ef428/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:loader:28.0.0] /Users/dario_leija/.gradle/caches/transforms-2/files-2.1/2ed80ab0527f7f6512ee93e8933ef428/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:viewpager:28.0.0] /Users/dario_leija/.gradle/caches/transforms-2/files-2.1/366724fdc7b49fabf632692605043fd8/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:viewpager:28.0.0] /Users/dario_leija/.gradle/caches/transforms-2/files-2.1/366724fdc7b49fabf632692605043fd8/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:coordinatorlayout:28.0.0] /Users/dario_leija/.gradle/caches/transforms-2/files-2.1/c23633b23a8dbe049894dfab11843cbc/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:coordinatorlayout:28.0.0] /Users/dario_leija/.gradle/caches/transforms-2/files-2.1/c23633b23a8dbe049894dfab11843cbc/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:drawerlayout:28.0.0] /Users/dario_leija/.gradle/caches/transforms-2/files-2.1/cc50cedb1907d3c8646050d93017a83c/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:drawerlayout:28.0.0] /Users/dario_leija/.gradle/caches/transforms-2/files-2.1/cc50cedb1907d3c8646050d93017a83c/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:slidingpanelayout:28.0.0] /Users/dario_leija/.gradle/caches/transforms-2/files-2.1/ba5d2a0a1f0976857ed4b14d799b7580/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:slidingpanelayout:28.0.0] /Users/dario_leija/.gradle/caches/transforms-2/files-2.1/ba5d2a0a1f0976857ed4b14d799b7580/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:customview:28.0.0] /Users/dario_leija/.gradle/caches/transforms-2/files-2.1/dc47d39585252fb208d699c94f20785d/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:customview:28.0.0] /Users/dario_leija/.gradle/caches/transforms-2/files-2.1/dc47d39585252fb208d699c94f20785d/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:swiperefreshlayout:28.0.0] /Users/dario_leija/.gradle/caches/transforms-2/files-2.1/3adba093b8ffc9fb5d7fa7d5f2633c00/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:swiperefreshlayout:28.0.0] /Users/dario_leija/.gradle/caches/transforms-2/files-2.1/3adba093b8ffc9fb5d7fa7d5f2633c00/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:asynclayoutinflater:28.0.0] /Users/dario_leija/.gradle/caches/transforms-2/files-2.1/f5e144e7079bbbbcc9709e79cf3a962c/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:asynclayoutinflater:28.0.0] /Users/dario_leija/.gradle/caches/transforms-2/files-2.1/f5e144e7079bbbbcc9709e79cf3a962c/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-compat:28.0.0] /Users/dario_leija/.gradle/caches/transforms-2/files-2.1/28afac38fff2a38e42fa9fd8c4b03521/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-compat:28.0.0] /Users/dario_leija/.gradle/caches/transforms-2/files-2.1/28afac38fff2a38e42fa9fd8c4b03521/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:versionedparcelable:28.0.0] /Users/dario_leija/.gradle/caches/transforms-2/files-2.1/df84b6255eb80240f5c916a10f150766/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:versionedparcelable:28.0.0] /Users/dario_leija/.gradle/caches/transforms-2/files-2.1/df84b6255eb80240f5c916a10f150766/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:cursoradapter:28.0.0] /Users/dario_leija/.gradle/caches/transforms-2/files-2.1/8a60363ebe4068b5f999e3c9cf502dcd/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:cursoradapter:28.0.0] /Users/dario_leija/.gradle/caches/transforms-2/files-2.1/8a60363ebe4068b5f999e3c9cf502dcd/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:cardview-v7:28.0.0] /Users/dario_leija/.gradle/caches/transforms-2/files-2.1/7cd452fb110a58261e4ac3a39b684e95/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:cardview-v7:28.0.0] /Users/dario_leija/.gradle/caches/transforms-2/files-2.1/7cd452fb110a58261e4ac3a39b684e95/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:runtime:1.1.1] /Users/dario_leija/.gradle/caches/transforms-2/files-2.1/86c0b61b96c99fd55a5520253a61b468/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:runtime:1.1.1] /Users/dario_leija/.gradle/caches/transforms-2/files-2.1/86c0b61b96c99fd55a5520253a61b468/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:documentfile:28.0.0] /Users/dario_leija/.gradle/caches/transforms-2/files-2.1/508dc69f54a4beb21a642e24ca6afc27/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:documentfile:28.0.0] /Users/dario_leija/.gradle/caches/transforms-2/files-2.1/508dc69f54a4beb21a642e24ca6afc27/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:localbroadcastmanager:28.0.0] /Users/dario_leija/.gradle/caches/transforms-2/files-2.1/318072b9a2c586c472de7f4ec0de7c3e/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:localbroadcastmanager:28.0.0] /Users/dario_leija/.gradle/caches/transforms-2/files-2.1/318072b9a2c586c472de7f4ec0de7c3e/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:print:28.0.0] /Users/dario_leija/.gradle/caches/transforms-2/files-2.1/f338c8d1868ca61081e6eea2561d5eee/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:print:28.0.0] /Users/dario_leija/.gradle/caches/transforms-2/files-2.1/f338c8d1868ca61081e6eea2561d5eee/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:viewmodel:1.1.1] /Users/dario_leija/.gradle/caches/transforms-2/files-2.1/8b7d8e335e1cecd968504e84a50a0751/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:viewmodel:1.1.1] /Users/dario_leija/.gradle/caches/transforms-2/files-2.1/8b7d8e335e1cecd968504e84a50a0751/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:interpolator:28.0.0] /Users/dario_leija/.gradle/caches/transforms-2/files-2.1/8dfc3ed756adb917d397718010043c1f/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:interpolator:28.0.0] /Users/dario_leija/.gradle/caches/transforms-2/files-2.1/8dfc3ed756adb917d397718010043c1f/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata:1.1.1] /Users/dario_leija/.gradle/caches/transforms-2/files-2.1/17328f1157d52be124af667f9c5f9c83/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata:1.1.1] /Users/dario_leija/.gradle/caches/transforms-2/files-2.1/17328f1157d52be124af667f9c5f9c83/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata-core:1.1.1] /Users/dario_leija/.gradle/caches/transforms-2/files-2.1/9fe7b4ac189c1531b2eacb336be9c5e3/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata-core:1.1.1] /Users/dario_leija/.gradle/caches/transforms-2/files-2.1/9fe7b4ac189c1531b2eacb336be9c5e3/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.core:runtime:1.1.1] /Users/dario_leija/.gradle/caches/transforms-2/files-2.1/23f2a70b45af852b069a72dba6a48d07/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.core:runtime:1.1.1] /Users/dario_leija/.gradle/caches/transforms-2/files-2.1/23f2a70b45af852b069a72dba6a48d07/AndroidManifest.xml:20:5-44
+INJECTED from /Users/dario_leija/Documents/Proyectos_Documentos/MyApplication/app/src/main/AndroidManifest.xml
+INJECTED from /Users/dario_leija/Documents/Proyectos_Documentos/MyApplication/app/src/main/AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from /Users/dario_leija/Documents/Proyectos_Documentos/MyApplication/app/src/main/AndroidManifest.xml
+		ADDED from /Users/dario_leija/Documents/Proyectos_Documentos/MyApplication/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/dario_leija/Documents/Proyectos_Documentos/MyApplication/app/src/main/AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from /Users/dario_leija/Documents/Proyectos_Documentos/MyApplication/app/src/main/AndroidManifest.xml
+		ADDED from /Users/dario_leija/Documents/Proyectos_Documentos/MyApplication/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/dario_leija/Documents/Proyectos_Documentos/MyApplication/app/src/main/AndroidManifest.xml
+uses-permission#android.permission.VIBRATE
+ADDED from [com.tarun0.zxing-standalone:zxing-standalone:1.0.0] /Users/dario_leija/.gradle/caches/transforms-2/files-2.1/430785a4f8c0062d1725195e5871d35d/AndroidManifest.xml:29:5-66
+	android:name
+		ADDED from [com.tarun0.zxing-standalone:zxing-standalone:1.0.0] /Users/dario_leija/.gradle/caches/transforms-2/files-2.1/430785a4f8c0062d1725195e5871d35d/AndroidManifest.xml:29:22-63
+uses-permission#android.permission.FLASHLIGHT
+ADDED from [com.tarun0.zxing-standalone:zxing-standalone:1.0.0] /Users/dario_leija/.gradle/caches/transforms-2/files-2.1/430785a4f8c0062d1725195e5871d35d/AndroidManifest.xml:30:5-69
+	android:name
+		ADDED from [com.tarun0.zxing-standalone:zxing-standalone:1.0.0] /Users/dario_leija/.gradle/caches/transforms-2/files-2.1/430785a4f8c0062d1725195e5871d35d/AndroidManifest.xml:30:22-66
+uses-permission#com.android.browser.permission.READ_HISTORY_BOOKMARKS
+ADDED from [com.tarun0.zxing-standalone:zxing-standalone:1.0.0] /Users/dario_leija/.gradle/caches/transforms-2/files-2.1/430785a4f8c0062d1725195e5871d35d/AndroidManifest.xml:33:5-93
+	android:name
+		ADDED from [com.tarun0.zxing-standalone:zxing-standalone:1.0.0] /Users/dario_leija/.gradle/caches/transforms-2/files-2.1/430785a4f8c0062d1725195e5871d35d/AndroidManifest.xml:33:22-90
+uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
+ADDED from [com.tarun0.zxing-standalone:zxing-standalone:1.0.0] /Users/dario_leija/.gradle/caches/transforms-2/files-2.1/430785a4f8c0062d1725195e5871d35d/AndroidManifest.xml:34:5-81
+	android:name
+		ADDED from [com.tarun0.zxing-standalone:zxing-standalone:1.0.0] /Users/dario_leija/.gradle/caches/transforms-2/files-2.1/430785a4f8c0062d1725195e5871d35d/AndroidManifest.xml:34:22-78
+uses-permission#android.permission.CHANGE_WIFI_STATE
+ADDED from [com.tarun0.zxing-standalone:zxing-standalone:1.0.0] /Users/dario_leija/.gradle/caches/transforms-2/files-2.1/430785a4f8c0062d1725195e5871d35d/AndroidManifest.xml:35:5-76
+	android:name
+		ADDED from [com.tarun0.zxing-standalone:zxing-standalone:1.0.0] /Users/dario_leija/.gradle/caches/transforms-2/files-2.1/430785a4f8c0062d1725195e5871d35d/AndroidManifest.xml:35:22-73
+uses-permission#android.permission.ACCESS_WIFI_STATE
+ADDED from [com.tarun0.zxing-standalone:zxing-standalone:1.0.0] /Users/dario_leija/.gradle/caches/transforms-2/files-2.1/430785a4f8c0062d1725195e5871d35d/AndroidManifest.xml:36:5-76
+	android:name
+		ADDED from [com.tarun0.zxing-standalone:zxing-standalone:1.0.0] /Users/dario_leija/.gradle/caches/transforms-2/files-2.1/430785a4f8c0062d1725195e5871d35d/AndroidManifest.xml:36:22-73
+uses-feature#android.hardware.camera
+ADDED from [com.tarun0.zxing-standalone:zxing-standalone:1.0.0] /Users/dario_leija/.gradle/caches/transforms-2/files-2.1/430785a4f8c0062d1725195e5871d35d/AndroidManifest.xml:39:5-41:36
+	android:required
+		ADDED from [com.tarun0.zxing-standalone:zxing-standalone:1.0.0] /Users/dario_leija/.gradle/caches/transforms-2/files-2.1/430785a4f8c0062d1725195e5871d35d/AndroidManifest.xml:41:9-33
+	android:name
+		ADDED from [com.tarun0.zxing-standalone:zxing-standalone:1.0.0] /Users/dario_leija/.gradle/caches/transforms-2/files-2.1/430785a4f8c0062d1725195e5871d35d/AndroidManifest.xml:40:9-47
+uses-feature#android.hardware.camera.front
+ADDED from [com.tarun0.zxing-standalone:zxing-standalone:1.0.0] /Users/dario_leija/.gradle/caches/transforms-2/files-2.1/430785a4f8c0062d1725195e5871d35d/AndroidManifest.xml:42:5-44:36
+	android:required
+		ADDED from [com.tarun0.zxing-standalone:zxing-standalone:1.0.0] /Users/dario_leija/.gradle/caches/transforms-2/files-2.1/430785a4f8c0062d1725195e5871d35d/AndroidManifest.xml:44:9-33
+	android:name
+		ADDED from [com.tarun0.zxing-standalone:zxing-standalone:1.0.0] /Users/dario_leija/.gradle/caches/transforms-2/files-2.1/430785a4f8c0062d1725195e5871d35d/AndroidManifest.xml:43:9-53
+uses-feature#android.hardware.camera.autofocus
+ADDED from [com.tarun0.zxing-standalone:zxing-standalone:1.0.0] /Users/dario_leija/.gradle/caches/transforms-2/files-2.1/430785a4f8c0062d1725195e5871d35d/AndroidManifest.xml:47:5-49:36
+	android:required
+		ADDED from [com.tarun0.zxing-standalone:zxing-standalone:1.0.0] /Users/dario_leija/.gradle/caches/transforms-2/files-2.1/430785a4f8c0062d1725195e5871d35d/AndroidManifest.xml:49:9-33
+	android:name
+		ADDED from [com.tarun0.zxing-standalone:zxing-standalone:1.0.0] /Users/dario_leija/.gradle/caches/transforms-2/files-2.1/430785a4f8c0062d1725195e5871d35d/AndroidManifest.xml:48:9-57
+uses-feature#android.hardware.camera.flash
+ADDED from [com.tarun0.zxing-standalone:zxing-standalone:1.0.0] /Users/dario_leija/.gradle/caches/transforms-2/files-2.1/430785a4f8c0062d1725195e5871d35d/AndroidManifest.xml:50:5-52:36
+	android:required
+		ADDED from [com.tarun0.zxing-standalone:zxing-standalone:1.0.0] /Users/dario_leija/.gradle/caches/transforms-2/files-2.1/430785a4f8c0062d1725195e5871d35d/AndroidManifest.xml:52:9-33
+	android:name
+		ADDED from [com.tarun0.zxing-standalone:zxing-standalone:1.0.0] /Users/dario_leija/.gradle/caches/transforms-2/files-2.1/430785a4f8c0062d1725195e5871d35d/AndroidManifest.xml:51:9-53
+uses-feature#android.hardware.screen.landscape
+ADDED from [com.tarun0.zxing-standalone:zxing-standalone:1.0.0] /Users/dario_leija/.gradle/caches/transforms-2/files-2.1/430785a4f8c0062d1725195e5871d35d/AndroidManifest.xml:53:5-70
+	android:name
+		ADDED from [com.tarun0.zxing-standalone:zxing-standalone:1.0.0] /Users/dario_leija/.gradle/caches/transforms-2/files-2.1/430785a4f8c0062d1725195e5871d35d/AndroidManifest.xml:53:19-67
+uses-feature#android.hardware.wifi
+ADDED from [com.tarun0.zxing-standalone:zxing-standalone:1.0.0] /Users/dario_leija/.gradle/caches/transforms-2/files-2.1/430785a4f8c0062d1725195e5871d35d/AndroidManifest.xml:54:5-56:36
+	android:required
+		ADDED from [com.tarun0.zxing-standalone:zxing-standalone:1.0.0] /Users/dario_leija/.gradle/caches/transforms-2/files-2.1/430785a4f8c0062d1725195e5871d35d/AndroidManifest.xml:56:9-33
+	android:name
+		ADDED from [com.tarun0.zxing-standalone:zxing-standalone:1.0.0] /Users/dario_leija/.gradle/caches/transforms-2/files-2.1/430785a4f8c0062d1725195e5871d35d/AndroidManifest.xml:55:9-45
+uses-feature#android.hardware.touchscreen
+ADDED from [com.tarun0.zxing-standalone:zxing-standalone:1.0.0] /Users/dario_leija/.gradle/caches/transforms-2/files-2.1/430785a4f8c0062d1725195e5871d35d/AndroidManifest.xml:58:5-65
+	android:name
+		ADDED from [com.tarun0.zxing-standalone:zxing-standalone:1.0.0] /Users/dario_leija/.gradle/caches/transforms-2/files-2.1/430785a4f8c0062d1725195e5871d35d/AndroidManifest.xml:58:19-62
+supports-screens
+ADDED from [com.tarun0.zxing-standalone:zxing-standalone:1.0.0] /Users/dario_leija/.gradle/caches/transforms-2/files-2.1/430785a4f8c0062d1725195e5871d35d/AndroidManifest.xml:61:5-66:40
+	android:largeScreens
+		ADDED from [com.tarun0.zxing-standalone:zxing-standalone:1.0.0] /Users/dario_leija/.gradle/caches/transforms-2/files-2.1/430785a4f8c0062d1725195e5871d35d/AndroidManifest.xml:63:9-36
+	android:smallScreens
+		ADDED from [com.tarun0.zxing-standalone:zxing-standalone:1.0.0] /Users/dario_leija/.gradle/caches/transforms-2/files-2.1/430785a4f8c0062d1725195e5871d35d/AndroidManifest.xml:65:9-36
+	android:normalScreens
+		ADDED from [com.tarun0.zxing-standalone:zxing-standalone:1.0.0] /Users/dario_leija/.gradle/caches/transforms-2/files-2.1/430785a4f8c0062d1725195e5871d35d/AndroidManifest.xml:64:9-37
+	android:xlargeScreens
+		ADDED from [com.tarun0.zxing-standalone:zxing-standalone:1.0.0] /Users/dario_leija/.gradle/caches/transforms-2/files-2.1/430785a4f8c0062d1725195e5871d35d/AndroidManifest.xml:66:9-37
+	android:anyDensity
+		ADDED from [com.tarun0.zxing-standalone:zxing-standalone:1.0.0] /Users/dario_leija/.gradle/caches/transforms-2/files-2.1/430785a4f8c0062d1725195e5871d35d/AndroidManifest.xml:62:9-34
+activity#com.google.zxing.client.android.CaptureActivity
+ADDED from [com.tarun0.zxing-standalone:zxing-standalone:1.0.0] /Users/dario_leija/.gradle/caches/transforms-2/files-2.1/430785a4f8c0062d1725195e5871d35d/AndroidManifest.xml:71:9-134:20
+	android:screenOrientation
+		ADDED from [com.tarun0.zxing-standalone:zxing-standalone:1.0.0] /Users/dario_leija/.gradle/caches/transforms-2/files-2.1/430785a4f8c0062d1725195e5871d35d/AndroidManifest.xml:74:13-56
+	android:clearTaskOnLaunch
+		ADDED from [com.tarun0.zxing-standalone:zxing-standalone:1.0.0] /Users/dario_leija/.gradle/caches/transforms-2/files-2.1/430785a4f8c0062d1725195e5871d35d/AndroidManifest.xml:73:13-45
+	android:stateNotNeeded
+		ADDED from [com.tarun0.zxing-standalone:zxing-standalone:1.0.0] /Users/dario_leija/.gradle/caches/transforms-2/files-2.1/430785a4f8c0062d1725195e5871d35d/AndroidManifest.xml:75:13-42
+	android:windowSoftInputMode
+		ADDED from [com.tarun0.zxing-standalone:zxing-standalone:1.0.0] /Users/dario_leija/.gradle/caches/transforms-2/files-2.1/430785a4f8c0062d1725195e5871d35d/AndroidManifest.xml:77:13-60
+	android:theme
+		ADDED from [com.tarun0.zxing-standalone:zxing-standalone:1.0.0] /Users/dario_leija/.gradle/caches/transforms-2/files-2.1/430785a4f8c0062d1725195e5871d35d/AndroidManifest.xml:76:13-48
+	android:name
+		ADDED from [com.tarun0.zxing-standalone:zxing-standalone:1.0.0] /Users/dario_leija/.gradle/caches/transforms-2/files-2.1/430785a4f8c0062d1725195e5871d35d/AndroidManifest.xml:72:13-75
+intent-filter#action:name:android.intent.action.MAIN
+ADDED from [com.tarun0.zxing-standalone:zxing-standalone:1.0.0] /Users/dario_leija/.gradle/caches/transforms-2/files-2.1/430785a4f8c0062d1725195e5871d35d/AndroidManifest.xml:78:13-80:29
+intent-filter#action:name:com.google.zxing.client.android.SCAN+category:name:android.intent.category.DEFAULT
+ADDED from [com.tarun0.zxing-standalone:zxing-standalone:1.0.0] /Users/dario_leija/.gradle/caches/transforms-2/files-2.1/430785a4f8c0062d1725195e5871d35d/AndroidManifest.xml:81:13-85:29
+action#com.google.zxing.client.android.SCAN
+ADDED from [com.tarun0.zxing-standalone:zxing-standalone:1.0.0] /Users/dario_leija/.gradle/caches/transforms-2/files-2.1/430785a4f8c0062d1725195e5871d35d/AndroidManifest.xml:82:17-79
+	android:name
+		ADDED from [com.tarun0.zxing-standalone:zxing-standalone:1.0.0] /Users/dario_leija/.gradle/caches/transforms-2/files-2.1/430785a4f8c0062d1725195e5871d35d/AndroidManifest.xml:82:25-76
+category#android.intent.category.DEFAULT
+ADDED from [com.tarun0.zxing-standalone:zxing-standalone:1.0.0] /Users/dario_leija/.gradle/caches/transforms-2/files-2.1/430785a4f8c0062d1725195e5871d35d/AndroidManifest.xml:84:17-76
+	android:name
+		ADDED from [com.tarun0.zxing-standalone:zxing-standalone:1.0.0] /Users/dario_leija/.gradle/caches/transforms-2/files-2.1/430785a4f8c0062d1725195e5871d35d/AndroidManifest.xml:84:27-73
+intent-filter#action:name:android.intent.action.VIEW+category:name:android.intent.category.BROWSABLE+category:name:android.intent.category.DEFAULT+data:host:zxing.appspot.com+data:path:/scan+data:scheme:http
+ADDED from [com.tarun0.zxing-standalone:zxing-standalone:1.0.0] /Users/dario_leija/.gradle/caches/transforms-2/files-2.1/430785a4f8c0062d1725195e5871d35d/AndroidManifest.xml:87:13-97:29
+action#android.intent.action.VIEW
+ADDED from [com.tarun0.zxing-standalone:zxing-standalone:1.0.0] /Users/dario_leija/.gradle/caches/transforms-2/files-2.1/430785a4f8c0062d1725195e5871d35d/AndroidManifest.xml:88:17-69
+	android:name
+		ADDED from [com.tarun0.zxing-standalone:zxing-standalone:1.0.0] /Users/dario_leija/.gradle/caches/transforms-2/files-2.1/430785a4f8c0062d1725195e5871d35d/AndroidManifest.xml:88:25-66
+category#android.intent.category.BROWSABLE
+ADDED from [com.tarun0.zxing-standalone:zxing-standalone:1.0.0] /Users/dario_leija/.gradle/caches/transforms-2/files-2.1/430785a4f8c0062d1725195e5871d35d/AndroidManifest.xml:91:17-78
+	android:name
+		ADDED from [com.tarun0.zxing-standalone:zxing-standalone:1.0.0] /Users/dario_leija/.gradle/caches/transforms-2/files-2.1/430785a4f8c0062d1725195e5871d35d/AndroidManifest.xml:91:27-75
+data
+ADDED from [com.tarun0.zxing-standalone:zxing-standalone:1.0.0] /Users/dario_leija/.gradle/caches/transforms-2/files-2.1/430785a4f8c0062d1725195e5871d35d/AndroidManifest.xml:93:17-96:45
+	android:path
+		ADDED from [com.tarun0.zxing-standalone:zxing-standalone:1.0.0] /Users/dario_leija/.gradle/caches/transforms-2/files-2.1/430785a4f8c0062d1725195e5871d35d/AndroidManifest.xml:95:21-41
+	android:host
+		ADDED from [com.tarun0.zxing-standalone:zxing-standalone:1.0.0] /Users/dario_leija/.gradle/caches/transforms-2/files-2.1/430785a4f8c0062d1725195e5871d35d/AndroidManifest.xml:94:21-53
+	android:scheme
+		ADDED from [com.tarun0.zxing-standalone:zxing-standalone:1.0.0] /Users/dario_leija/.gradle/caches/transforms-2/files-2.1/430785a4f8c0062d1725195e5871d35d/AndroidManifest.xml:96:21-42
+intent-filter#action:name:android.intent.action.VIEW+category:name:android.intent.category.BROWSABLE+category:name:android.intent.category.DEFAULT+data:host:www.google.com+data:path:/m/products/scan+data:scheme:http
+ADDED from [com.tarun0.zxing-standalone:zxing-standalone:1.0.0] /Users/dario_leija/.gradle/caches/transforms-2/files-2.1/430785a4f8c0062d1725195e5871d35d/AndroidManifest.xml:99:13-109:29
+intent-filter#action:name:android.intent.action.VIEW+category:name:android.intent.category.BROWSABLE+category:name:android.intent.category.DEFAULT+data:host:www.google.co.uk+data:path:/m/products/scan+data:scheme:http
+ADDED from [com.tarun0.zxing-standalone:zxing-standalone:1.0.0] /Users/dario_leija/.gradle/caches/transforms-2/files-2.1/430785a4f8c0062d1725195e5871d35d/AndroidManifest.xml:111:13-121:29
+intent-filter#action:name:android.intent.action.VIEW+category:name:android.intent.category.BROWSABLE+category:name:android.intent.category.DEFAULT+data:host:scan+data:path:/+data:scheme:zxing
+ADDED from [com.tarun0.zxing-standalone:zxing-standalone:1.0.0] /Users/dario_leija/.gradle/caches/transforms-2/files-2.1/430785a4f8c0062d1725195e5871d35d/AndroidManifest.xml:123:13-133:29
+activity#com.google.zxing.client.android.PreferencesActivity
+ADDED from [com.tarun0.zxing-standalone:zxing-standalone:1.0.0] /Users/dario_leija/.gradle/caches/transforms-2/files-2.1/430785a4f8c0062d1725195e5871d35d/AndroidManifest.xml:135:9-138:45
+	android:stateNotNeeded
+		ADDED from [com.tarun0.zxing-standalone:zxing-standalone:1.0.0] /Users/dario_leija/.gradle/caches/transforms-2/files-2.1/430785a4f8c0062d1725195e5871d35d/AndroidManifest.xml:138:13-42
+	android:label
+		ADDED from [com.tarun0.zxing-standalone:zxing-standalone:1.0.0] /Users/dario_leija/.gradle/caches/transforms-2/files-2.1/430785a4f8c0062d1725195e5871d35d/AndroidManifest.xml:137:13-53
+	android:name
+		ADDED from [com.tarun0.zxing-standalone:zxing-standalone:1.0.0] /Users/dario_leija/.gradle/caches/transforms-2/files-2.1/430785a4f8c0062d1725195e5871d35d/AndroidManifest.xml:136:13-79
+activity#com.google.zxing.client.android.encode.EncodeActivity
+ADDED from [com.tarun0.zxing-standalone:zxing-standalone:1.0.0] /Users/dario_leija/.gradle/caches/transforms-2/files-2.1/430785a4f8c0062d1725195e5871d35d/AndroidManifest.xml:139:9-163:20
+	android:stateNotNeeded
+		ADDED from [com.tarun0.zxing-standalone:zxing-standalone:1.0.0] /Users/dario_leija/.gradle/caches/transforms-2/files-2.1/430785a4f8c0062d1725195e5871d35d/AndroidManifest.xml:141:13-42
+	android:name
+		ADDED from [com.tarun0.zxing-standalone:zxing-standalone:1.0.0] /Users/dario_leija/.gradle/caches/transforms-2/files-2.1/430785a4f8c0062d1725195e5871d35d/AndroidManifest.xml:140:13-81
+intent-filter#action:name:com.google.zxing.client.android.ENCODE+category:name:android.intent.category.DEFAULT
+ADDED from [com.tarun0.zxing-standalone:zxing-standalone:1.0.0] /Users/dario_leija/.gradle/caches/transforms-2/files-2.1/430785a4f8c0062d1725195e5871d35d/AndroidManifest.xml:142:13-146:29
+action#com.google.zxing.client.android.ENCODE
+ADDED from [com.tarun0.zxing-standalone:zxing-standalone:1.0.0] /Users/dario_leija/.gradle/caches/transforms-2/files-2.1/430785a4f8c0062d1725195e5871d35d/AndroidManifest.xml:143:17-81
+	android:name
+		ADDED from [com.tarun0.zxing-standalone:zxing-standalone:1.0.0] /Users/dario_leija/.gradle/caches/transforms-2/files-2.1/430785a4f8c0062d1725195e5871d35d/AndroidManifest.xml:143:25-78
+intent-filter#action:name:android.intent.action.SEND+category:name:android.intent.category.DEFAULT+data:mimeType:text/x-vcard
+ADDED from [com.tarun0.zxing-standalone:zxing-standalone:1.0.0] /Users/dario_leija/.gradle/caches/transforms-2/files-2.1/430785a4f8c0062d1725195e5871d35d/AndroidManifest.xml:148:13-154:29
+action#android.intent.action.SEND
+ADDED from [com.tarun0.zxing-standalone:zxing-standalone:1.0.0] /Users/dario_leija/.gradle/caches/transforms-2/files-2.1/430785a4f8c0062d1725195e5871d35d/AndroidManifest.xml:149:17-69
+	android:name
+		ADDED from [com.tarun0.zxing-standalone:zxing-standalone:1.0.0] /Users/dario_leija/.gradle/caches/transforms-2/files-2.1/430785a4f8c0062d1725195e5871d35d/AndroidManifest.xml:149:25-66
+intent-filter#action:name:android.intent.action.SEND+category:name:android.intent.category.DEFAULT+data:mimeType:text/plain
+ADDED from [com.tarun0.zxing-standalone:zxing-standalone:1.0.0] /Users/dario_leija/.gradle/caches/transforms-2/files-2.1/430785a4f8c0062d1725195e5871d35d/AndroidManifest.xml:156:13-162:29
+activity#com.google.zxing.client.android.book.SearchBookContentsActivity
+ADDED from [com.tarun0.zxing-standalone:zxing-standalone:1.0.0] /Users/dario_leija/.gradle/caches/transforms-2/files-2.1/430785a4f8c0062d1725195e5871d35d/AndroidManifest.xml:164:9-174:20
+	android:screenOrientation
+		ADDED from [com.tarun0.zxing-standalone:zxing-standalone:1.0.0] /Users/dario_leija/.gradle/caches/transforms-2/files-2.1/430785a4f8c0062d1725195e5871d35d/AndroidManifest.xml:167:13-56
+	android:stateNotNeeded
+		ADDED from [com.tarun0.zxing-standalone:zxing-standalone:1.0.0] /Users/dario_leija/.gradle/caches/transforms-2/files-2.1/430785a4f8c0062d1725195e5871d35d/AndroidManifest.xml:168:13-42
+	android:label
+		ADDED from [com.tarun0.zxing-standalone:zxing-standalone:1.0.0] /Users/dario_leija/.gradle/caches/transforms-2/files-2.1/430785a4f8c0062d1725195e5871d35d/AndroidManifest.xml:166:13-45
+	android:name
+		ADDED from [com.tarun0.zxing-standalone:zxing-standalone:1.0.0] /Users/dario_leija/.gradle/caches/transforms-2/files-2.1/430785a4f8c0062d1725195e5871d35d/AndroidManifest.xml:165:13-91
+intent-filter#action:name:com.google.zxing.client.android.SEARCH_BOOK_CONTENTS+category:name:android.intent.category.DEFAULT
+ADDED from [com.tarun0.zxing-standalone:zxing-standalone:1.0.0] /Users/dario_leija/.gradle/caches/transforms-2/files-2.1/430785a4f8c0062d1725195e5871d35d/AndroidManifest.xml:169:13-173:29
+action#com.google.zxing.client.android.SEARCH_BOOK_CONTENTS
+ADDED from [com.tarun0.zxing-standalone:zxing-standalone:1.0.0] /Users/dario_leija/.gradle/caches/transforms-2/files-2.1/430785a4f8c0062d1725195e5871d35d/AndroidManifest.xml:170:17-95
+	android:name
+		ADDED from [com.tarun0.zxing-standalone:zxing-standalone:1.0.0] /Users/dario_leija/.gradle/caches/transforms-2/files-2.1/430785a4f8c0062d1725195e5871d35d/AndroidManifest.xml:170:25-92
+activity#com.google.zxing.client.android.share.ShareActivity
+ADDED from [com.tarun0.zxing-standalone:zxing-standalone:1.0.0] /Users/dario_leija/.gradle/caches/transforms-2/files-2.1/430785a4f8c0062d1725195e5871d35d/AndroidManifest.xml:175:9-184:20
+	android:screenOrientation
+		ADDED from [com.tarun0.zxing-standalone:zxing-standalone:1.0.0] /Users/dario_leija/.gradle/caches/transforms-2/files-2.1/430785a4f8c0062d1725195e5871d35d/AndroidManifest.xml:177:13-45
+	android:stateNotNeeded
+		ADDED from [com.tarun0.zxing-standalone:zxing-standalone:1.0.0] /Users/dario_leija/.gradle/caches/transforms-2/files-2.1/430785a4f8c0062d1725195e5871d35d/AndroidManifest.xml:178:13-42
+	android:name
+		ADDED from [com.tarun0.zxing-standalone:zxing-standalone:1.0.0] /Users/dario_leija/.gradle/caches/transforms-2/files-2.1/430785a4f8c0062d1725195e5871d35d/AndroidManifest.xml:176:13-79
+intent-filter#action:name:com.google.zxing.client.android.SHARE+category:name:android.intent.category.DEFAULT
+ADDED from [com.tarun0.zxing-standalone:zxing-standalone:1.0.0] /Users/dario_leija/.gradle/caches/transforms-2/files-2.1/430785a4f8c0062d1725195e5871d35d/AndroidManifest.xml:179:13-183:29
+action#com.google.zxing.client.android.SHARE
+ADDED from [com.tarun0.zxing-standalone:zxing-standalone:1.0.0] /Users/dario_leija/.gradle/caches/transforms-2/files-2.1/430785a4f8c0062d1725195e5871d35d/AndroidManifest.xml:180:17-80
+	android:name
+		ADDED from [com.tarun0.zxing-standalone:zxing-standalone:1.0.0] /Users/dario_leija/.gradle/caches/transforms-2/files-2.1/430785a4f8c0062d1725195e5871d35d/AndroidManifest.xml:180:25-77
+activity#com.google.zxing.client.android.history.HistoryActivity
+ADDED from [com.tarun0.zxing-standalone:zxing-standalone:1.0.0] /Users/dario_leija/.gradle/caches/transforms-2/files-2.1/430785a4f8c0062d1725195e5871d35d/AndroidManifest.xml:185:9-188:45
+	android:stateNotNeeded
+		ADDED from [com.tarun0.zxing-standalone:zxing-standalone:1.0.0] /Users/dario_leija/.gradle/caches/transforms-2/files-2.1/430785a4f8c0062d1725195e5871d35d/AndroidManifest.xml:188:13-42
+	android:label
+		ADDED from [com.tarun0.zxing-standalone:zxing-standalone:1.0.0] /Users/dario_leija/.gradle/caches/transforms-2/files-2.1/430785a4f8c0062d1725195e5871d35d/AndroidManifest.xml:187:13-50
+	android:name
+		ADDED from [com.tarun0.zxing-standalone:zxing-standalone:1.0.0] /Users/dario_leija/.gradle/caches/transforms-2/files-2.1/430785a4f8c0062d1725195e5871d35d/AndroidManifest.xml:186:13-83
+activity#com.google.zxing.client.android.share.BookmarkPickerActivity
+ADDED from [com.tarun0.zxing-standalone:zxing-standalone:1.0.0] /Users/dario_leija/.gradle/caches/transforms-2/files-2.1/430785a4f8c0062d1725195e5871d35d/AndroidManifest.xml:189:9-192:45
+	android:stateNotNeeded
+		ADDED from [com.tarun0.zxing-standalone:zxing-standalone:1.0.0] /Users/dario_leija/.gradle/caches/transforms-2/files-2.1/430785a4f8c0062d1725195e5871d35d/AndroidManifest.xml:192:13-42
+	android:label
+		ADDED from [com.tarun0.zxing-standalone:zxing-standalone:1.0.0] /Users/dario_leija/.gradle/caches/transforms-2/files-2.1/430785a4f8c0062d1725195e5871d35d/AndroidManifest.xml:191:13-57
+	android:name
+		ADDED from [com.tarun0.zxing-standalone:zxing-standalone:1.0.0] /Users/dario_leija/.gradle/caches/transforms-2/files-2.1/430785a4f8c0062d1725195e5871d35d/AndroidManifest.xml:190:13-88
+activity#com.google.zxing.client.android.share.AppPickerActivity
+ADDED from [com.tarun0.zxing-standalone:zxing-standalone:1.0.0] /Users/dario_leija/.gradle/caches/transforms-2/files-2.1/430785a4f8c0062d1725195e5871d35d/AndroidManifest.xml:193:9-196:45
+	android:stateNotNeeded
+		ADDED from [com.tarun0.zxing-standalone:zxing-standalone:1.0.0] /Users/dario_leija/.gradle/caches/transforms-2/files-2.1/430785a4f8c0062d1725195e5871d35d/AndroidManifest.xml:196:13-42
+	android:label
+		ADDED from [com.tarun0.zxing-standalone:zxing-standalone:1.0.0] /Users/dario_leija/.gradle/caches/transforms-2/files-2.1/430785a4f8c0062d1725195e5871d35d/AndroidManifest.xml:195:13-52
+	android:name
+		ADDED from [com.tarun0.zxing-standalone:zxing-standalone:1.0.0] /Users/dario_leija/.gradle/caches/transforms-2/files-2.1/430785a4f8c0062d1725195e5871d35d/AndroidManifest.xml:194:13-83
+activity#com.google.zxing.client.android.HelpActivity
+ADDED from [com.tarun0.zxing-standalone:zxing-standalone:1.0.0] /Users/dario_leija/.gradle/caches/transforms-2/files-2.1/430785a4f8c0062d1725195e5871d35d/AndroidManifest.xml:197:9-201:45
+	android:screenOrientation
+		ADDED from [com.tarun0.zxing-standalone:zxing-standalone:1.0.0] /Users/dario_leija/.gradle/caches/transforms-2/files-2.1/430785a4f8c0062d1725195e5871d35d/AndroidManifest.xml:200:13-45
+	android:stateNotNeeded
+		ADDED from [com.tarun0.zxing-standalone:zxing-standalone:1.0.0] /Users/dario_leija/.gradle/caches/transforms-2/files-2.1/430785a4f8c0062d1725195e5871d35d/AndroidManifest.xml:201:13-42
+	android:label
+		ADDED from [com.tarun0.zxing-standalone:zxing-standalone:1.0.0] /Users/dario_leija/.gradle/caches/transforms-2/files-2.1/430785a4f8c0062d1725195e5871d35d/AndroidManifest.xml:199:13-46
+	android:name
+		ADDED from [com.tarun0.zxing-standalone:zxing-standalone:1.0.0] /Users/dario_leija/.gradle/caches/transforms-2/files-2.1/430785a4f8c0062d1725195e5871d35d/AndroidManifest.xml:198:13-72
+uses-permission#android.permission.READ_EXTERNAL_STORAGE
+IMPLIED from /Users/dario_leija/Documents/Proyectos_Documentos/MyApplication/app/src/main/AndroidManifest.xml:2:1-50:12 reason: com.google.zxing.client.android requested WRITE_EXTERNAL_STORAGE

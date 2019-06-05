@@ -1,0 +1,4 @@
+#Mon May 27 18:14:01 CDT 2019
+base.0=/Users/dario_leija/Documents/Proyectos_Documentos/MyApplication/app/build/intermediates/transforms/dexMerger/debug/0
+path.0=classes.dex
+renamed.0=classes.dex
