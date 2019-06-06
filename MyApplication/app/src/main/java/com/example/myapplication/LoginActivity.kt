@@ -53,6 +53,12 @@ class LoginActivity : AppCompatActivity() {
         setContentView(R.layout.activity_login)
         Realm.init(this)
         context = this
+
+        val prefs = context.getSharedPreferences("Preferencias", Context.MODE_PRIVATE)
+        val ordenManual = prefs.getBoolean("ordenConfig", false)
+        SharedData.SharedInstance.codigoOpcional = ordenManual
+
+
         val lightFont: Typeface = Typeface.createFromAsset(assets, "fonts/graphik_light.ttf")
         val regularFont: Typeface = Typeface.createFromAsset(assets, "fonts/graphik_regular.ttf")
         sucursalTextfield.typeface = lightFont

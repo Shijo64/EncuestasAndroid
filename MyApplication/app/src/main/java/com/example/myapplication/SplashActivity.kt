@@ -6,21 +6,31 @@ import android.os.Bundle
 import android.os.Handler
 import android.view.Window
 import android.view.WindowManager
+import gr.net.maroulis.library.EasySplashScreen
 
 class SplashActivity : AppCompatActivity() {
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_splash)
+        //setContentView(R.layout.activity_splash)
 
+        val view = EasySplashScreen(this)
+            .withFullScreen()
+            .withBackgroundResource(R.color.colorPrimary)
+            .withLogo(R.drawable.logo)
+            .withTargetActivity(LoginActivity::class.java)
+            .withSplashTimeOut(4000)
+            .create()
+        setContentView(view)
+            //.withBackgroundResource(R.id.)
         /*Handler().postDelayed({
             val intent = Intent(this, LoginActivity::class.java)
             startActivity(intent)
             this.finish()
         }, 4000)*/
 
-        val background = object : Thread() {
+        /*val background = object : Thread() {
             override fun run(){
                 try{
                     Thread.sleep(4000)
@@ -32,6 +42,6 @@ class SplashActivity : AppCompatActivity() {
                 }
             }
         }
-        background.start()
+        background.start()*/
     }
 }

@@ -1114,6 +1114,7 @@ drawable ic_mtrl_chip_close_circle
 drawable ic_notifications_black_24dp
 drawable launcher_icon
 drawable left_arrow
+drawable logo
 drawable mtrl_snackbar_background
 drawable mtrl_tabs_default_indicator
 drawable navigation_empty_icon
@@ -1133,7 +1134,6 @@ drawable preference_list_divider_material
 drawable right_arrow
 drawable share_via_barcode
 drawable side_nav_bar
-drawable splash_android
 drawable tooltip_frame_dark
 drawable tooltip_frame_light
 id ALT
@@ -1164,6 +1164,7 @@ id action_text
 id actions
 id activity_chooser_view_content
 id add
+id after_logo_tv
 id alertTitle
 id all
 id always
@@ -1174,6 +1175,7 @@ id atrasButton
 id auto
 id barcode_image_view
 id barrier
+id before_logo_tv
 id beginning
 id blocking
 id bookmark_title
@@ -1239,12 +1241,14 @@ id fill_horizontal
 id fill_vertical
 id filled
 id fixed
+id footer_tv
 id forever
 id format_text_view
 id ghost_view
 id gone
 id group_divider
 id groups
+id header_tv
 id help_contents
 id history_detail
 id history_title
@@ -1274,6 +1278,7 @@ id list_item
 id loginButton
 id login_form
 id login_progress
+id logo
 id masked
 id media_actions
 id menu_encode
@@ -1384,6 +1389,7 @@ id snapMargins
 id snippet_view
 id spacer
 id spinner
+id splash_wrapper_rl
 id split_action_bar
 id spread
 id spread_inside
@@ -1578,6 +1584,7 @@ layout select_dialog_item_material
 layout select_dialog_multichoice_material
 layout select_dialog_singlechoice_material
 layout share
+layout splash
 layout support_simple_spinner_dropdown_item
 layout template_encuesta
 menu activity_home_drawer
@@ -1802,6 +1809,7 @@ style Animation_AppCompat_Tooltip
 style Animation_Design_BottomSheetDialog
 style AppTheme
 style AppTheme_AppBarOverlay
+style AppTheme_AppStyled
 style AppTheme_NoActionBar
 style AppTheme_PopupOverlay
 style Base_AlertDialog_AppCompat

@@ -8,5 +8,5 @@ object SharedInstance {
     val realmInstance = Realm.getDefaultInstance()
     var respuestas = mutableListOf<EncuestaRespuestas>()
     var numeroOrden = ""
-    var codigoOpcional = true
+    var codigoOpcional = false
 }

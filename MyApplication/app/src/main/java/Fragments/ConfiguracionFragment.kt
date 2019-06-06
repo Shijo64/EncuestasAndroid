@@ -1,6 +1,7 @@
 package Fragments
 
 import android.content.Context
+import android.content.SharedPreferences
 import android.net.Uri
 import android.os.Bundle
 import android.support.v4.app.Fragment
@@ -28,12 +29,18 @@ class ConfiguracionFragment : Fragment() {
             checkBox.isChecked = false
         }
 
+        val prefs: SharedPreferences = context!!.getSharedPreferences("Preferencias", Context.MODE_PRIVATE)
+        val editor = prefs.edit()
         checkBox.setOnCheckedChangeListener { buttonView, isChecked ->
+
             if(isChecked){
                 SharedData.SharedInstance.codigoOpcional = true
+                editor.putBoolean("ordenConfig", true)
             }else{
                 SharedData.SharedInstance.codigoOpcional = false
+                editor.putBoolean("ordenConfig", false)
             }
+            editor.commit()
         }
         return vista
     }
