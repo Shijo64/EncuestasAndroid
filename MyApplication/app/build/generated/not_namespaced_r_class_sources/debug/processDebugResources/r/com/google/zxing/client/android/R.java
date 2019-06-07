@@ -41,7 +41,7 @@ public final class R {
         private drawable() {}
 
         public static final int launcher_icon = 0x7f080072;
-        public static final int share_via_barcode = 0x7f080086;
+        public static final int share_via_barcode = 0x7f080087;
     }
     public static final class id {
         private id() {}

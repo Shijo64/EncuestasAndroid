@@ -1,4 +1,0 @@
-#Thu Jun 06 12:51:20 CDT 2019
-base.0=/Users/dario_leija/Documents/Proyectos_Documentos/EncuestaAndroid/MyApplication/app/build/intermediates/transforms/dexMerger/debug/0
-path.0=classes.dex
-renamed.0=classes.dex

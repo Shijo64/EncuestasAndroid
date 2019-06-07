@@ -5630,11 +5630,12 @@ public final class R {
     public static final int notification_tile_bg=0x7f080082;
     public static final int notify_panel_notification_icon_bg=0x7f080083;
     public static final int preference_list_divider_material=0x7f080084;
-    public static final int right_arrow=0x7f080085;
-    public static final int share_via_barcode=0x7f080086;
-    public static final int side_nav_bar=0x7f080087;
-    public static final int tooltip_frame_dark=0x7f080088;
-    public static final int tooltip_frame_light=0x7f080089;
+    public static final int restaurant_desk=0x7f080085;
+    public static final int right_arrow=0x7f080086;
+    public static final int share_via_barcode=0x7f080087;
+    public static final int side_nav_bar=0x7f080088;
+    public static final int tooltip_frame_dark=0x7f080089;
+    public static final int tooltip_frame_light=0x7f08008a;
   }
   public static final class id {
     public static final int ALT=0x7f090000;

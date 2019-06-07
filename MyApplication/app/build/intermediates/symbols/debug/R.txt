@@ -1130,11 +1130,12 @@ int drawable notification_template_icon_low_bg 0x7f080081
 int drawable notification_tile_bg 0x7f080082
 int drawable notify_panel_notification_icon_bg 0x7f080083
 int drawable preference_list_divider_material 0x7f080084
-int drawable right_arrow 0x7f080085
-int drawable share_via_barcode 0x7f080086
-int drawable side_nav_bar 0x7f080087
-int drawable tooltip_frame_dark 0x7f080088
-int drawable tooltip_frame_light 0x7f080089
+int drawable restaurant_desk 0x7f080085
+int drawable right_arrow 0x7f080086
+int drawable share_via_barcode 0x7f080087
+int drawable side_nav_bar 0x7f080088
+int drawable tooltip_frame_dark 0x7f080089
+int drawable tooltip_frame_light 0x7f08008a
 int id ALT 0x7f090000
 int id CTRL 0x7f090001
 int id FUNCTION 0x7f090002
