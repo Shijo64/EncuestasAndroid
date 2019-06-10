@@ -62,8 +62,8 @@ class OpcionMultipleFragment : Fragment() {
         })
         recyclerView.adapter = this.adaptador
 
-        val linea = DividerItemDecoration(this.activity, 1)
-        recyclerView.addItemDecoration(linea)
+        /*val linea = DividerItemDecoration(this.activity, 1)
+        recyclerView.addItemDecoration(linea)*/
         // Inflate the layout for this fragment
         return vista
     }

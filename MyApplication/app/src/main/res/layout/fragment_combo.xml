@@ -5,5 +5,7 @@
              tools:context="Fragments.ComboFragment" android:visibility="visible">
     <Spinner
             android:layout_width="match_parent"
-            android:layout_height="55dp" android:id="@+id/comboSpinner"/>
+            android:layout_height="55dp"
+            android:id="@+id/comboSpinner"
+            android:textColor="@android:color/white"/>
 </FrameLayout>

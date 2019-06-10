@@ -2,6 +2,8 @@ package Fragments
 
 
 import Models.OpcionesPreguntaModel
+import android.content.Context
+import android.graphics.Color
 import android.graphics.Typeface
 import android.os.Bundle
 import android.support.v4.app.Fragment
@@ -11,6 +13,7 @@ import android.view.ViewGroup
 import android.widget.AdapterView
 import android.widget.ArrayAdapter
 import android.widget.Spinner
+import android.widget.TextView
 import com.example.myapplication.EncuestaActivity
 
 import com.example.myapplication.R
@@ -55,5 +58,6 @@ class ComboFragment : Fragment() {
 
         return vista
     }
-
 }
+
+

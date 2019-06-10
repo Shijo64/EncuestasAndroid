@@ -58,8 +58,8 @@ class EncuestasActivity : AppCompatActivity() {
         })
         encuestasRecyclerView.adapter = this.adaptador
 
-        val linea = DividerItemDecoration(this, 1)
-        encuestasRecyclerView.addItemDecoration(linea)
+        /*val linea = DividerItemDecoration(this, 1)
+        encuestasRecyclerView.addItemDecoration(linea)*/
 
         swipeToRefresh.setOnRefreshListener {
             actualizarEncuestas()

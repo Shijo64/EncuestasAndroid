@@ -5,18 +5,27 @@
              tools:context="Fragments.SegmentoFragment">
     <RadioGroup
             android:layout_width="match_parent"
-            android:layout_height="wrap_content" android:id="@+id/segmentRadioGroup">
+            android:layout_height="wrap_content"
+            android:id="@+id/segmentRadioGroup"
+            android:background="#BFAAAAAA">
         <RadioButton
                 android:text="RadioButton"
                 android:layout_width="match_parent"
                 android:textSize="24sp"
-                android:layout_height="wrap_content" android:id="@+id/segment1" android:layout_weight="1"/>
-                //android:typeface="sans" android:textSize="24sp"/>
+                android:layout_height="wrap_content"
+                android:id="@+id/segment1"
+                android:layout_weight="1"
+                android:textColor="@android:color/white"
+        />
+        //android:typeface="sans" android:textSize="24sp"/>
         <RadioButton
                 android:text="RadioButton"
                 android:layout_width="match_parent"
                 android:textSize="24sp"
-                android:layout_height="wrap_content" android:id="@+id/segment2" android:layout_weight="1"/>
-                //android:typeface="sans" android:textSize="24sp"/>
+                android:layout_height="wrap_content"
+                android:id="@+id/segment2"
+                android:layout_weight="1"
+                android:textColor="@android:color/white"/>
+        //android:typeface="sans" android:textSize="24sp"/>
     </RadioGroup>
 </FrameLayout>

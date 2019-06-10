@@ -1115,6 +1115,7 @@ drawable ic_notifications_black_24dp
 drawable launcher_icon
 drawable left_arrow
 drawable logo
+drawable logo_completo
 drawable mtrl_snackbar_background
 drawable mtrl_tabs_default_indicator
 drawable navigation_empty_icon
@@ -1169,6 +1170,7 @@ id after_logo_tv
 id alertTitle
 id all
 id always
+id appBarLayout
 id app_picker_list_item_icon
 id app_picker_list_item_label
 id async
@@ -1430,7 +1432,6 @@ id titleDividerNoCustom
 id titleText
 id title_template
 id toolbar
-id toolbar2
 id toolbar3
 id top
 id topPanel

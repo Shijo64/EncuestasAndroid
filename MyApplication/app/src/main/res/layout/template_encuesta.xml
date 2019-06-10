@@ -3,13 +3,16 @@
               xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools"
               android:orientation="vertical"
               android:layout_width="match_parent"
-              android:layout_height="wrap_content" android:background="@android:color/white">
+              android:layout_height="wrap_content" android:background="#BFAAAAAA">
 
     <TextView
             android:text="Nombre Encuesta"
             android:layout_width="match_parent"
-            android:layout_height="80dp" android:id="@+id/nombreEncuesta" app:fontFamily="sans-serif"
-            android:textSize="24sp" android:textColor="@android:color/black"
-            android:paddingLeft="40dp" android:paddingTop="25dp"
-            android:background="@android:color/white"/>
+            android:layout_height="80dp"
+            android:id="@+id/nombreEncuesta"
+            android:textSize="24sp"
+            android:textColor="@android:color/white"
+            android:paddingLeft="40dp"
+            android:paddingTop="25dp"
+            android:background="#BFAAAAAA"/>
 </LinearLayout>

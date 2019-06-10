@@ -51,8 +51,8 @@ class ResumenActivity : AppCompatActivity() {
         resumenRecyclerView.adapter = this.adaptador
         resumenRecyclerView.setHasFixedSize(true)
 
-        val linea = DividerItemDecoration(this, 1)
-        resumenRecyclerView.addItemDecoration(linea)
+        /*val linea = DividerItemDecoration(this, 1)
+        resumenRecyclerView.addItemDecoration(linea)*/
 
         val enviarButton = findViewById<Button>(R.id.enviarEncuestaButton)
         enviarButton.setOnClickListener {
