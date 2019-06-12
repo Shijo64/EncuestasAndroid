@@ -771,6 +771,7 @@ color tooltip_background_light
 color transparent
 color viewfinder_laser
 color viewfinder_mask
+color white
 dimen abc_action_bar_content_inset_material
 dimen abc_action_bar_content_inset_with_nav
 dimen abc_action_bar_default_height_material

@@ -4,6 +4,7 @@ package Fragments
 import Models.OpcionesPreguntaModel
 import android.content.Context
 import android.graphics.Color
+import android.graphics.PorterDuff
 import android.graphics.Typeface
 import android.os.Bundle
 import android.support.v4.app.Fragment
@@ -39,7 +40,6 @@ class ComboFragment : Fragment() {
         val spinner = vista.findViewById<Spinner>(R.id.comboSpinner)
         val adapter = ArrayAdapter(getActivity(), android.R.layout.simple_spinner_item, opcionesArray)
         adapter.setDropDownViewResource(android.R.layout.simple_dropdown_item_1line)
-        spinner.adapter = adapter
         val index = opcionesArray.indexOf(respuestaSeleccionada)
         spinner.setSelection(index)
         activity.guardarOpcionSeleccionada(respuestaSeleccionada)
@@ -51,10 +51,14 @@ class ComboFragment : Fragment() {
 
             override fun onItemSelected(parent:AdapterView<*>, view: View, position: Int, id: Long){
                 // Display the selected item text on text view
+                val textView = parent.getChildAt(0) as TextView
+                textView.setTextColor(Color.WHITE)
                 val respuestaSeleccionada = parent.getItemAtPosition(position).toString()
                 activity.guardarOpcionSeleccionada(respuestaSeleccionada)
             }
         }
+
+        spinner.adapter = adapter
 
         return vista
     }

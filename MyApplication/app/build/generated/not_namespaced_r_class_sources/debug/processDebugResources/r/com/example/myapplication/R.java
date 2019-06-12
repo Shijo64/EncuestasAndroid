@@ -4723,6 +4723,7 @@ public final class R {
     public static final int transparent=0x7f06008c;
     public static final int viewfinder_laser=0x7f06008d;
     public static final int viewfinder_mask=0x7f06008e;
+    public static final int white=0x7f06008f;
   }
   public static final class dimen {
     public static final int abc_action_bar_content_inset_material=0x7f070000;
