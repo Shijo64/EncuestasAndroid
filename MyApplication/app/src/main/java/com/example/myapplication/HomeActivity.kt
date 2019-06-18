@@ -44,6 +44,7 @@ class HomeActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
         codigoTextField.typeface = lightFont
         iniciarButton.typeface = regularFont
         codigoButton.typeface = regularFont
+        fechaOrdenButton.typeface = regularFont
 
         if(SharedData.SharedInstance.codigoOpcional == false){
             codigoTextField.isEnabled = false

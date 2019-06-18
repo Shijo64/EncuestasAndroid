@@ -7,7 +7,8 @@
         android:layout_height="match_parent"
         app:layout_behavior="@string/appbar_scrolling_view_behavior"
         tools:showIn="@layout/app_bar_home"
-        tools:context=".HomeActivity" android:background="@drawable/restaurant_desk">
+        tools:context=".HomeActivity"
+        android:background="@drawable/restaurant_desk">
 
     <android.support.constraint.ConstraintLayout
             android:layout_width="match_parent"
@@ -15,8 +16,8 @@
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent" app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            android:background="#BFAAAAAA">
-
+            android:background="#BFAAAAAA" app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintVertical_bias="1.0">
     </android.support.constraint.ConstraintLayout>
     <TextView
             android:text="Titulo"
@@ -25,22 +26,24 @@
             android:id="@+id/encuestaTitulo"
             android:textSize="36sp"
             android:textColor="@android:color/white"
-            android:layout_marginTop="16dp"
+            android:gravity="center"
+            android:layout_marginTop="8dp"
             app:layout_constraintTop_toTopOf="parent"
             android:layout_marginStart="8dp"
             app:layout_constraintStart_toStartOf="parent"
             android:layout_marginLeft="8dp"
             android:layout_marginEnd="8dp"
             app:layout_constraintEnd_toEndOf="parent"
-            android:layout_marginRight="8dp"
-            app:layout_constraintHorizontal_bias="0.497"
-            android:gravity="center"/>
+            android:layout_marginRight="8dp"/>
     <EditText
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:inputType="none"
             android:ems="10"
             android:id="@+id/codigoTextField"
+            android:hint="Número de orden:"
+            android:editable="true"
+            android:textColor="@android:color/white"
             android:layout_marginTop="16dp"
             app:layout_constraintTop_toBottomOf="@+id/titleText"
             android:layout_marginStart="8dp"
@@ -48,60 +51,76 @@
             android:layout_marginLeft="8dp"
             android:layout_marginEnd="8dp"
             app:layout_constraintEnd_toEndOf="parent"
-            android:layout_marginRight="8dp"
-            android:hint="Número de orden:"
-            android:editable="true" android:textColor="@android:color/white"/>
+            android:layout_marginRight="8dp"/>
     <TextView
             android:text="Introduce el número de orden:"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/titleText"
+            android:typeface="sans"
+            android:textSize="24sp"
+            android:textColor="@android:color/holo_blue_light"
+            android:gravity="center"
             android:layout_marginTop="16dp"
             app:layout_constraintTop_toBottomOf="@+id/encuestaTitulo"
+            android:layout_marginStart="8dp"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginLeft="8dp"
+            android:layout_marginEnd="8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginRight="8dp"/>
+
+    <Button
+            android:text="Fecha de orden:"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/fechaOrdenButton"
+            android:layout_marginTop="16dp"
+            app:layout_constraintTop_toBottomOf="@+id/codigoTextField"
             app:layout_constraintStart_toStartOf="parent"
             android:layout_marginLeft="8dp"
             android:layout_marginStart="8dp"
             app:layout_constraintEnd_toEndOf="parent"
             android:layout_marginEnd="8dp"
             android:layout_marginRight="8dp"
-            android:typeface="sans"
-            android:textSize="24sp"
-            android:textColor="@android:color/holo_blue_light"
-            android:gravity="center"/>
-
+            android:textAllCaps="false"
+            android:textSize="19sp" android:gravity="center|left" android:background="#00FFFFFF"/>
     <Button
             android:text="Iniciar"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:id="@+id/iniciarButton"
-            android:layout_marginTop="16dp"
-            app:layout_constraintTop_toBottomOf="@+id/codigoTextField"
-            app:layout_constraintStart_toStartOf="parent"
-            android:layout_marginLeft="40dp"
-            android:layout_marginStart="40dp"
-            app:layout_constraintEnd_toEndOf="parent"
-            android:layout_marginEnd="40dp"
-            android:layout_marginRight="40dp"
             android:backgroundTint="@android:color/holo_blue_dark"
             android:textSize="24sp"
             android:textColor="@android:color/white"
-            android:textAllCaps="false" android:background="@color/colorPrimary"/>
+            android:textAllCaps="false"
+            android:background="@color/colorPrimary"
+            android:layout_marginStart="40dp"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginLeft="40dp"
+            android:layout_marginEnd="40dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginRight="40dp"
+            app:layout_constraintHorizontal_bias="0.0"
+            android:layout_marginTop="16dp"
+            app:layout_constraintTop_toBottomOf="@+id/fechaOrdenButton"/>
 
     <Button
             android:text="Código de Barras"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:id="@+id/codigoButton"
-            android:layout_marginTop="16dp"
-            app:layout_constraintTop_toBottomOf="@+id/iniciarButton"
-            app:layout_constraintStart_toStartOf="parent"
-            android:layout_marginLeft="40dp"
-            android:layout_marginStart="40dp"
-            app:layout_constraintEnd_toEndOf="parent"
-            android:layout_marginEnd="40dp"
-            android:layout_marginRight="40dp"
             android:textSize="24sp"
             android:textColor="@android:color/white"
             android:background="@color/colorPrimary"
-            android:textAllCaps="false"/>
+            android:textAllCaps="false"
+            android:layout_marginEnd="40dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginRight="40dp"
+            android:layout_marginStart="40dp"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginLeft="40dp"
+            app:layout_constraintHorizontal_bias="0.0"
+            android:layout_marginTop="16dp"
+            app:layout_constraintTop_toBottomOf="@+id/iniciarButton"/>
 </android.support.constraint.ConstraintLayout>
