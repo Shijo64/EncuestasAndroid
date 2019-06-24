@@ -94,7 +94,7 @@ class EncuestasActivity : AppCompatActivity() {
 
     fun getEncuestasPendientes():List<EncuestaBO> {
         val encuestasPendientes = EncuestaBO().queryAll()
-        /*if(encuestasPendientes.count() > 0){
+        if(encuestasPendientes.count() > 0){
             for(encuesta in encuestasPendientes){
                 val respuestas = EncuestaRespuestas().query { equalTo("idEncuestaBO", encuesta.Id) }
                 val manager = ServiceManager()
@@ -103,7 +103,7 @@ class EncuestasActivity : AppCompatActivity() {
                     EncuestaBO().deleteAll()
                 }
             }
-        }*/
+        }
         return encuestasPendientes
     }
 

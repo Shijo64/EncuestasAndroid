@@ -66,6 +66,7 @@ class ResumenActivity : AppCompatActivity() {
             encuestaEnviar.nombreEncuesta = this@ResumenActivity.encuesta!!.Name!!
             encuestaEnviar.CodigoEncuesta = this@ResumenActivity.encuesta!!.Name!!
             encuestaEnviar.Orden = SharedData.SharedInstance.numeroOrden.toInt()
+            encuestaEnviar.FechaOrden = SharedData.SharedInstance.fechaOrden
 
             var respuestasEnviar = mutableListOf<EncuestaRespuestas>()
             for (respuesta in this@ResumenActivity.respuestas!!){

@@ -16,6 +16,8 @@ class ResultadoEncuesta {
     var EncuestaId = 0
     @SerializedName("RegistrationDate")
     var FechaRegistro = Date()
+    @SerializedName("OrderDate")
+    var FechaOrden = Date()
     @SerializedName("SurveyDetailResultList")
     var respuestas = mutableListOf<DetalleResultadoEncuesta>()
 

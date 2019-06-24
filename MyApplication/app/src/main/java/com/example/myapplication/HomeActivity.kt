@@ -22,11 +22,14 @@ import android.R.attr.data
 import android.widget.Toast
 import com.google.zxing.client.android.CaptureActivity
 import android.R.attr.data
+import android.app.DatePickerDialog
 import android.content.Context
 import android.graphics.Typeface
 import android.view.View
 import android.view.inputmethod.InputMethodManager
 import com.vicpin.krealmextensions.*
+import java.text.SimpleDateFormat
+import java.util.*
 
 
 class HomeActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelectedListener {
@@ -45,6 +48,8 @@ class HomeActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
         iniciarButton.typeface = regularFont
         codigoButton.typeface = regularFont
         fechaOrdenButton.typeface = regularFont
+
+        SharedData.SharedInstance.fechaOrden = Date()
 
         if(SharedData.SharedInstance.codigoOpcional == false){
             codigoTextField.isEnabled = false
@@ -94,6 +99,24 @@ class HomeActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
         }else{
             codigoTextField.isEnabled = true
         }
+    }
+
+    fun showDatePicker(view:View){
+        val calendar = Calendar.getInstance()
+        val day = calendar.get(Calendar.DAY_OF_MONTH)
+        val month = calendar.get(Calendar.MONTH)
+        val year = calendar.get(Calendar.YEAR)
+        val format = SimpleDateFormat("dd-MMM-yyyy")
+
+        val datePicker = DatePickerDialog(this, DatePickerDialog.OnDateSetListener(){
+                view, year, monthOfYear, dayOfMonth ->
+            val calendar = Calendar.getInstance()
+            calendar.set(year, monthOfYear, dayOfMonth)
+            val fecha = calendar.time
+            SharedData.SharedInstance.fechaOrden = calendar.time
+            val fechaTexto = format.format(fecha)
+            fechaOrdenButton.setText(fechaTexto)
+        }, year, month, day).show()
     }
 
     fun getEncuestasPendientes() {

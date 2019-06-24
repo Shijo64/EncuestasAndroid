@@ -13,6 +13,7 @@ open class EncuestaBO:RealmObject() {
     var EncuestaId = 0
     var nombreEncuesta = ""
     var FechaRegistro = Date()
+    var FechaOrden = Date()
     var respuestas = RealmList<EncuestaRespuestas>()
 
     fun idIncrement():Int{
