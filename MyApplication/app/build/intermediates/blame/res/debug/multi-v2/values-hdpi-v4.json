@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "/Users/dario_leija/Documents/Proyectos_Documentos/EncuestaAndroid/MyApplication/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-hdpi-v4/values-hdpi-v4.xml",
+            "outputFile": "/Users/arturocalvo/EncuestasAndroid/MyApplication/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-hdpi-v4/values-hdpi-v4.xml",
             "map": [
                 {
-                    "source": "/Users/dario_leija/.gradle/caches/transforms-2/files-2.1/62af9be9bfffc47b6dedc8878b976337/res/values-hdpi-v4/values-hdpi-v4.xml",
+                    "source": "/Users/arturocalvo/.gradle/caches/transforms-2/files-2.1/31997fdd28674cf88b5c835d7a5598b2/res/values-hdpi-v4/values-hdpi-v4.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",

@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "/Users/dario_leija/Documents/Proyectos_Documentos/EncuestaAndroid/MyApplication/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-sw360dp-v13/values-sw360dp-v13.xml",
+            "outputFile": "/Users/arturocalvo/EncuestasAndroid/MyApplication/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-sw360dp-v13/values-sw360dp-v13.xml",
             "map": [
                 {
-                    "source": "/Users/dario_leija/.gradle/caches/transforms-2/files-2.1/ec76a5e905b75e4583e45cb31cad113f/res/values-sw360dp-v13/values-sw360dp-v13.xml",
+                    "source": "/Users/arturocalvo/.gradle/caches/transforms-2/files-2.1/24b24b1c92e6b92558565efa1014a15f/res/values-sw360dp-v13/values-sw360dp-v13.xml",
                     "from": {
                         "startLines": "2,3",
                         "startColumns": "4,4",

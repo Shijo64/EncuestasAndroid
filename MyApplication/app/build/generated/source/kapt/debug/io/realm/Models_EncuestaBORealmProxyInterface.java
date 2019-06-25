@@ -16,6 +16,8 @@ public interface Models_EncuestaBORealmProxyInterface {
     public void realmSet$nombreEncuesta(String value);
     public java.util.Date realmGet$FechaRegistro();
     public void realmSet$FechaRegistro(java.util.Date value);
+    public java.util.Date realmGet$FechaOrden();
+    public void realmSet$FechaOrden(java.util.Date value);
     public RealmList<Models.EncuestaRespuestas> realmGet$respuestas();
     public void realmSet$respuestas(RealmList<Models.EncuestaRespuestas> value);
 }

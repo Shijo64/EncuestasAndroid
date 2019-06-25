@@ -46,10 +46,11 @@ public class Models_EncuestaBORealmProxy extends Models.EncuestaBO
         long EncuestaIdIndex;
         long nombreEncuestaIndex;
         long FechaRegistroIndex;
+        long FechaOrdenIndex;
         long respuestasIndex;
 
         EncuestaBOColumnInfo(OsSchemaInfo schemaInfo) {
-            super(8);
+            super(9);
             OsObjectSchemaInfo objectSchemaInfo = schemaInfo.getObjectSchemaInfo("EncuestaBO");
             this.IdIndex = addColumnDetails("Id", "Id", objectSchemaInfo);
             this.CodigoEncuestaIndex = addColumnDetails("CodigoEncuesta", "CodigoEncuesta", objectSchemaInfo);
@@ -58,6 +59,7 @@ public class Models_EncuestaBORealmProxy extends Models.EncuestaBO
             this.EncuestaIdIndex = addColumnDetails("EncuestaId", "EncuestaId", objectSchemaInfo);
             this.nombreEncuestaIndex = addColumnDetails("nombreEncuesta", "nombreEncuesta", objectSchemaInfo);
             this.FechaRegistroIndex = addColumnDetails("FechaRegistro", "FechaRegistro", objectSchemaInfo);
+            this.FechaOrdenIndex = addColumnDetails("FechaOrden", "FechaOrden", objectSchemaInfo);
             this.respuestasIndex = addColumnDetails("respuestas", "respuestas", objectSchemaInfo);
             this.maxColumnIndexValue = objectSchemaInfo.getMaxColumnIndex();
         }
@@ -83,6 +85,7 @@ public class Models_EncuestaBORealmProxy extends Models.EncuestaBO
             dst.EncuestaIdIndex = src.EncuestaIdIndex;
             dst.nombreEncuestaIndex = src.nombreEncuestaIndex;
             dst.FechaRegistroIndex = src.FechaRegistroIndex;
+            dst.FechaOrdenIndex = src.FechaOrdenIndex;
             dst.respuestasIndex = src.respuestasIndex;
             dst.maxColumnIndexValue = src.maxColumnIndexValue;
         }
@@ -291,6 +294,34 @@ public class Models_EncuestaBORealmProxy extends Models.EncuestaBO
     }
 
     @Override
+    @SuppressWarnings("cast")
+    public Date realmGet$FechaOrden() {
+        proxyState.getRealm$realm().checkIfValid();
+        return (java.util.Date) proxyState.getRow$realm().getDate(columnInfo.FechaOrdenIndex);
+    }
+
+    @Override
+    public void realmSet$FechaOrden(Date value) {
+        if (proxyState.isUnderConstruction()) {
+            if (!proxyState.getAcceptDefaultValue$realm()) {
+                return;
+            }
+            final Row row = proxyState.getRow$realm();
+            if (value == null) {
+                throw new IllegalArgumentException("Trying to set non-nullable field 'FechaOrden' to null.");
+            }
+            row.getTable().setDate(columnInfo.FechaOrdenIndex, row.getIndex(), value, true);
+            return;
+        }
+
+        proxyState.getRealm$realm().checkIfValid();
+        if (value == null) {
+            throw new IllegalArgumentException("Trying to set non-nullable field 'FechaOrden' to null.");
+        }
+        proxyState.getRow$realm().setDate(columnInfo.FechaOrdenIndex, value);
+    }
+
+    @Override
     public RealmList<Models.EncuestaRespuestas> realmGet$respuestas() {
         proxyState.getRealm$realm().checkIfValid();
         // use the cached value if available
@@ -352,7 +383,7 @@ public class Models_EncuestaBORealmProxy extends Models.EncuestaBO
     }
 
     private static OsObjectSchemaInfo createExpectedObjectSchemaInfo() {
-        OsObjectSchemaInfo.Builder builder = new OsObjectSchemaInfo.Builder("EncuestaBO", 8, 0);
+        OsObjectSchemaInfo.Builder builder = new OsObjectSchemaInfo.Builder("EncuestaBO", 9, 0);
         builder.addPersistedProperty("Id", RealmFieldType.INTEGER, !Property.PRIMARY_KEY, !Property.INDEXED, Property.REQUIRED);
         builder.addPersistedProperty("CodigoEncuesta", RealmFieldType.STRING, !Property.PRIMARY_KEY, !Property.INDEXED, Property.REQUIRED);
         builder.addPersistedProperty("Orden", RealmFieldType.INTEGER, !Property.PRIMARY_KEY, !Property.INDEXED, Property.REQUIRED);
@@ -360,6 +391,7 @@ public class Models_EncuestaBORealmProxy extends Models.EncuestaBO
         builder.addPersistedProperty("EncuestaId", RealmFieldType.INTEGER, !Property.PRIMARY_KEY, !Property.INDEXED, Property.REQUIRED);
         builder.addPersistedProperty("nombreEncuesta", RealmFieldType.STRING, !Property.PRIMARY_KEY, !Property.INDEXED, Property.REQUIRED);
         builder.addPersistedProperty("FechaRegistro", RealmFieldType.DATE, !Property.PRIMARY_KEY, !Property.INDEXED, Property.REQUIRED);
+        builder.addPersistedProperty("FechaOrden", RealmFieldType.DATE, !Property.PRIMARY_KEY, !Property.INDEXED, Property.REQUIRED);
         builder.addPersistedLinkProperty("respuestas", RealmFieldType.LIST, "EncuestaRespuestas");
         return builder.build();
     }
@@ -449,6 +481,18 @@ public class Models_EncuestaBORealmProxy extends Models.EncuestaBO
                 }
             }
         }
+        if (json.has("FechaOrden")) {
+            if (json.isNull("FechaOrden")) {
+                objProxy.realmSet$FechaOrden(null);
+            } else {
+                Object timestamp = json.get("FechaOrden");
+                if (timestamp instanceof String) {
+                    objProxy.realmSet$FechaOrden(JsonUtils.stringToDate((String) timestamp));
+                } else {
+                    objProxy.realmSet$FechaOrden(new Date(json.getLong("FechaOrden")));
+                }
+            }
+        }
         if (json.has("respuestas")) {
             if (json.isNull("respuestas")) {
                 objProxy.realmSet$respuestas(null);
@@ -533,6 +577,18 @@ public class Models_EncuestaBORealmProxy extends Models.EncuestaBO
                 } else {
                     objProxy.realmSet$FechaRegistro(JsonUtils.stringToDate(reader.nextString()));
                 }
+            } else if (name.equals("FechaOrden")) {
+                if (reader.peek() == JsonToken.NULL) {
+                    reader.skipValue();
+                    objProxy.realmSet$FechaOrden(null);
+                } else if (reader.peek() == JsonToken.NUMBER) {
+                    long timestamp = reader.nextLong();
+                    if (timestamp > -1) {
+                        objProxy.realmSet$FechaOrden(new Date(timestamp));
+                    }
+                } else {
+                    objProxy.realmSet$FechaOrden(JsonUtils.stringToDate(reader.nextString()));
+                }
             } else if (name.equals("respuestas")) {
                 if (reader.peek() == JsonToken.NULL) {
                     reader.skipValue();
@@ -601,6 +657,7 @@ public class Models_EncuestaBORealmProxy extends Models.EncuestaBO
         builder.addInteger(columnInfo.EncuestaIdIndex, realmObjectSource.realmGet$EncuestaId());
         builder.addString(columnInfo.nombreEncuestaIndex, realmObjectSource.realmGet$nombreEncuesta());
         builder.addDate(columnInfo.FechaRegistroIndex, realmObjectSource.realmGet$FechaRegistro());
+        builder.addDate(columnInfo.FechaOrdenIndex, realmObjectSource.realmGet$FechaOrden());
 
         // Create the underlying object and cache it before setting any object/objectlist references
         // This will allow us to break any circular dependencies by using the object cache.
@@ -655,6 +712,10 @@ public class Models_EncuestaBORealmProxy extends Models.EncuestaBO
         if (realmGet$FechaRegistro != null) {
             Table.nativeSetTimestamp(tableNativePtr, columnInfo.FechaRegistroIndex, rowIndex, realmGet$FechaRegistro.getTime(), false);
         }
+        java.util.Date realmGet$FechaOrden = ((Models_EncuestaBORealmProxyInterface) object).realmGet$FechaOrden();
+        if (realmGet$FechaOrden != null) {
+            Table.nativeSetTimestamp(tableNativePtr, columnInfo.FechaOrdenIndex, rowIndex, realmGet$FechaOrden.getTime(), false);
+        }
 
         RealmList<Models.EncuestaRespuestas> respuestasList = ((Models_EncuestaBORealmProxyInterface) object).realmGet$respuestas();
         if (respuestasList != null) {
@@ -704,6 +765,10 @@ public class Models_EncuestaBORealmProxy extends Models.EncuestaBO
             java.util.Date realmGet$FechaRegistro = ((Models_EncuestaBORealmProxyInterface) object).realmGet$FechaRegistro();
             if (realmGet$FechaRegistro != null) {
                 Table.nativeSetTimestamp(tableNativePtr, columnInfo.FechaRegistroIndex, rowIndex, realmGet$FechaRegistro.getTime(), false);
+            }
+            java.util.Date realmGet$FechaOrden = ((Models_EncuestaBORealmProxyInterface) object).realmGet$FechaOrden();
+            if (realmGet$FechaOrden != null) {
+                Table.nativeSetTimestamp(tableNativePtr, columnInfo.FechaOrdenIndex, rowIndex, realmGet$FechaOrden.getTime(), false);
             }
 
             RealmList<Models.EncuestaRespuestas> respuestasList = ((Models_EncuestaBORealmProxyInterface) object).realmGet$respuestas();
@@ -755,6 +820,12 @@ public class Models_EncuestaBORealmProxy extends Models.EncuestaBO
             Table.nativeSetTimestamp(tableNativePtr, columnInfo.FechaRegistroIndex, rowIndex, realmGet$FechaRegistro.getTime(), false);
         } else {
             Table.nativeSetNull(tableNativePtr, columnInfo.FechaRegistroIndex, rowIndex, false);
+        }
+        java.util.Date realmGet$FechaOrden = ((Models_EncuestaBORealmProxyInterface) object).realmGet$FechaOrden();
+        if (realmGet$FechaOrden != null) {
+            Table.nativeSetTimestamp(tableNativePtr, columnInfo.FechaOrdenIndex, rowIndex, realmGet$FechaOrden.getTime(), false);
+        } else {
+            Table.nativeSetNull(tableNativePtr, columnInfo.FechaOrdenIndex, rowIndex, false);
         }
 
         OsList respuestasOsList = new OsList(table.getUncheckedRow(rowIndex), columnInfo.respuestasIndex);
@@ -829,6 +900,12 @@ public class Models_EncuestaBORealmProxy extends Models.EncuestaBO
             } else {
                 Table.nativeSetNull(tableNativePtr, columnInfo.FechaRegistroIndex, rowIndex, false);
             }
+            java.util.Date realmGet$FechaOrden = ((Models_EncuestaBORealmProxyInterface) object).realmGet$FechaOrden();
+            if (realmGet$FechaOrden != null) {
+                Table.nativeSetTimestamp(tableNativePtr, columnInfo.FechaOrdenIndex, rowIndex, realmGet$FechaOrden.getTime(), false);
+            } else {
+                Table.nativeSetNull(tableNativePtr, columnInfo.FechaOrdenIndex, rowIndex, false);
+            }
 
             OsList respuestasOsList = new OsList(table.getUncheckedRow(rowIndex), columnInfo.respuestasIndex);
             RealmList<Models.EncuestaRespuestas> respuestasList = ((Models_EncuestaBORealmProxyInterface) object).realmGet$respuestas();
@@ -885,6 +962,7 @@ public class Models_EncuestaBORealmProxy extends Models.EncuestaBO
         unmanagedCopy.realmSet$EncuestaId(realmSource.realmGet$EncuestaId());
         unmanagedCopy.realmSet$nombreEncuesta(realmSource.realmGet$nombreEncuesta());
         unmanagedCopy.realmSet$FechaRegistro(realmSource.realmGet$FechaRegistro());
+        unmanagedCopy.realmSet$FechaOrden(realmSource.realmGet$FechaOrden());
 
         // Deep copy of respuestas
         if (currentDepth == maxDepth) {
@@ -937,6 +1015,10 @@ public class Models_EncuestaBORealmProxy extends Models.EncuestaBO
         stringBuilder.append(",");
         stringBuilder.append("{FechaRegistro:");
         stringBuilder.append(realmGet$FechaRegistro());
+        stringBuilder.append("}");
+        stringBuilder.append(",");
+        stringBuilder.append("{FechaOrden:");
+        stringBuilder.append(realmGet$FechaOrden());
         stringBuilder.append("}");
         stringBuilder.append(",");
         stringBuilder.append("{respuestas:");

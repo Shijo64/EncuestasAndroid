@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "/Users/dario_leija/Documents/Proyectos_Documentos/EncuestaAndroid/MyApplication/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-iw/values-iw.xml",
+            "outputFile": "/Users/arturocalvo/EncuestasAndroid/MyApplication/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-iw/values-iw.xml",
             "map": [
                 {
-                    "source": "/Users/dario_leija/.gradle/caches/transforms-2/files-2.1/62af9be9bfffc47b6dedc8878b976337/res/values-iw/values-iw.xml",
+                    "source": "/Users/arturocalvo/.gradle/caches/transforms-2/files-2.1/31997fdd28674cf88b5c835d7a5598b2/res/values-iw/values-iw.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
@@ -21,7 +21,7 @@
                     }
                 },
                 {
-                    "source": "/Users/dario_leija/.gradle/caches/transforms-2/files-2.1/ec76a5e905b75e4583e45cb31cad113f/res/values-iw/values-iw.xml",
+                    "source": "/Users/arturocalvo/.gradle/caches/transforms-2/files-2.1/24b24b1c92e6b92558565efa1014a15f/res/values-iw/values-iw.xml",
                     "from": {
                         "startLines": "2,3,4,5",
                         "startColumns": "4,4,4,4",
@@ -38,7 +38,7 @@
                     }
                 },
                 {
-                    "source": "/Users/dario_leija/.gradle/caches/transforms-2/files-2.1/28afac38fff2a38e42fa9fd8c4b03521/res/values-iw/values-iw.xml",
+                    "source": "/Users/arturocalvo/.gradle/caches/transforms-2/files-2.1/1bbdf599bb09968f846598649737c806/res/values-iw/values-iw.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",

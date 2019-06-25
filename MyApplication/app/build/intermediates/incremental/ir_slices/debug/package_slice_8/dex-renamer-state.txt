@@ -1,0 +1,4 @@
+#Tue Jun 25 13:42:08 CDT 2019
+base.0=/Users/arturocalvo/EncuestasAndroid/MyApplication/app/build/intermediates/transforms/dexMerger/debug/8
+path.0=classes.dex
+renamed.0=classes.dex
