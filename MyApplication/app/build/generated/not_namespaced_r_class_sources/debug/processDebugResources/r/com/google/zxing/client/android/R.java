@@ -251,8 +251,8 @@ public final class R {
         private style() {}
 
         public static final int CaptureTheme = 0x7f1100c7;
-        public static final int ResultButton = 0x7f1100f9;
-        public static final int ShareButton = 0x7f11010b;
+        public static final int ResultButton = 0x7f1100fa;
+        public static final int ShareButton = 0x7f11010c;
     }
     public static final class xml {
         private xml() {}

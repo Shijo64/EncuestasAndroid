@@ -22,6 +22,7 @@ import android.R.attr.data
 import android.widget.Toast
 import com.google.zxing.client.android.CaptureActivity
 import android.R.attr.data
+import android.app.AlertDialog
 import android.app.DatePickerDialog
 import android.content.Context
 import android.graphics.Typeface
@@ -52,8 +53,10 @@ class HomeActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
         SharedData.SharedInstance.fechaOrden = Date()
 
         if(SharedData.SharedInstance.codigoOpcional == false){
+            fechaOrdenButton.isEnabled = false
             codigoTextField.isEnabled = false
         }else{
+            fechaOrdenButton.isEnabled = true
             codigoTextField.isEnabled = true
         }
 
@@ -76,6 +79,11 @@ class HomeActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
         this.getEncuestasGuardadas()
         this.getEncuestasPendientes()
 
+        val currentDate = SharedData.SharedInstance.fechaOrden
+        val format = SimpleDateFormat("dd-MMM-yyyy")
+        val fechaTexto = format.format(currentDate)
+        fechaOrdenButton.setText(fechaTexto)
+
         codigoButton.setOnClickListener {
             this.getCodigoSucursal()
         }
@@ -95,8 +103,10 @@ class HomeActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
         super.onRestart()
         this.getEncuestasPendientes()
         if(SharedData.SharedInstance.codigoOpcional == false){
+            fechaOrdenButton.isEnabled = false
             codigoTextField.isEnabled = false
         }else{
+            fechaOrdenButton.isEnabled = true
             codigoTextField.isEnabled = true
         }
     }
@@ -108,7 +118,7 @@ class HomeActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
         val year = calendar.get(Calendar.YEAR)
         val format = SimpleDateFormat("dd-MMM-yyyy")
 
-        val datePicker = DatePickerDialog(this, DatePickerDialog.OnDateSetListener(){
+        val datePicker = DatePickerDialog(this, R.style.DatePicker, DatePickerDialog.OnDateSetListener(){
                 view, year, monthOfYear, dayOfMonth ->
             val calendar = Calendar.getInstance()
             calendar.set(year, monthOfYear, dayOfMonth)

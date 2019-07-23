@@ -53,7 +53,7 @@ class FechaFragment : Fragment() {
 
         fechaButton.setOnClickListener {
 
-            val datePicker = DatePickerDialog(this.activity, DatePickerDialog.OnDateSetListener(){
+            val datePicker = DatePickerDialog(this.activity,R.style.DatePicker, DatePickerDialog.OnDateSetListener(){
                     view, year, monthOfYear, dayOfMonth ->
                 val calendar = Calendar.getInstance()
                 calendar.set(year, monthOfYear, dayOfMonth)

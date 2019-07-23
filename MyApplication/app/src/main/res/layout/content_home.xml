@@ -53,7 +53,7 @@
             app:layout_constraintEnd_toEndOf="parent"
             android:layout_marginRight="8dp"/>
     <TextView
-            android:text="Introduce el número de orden:"
+            android:text="Introduce el número y fecha de orden:"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/titleText"
@@ -68,7 +68,7 @@
             android:layout_marginLeft="8dp"
             android:layout_marginEnd="8dp"
             app:layout_constraintEnd_toEndOf="parent"
-            android:layout_marginRight="8dp"/>
+            android:layout_marginRight="8dp" android:scrollHorizontally="false"/>
 
     <Button
             android:text="Fecha de orden:"
@@ -85,13 +85,12 @@
             android:layout_marginRight="8dp"
             android:textAllCaps="false"
             android:textSize="19sp" android:gravity="center|left" android:background="#00FFFFFF"
-            android:onClick="showDatePicker"/>
+            android:onClick="showDatePicker" android:textColor="@color/white" android:textColorHint="@color/white"/>
     <Button
             android:text="Iniciar"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:id="@+id/iniciarButton"
-            android:backgroundTint="@android:color/holo_blue_dark"
             android:textSize="24sp"
             android:textColor="@android:color/white"
             android:textAllCaps="false"
@@ -113,7 +112,7 @@
             android:id="@+id/codigoButton"
             android:textSize="24sp"
             android:textColor="@android:color/white"
-            android:background="@color/colorPrimary"
+            android:background="#33B5E5"
             android:textAllCaps="false"
             android:layout_marginEnd="40dp"
             app:layout_constraintEnd_toEndOf="parent"

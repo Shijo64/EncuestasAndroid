@@ -136,12 +136,12 @@
         "source": "/Users/arturocalvo/.gradle/caches/transforms-2/files-2.1/31997fdd28674cf88b5c835d7a5598b2/res/drawable-hdpi-v4/abc_btn_check_to_on_mtrl_015.png"
     },
     {
-        "merged": "/Users/arturocalvo/EncuestasAndroid/MyApplication/app/build/intermediates/res/merged/debug/drawable-hdpi-v4_design_ic_visibility.png.flat",
-        "source": "/Users/arturocalvo/.gradle/caches/transforms-2/files-2.1/918ebb3fdb5e1d5d0f33d53f2e475f5b/res/drawable-hdpi-v4/design_ic_visibility.png"
-    },
-    {
         "merged": "/Users/arturocalvo/EncuestasAndroid/MyApplication/app/build/intermediates/res/merged/debug/drawable-hdpi-v4_abc_cab_background_top_mtrl_alpha.9.png.flat",
         "source": "/Users/arturocalvo/.gradle/caches/transforms-2/files-2.1/31997fdd28674cf88b5c835d7a5598b2/res/drawable-hdpi-v4/abc_cab_background_top_mtrl_alpha.9.png"
+    },
+    {
+        "merged": "/Users/arturocalvo/EncuestasAndroid/MyApplication/app/build/intermediates/res/merged/debug/drawable-hdpi-v4_design_ic_visibility.png.flat",
+        "source": "/Users/arturocalvo/.gradle/caches/transforms-2/files-2.1/918ebb3fdb5e1d5d0f33d53f2e475f5b/res/drawable-hdpi-v4/design_ic_visibility.png"
     },
     {
         "merged": "/Users/arturocalvo/EncuestasAndroid/MyApplication/app/build/intermediates/res/merged/debug/layout_preference_category.xml.flat",
@@ -156,16 +156,16 @@
         "source": "/Users/arturocalvo/.gradle/caches/transforms-2/files-2.1/31997fdd28674cf88b5c835d7a5598b2/res/layout-v26/abc_screen_toolbar.xml"
     },
     {
-        "merged": "/Users/arturocalvo/EncuestasAndroid/MyApplication/app/build/intermediates/res/merged/debug/anim_design_bottom_sheet_slide_in.xml.flat",
-        "source": "/Users/arturocalvo/.gradle/caches/transforms-2/files-2.1/918ebb3fdb5e1d5d0f33d53f2e475f5b/res/anim/design_bottom_sheet_slide_in.xml"
+        "merged": "/Users/arturocalvo/EncuestasAndroid/MyApplication/app/build/intermediates/res/merged/debug/anim_abc_slide_in_top.xml.flat",
+        "source": "/Users/arturocalvo/.gradle/caches/transforms-2/files-2.1/31997fdd28674cf88b5c835d7a5598b2/res/anim/abc_slide_in_top.xml"
     },
     {
         "merged": "/Users/arturocalvo/EncuestasAndroid/MyApplication/app/build/intermediates/res/merged/debug/layout_notification_template_part_chronometer.xml.flat",
         "source": "/Users/arturocalvo/.gradle/caches/transforms-2/files-2.1/1bbdf599bb09968f846598649737c806/res/layout/notification_template_part_chronometer.xml"
     },
     {
-        "merged": "/Users/arturocalvo/EncuestasAndroid/MyApplication/app/build/intermediates/res/merged/debug/anim_abc_slide_in_top.xml.flat",
-        "source": "/Users/arturocalvo/.gradle/caches/transforms-2/files-2.1/31997fdd28674cf88b5c835d7a5598b2/res/anim/abc_slide_in_top.xml"
+        "merged": "/Users/arturocalvo/EncuestasAndroid/MyApplication/app/build/intermediates/res/merged/debug/anim_design_bottom_sheet_slide_in.xml.flat",
+        "source": "/Users/arturocalvo/.gradle/caches/transforms-2/files-2.1/918ebb3fdb5e1d5d0f33d53f2e475f5b/res/anim/design_bottom_sheet_slide_in.xml"
     },
     {
         "merged": "/Users/arturocalvo/EncuestasAndroid/MyApplication/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4_abc_scrubber_primary_mtrl_alpha.9.png.flat",
@@ -180,12 +180,12 @@
         "source": "/Users/arturocalvo/.gradle/caches/transforms-2/files-2.1/918ebb3fdb5e1d5d0f33d53f2e475f5b/res/layout/design_bottom_navigation_item.xml"
     },
     {
-        "merged": "/Users/arturocalvo/EncuestasAndroid/MyApplication/app/build/intermediates/res/merged/debug/drawable-xxhdpi-v4_abc_switch_track_mtrl_alpha.9.png.flat",
-        "source": "/Users/arturocalvo/.gradle/caches/transforms-2/files-2.1/31997fdd28674cf88b5c835d7a5598b2/res/drawable-xxhdpi-v4/abc_switch_track_mtrl_alpha.9.png"
-    },
-    {
         "merged": "/Users/arturocalvo/EncuestasAndroid/MyApplication/app/build/intermediates/res/merged/debug/drawable-xxhdpi-v4_launcher_icon.png.flat",
         "source": "/Users/arturocalvo/.gradle/caches/transforms-2/files-2.1/d0b840cb9450ce4b550f59c3ffacc306/res/drawable-xxhdpi-v4/launcher_icon.png"
+    },
+    {
+        "merged": "/Users/arturocalvo/EncuestasAndroid/MyApplication/app/build/intermediates/res/merged/debug/drawable-xxhdpi-v4_abc_switch_track_mtrl_alpha.9.png.flat",
+        "source": "/Users/arturocalvo/.gradle/caches/transforms-2/files-2.1/31997fdd28674cf88b5c835d7a5598b2/res/drawable-xxhdpi-v4/abc_switch_track_mtrl_alpha.9.png"
     },
     {
         "merged": "/Users/arturocalvo/EncuestasAndroid/MyApplication/app/build/intermediates/res/merged/debug/drawable-xxhdpi-v4_abc_list_selector_disabled_holo_light.9.png.flat",
@@ -204,12 +204,12 @@
         "source": "/Users/arturocalvo/.gradle/caches/transforms-2/files-2.1/31997fdd28674cf88b5c835d7a5598b2/res/drawable/abc_list_selector_holo_dark.xml"
     },
     {
-        "merged": "/Users/arturocalvo/EncuestasAndroid/MyApplication/app/build/intermediates/res/merged/debug/drawable-v21_ic_menu_share.xml.flat",
-        "source": "/Users/arturocalvo/EncuestasAndroid/MyApplication/app/src/main/res/drawable-v21/ic_menu_share.xml"
-    },
-    {
         "merged": "/Users/arturocalvo/EncuestasAndroid/MyApplication/app/build/intermediates/res/merged/debug/drawable-xxhdpi-v4_abc_list_longpressed_holo.9.png.flat",
         "source": "/Users/arturocalvo/.gradle/caches/transforms-2/files-2.1/31997fdd28674cf88b5c835d7a5598b2/res/drawable-xxhdpi-v4/abc_list_longpressed_holo.9.png"
+    },
+    {
+        "merged": "/Users/arturocalvo/EncuestasAndroid/MyApplication/app/build/intermediates/res/merged/debug/drawable-v21_ic_menu_share.xml.flat",
+        "source": "/Users/arturocalvo/EncuestasAndroid/MyApplication/app/src/main/res/drawable-v21/ic_menu_share.xml"
     },
     {
         "merged": "/Users/arturocalvo/EncuestasAndroid/MyApplication/app/build/intermediates/res/merged/debug/drawable-xxhdpi-v4_abc_cab_background_top_mtrl_alpha.9.png.flat",
@@ -220,32 +220,32 @@
         "source": "/Users/arturocalvo/.gradle/caches/transforms-2/files-2.1/918ebb3fdb5e1d5d0f33d53f2e475f5b/res/drawable-anydpi-v21/design_ic_visibility.xml"
     },
     {
-        "merged": "/Users/arturocalvo/EncuestasAndroid/MyApplication/app/build/intermediates/res/merged/debug/color_abc_primary_text_material_light.xml.flat",
-        "source": "/Users/arturocalvo/.gradle/caches/transforms-2/files-2.1/31997fdd28674cf88b5c835d7a5598b2/res/color/abc_primary_text_material_light.xml"
-    },
-    {
         "merged": "/Users/arturocalvo/EncuestasAndroid/MyApplication/app/build/intermediates/res/merged/debug/drawable_abc_switch_thumb_material.xml.flat",
         "source": "/Users/arturocalvo/.gradle/caches/transforms-2/files-2.1/31997fdd28674cf88b5c835d7a5598b2/res/drawable/abc_switch_thumb_material.xml"
+    },
+    {
+        "merged": "/Users/arturocalvo/EncuestasAndroid/MyApplication/app/build/intermediates/res/merged/debug/color_abc_primary_text_material_light.xml.flat",
+        "source": "/Users/arturocalvo/.gradle/caches/transforms-2/files-2.1/31997fdd28674cf88b5c835d7a5598b2/res/color/abc_primary_text_material_light.xml"
     },
     {
         "merged": "/Users/arturocalvo/EncuestasAndroid/MyApplication/app/build/intermediates/res/merged/debug/drawable-mdpi-v4_notification_bg_low_pressed.9.png.flat",
         "source": "/Users/arturocalvo/.gradle/caches/transforms-2/files-2.1/1bbdf599bb09968f846598649737c806/res/drawable-mdpi-v4/notification_bg_low_pressed.9.png"
     },
     {
-        "merged": "/Users/arturocalvo/EncuestasAndroid/MyApplication/app/build/intermediates/res/merged/debug/layout_preference_widget_seekbar.xml.flat",
-        "source": "/Users/arturocalvo/.gradle/caches/transforms-2/files-2.1/24b24b1c92e6b92558565efa1014a15f/res/layout/preference_widget_seekbar.xml"
-    },
-    {
-        "merged": "/Users/arturocalvo/EncuestasAndroid/MyApplication/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4_abc_list_focused_holo.9.png.flat",
-        "source": "/Users/arturocalvo/.gradle/caches/transforms-2/files-2.1/31997fdd28674cf88b5c835d7a5598b2/res/drawable-xhdpi-v4/abc_list_focused_holo.9.png"
+        "merged": "/Users/arturocalvo/EncuestasAndroid/MyApplication/app/build/intermediates/res/merged/debug/drawable-mdpi-v4_abc_ic_star_half_black_48dp.png.flat",
+        "source": "/Users/arturocalvo/.gradle/caches/transforms-2/files-2.1/31997fdd28674cf88b5c835d7a5598b2/res/drawable-mdpi-v4/abc_ic_star_half_black_48dp.png"
     },
     {
         "merged": "/Users/arturocalvo/EncuestasAndroid/MyApplication/app/build/intermediates/res/merged/debug/layout_design_menu_item_action_area.xml.flat",
         "source": "/Users/arturocalvo/.gradle/caches/transforms-2/files-2.1/918ebb3fdb5e1d5d0f33d53f2e475f5b/res/layout/design_menu_item_action_area.xml"
     },
     {
-        "merged": "/Users/arturocalvo/EncuestasAndroid/MyApplication/app/build/intermediates/res/merged/debug/drawable-mdpi-v4_abc_ic_star_half_black_48dp.png.flat",
-        "source": "/Users/arturocalvo/.gradle/caches/transforms-2/files-2.1/31997fdd28674cf88b5c835d7a5598b2/res/drawable-mdpi-v4/abc_ic_star_half_black_48dp.png"
+        "merged": "/Users/arturocalvo/EncuestasAndroid/MyApplication/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4_abc_list_focused_holo.9.png.flat",
+        "source": "/Users/arturocalvo/.gradle/caches/transforms-2/files-2.1/31997fdd28674cf88b5c835d7a5598b2/res/drawable-xhdpi-v4/abc_list_focused_holo.9.png"
+    },
+    {
+        "merged": "/Users/arturocalvo/EncuestasAndroid/MyApplication/app/build/intermediates/res/merged/debug/layout_preference_widget_seekbar.xml.flat",
+        "source": "/Users/arturocalvo/.gradle/caches/transforms-2/files-2.1/24b24b1c92e6b92558565efa1014a15f/res/layout/preference_widget_seekbar.xml"
     },
     {
         "merged": "/Users/arturocalvo/EncuestasAndroid/MyApplication/app/build/intermediates/res/merged/debug/color_abc_primary_text_material_dark.xml.flat",
@@ -276,12 +276,12 @@
         "source": "/Users/arturocalvo/.gradle/caches/transforms-2/files-2.1/31997fdd28674cf88b5c835d7a5598b2/res/drawable-xhdpi-v4/abc_ic_star_black_16dp.png"
     },
     {
-        "merged": "/Users/arturocalvo/EncuestasAndroid/MyApplication/app/build/intermediates/res/merged/debug/layout_fragment_comentarios.xml.flat",
-        "source": "/Users/arturocalvo/EncuestasAndroid/MyApplication/app/src/main/res/layout/fragment_comentarios.xml"
-    },
-    {
         "merged": "/Users/arturocalvo/EncuestasAndroid/MyApplication/app/build/intermediates/res/merged/debug/layout_preference_category_material.xml.flat",
         "source": "/Users/arturocalvo/.gradle/caches/transforms-2/files-2.1/24b24b1c92e6b92558565efa1014a15f/res/layout/preference_category_material.xml"
+    },
+    {
+        "merged": "/Users/arturocalvo/EncuestasAndroid/MyApplication/app/build/intermediates/res/merged/debug/layout_fragment_comentarios.xml.flat",
+        "source": "/Users/arturocalvo/EncuestasAndroid/MyApplication/app/src/main/res/layout/fragment_comentarios.xml"
     },
     {
         "merged": "/Users/arturocalvo/EncuestasAndroid/MyApplication/app/build/intermediates/res/merged/debug/drawable_design_password_eye.xml.flat",
@@ -296,12 +296,12 @@
         "source": "/Users/arturocalvo/.gradle/caches/transforms-2/files-2.1/31997fdd28674cf88b5c835d7a5598b2/res/drawable/abc_tab_indicator_material.xml"
     },
     {
-        "merged": "/Users/arturocalvo/EncuestasAndroid/MyApplication/app/build/intermediates/res/merged/debug/drawable_side_nav_bar.xml.flat",
-        "source": "/Users/arturocalvo/EncuestasAndroid/MyApplication/app/src/main/res/drawable/side_nav_bar.xml"
-    },
-    {
         "merged": "/Users/arturocalvo/EncuestasAndroid/MyApplication/app/build/intermediates/res/merged/debug/color_switch_thumb_material_dark.xml.flat",
         "source": "/Users/arturocalvo/.gradle/caches/transforms-2/files-2.1/31997fdd28674cf88b5c835d7a5598b2/res/color/switch_thumb_material_dark.xml"
+    },
+    {
+        "merged": "/Users/arturocalvo/EncuestasAndroid/MyApplication/app/build/intermediates/res/merged/debug/drawable_side_nav_bar.xml.flat",
+        "source": "/Users/arturocalvo/EncuestasAndroid/MyApplication/app/src/main/res/drawable/side_nav_bar.xml"
     },
     {
         "merged": "/Users/arturocalvo/EncuestasAndroid/MyApplication/app/build/intermediates/res/merged/debug/anim-v21_design_bottom_sheet_slide_out.xml.flat",
@@ -312,12 +312,12 @@
         "source": "/Users/arturocalvo/.gradle/caches/transforms-2/files-2.1/31997fdd28674cf88b5c835d7a5598b2/res/color/abc_btn_colored_borderless_text_material.xml"
     },
     {
-        "merged": "/Users/arturocalvo/EncuestasAndroid/MyApplication/app/build/intermediates/res/merged/debug/drawable-xxxhdpi-v4_abc_scrubber_control_to_pressed_mtrl_005.png.flat",
-        "source": "/Users/arturocalvo/.gradle/caches/transforms-2/files-2.1/31997fdd28674cf88b5c835d7a5598b2/res/drawable-xxxhdpi-v4/abc_scrubber_control_to_pressed_mtrl_005.png"
-    },
-    {
         "merged": "/Users/arturocalvo/EncuestasAndroid/MyApplication/app/build/intermediates/res/merged/debug/layout_preference_dropdown.xml.flat",
         "source": "/Users/arturocalvo/.gradle/caches/transforms-2/files-2.1/24b24b1c92e6b92558565efa1014a15f/res/layout/preference_dropdown.xml"
+    },
+    {
+        "merged": "/Users/arturocalvo/EncuestasAndroid/MyApplication/app/build/intermediates/res/merged/debug/drawable-xxxhdpi-v4_abc_scrubber_control_to_pressed_mtrl_005.png.flat",
+        "source": "/Users/arturocalvo/.gradle/caches/transforms-2/files-2.1/31997fdd28674cf88b5c835d7a5598b2/res/drawable-xxxhdpi-v4/abc_scrubber_control_to_pressed_mtrl_005.png"
     },
     {
         "merged": "/Users/arturocalvo/EncuestasAndroid/MyApplication/app/build/intermediates/res/merged/debug/drawable-anydpi-v21_ic_arrow_down_24dp.xml.flat",
@@ -376,12 +376,12 @@
         "source": "/Users/arturocalvo/.gradle/caches/transforms-2/files-2.1/09afb414baea629692ad3cc5cf85e8e6/res/layout/notification_template_big_media_narrow.xml"
     },
     {
-        "merged": "/Users/arturocalvo/EncuestasAndroid/MyApplication/app/build/intermediates/res/merged/debug/drawable-xxxhdpi-v4_abc_ic_star_half_black_36dp.png.flat",
-        "source": "/Users/arturocalvo/.gradle/caches/transforms-2/files-2.1/31997fdd28674cf88b5c835d7a5598b2/res/drawable-xxxhdpi-v4/abc_ic_star_half_black_36dp.png"
-    },
-    {
         "merged": "/Users/arturocalvo/EncuestasAndroid/MyApplication/app/build/intermediates/res/merged/debug/layout_design_navigation_item_separator.xml.flat",
         "source": "/Users/arturocalvo/.gradle/caches/transforms-2/files-2.1/918ebb3fdb5e1d5d0f33d53f2e475f5b/res/layout/design_navigation_item_separator.xml"
+    },
+    {
+        "merged": "/Users/arturocalvo/EncuestasAndroid/MyApplication/app/build/intermediates/res/merged/debug/drawable-xxxhdpi-v4_abc_ic_star_half_black_36dp.png.flat",
+        "source": "/Users/arturocalvo/.gradle/caches/transforms-2/files-2.1/31997fdd28674cf88b5c835d7a5598b2/res/drawable-xxxhdpi-v4/abc_ic_star_half_black_36dp.png"
     },
     {
         "merged": "/Users/arturocalvo/EncuestasAndroid/MyApplication/app/build/intermediates/res/merged/debug/mipmap-mdpi_ic_launcher.png.flat",
@@ -396,12 +396,12 @@
         "source": "/Users/arturocalvo/.gradle/caches/transforms-2/files-2.1/31997fdd28674cf88b5c835d7a5598b2/res/drawable-xxhdpi-v4/abc_list_focused_holo.9.png"
     },
     {
-        "merged": "/Users/arturocalvo/EncuestasAndroid/MyApplication/app/build/intermediates/res/merged/debug/drawable-ldrtl-mdpi-v17_abc_spinner_mtrl_am_alpha.9.png.flat",
-        "source": "/Users/arturocalvo/.gradle/caches/transforms-2/files-2.1/31997fdd28674cf88b5c835d7a5598b2/res/drawable-ldrtl-mdpi-v17/abc_spinner_mtrl_am_alpha.9.png"
-    },
-    {
         "merged": "/Users/arturocalvo/EncuestasAndroid/MyApplication/app/build/intermediates/res/merged/debug/layout-v21_preference_information_material.xml.flat",
         "source": "/Users/arturocalvo/.gradle/caches/transforms-2/files-2.1/24b24b1c92e6b92558565efa1014a15f/res/layout-v21/preference_information_material.xml"
+    },
+    {
+        "merged": "/Users/arturocalvo/EncuestasAndroid/MyApplication/app/build/intermediates/res/merged/debug/drawable-ldrtl-mdpi-v17_abc_spinner_mtrl_am_alpha.9.png.flat",
+        "source": "/Users/arturocalvo/.gradle/caches/transforms-2/files-2.1/31997fdd28674cf88b5c835d7a5598b2/res/drawable-ldrtl-mdpi-v17/abc_spinner_mtrl_am_alpha.9.png"
     },
     {
         "merged": "/Users/arturocalvo/EncuestasAndroid/MyApplication/app/build/intermediates/res/merged/debug/drawable-mdpi-v4_abc_ic_star_half_black_36dp.png.flat",
