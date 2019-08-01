@@ -4,7 +4,7 @@
             "outputFile": "/Users/arturocalvo/EncuestasAndroid/MyApplication/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-sr/values-sr.xml",
             "map": [
                 {
-                    "source": "/Users/arturocalvo/.gradle/caches/transforms-2/files-2.1/31997fdd28674cf88b5c835d7a5598b2/res/values-sr/values-sr.xml",
+                    "source": "/Users/arturocalvo/.gradle/caches/transforms-2/files-2.1/12069a1e8cc88f3782601f9cbbabdbd6/res/values-sr/values-sr.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
@@ -21,7 +21,7 @@
                     }
                 },
                 {
-                    "source": "/Users/arturocalvo/.gradle/caches/transforms-2/files-2.1/1bbdf599bb09968f846598649737c806/res/values-sr/values-sr.xml",
+                    "source": "/Users/arturocalvo/.gradle/caches/transforms-2/files-2.1/bfac658fca601a00fb38ebd72c92d38a/res/values-sr/values-sr.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
@@ -38,7 +38,7 @@
                     }
                 },
                 {
-                    "source": "/Users/arturocalvo/.gradle/caches/transforms-2/files-2.1/24b24b1c92e6b92558565efa1014a15f/res/values-sr/values-sr.xml",
+                    "source": "/Users/arturocalvo/.gradle/caches/transforms-2/files-2.1/b82d1bb58efe265fb40552dfc35c7d96/res/values-sr/values-sr.xml",
                     "from": {
                         "startLines": "2,3,4,5",
                         "startColumns": "4,4,4,4",

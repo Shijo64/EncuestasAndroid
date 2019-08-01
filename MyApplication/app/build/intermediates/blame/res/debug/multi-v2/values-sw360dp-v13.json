@@ -4,7 +4,7 @@
             "outputFile": "/Users/arturocalvo/EncuestasAndroid/MyApplication/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-sw360dp-v13/values-sw360dp-v13.xml",
             "map": [
                 {
-                    "source": "/Users/arturocalvo/.gradle/caches/transforms-2/files-2.1/24b24b1c92e6b92558565efa1014a15f/res/values-sw360dp-v13/values-sw360dp-v13.xml",
+                    "source": "/Users/arturocalvo/.gradle/caches/transforms-2/files-2.1/b82d1bb58efe265fb40552dfc35c7d96/res/values-sw360dp-v13/values-sw360dp-v13.xml",
                     "from": {
                         "startLines": "2,3",
                         "startColumns": "4,4",
