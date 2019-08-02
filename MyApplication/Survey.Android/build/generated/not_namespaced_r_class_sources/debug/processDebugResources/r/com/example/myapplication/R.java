@@ -6311,7 +6311,6 @@ public final class R {
     public static final int search_menu_title=0x7f1000c3;
     public static final int status_bar_notification_info_overflow=0x7f1000c4;
     public static final int summary_collapsed_preference_list=0x7f1000c5;
-    public static final int title_activity_home=0x7f1000c6;
     public static final int title_activity_prueba=0x7f1000c7;
     public static final int title_activity_resumen_scrolling=0x7f1000c8;
     public static final int title_dashboard=0x7f1000c9;
