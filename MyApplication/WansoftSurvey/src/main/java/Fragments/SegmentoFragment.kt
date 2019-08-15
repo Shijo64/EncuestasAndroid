@@ -9,7 +9,7 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.RadioButton
 import android.widget.RadioGroup
-import com.example.myapplication.EncuestaActivity
+import com.example.Wansoft.Survey.EncuestaActivity
 
 import com.example.myapplication.R
 
@@ -35,19 +35,25 @@ class SegmentoFragment : Fragment() {
 
         var group = vista.findViewById<RadioGroup>(R.id.segmentRadioGroup)
 
-        if(opciones[0].Description == respuesta){
+        if(opciones[0].Id == respuesta.toInt()){
             group.check(radio1.id)
         }else{
             group.check(radio2.id)
         }
 
-        activity.guardarSegmento(respuesta)
+        activity.guardarSegmento(respuesta.toString())
 
         group.setOnCheckedChangeListener(RadioGroup.OnCheckedChangeListener { group, checkedId ->
             val id = group.checkedRadioButtonId
             val radio = vista.findViewById<RadioButton>(checkedId)
             val texto = radio.text.toString()
-            activity.guardarSegmento(texto)
+            var respuesta = 0
+            for (opcion in opciones){
+                if(opcion.Description == texto){
+                    respuesta = opcion.Id
+                }
+            }
+            activity.guardarSegmento(respuesta.toString())
         })
 
         return vista

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory
+        android:title="Configuración">
+        <CheckBoxPreference
+                android:title="Número de orden manual"
+                android:summary="Al seleccionar esta opción se habilita poder agregar el número de orden de forma manual"
+                android:key="@string/pref_key_norden"/>
+    </PreferenceCategory>
+</PreferenceScreen>

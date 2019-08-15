@@ -10,5 +10,6 @@ object SharedInstance {
     var respuestas = mutableListOf<EncuestaRespuestas>()
     var numeroOrden = ""
     var fechaOrden = Date()
+    var fechaSeleccionada = Date()
     var codigoOpcional = false
 }

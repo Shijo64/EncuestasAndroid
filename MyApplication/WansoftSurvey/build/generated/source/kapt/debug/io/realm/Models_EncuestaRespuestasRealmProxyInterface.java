@@ -14,4 +14,6 @@ public interface Models_EncuestaRespuestasRealmProxyInterface {
     public void realmSet$numeroPregunta(int value);
     public String realmGet$respuesta();
     public void realmSet$respuesta(String value);
+    public RealmList<String> realmGet$arrayRespuestas();
+    public void realmSet$arrayRespuestas(RealmList<String> value);
 }

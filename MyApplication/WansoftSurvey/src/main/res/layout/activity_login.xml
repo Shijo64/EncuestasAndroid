@@ -39,7 +39,7 @@
                     android:paddingLeft="@dimen/activity_horizontal_margin"
                     android:paddingRight="@dimen/activity_horizontal_margin"
                     android:paddingTop="@dimen/activity_vertical_margin"
-                    tools:context=".LoginActivity"
+                    tools:context="com.example.Wansoft.Survey.LoginActivity"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
                     android:layout_marginTop="16dp" app:layout_constraintTop_toBottomOf="@+id/toolbar3">
@@ -104,9 +104,9 @@
                                 android:text="Enviar"
                                 android:textSize="30sp"
                                 android:textAllCaps="false"
-                                android:backgroundTint="@android:color/holo_blue_dark"
                                 android:id="@+id/loginButton"
-                                android:textColor="@android:color/white" android:background="@color/colorPrimary"
+                                android:textColor="@android:color/white"
+                                android:background="@color/colorPrimary"
                         />
 
                     </LinearLayout>

@@ -1,17 +1,16 @@
 package Fragments
 
-import android.content.Context
-import android.media.Rating
-import android.net.Uri
+import Models.PreguntaModel
 import android.os.Bundle
 import android.support.v4.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.RatingBar
-import com.example.myapplication.EncuestaActivity
+import com.example.Wansoft.Survey.EncuestaActivity
 
 import com.example.myapplication.R
+import kotlinx.android.synthetic.main.activity_encuesta.*
 
 
 class FragmentRating : Fragment() {
@@ -35,6 +34,7 @@ class FragmentRating : Fragment() {
         ratingBar.onRatingBarChangeListener = RatingBar.OnRatingBarChangeListener { ratingBar, rating, fromUser ->
             val activity = getActivity() as EncuestaActivity
             activity.guardarRating(rating)
+            //activity.siguienteButton.isEnabled = true
         }
 
         return vista

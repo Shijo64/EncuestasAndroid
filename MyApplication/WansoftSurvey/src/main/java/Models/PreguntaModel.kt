@@ -15,6 +15,7 @@ open class PreguntaModel() :RealmObject(), Parcelable {
     var Order = 0
     var Status = 0
     var QuestionType:TipoPreguntaModel? = null
+    var Optional:Boolean? = false
     var AnswerOptions = RealmList<OpcionesPreguntaModel>()
 
     @RequiresApi(Build.VERSION_CODES.M)
@@ -25,6 +26,7 @@ open class PreguntaModel() :RealmObject(), Parcelable {
         Order = parcel.readInt()
         Status = parcel.readInt()
         QuestionType = Gson().fromJson(parcel.readString(), TipoPreguntaModel::class.java)
+        Optional = parcel.readValue(Boolean::class.java.classLoader) as? Boolean
         parcel.readTypedList(AnswerOptions, OpcionesPreguntaModel.CREATOR)
     }
 
@@ -36,6 +38,7 @@ open class PreguntaModel() :RealmObject(), Parcelable {
         parcel.writeInt(Order)
         parcel.writeInt(Status)
         parcel.writeString(Gson().toJson(QuestionType))
+        parcel.writeValue(Optional)
         parcel.writeTypedList(AnswerOptions)
     }
 

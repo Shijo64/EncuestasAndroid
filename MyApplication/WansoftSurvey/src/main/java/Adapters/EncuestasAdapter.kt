@@ -38,7 +38,7 @@ class EncuestasAdapter(context:Context, encuestas:List<EncuestaModel>, var liste
     override fun onBindViewHolder(holder: EncuestasAdapter.ViewHolder, position: Int) {
         val item = items?.get(position)
         val pendientes = EncuestaBO().query {equalTo("Id", item!!.Id)}
-        val texto = item?.Name + "    ("+pendientes.count()+")"
+        val texto = item?.Name + "    Pendientes: ("+pendientes.count()+")"
         holder.nombre?.setText(texto)
     }
 

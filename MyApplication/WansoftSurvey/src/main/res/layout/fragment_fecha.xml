@@ -12,14 +12,11 @@
                 android:layout_height="wrap_content"
                 android:inputType="date"
                 android:ems="10"
-                android:id="@+id/fechaText" android:textColor="@android:color/white"
-                android:textColorHighlight="@android:color/white" android:textColorHint="@android:color/white"
-                android:textColorLink="@android:color/white" android:editable="false" android:enabled="false"/>
-        <Button
-                android:text="Seleccionar Fecha"
-                android:textSize="24sp"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content" android:id="@+id/fechaButton"
-                android:background="@color/colorPrimary" android:textColor="@android:color/white"/>
+                android:focusable="false"
+                android:id="@+id/fechaText"
+                android:textColor="@android:color/white"
+                android:textColorHighlight="@android:color/white"
+                android:textColorHint="@android:color/white"
+                android:textColorLink="@android:color/white" />
     </LinearLayout>
 </FrameLayout>

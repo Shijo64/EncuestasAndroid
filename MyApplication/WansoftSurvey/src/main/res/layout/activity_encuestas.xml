@@ -9,7 +9,7 @@
     <LinearLayout
             android:orientation="vertical"
             android:layout_width="match_parent"
-            android:layout_height="match_parent" android:background="@drawable/restaurant_desk">
+            android:layout_height="match_parent">
         <android.support.design.widget.AppBarLayout
                 android:layout_height="wrap_content"
                 android:layout_width="match_parent"
@@ -22,7 +22,7 @@
                     android:id="@+id/toolbar"
                     android:layout_width="match_parent"
                     android:layout_height="?attr/actionBarSize"
-                    android:background="@android:color/holo_blue_light"
+                    android:background="?attr/colorPrimary"
                     app:popupTheme="@style/AppTheme.PopupOverlay">
                 <ImageView
                         android:src="@drawable/logo_completo"
@@ -34,17 +34,31 @@
         <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                tools:context=".EncuestasActivity" android:orientation="vertical">
+                tools:context="com.example.Wansoft.Survey.EncuestasActivity" android:orientation="vertical">
 
             <android.support.v4.widget.SwipeRefreshLayout android:layout_width="match_parent"
                                                           android:layout_height="match_parent"
-                                                          android:id="@+id/swipeToRefresh">
+                                                          android:id="@+id/swipeToRefresh" android:visibility="gone"
+                                                          tools:visibility="visible">
 
                 <android.support.v7.widget.RecyclerView
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:id="@+id/encuestasRecyclerView"/>
+                        android:id="@+id/encuestasRecyclerView"
+                        android:visibility="visible">
+                </android.support.v7.widget.RecyclerView>
 
+
+            </android.support.v4.widget.SwipeRefreshLayout>
+            <android.support.v4.widget.SwipeRefreshLayout android:layout_width="match_parent"
+                                                          android:layout_height="match_parent"
+                                                          android:id="@+id/emptyView" tools:visibility="gone">
+
+
+                <TextView
+                        android:text="No hay encuestas disponibles."
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" android:id="@+id/textView7" android:gravity="center"/>
             </android.support.v4.widget.SwipeRefreshLayout>
         </LinearLayout>
     </LinearLayout>

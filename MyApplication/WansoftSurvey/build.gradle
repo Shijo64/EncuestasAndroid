@@ -40,14 +40,25 @@ dependencies {
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
     implementation 'com.android.volley:volley:1.1.1'
     implementation 'com.google.code.gson:gson:2.8.5'
-    implementation "org.jetbrains.anko:anko-commons:0.10.4"
     implementation "com.github.vicpinm:krealmextensions:2.5.0"
-    implementation 'com.tarun0.zxing-standalone:zxing-standalone:1.0.0'
-    implementation "org.jetbrains.anko:anko-commons:0.10.8"
+    implementation 'com.github.Shashank02051997:FancyToast-Android:0.1.6'
+
+    //Anko
+    implementation "org.jetbrains.anko:anko-commons:$anko_version"
+    // Anko Layouts
+    implementation "org.jetbrains.anko:anko-sdk25:$anko_version" // sdk15, sdk19, sdk21, sdk23 are also available
+    implementation "org.jetbrains.anko:anko-appcompat-v7:$anko_version"
+
+    // Coroutine listeners for Anko Layouts
+    implementation "org.jetbrains.anko:anko-sdk25-coroutines:$anko_version"
+    implementation "org.jetbrains.anko:anko-appcompat-v7-coroutines:$anko_version"
+
     implementation fileTree(dir: 'libs', include: ['*.jar'])
     implementation "com.android.support:preference-v7:28.0.0"
     implementation 'gr.pantrif:easy-android-splash-screen:0.0.1'
     implementation 'com.kaopiz:kprogresshud:1.2.0'
+    implementation 'com.journeyapps:zxing-android-embedded:3.6.0'
+
 //For Single and Flowable queries:
     implementation 'io.reactivex.rxjava2:rxjava:2.1.16'
     implementation 'io.reactivex.rxjava2:rxandroid:2.0.2'

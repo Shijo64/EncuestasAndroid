@@ -12,5 +12,8 @@
     <style name="DatePicker" parent="Theme.AppCompat.Light.Dialog">
         <item name="colorAccent">@color/colorPrimary</item>
     </style>
+    <style name="CheckStyle">
+        <item name="android:buttonTint">#00000f</item>
+    </style>
 
 </resources>

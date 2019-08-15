@@ -10,9 +10,10 @@
             android:layout_width="match_parent"
             android:layout_height="80dp"
             android:id="@+id/nombreEncuesta"
-            android:textSize="24sp"
-            android:textColor="@android:color/white"
+            android:textSize="18sp"
+            android:textColor="@android:color/black"
             android:paddingLeft="40dp"
             android:paddingTop="25dp"
-            android:background="#BFAAAAAA"/>
+            android:background="@color/white"
+            android:singleLine="true"/>
 </LinearLayout>

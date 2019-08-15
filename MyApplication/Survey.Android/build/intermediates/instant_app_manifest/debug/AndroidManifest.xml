@@ -59,27 +59,27 @@
         android:supportsRtl="true"
         android:testOnly="true"
         android:theme="@style/AppTheme" >
-        <activity android:name="com.example.myapplication.ConfiguracionActivity" >
+        <activity android:name="com.example.Wansoft.Survey.ConfiguracionActivity" >
         </activity>
-        <activity android:name="com.example.myapplication.AcercaDeActivity" >
+        <activity android:name="com.example.Wansoft.Survey.AcercaDeActivity" >
         </activity>
-        <activity android:name="com.example.myapplication.LoginActivity" >
+        <activity android:name="com.example.Wansoft.Survey.LoginActivity" >
         </activity>
-        <activity android:name="com.example.myapplication.ResultActivity" >
+        <activity android:name="com.example.Wansoft.Survey.ResultActivity" >
         </activity>
-        <activity android:name="com.example.myapplication.ResumenActivity" >
+        <activity android:name="com.example.Wansoft.Survey.ResumenActivity" >
         </activity>
-        <activity android:name="com.example.myapplication.EncuestaActivity" >
+        <activity android:name="com.example.Wansoft.Survey.EncuestaActivity" >
         </activity>
-        <activity android:name="com.example.myapplication.EncuestasActivity" >
+        <activity android:name="com.example.Wansoft.Survey.EncuestasActivity" >
         </activity>
         <activity
-            android:name="com.example.myapplication.HomeActivity"
+            android:name="com.example.Wansoft.Survey.HomeActivity"
             android:label="@string/title_activity_home"
             android:theme="@style/AppTheme.NoActionBar" >
         </activity>
         <activity
-            android:name="com.example.myapplication.SplashActivity"
+            android:name="com.example.Wansoft.Survey.SplashActivity"
             android:label="@string/app_name" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

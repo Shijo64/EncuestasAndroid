@@ -1,6 +1,7 @@
 package Adapters
 
 import Helpers.TablaListener
+import Models.OpcionesPreguntaModel
 import android.content.Context
 import android.graphics.Typeface
 import android.support.v7.widget.RecyclerView
@@ -12,8 +13,8 @@ import android.widget.TextView
 import com.example.myapplication.R
 import kotlinx.android.synthetic.main.opcion_multiple_template.view.*
 
-class OpcionMultipleAdapter(context:Context ,opcionesSeleccionadas:List<String>, opciones: List<String>, var listener:TablaListener) : RecyclerView.Adapter<OpcionMultipleAdapter.ViewHolder>() {
-    var items:List<String>? = null
+class OpcionMultipleAdapter(context:Context ,opcionesSeleccionadas:List<String>, opciones: List<OpcionesPreguntaModel>, var listener:TablaListener) : RecyclerView.Adapter<OpcionMultipleAdapter.ViewHolder>() {
+    var items:List<OpcionesPreguntaModel>? = null
     var opcionesSeleccionadas:List<String>? = null
     var context:Context? = null
 
@@ -37,8 +38,8 @@ class OpcionMultipleAdapter(context:Context ,opcionesSeleccionadas:List<String>,
 
     override fun onBindViewHolder(holder: OpcionMultipleAdapter.ViewHolder, position: Int) {
         val item = items?.get(position)
-        holder.nombre?.setText(item)
-        if(this.opcionesSeleccionadas!!.contains(item)){
+        holder.nombre?.setText(item?.Description)
+        if(this.opcionesSeleccionadas!!.contains(item?.Id.toString())){
             holder.checkBox.isChecked = true
         }
     }

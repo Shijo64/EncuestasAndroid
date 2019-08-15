@@ -1,16 +1,12 @@
 package DataManager
 
-import Models.EncuestaModel
-import Models.LoginModel
-import Models.LoginResponseClass
+import Models.*
 import ServiceManager.ServiceManager
 import android.content.Context
-import android.widget.Toast
-import com.example.myapplication.LoginActivity
+import com.vicpin.krealmextensions.delete
+import com.vicpin.krealmextensions.queryAll
 import com.vicpin.krealmextensions.save
-import io.realm.Realm
 import org.jetbrains.anko.doAsync
-import org.jetbrains.anko.uiThread
 
 class DataManager {
 
@@ -43,6 +39,22 @@ class DataManager {
             for (pregunta in encuesta.Questions){
                 pregunta.save()
             }
+        }
+    }
+
+    fun deleteEncuestaPendiente(encuesta:EncuestaBO, callback:(Boolean) -> Unit){
+        val encuestaBorrar = encuesta
+        EncuestaBO().delete { equalTo("Id", encuesta.Id) }
+        EncuestaRespuestas().delete { equalTo("idEncuestaBO", encuesta.Id) }
+        val encuestasPendientes = EncuestaBO().queryAll()
+        if(encuestasPendientes.contains(encuestaBorrar)){
+            this.deleteEncuestaPendiente(encuestaBorrar){
+                if(it){
+                    callback(true)
+                }
+            }
+        }else{
+            callback(true)
         }
     }
 }

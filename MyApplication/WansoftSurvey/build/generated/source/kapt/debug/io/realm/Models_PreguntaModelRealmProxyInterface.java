@@ -14,6 +14,8 @@ public interface Models_PreguntaModelRealmProxyInterface {
     public void realmSet$Status(int value);
     public Models.TipoPreguntaModel realmGet$QuestionType();
     public void realmSet$QuestionType(Models.TipoPreguntaModel value);
+    public Boolean realmGet$Optional();
+    public void realmSet$Optional(Boolean value);
     public RealmList<Models.OpcionesPreguntaModel> realmGet$AnswerOptions();
     public void realmSet$AnswerOptions(RealmList<Models.OpcionesPreguntaModel> value);
 }

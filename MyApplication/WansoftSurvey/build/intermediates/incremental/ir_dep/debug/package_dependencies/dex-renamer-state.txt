@@ -1,4 +1,4 @@
-#Fri Aug 02 16:38:28 CDT 2019
-base.0=/Users/arturocalvo/EncuestasAndroid/MyApplication/WansoftSurvey/build/intermediates/transforms/dexMerger/debug/21
+#Thu Aug 15 11:10:09 CDT 2019
+base.0=/Users/arturocalvo/Wansoft.Apps/MyApplication/WansoftSurvey/build/intermediates/transforms/dexMerger/debug/21
 path.0=classes.dex
 renamed.0=classes.dex

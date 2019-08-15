@@ -45,10 +45,11 @@ public class Models_PreguntaModelRealmProxy extends Models.PreguntaModel
         long OrderIndex;
         long StatusIndex;
         long QuestionTypeIndex;
+        long OptionalIndex;
         long AnswerOptionsIndex;
 
         PreguntaModelColumnInfo(OsSchemaInfo schemaInfo) {
-            super(7);
+            super(8);
             OsObjectSchemaInfo objectSchemaInfo = schemaInfo.getObjectSchemaInfo("PreguntaModel");
             this.IdIndex = addColumnDetails("Id", "Id", objectSchemaInfo);
             this.SurveyIdIndex = addColumnDetails("SurveyId", "SurveyId", objectSchemaInfo);
@@ -56,6 +57,7 @@ public class Models_PreguntaModelRealmProxy extends Models.PreguntaModel
             this.OrderIndex = addColumnDetails("Order", "Order", objectSchemaInfo);
             this.StatusIndex = addColumnDetails("Status", "Status", objectSchemaInfo);
             this.QuestionTypeIndex = addColumnDetails("QuestionType", "QuestionType", objectSchemaInfo);
+            this.OptionalIndex = addColumnDetails("Optional", "Optional", objectSchemaInfo);
             this.AnswerOptionsIndex = addColumnDetails("AnswerOptions", "AnswerOptions", objectSchemaInfo);
             this.maxColumnIndexValue = objectSchemaInfo.getMaxColumnIndex();
         }
@@ -80,6 +82,7 @@ public class Models_PreguntaModelRealmProxy extends Models.PreguntaModel
             dst.OrderIndex = src.OrderIndex;
             dst.StatusIndex = src.StatusIndex;
             dst.QuestionTypeIndex = src.QuestionTypeIndex;
+            dst.OptionalIndex = src.OptionalIndex;
             dst.AnswerOptionsIndex = src.AnswerOptionsIndex;
             dst.maxColumnIndexValue = src.maxColumnIndexValue;
         }
@@ -267,6 +270,39 @@ public class Models_PreguntaModelRealmProxy extends Models.PreguntaModel
     }
 
     @Override
+    @SuppressWarnings("cast")
+    public Boolean realmGet$Optional() {
+        proxyState.getRealm$realm().checkIfValid();
+        if (proxyState.getRow$realm().isNull(columnInfo.OptionalIndex)) {
+            return null;
+        }
+        return (boolean) proxyState.getRow$realm().getBoolean(columnInfo.OptionalIndex);
+    }
+
+    @Override
+    public void realmSet$Optional(Boolean value) {
+        if (proxyState.isUnderConstruction()) {
+            if (!proxyState.getAcceptDefaultValue$realm()) {
+                return;
+            }
+            final Row row = proxyState.getRow$realm();
+            if (value == null) {
+                row.getTable().setNull(columnInfo.OptionalIndex, row.getIndex(), true);
+                return;
+            }
+            row.getTable().setBoolean(columnInfo.OptionalIndex, row.getIndex(), value, true);
+            return;
+        }
+
+        proxyState.getRealm$realm().checkIfValid();
+        if (value == null) {
+            proxyState.getRow$realm().setNull(columnInfo.OptionalIndex);
+            return;
+        }
+        proxyState.getRow$realm().setBoolean(columnInfo.OptionalIndex, value);
+    }
+
+    @Override
     public RealmList<Models.OpcionesPreguntaModel> realmGet$AnswerOptions() {
         proxyState.getRealm$realm().checkIfValid();
         // use the cached value if available
@@ -328,13 +364,14 @@ public class Models_PreguntaModelRealmProxy extends Models.PreguntaModel
     }
 
     private static OsObjectSchemaInfo createExpectedObjectSchemaInfo() {
-        OsObjectSchemaInfo.Builder builder = new OsObjectSchemaInfo.Builder("PreguntaModel", 7, 0);
+        OsObjectSchemaInfo.Builder builder = new OsObjectSchemaInfo.Builder("PreguntaModel", 8, 0);
         builder.addPersistedProperty("Id", RealmFieldType.INTEGER, !Property.PRIMARY_KEY, !Property.INDEXED, Property.REQUIRED);
         builder.addPersistedProperty("SurveyId", RealmFieldType.INTEGER, !Property.PRIMARY_KEY, !Property.INDEXED, Property.REQUIRED);
         builder.addPersistedProperty("Description", RealmFieldType.STRING, !Property.PRIMARY_KEY, !Property.INDEXED, Property.REQUIRED);
         builder.addPersistedProperty("Order", RealmFieldType.INTEGER, !Property.PRIMARY_KEY, !Property.INDEXED, Property.REQUIRED);
         builder.addPersistedProperty("Status", RealmFieldType.INTEGER, !Property.PRIMARY_KEY, !Property.INDEXED, Property.REQUIRED);
         builder.addPersistedLinkProperty("QuestionType", RealmFieldType.OBJECT, "TipoPreguntaModel");
+        builder.addPersistedProperty("Optional", RealmFieldType.BOOLEAN, !Property.PRIMARY_KEY, !Property.INDEXED, !Property.REQUIRED);
         builder.addPersistedLinkProperty("AnswerOptions", RealmFieldType.LIST, "OpcionesPreguntaModel");
         return builder.build();
     }
@@ -411,6 +448,13 @@ public class Models_PreguntaModelRealmProxy extends Models.PreguntaModel
                 objProxy.realmSet$QuestionType(QuestionTypeObj);
             }
         }
+        if (json.has("Optional")) {
+            if (json.isNull("Optional")) {
+                objProxy.realmSet$Optional(null);
+            } else {
+                objProxy.realmSet$Optional((boolean) json.getBoolean("Optional"));
+            }
+        }
         if (json.has("AnswerOptions")) {
             if (json.isNull("AnswerOptions")) {
                 objProxy.realmSet$AnswerOptions(null);
@@ -479,6 +523,13 @@ public class Models_PreguntaModelRealmProxy extends Models.PreguntaModel
                     Models.TipoPreguntaModel QuestionTypeObj = Models_TipoPreguntaModelRealmProxy.createUsingJsonStream(realm, reader);
                     objProxy.realmSet$QuestionType(QuestionTypeObj);
                 }
+            } else if (name.equals("Optional")) {
+                if (reader.peek() != JsonToken.NULL) {
+                    objProxy.realmSet$Optional((boolean) reader.nextBoolean());
+                } else {
+                    reader.skipValue();
+                    objProxy.realmSet$Optional(null);
+                }
             } else if (name.equals("AnswerOptions")) {
                 if (reader.peek() == JsonToken.NULL) {
                     reader.skipValue();
@@ -545,6 +596,7 @@ public class Models_PreguntaModelRealmProxy extends Models.PreguntaModel
         builder.addString(columnInfo.DescriptionIndex, realmObjectSource.realmGet$Description());
         builder.addInteger(columnInfo.OrderIndex, realmObjectSource.realmGet$Order());
         builder.addInteger(columnInfo.StatusIndex, realmObjectSource.realmGet$Status());
+        builder.addBoolean(columnInfo.OptionalIndex, realmObjectSource.realmGet$Optional());
 
         // Create the underlying object and cache it before setting any object/objectlist references
         // This will allow us to break any circular dependencies by using the object cache.
@@ -609,6 +661,10 @@ public class Models_PreguntaModelRealmProxy extends Models.PreguntaModel
             }
             Table.nativeSetLink(tableNativePtr, columnInfo.QuestionTypeIndex, rowIndex, cacheQuestionType, false);
         }
+        Boolean realmGet$Optional = ((Models_PreguntaModelRealmProxyInterface) object).realmGet$Optional();
+        if (realmGet$Optional != null) {
+            Table.nativeSetBoolean(tableNativePtr, columnInfo.OptionalIndex, rowIndex, realmGet$Optional, false);
+        }
 
         RealmList<Models.OpcionesPreguntaModel> AnswerOptionsList = ((Models_PreguntaModelRealmProxyInterface) object).realmGet$AnswerOptions();
         if (AnswerOptionsList != null) {
@@ -657,6 +713,10 @@ public class Models_PreguntaModelRealmProxy extends Models.PreguntaModel
                 }
                 table.setLink(columnInfo.QuestionTypeIndex, rowIndex, cacheQuestionType, false);
             }
+            Boolean realmGet$Optional = ((Models_PreguntaModelRealmProxyInterface) object).realmGet$Optional();
+            if (realmGet$Optional != null) {
+                Table.nativeSetBoolean(tableNativePtr, columnInfo.OptionalIndex, rowIndex, realmGet$Optional, false);
+            }
 
             RealmList<Models.OpcionesPreguntaModel> AnswerOptionsList = ((Models_PreguntaModelRealmProxyInterface) object).realmGet$AnswerOptions();
             if (AnswerOptionsList != null) {
@@ -701,6 +761,12 @@ public class Models_PreguntaModelRealmProxy extends Models.PreguntaModel
             Table.nativeSetLink(tableNativePtr, columnInfo.QuestionTypeIndex, rowIndex, cacheQuestionType, false);
         } else {
             Table.nativeNullifyLink(tableNativePtr, columnInfo.QuestionTypeIndex, rowIndex);
+        }
+        Boolean realmGet$Optional = ((Models_PreguntaModelRealmProxyInterface) object).realmGet$Optional();
+        if (realmGet$Optional != null) {
+            Table.nativeSetBoolean(tableNativePtr, columnInfo.OptionalIndex, rowIndex, realmGet$Optional, false);
+        } else {
+            Table.nativeSetNull(tableNativePtr, columnInfo.OptionalIndex, rowIndex, false);
         }
 
         OsList AnswerOptionsOsList = new OsList(table.getUncheckedRow(rowIndex), columnInfo.AnswerOptionsIndex);
@@ -769,6 +835,12 @@ public class Models_PreguntaModelRealmProxy extends Models.PreguntaModel
             } else {
                 Table.nativeNullifyLink(tableNativePtr, columnInfo.QuestionTypeIndex, rowIndex);
             }
+            Boolean realmGet$Optional = ((Models_PreguntaModelRealmProxyInterface) object).realmGet$Optional();
+            if (realmGet$Optional != null) {
+                Table.nativeSetBoolean(tableNativePtr, columnInfo.OptionalIndex, rowIndex, realmGet$Optional, false);
+            } else {
+                Table.nativeSetNull(tableNativePtr, columnInfo.OptionalIndex, rowIndex, false);
+            }
 
             OsList AnswerOptionsOsList = new OsList(table.getUncheckedRow(rowIndex), columnInfo.AnswerOptionsIndex);
             RealmList<Models.OpcionesPreguntaModel> AnswerOptionsList = ((Models_PreguntaModelRealmProxyInterface) object).realmGet$AnswerOptions();
@@ -826,6 +898,7 @@ public class Models_PreguntaModelRealmProxy extends Models.PreguntaModel
 
         // Deep copy of QuestionType
         unmanagedCopy.realmSet$QuestionType(Models_TipoPreguntaModelRealmProxy.createDetachedCopy(realmSource.realmGet$QuestionType(), currentDepth + 1, maxDepth, cache));
+        unmanagedCopy.realmSet$Optional(realmSource.realmGet$Optional());
 
         // Deep copy of AnswerOptions
         if (currentDepth == maxDepth) {
@@ -874,6 +947,10 @@ public class Models_PreguntaModelRealmProxy extends Models.PreguntaModel
         stringBuilder.append(",");
         stringBuilder.append("{QuestionType:");
         stringBuilder.append(realmGet$QuestionType() != null ? "TipoPreguntaModel" : "null");
+        stringBuilder.append("}");
+        stringBuilder.append(",");
+        stringBuilder.append("{Optional:");
+        stringBuilder.append(realmGet$Optional() != null ? realmGet$Optional() : "null");
         stringBuilder.append("}");
         stringBuilder.append(",");
         stringBuilder.append("{AnswerOptions:");

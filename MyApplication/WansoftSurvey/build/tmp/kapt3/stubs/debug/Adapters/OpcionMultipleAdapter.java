@@ -2,10 +2,10 @@ package Adapters;
 
 import java.lang.System;
 
-@kotlin.Metadata(mv = {1, 1, 13}, bv = {1, 0, 3}, k = 1, d1 = {"\u0000>\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010 \n\u0002\u0010\u000e\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0011\n\u0002\u0010\b\n\u0000\n\u0002\u0010\u0002\n\u0002\b\u0004\n\u0002\u0018\u0002\n\u0002\b\u0003\u0018\u00002\b\u0012\u0004\u0012\u00020\u00020\u0001:\u0001%B1\u0012\u0006\u0010\u0003\u001a\u00020\u0004\u0012\f\u0010\u0005\u001a\b\u0012\u0004\u0012\u00020\u00070\u0006\u0012\f\u0010\b\u001a\b\u0012\u0004\u0012\u00020\u00070\u0006\u0012\u0006\u0010\t\u001a\u00020\n\u00a2\u0006\u0002\u0010\u000bJ\b\u0010\u001b\u001a\u00020\u001cH\u0016J\u0018\u0010\u001d\u001a\u00020\u001e2\u0006\u0010\u001f\u001a\u00020\u00022\u0006\u0010 \u001a\u00020\u001cH\u0016J\u0018\u0010!\u001a\u00020\u00022\u0006\u0010\"\u001a\u00020#2\u0006\u0010$\u001a\u00020\u001cH\u0016R\u001c\u0010\u0003\u001a\u0004\u0018\u00010\u0004X\u0086\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\b\f\u0010\r\"\u0004\b\u000e\u0010\u000fR\"\u0010\u0010\u001a\n\u0012\u0004\u0012\u00020\u0007\u0018\u00010\u0006X\u0086\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\b\u0011\u0010\u0012\"\u0004\b\u0013\u0010\u0014R\u001a\u0010\t\u001a\u00020\nX\u0086\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\b\u0015\u0010\u0016\"\u0004\b\u0017\u0010\u0018R\"\u0010\u0005\u001a\n\u0012\u0004\u0012\u00020\u0007\u0018\u00010\u0006X\u0086\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\b\u0019\u0010\u0012\"\u0004\b\u001a\u0010\u0014\u00a8\u0006&"}, d2 = {"LAdapters/OpcionMultipleAdapter;", "Landroid/support/v7/widget/RecyclerView$Adapter;", "LAdapters/OpcionMultipleAdapter$ViewHolder;", "context", "Landroid/content/Context;", "opcionesSeleccionadas", "", "", "opciones", "listener", "LHelpers/TablaListener;", "(Landroid/content/Context;Ljava/util/List;Ljava/util/List;LHelpers/TablaListener;)V", "getContext", "()Landroid/content/Context;", "setContext", "(Landroid/content/Context;)V", "items", "getItems", "()Ljava/util/List;", "setItems", "(Ljava/util/List;)V", "getListener", "()LHelpers/TablaListener;", "setListener", "(LHelpers/TablaListener;)V", "getOpcionesSeleccionadas", "setOpcionesSeleccionadas", "getItemCount", "", "onBindViewHolder", "", "holder", "position", "onCreateViewHolder", "parent", "Landroid/view/ViewGroup;", "viewType", "ViewHolder", "WansoftSurvey_debug"})
+@kotlin.Metadata(mv = {1, 1, 13}, bv = {1, 0, 3}, k = 1, d1 = {"\u0000B\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010 \n\u0002\u0010\u000e\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0011\n\u0002\u0010\b\n\u0000\n\u0002\u0010\u0002\n\u0002\b\u0004\n\u0002\u0018\u0002\n\u0002\b\u0003\u0018\u00002\b\u0012\u0004\u0012\u00020\u00020\u0001:\u0001&B1\u0012\u0006\u0010\u0003\u001a\u00020\u0004\u0012\f\u0010\u0005\u001a\b\u0012\u0004\u0012\u00020\u00070\u0006\u0012\f\u0010\b\u001a\b\u0012\u0004\u0012\u00020\t0\u0006\u0012\u0006\u0010\n\u001a\u00020\u000b\u00a2\u0006\u0002\u0010\fJ\b\u0010\u001c\u001a\u00020\u001dH\u0016J\u0018\u0010\u001e\u001a\u00020\u001f2\u0006\u0010 \u001a\u00020\u00022\u0006\u0010!\u001a\u00020\u001dH\u0016J\u0018\u0010\"\u001a\u00020\u00022\u0006\u0010#\u001a\u00020$2\u0006\u0010%\u001a\u00020\u001dH\u0016R\u001c\u0010\u0003\u001a\u0004\u0018\u00010\u0004X\u0086\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\b\r\u0010\u000e\"\u0004\b\u000f\u0010\u0010R\"\u0010\u0011\u001a\n\u0012\u0004\u0012\u00020\t\u0018\u00010\u0006X\u0086\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\b\u0012\u0010\u0013\"\u0004\b\u0014\u0010\u0015R\u001a\u0010\n\u001a\u00020\u000bX\u0086\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\b\u0016\u0010\u0017\"\u0004\b\u0018\u0010\u0019R\"\u0010\u0005\u001a\n\u0012\u0004\u0012\u00020\u0007\u0018\u00010\u0006X\u0086\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\b\u001a\u0010\u0013\"\u0004\b\u001b\u0010\u0015\u00a8\u0006\'"}, d2 = {"LAdapters/OpcionMultipleAdapter;", "Landroid/support/v7/widget/RecyclerView$Adapter;", "LAdapters/OpcionMultipleAdapter$ViewHolder;", "context", "Landroid/content/Context;", "opcionesSeleccionadas", "", "", "opciones", "LModels/OpcionesPreguntaModel;", "listener", "LHelpers/TablaListener;", "(Landroid/content/Context;Ljava/util/List;Ljava/util/List;LHelpers/TablaListener;)V", "getContext", "()Landroid/content/Context;", "setContext", "(Landroid/content/Context;)V", "items", "getItems", "()Ljava/util/List;", "setItems", "(Ljava/util/List;)V", "getListener", "()LHelpers/TablaListener;", "setListener", "(LHelpers/TablaListener;)V", "getOpcionesSeleccionadas", "setOpcionesSeleccionadas", "getItemCount", "", "onBindViewHolder", "", "holder", "position", "onCreateViewHolder", "parent", "Landroid/view/ViewGroup;", "viewType", "ViewHolder", "WansoftSurvey_debug"})
 public final class OpcionMultipleAdapter extends android.support.v7.widget.RecyclerView.Adapter<Adapters.OpcionMultipleAdapter.ViewHolder> {
     @org.jetbrains.annotations.Nullable()
-    private java.util.List<java.lang.String> items;
+    private java.util.List<? extends Models.OpcionesPreguntaModel> items;
     @org.jetbrains.annotations.Nullable()
     private java.util.List<java.lang.String> opcionesSeleccionadas;
     @org.jetbrains.annotations.Nullable()
@@ -14,12 +14,12 @@ public final class OpcionMultipleAdapter extends android.support.v7.widget.Recyc
     private Helpers.TablaListener listener;
     
     @org.jetbrains.annotations.Nullable()
-    public final java.util.List<java.lang.String> getItems() {
+    public final java.util.List<Models.OpcionesPreguntaModel> getItems() {
         return null;
     }
     
     public final void setItems(@org.jetbrains.annotations.Nullable()
-    java.util.List<java.lang.String> p0) {
+    java.util.List<? extends Models.OpcionesPreguntaModel> p0) {
     }
     
     @org.jetbrains.annotations.Nullable()
@@ -69,7 +69,7 @@ public final class OpcionMultipleAdapter extends android.support.v7.widget.Recyc
     public OpcionMultipleAdapter(@org.jetbrains.annotations.NotNull()
     android.content.Context context, @org.jetbrains.annotations.NotNull()
     java.util.List<java.lang.String> opcionesSeleccionadas, @org.jetbrains.annotations.NotNull()
-    java.util.List<java.lang.String> opciones, @org.jetbrains.annotations.NotNull()
+    java.util.List<? extends Models.OpcionesPreguntaModel> opciones, @org.jetbrains.annotations.NotNull()
     Helpers.TablaListener listener) {
         super();
     }

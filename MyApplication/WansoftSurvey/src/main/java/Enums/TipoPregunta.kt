@@ -7,7 +7,7 @@ enum class TipoPregunta(val tipo:String) {
     SEGMENTO("Segmento"),
     TEXTO("Texto abierto"),
     FECHA("Fecha"),
-    OPCIONMULTIPLE("Opción multiple"),
+    OPCIONMULTIPLE("Opción múltiple"),
     COMENTARIOS("Comentarios"),
     EMAIL("Correo electrónico"),
     CELULAR("Celular")

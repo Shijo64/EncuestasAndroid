@@ -14,7 +14,6 @@ import android.view.ViewGroup
 import android.widget.CheckBox
 
 import com.example.myapplication.R
-import com.google.zxing.client.android.Intents
 
 class ConfiguracionFragment : Fragment() {
     override fun onCreateView(

@@ -5,8 +5,16 @@
              tools:context="Fragments.EmailFragment">
     <EditText
             android:layout_width="match_parent"
-            android:layout_height="wrap_content" android:id="@+id/emailText" android:textSize="24sp"
-            android:hint="Correo electrónico:" android:editable="true" android:inputType="textWebEmailAddress"
-            android:textColor="@android:color/white" android:textColorHighlight="@android:color/white"
-            android:textColorHint="@android:color/white" android:textColorLink="@android:color/white"/>
+            android:layout_height="wrap_content"
+            android:id="@+id/emailText"
+            android:textSize="24sp"
+            android:hint="Correo electrónico:"
+            android:editable="true"
+            android:inputType="textWebEmailAddress"
+            android:textColor="@android:color/white"
+            android:textColorHighlight="@android:color/white"
+            android:textColorHint="@android:color/white"
+            android:textColorLink="@android:color/white"
+            android:imeOptions="actionDone"
+            android:singleLine="true"/>
 </FrameLayout>

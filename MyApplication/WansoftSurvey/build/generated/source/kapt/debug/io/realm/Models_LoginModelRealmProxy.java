@@ -108,8 +108,7 @@ public class Models_LoginModelRealmProxy extends Models.LoginModel
             }
             final Row row = proxyState.getRow$realm();
             if (value == null) {
-                row.getTable().setNull(columnInfo.idSucursalIndex, row.getIndex(), true);
-                return;
+                throw new IllegalArgumentException("Trying to set non-nullable field 'idSucursal' to null.");
             }
             row.getTable().setString(columnInfo.idSucursalIndex, row.getIndex(), value, true);
             return;
@@ -117,8 +116,7 @@ public class Models_LoginModelRealmProxy extends Models.LoginModel
 
         proxyState.getRealm$realm().checkIfValid();
         if (value == null) {
-            proxyState.getRow$realm().setNull(columnInfo.idSucursalIndex);
-            return;
+            throw new IllegalArgumentException("Trying to set non-nullable field 'idSucursal' to null.");
         }
         proxyState.getRow$realm().setString(columnInfo.idSucursalIndex, value);
     }
@@ -138,8 +136,7 @@ public class Models_LoginModelRealmProxy extends Models.LoginModel
             }
             final Row row = proxyState.getRow$realm();
             if (value == null) {
-                row.getTable().setNull(columnInfo.passwordIndex, row.getIndex(), true);
-                return;
+                throw new IllegalArgumentException("Trying to set non-nullable field 'password' to null.");
             }
             row.getTable().setString(columnInfo.passwordIndex, row.getIndex(), value, true);
             return;
@@ -147,16 +144,15 @@ public class Models_LoginModelRealmProxy extends Models.LoginModel
 
         proxyState.getRealm$realm().checkIfValid();
         if (value == null) {
-            proxyState.getRow$realm().setNull(columnInfo.passwordIndex);
-            return;
+            throw new IllegalArgumentException("Trying to set non-nullable field 'password' to null.");
         }
         proxyState.getRow$realm().setString(columnInfo.passwordIndex, value);
     }
 
     private static OsObjectSchemaInfo createExpectedObjectSchemaInfo() {
         OsObjectSchemaInfo.Builder builder = new OsObjectSchemaInfo.Builder("LoginModel", 2, 0);
-        builder.addPersistedProperty("idSucursal", RealmFieldType.STRING, !Property.PRIMARY_KEY, !Property.INDEXED, !Property.REQUIRED);
-        builder.addPersistedProperty("password", RealmFieldType.STRING, !Property.PRIMARY_KEY, !Property.INDEXED, !Property.REQUIRED);
+        builder.addPersistedProperty("idSucursal", RealmFieldType.STRING, !Property.PRIMARY_KEY, !Property.INDEXED, Property.REQUIRED);
+        builder.addPersistedProperty("password", RealmFieldType.STRING, !Property.PRIMARY_KEY, !Property.INDEXED, Property.REQUIRED);
         return builder.build();
     }
 
@@ -419,11 +415,11 @@ public class Models_LoginModelRealmProxy extends Models.LoginModel
         }
         StringBuilder stringBuilder = new StringBuilder("LoginModel = proxy[");
         stringBuilder.append("{idSucursal:");
-        stringBuilder.append(realmGet$idSucursal() != null ? realmGet$idSucursal() : "null");
+        stringBuilder.append(realmGet$idSucursal());
         stringBuilder.append("}");
         stringBuilder.append(",");
         stringBuilder.append("{password:");
-        stringBuilder.append(realmGet$password() != null ? realmGet$password() : "null");
+        stringBuilder.append(realmGet$password());
         stringBuilder.append("}");
         stringBuilder.append("]");
         return stringBuilder.toString();

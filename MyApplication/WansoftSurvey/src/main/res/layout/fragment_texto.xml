@@ -5,9 +5,15 @@
              tools:context="Fragments.TextoFragment">
     <EditText
             android:layout_width="match_parent"
-            android:layout_height="wrap_content" android:id="@+id/nombreText"
+            android:layout_height="wrap_content"
+            android:id="@+id/nombreText"
             android:textSize="24sp"
-            android:textColor="@android:color/white" android:editable="true" android:hint="Nombre:"
-            android:textColorHighlight="@android:color/white" android:textColorHint="@android:color/white"
-            android:textColorLink="@android:color/white"/>
+            android:textColor="@android:color/white"
+            android:editable="true"
+            android:hint="Nombre:"
+            android:textColorHighlight="@android:color/white"
+            android:textColorHint="@android:color/white"
+            android:textColorLink="@android:color/white"
+            android:singleLine="true"
+            android:imeOptions="actionDone"/>
 </FrameLayout>

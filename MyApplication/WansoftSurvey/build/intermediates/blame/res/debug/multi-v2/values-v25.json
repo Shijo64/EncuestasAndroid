@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "/Users/arturocalvo/EncuestasAndroid/MyApplication/WansoftSurvey/build/intermediates/incremental/mergeDebugResources/merged.dir/values-v25/values-v25.xml",
+            "outputFile": "/Users/arturocalvo/Wansoft.Apps/MyApplication/WansoftSurvey/build/intermediates/incremental/mergeDebugResources/merged.dir/values-v25/values-v25.xml",
             "map": [
                 {
                     "source": "/Users/arturocalvo/.gradle/caches/transforms-2/files-2.1/42d897114222802c12a7ac4a0de9d681/res/values-v25/values-v25.xml",

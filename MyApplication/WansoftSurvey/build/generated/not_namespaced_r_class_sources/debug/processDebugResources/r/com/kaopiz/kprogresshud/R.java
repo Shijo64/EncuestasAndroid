@@ -12,25 +12,25 @@ public final class R {
     public static final class color {
         private color() {}
 
-        public static final int kprogresshud_default_color = 0x7f060046;
-        public static final int kprogresshud_grey_color = 0x7f060047;
+        public static final int kprogresshud_default_color = 0x7f050045;
+        public static final int kprogresshud_grey_color = 0x7f050046;
     }
     public static final class drawable {
         private drawable() {}
 
-        public static final int kprogresshud_spinner = 0x7f080072;
+        public static final int kprogresshud_spinner = 0x7f07007a;
     }
     public static final class id {
         private id() {}
 
-        public static final int background = 0x7f090026;
-        public static final int container = 0x7f090040;
-        public static final int details_label = 0x7f090053;
-        public static final int label = 0x7f090085;
+        public static final int background = 0x7f080024;
+        public static final int container = 0x7f08003c;
+        public static final int details_label = 0x7f08004a;
+        public static final int label = 0x7f08007a;
     }
     public static final class layout {
         private layout() {}
 
-        public static final int kprogresshud_hud = 0x7f0c0046;
+        public static final int kprogresshud_hud = 0x7f0b0042;
     }
 }

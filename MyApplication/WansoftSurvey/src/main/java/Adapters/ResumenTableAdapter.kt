@@ -42,7 +42,17 @@ class ResumenTableAdapter(context:Context, preguntas:List<PreguntaModel>, respue
         val item = this.respuestas?.get(position)
         val question = this.preguntas?.get(position)
         holder.pregunta!!.setText(question!!.Description)
-        holder.respuesta!!.setText(item!!.respuesta)
+        if(item!!.arrayRespuestas!!.count() > 0){
+            var respuestasSeleccionadas = mutableListOf<String>()
+            for(opcion in item.arrayRespuestas){
+                val respuestaOpcion = question.AnswerOptions.first { it.Id == opcion?.toInt() }
+                respuestasSeleccionadas.add(respuestaOpcion.Description)
+            }
+            val respuestasString = respuestasSeleccionadas.joinToString()
+            holder.respuesta!!.setText(respuestasString)
+        }else{
+            holder.respuesta!!.setText(item?.respuesta)
+        }
     }
 
     class ViewHolder(context: Context, vista: View, listener:ResumenTablaListener):RecyclerView.ViewHolder(vista), View.OnClickListener{

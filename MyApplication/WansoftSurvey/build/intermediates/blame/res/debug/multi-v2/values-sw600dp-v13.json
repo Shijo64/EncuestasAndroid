@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "/Users/arturocalvo/EncuestasAndroid/MyApplication/WansoftSurvey/build/intermediates/incremental/mergeDebugResources/merged.dir/values-sw600dp-v13/values-sw600dp-v13.xml",
+            "outputFile": "/Users/arturocalvo/Wansoft.Apps/MyApplication/WansoftSurvey/build/intermediates/incremental/mergeDebugResources/merged.dir/values-sw600dp-v13/values-sw600dp-v13.xml",
             "map": [
                 {
                     "source": "/Users/arturocalvo/.gradle/caches/transforms-2/files-2.1/d2b29af0c35f10ea11de9ea8b721daa2/res/values-sw600dp-v13/values-sw600dp-v13.xml",

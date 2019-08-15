@@ -13,6 +13,6 @@
                 android:layout_height="wrap_content" android:id="@+id/multipleOpcion" android:layout_weight="1"
                 android:textSize="24sp"
                 android:textColorLink="@android:color/white" android:textColor="@android:color/white"
-                android:background="#BFAAAAAA"/>
+                android:background="#00AAAAAA"/>
     </LinearLayout>
 </LinearLayout>

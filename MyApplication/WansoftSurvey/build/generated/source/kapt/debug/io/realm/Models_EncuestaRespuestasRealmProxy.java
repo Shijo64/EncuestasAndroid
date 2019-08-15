@@ -45,9 +45,10 @@ public class Models_EncuestaRespuestasRealmProxy extends Models.EncuestaRespuest
         long idPreguntaIndex;
         long numeroPreguntaIndex;
         long respuestaIndex;
+        long arrayRespuestasIndex;
 
         EncuestaRespuestasColumnInfo(OsSchemaInfo schemaInfo) {
-            super(6);
+            super(7);
             OsObjectSchemaInfo objectSchemaInfo = schemaInfo.getObjectSchemaInfo("EncuestaRespuestas");
             this.IdIndex = addColumnDetails("Id", "Id", objectSchemaInfo);
             this.idEncuestaBOIndex = addColumnDetails("idEncuestaBO", "idEncuestaBO", objectSchemaInfo);
@@ -55,6 +56,7 @@ public class Models_EncuestaRespuestasRealmProxy extends Models.EncuestaRespuest
             this.idPreguntaIndex = addColumnDetails("idPregunta", "idPregunta", objectSchemaInfo);
             this.numeroPreguntaIndex = addColumnDetails("numeroPregunta", "numeroPregunta", objectSchemaInfo);
             this.respuestaIndex = addColumnDetails("respuesta", "respuesta", objectSchemaInfo);
+            this.arrayRespuestasIndex = addColumnDetails("arrayRespuestas", "arrayRespuestas", objectSchemaInfo);
             this.maxColumnIndexValue = objectSchemaInfo.getMaxColumnIndex();
         }
 
@@ -78,6 +80,7 @@ public class Models_EncuestaRespuestasRealmProxy extends Models.EncuestaRespuest
             dst.idPreguntaIndex = src.idPreguntaIndex;
             dst.numeroPreguntaIndex = src.numeroPreguntaIndex;
             dst.respuestaIndex = src.respuestaIndex;
+            dst.arrayRespuestasIndex = src.arrayRespuestasIndex;
             dst.maxColumnIndexValue = src.maxColumnIndexValue;
         }
     }
@@ -86,6 +89,7 @@ public class Models_EncuestaRespuestasRealmProxy extends Models.EncuestaRespuest
 
     private EncuestaRespuestasColumnInfo columnInfo;
     private ProxyState<Models.EncuestaRespuestas> proxyState;
+    private RealmList<String> arrayRespuestasRealmList;
 
     Models_EncuestaRespuestasRealmProxy() {
         proxyState.setConstructionFinished();
@@ -243,14 +247,54 @@ public class Models_EncuestaRespuestasRealmProxy extends Models.EncuestaRespuest
         proxyState.getRow$realm().setString(columnInfo.respuestaIndex, value);
     }
 
+    @Override
+    public RealmList<String> realmGet$arrayRespuestas() {
+        proxyState.getRealm$realm().checkIfValid();
+        // use the cached value if available
+        if (arrayRespuestasRealmList != null) {
+            return arrayRespuestasRealmList;
+        } else {
+            OsList osList = proxyState.getRow$realm().getValueList(columnInfo.arrayRespuestasIndex, RealmFieldType.STRING_LIST);
+            arrayRespuestasRealmList = new RealmList<java.lang.String>(java.lang.String.class, osList, proxyState.getRealm$realm());
+            return arrayRespuestasRealmList;
+        }
+    }
+
+    @Override
+    public void realmSet$arrayRespuestas(RealmList<String> value) {
+        if (proxyState.isUnderConstruction()) {
+            if (!proxyState.getAcceptDefaultValue$realm()) {
+                return;
+            }
+            if (proxyState.getExcludeFields$realm().contains("arrayRespuestas")) {
+                return;
+            }
+        }
+
+        proxyState.getRealm$realm().checkIfValid();
+        OsList osList = proxyState.getRow$realm().getValueList(columnInfo.arrayRespuestasIndex, RealmFieldType.STRING_LIST);
+        osList.removeAll();
+        if (value == null) {
+            return;
+        }
+        for (java.lang.String item : value) {
+            if (item == null) {
+                osList.addNull();
+            } else {
+                osList.addString(item);
+            }
+        }
+    }
+
     private static OsObjectSchemaInfo createExpectedObjectSchemaInfo() {
-        OsObjectSchemaInfo.Builder builder = new OsObjectSchemaInfo.Builder("EncuestaRespuestas", 6, 0);
+        OsObjectSchemaInfo.Builder builder = new OsObjectSchemaInfo.Builder("EncuestaRespuestas", 7, 0);
         builder.addPersistedProperty("Id", RealmFieldType.INTEGER, !Property.PRIMARY_KEY, !Property.INDEXED, Property.REQUIRED);
         builder.addPersistedProperty("idEncuestaBO", RealmFieldType.INTEGER, !Property.PRIMARY_KEY, !Property.INDEXED, Property.REQUIRED);
         builder.addPersistedProperty("idEncuesta", RealmFieldType.INTEGER, !Property.PRIMARY_KEY, !Property.INDEXED, Property.REQUIRED);
         builder.addPersistedProperty("idPregunta", RealmFieldType.INTEGER, !Property.PRIMARY_KEY, !Property.INDEXED, Property.REQUIRED);
         builder.addPersistedProperty("numeroPregunta", RealmFieldType.INTEGER, !Property.PRIMARY_KEY, !Property.INDEXED, Property.REQUIRED);
         builder.addPersistedProperty("respuesta", RealmFieldType.STRING, !Property.PRIMARY_KEY, !Property.INDEXED, Property.REQUIRED);
+        builder.addPersistedValueListProperty("arrayRespuestas", RealmFieldType.STRING_LIST, !Property.REQUIRED);
         return builder.build();
     }
 
@@ -273,7 +317,10 @@ public class Models_EncuestaRespuestasRealmProxy extends Models.EncuestaRespuest
     @SuppressWarnings("cast")
     public static Models.EncuestaRespuestas createOrUpdateUsingJsonObject(Realm realm, JSONObject json, boolean update)
         throws JSONException {
-        final List<String> excludeFields = Collections.<String> emptyList();
+        final List<String> excludeFields = new ArrayList<String>(1);
+        if (json.has("arrayRespuestas")) {
+            excludeFields.add("arrayRespuestas");
+        }
         Models.EncuestaRespuestas obj = realm.createObjectInternal(Models.EncuestaRespuestas.class, true, excludeFields);
 
         final Models_EncuestaRespuestasRealmProxyInterface objProxy = (Models_EncuestaRespuestasRealmProxyInterface) obj;
@@ -319,6 +366,7 @@ public class Models_EncuestaRespuestasRealmProxy extends Models.EncuestaRespuest
                 objProxy.realmSet$respuesta((String) json.getString("respuesta"));
             }
         }
+        ProxyUtils.setRealmListWithJsonObject(objProxy.realmGet$arrayRespuestas(), json, "arrayRespuestas");
         return obj;
     }
 
@@ -374,6 +422,8 @@ public class Models_EncuestaRespuestasRealmProxy extends Models.EncuestaRespuest
                     reader.skipValue();
                     objProxy.realmSet$respuesta(null);
                 }
+            } else if (name.equals("arrayRespuestas")) {
+                objProxy.realmSet$arrayRespuestas(ProxyUtils.createRealmListWithJsonStream(java.lang.String.class, reader));
             } else {
                 reader.skipValue();
             }
@@ -428,6 +478,7 @@ public class Models_EncuestaRespuestasRealmProxy extends Models.EncuestaRespuest
         builder.addInteger(columnInfo.idPreguntaIndex, realmObjectSource.realmGet$idPregunta());
         builder.addInteger(columnInfo.numeroPreguntaIndex, realmObjectSource.realmGet$numeroPregunta());
         builder.addString(columnInfo.respuestaIndex, realmObjectSource.realmGet$respuesta());
+        builder.addStringList(columnInfo.arrayRespuestasIndex, realmObjectSource.realmGet$arrayRespuestas());
 
         // Create the underlying object and cache it before setting any object/objectlist references
         // This will allow us to break any circular dependencies by using the object cache.
@@ -455,6 +506,18 @@ public class Models_EncuestaRespuestasRealmProxy extends Models.EncuestaRespuest
         String realmGet$respuesta = ((Models_EncuestaRespuestasRealmProxyInterface) object).realmGet$respuesta();
         if (realmGet$respuesta != null) {
             Table.nativeSetString(tableNativePtr, columnInfo.respuestaIndex, rowIndex, realmGet$respuesta, false);
+        }
+
+        RealmList<java.lang.String> arrayRespuestasList = ((Models_EncuestaRespuestasRealmProxyInterface) object).realmGet$arrayRespuestas();
+        if (arrayRespuestasList != null) {
+            OsList arrayRespuestasOsList = new OsList(table.getUncheckedRow(rowIndex), columnInfo.arrayRespuestasIndex);
+            for (java.lang.String arrayRespuestasItem : arrayRespuestasList) {
+                if (arrayRespuestasItem == null) {
+                    arrayRespuestasOsList.addNull();
+                } else {
+                    arrayRespuestasOsList.addString(arrayRespuestasItem);
+                }
+            }
         }
         return rowIndex;
     }
@@ -484,6 +547,18 @@ public class Models_EncuestaRespuestasRealmProxy extends Models.EncuestaRespuest
             if (realmGet$respuesta != null) {
                 Table.nativeSetString(tableNativePtr, columnInfo.respuestaIndex, rowIndex, realmGet$respuesta, false);
             }
+
+            RealmList<java.lang.String> arrayRespuestasList = ((Models_EncuestaRespuestasRealmProxyInterface) object).realmGet$arrayRespuestas();
+            if (arrayRespuestasList != null) {
+                OsList arrayRespuestasOsList = new OsList(table.getUncheckedRow(rowIndex), columnInfo.arrayRespuestasIndex);
+                for (java.lang.String arrayRespuestasItem : arrayRespuestasList) {
+                    if (arrayRespuestasItem == null) {
+                        arrayRespuestasOsList.addNull();
+                    } else {
+                        arrayRespuestasOsList.addString(arrayRespuestasItem);
+                    }
+                }
+            }
         }
     }
 
@@ -507,6 +582,20 @@ public class Models_EncuestaRespuestasRealmProxy extends Models.EncuestaRespuest
         } else {
             Table.nativeSetNull(tableNativePtr, columnInfo.respuestaIndex, rowIndex, false);
         }
+
+        OsList arrayRespuestasOsList = new OsList(table.getUncheckedRow(rowIndex), columnInfo.arrayRespuestasIndex);
+        arrayRespuestasOsList.removeAll();
+        RealmList<java.lang.String> arrayRespuestasList = ((Models_EncuestaRespuestasRealmProxyInterface) object).realmGet$arrayRespuestas();
+        if (arrayRespuestasList != null) {
+            for (java.lang.String arrayRespuestasItem : arrayRespuestasList) {
+                if (arrayRespuestasItem == null) {
+                    arrayRespuestasOsList.addNull();
+                } else {
+                    arrayRespuestasOsList.addString(arrayRespuestasItem);
+                }
+            }
+        }
+
         return rowIndex;
     }
 
@@ -537,6 +626,20 @@ public class Models_EncuestaRespuestasRealmProxy extends Models.EncuestaRespuest
             } else {
                 Table.nativeSetNull(tableNativePtr, columnInfo.respuestaIndex, rowIndex, false);
             }
+
+            OsList arrayRespuestasOsList = new OsList(table.getUncheckedRow(rowIndex), columnInfo.arrayRespuestasIndex);
+            arrayRespuestasOsList.removeAll();
+            RealmList<java.lang.String> arrayRespuestasList = ((Models_EncuestaRespuestasRealmProxyInterface) object).realmGet$arrayRespuestas();
+            if (arrayRespuestasList != null) {
+                for (java.lang.String arrayRespuestasItem : arrayRespuestasList) {
+                    if (arrayRespuestasItem == null) {
+                        arrayRespuestasOsList.addNull();
+                    } else {
+                        arrayRespuestasOsList.addString(arrayRespuestasItem);
+                    }
+                }
+            }
+
         }
     }
 
@@ -565,6 +668,9 @@ public class Models_EncuestaRespuestasRealmProxy extends Models.EncuestaRespuest
         unmanagedCopy.realmSet$idPregunta(realmSource.realmGet$idPregunta());
         unmanagedCopy.realmSet$numeroPregunta(realmSource.realmGet$numeroPregunta());
         unmanagedCopy.realmSet$respuesta(realmSource.realmGet$respuesta());
+
+        unmanagedCopy.realmSet$arrayRespuestas(new RealmList<java.lang.String>());
+        unmanagedCopy.realmGet$arrayRespuestas().addAll(realmSource.realmGet$arrayRespuestas());
 
         return unmanagedObject;
     }
@@ -598,6 +704,10 @@ public class Models_EncuestaRespuestasRealmProxy extends Models.EncuestaRespuest
         stringBuilder.append(",");
         stringBuilder.append("{respuesta:");
         stringBuilder.append(realmGet$respuesta());
+        stringBuilder.append("}");
+        stringBuilder.append(",");
+        stringBuilder.append("{arrayRespuestas:");
+        stringBuilder.append("RealmList<String>[").append(realmGet$arrayRespuestas().size()).append("]");
         stringBuilder.append("}");
         stringBuilder.append("]");
         return stringBuilder.toString();

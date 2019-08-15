@@ -3,6 +3,7 @@ package Models
 import android.os.Parcel
 import android.os.Parcelable
 import com.vicpin.krealmextensions.queryAll
+import io.realm.RealmList
 import io.realm.RealmObject
 
 open class EncuestaRespuestas() : RealmObject(), Parcelable {
@@ -12,6 +13,7 @@ open class EncuestaRespuestas() : RealmObject(), Parcelable {
     var idPregunta = 0
     var numeroPregunta = 0
     var respuesta = ""
+    var arrayRespuestas = RealmList<String>()
 
     constructor(parcel: Parcel) : this() {
         Id = parcel.readInt()
@@ -20,6 +22,7 @@ open class EncuestaRespuestas() : RealmObject(), Parcelable {
         idPregunta = parcel.readInt()
         numeroPregunta = parcel.readInt()
         respuesta = parcel.readString()
+        parcel.readStringList(arrayRespuestas)
     }
 
     fun idIncrement():Int{
@@ -42,6 +45,7 @@ open class EncuestaRespuestas() : RealmObject(), Parcelable {
         parcel.writeInt(idPregunta)
         parcel.writeInt(numeroPregunta)
         parcel.writeString(respuesta)
+        parcel.writeStringList(arrayRespuestas)
     }
 
     override fun describeContents(): Int {
