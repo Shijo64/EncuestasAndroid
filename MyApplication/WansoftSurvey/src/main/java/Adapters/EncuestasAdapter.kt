@@ -12,6 +12,7 @@ import android.view.ViewGroup
 import android.widget.TextView
 import com.example.myapplication.R
 import com.vicpin.krealmextensions.query
+import com.vicpin.krealmextensions.queryAll
 import kotlinx.android.synthetic.main.template_encuesta.view.*
 
 class EncuestasAdapter(context:Context, encuestas:List<EncuestaModel>, var listener:TablaListener): RecyclerView.Adapter<EncuestasAdapter.ViewHolder>() {
@@ -37,7 +38,8 @@ class EncuestasAdapter(context:Context, encuestas:List<EncuestaModel>, var liste
 
     override fun onBindViewHolder(holder: EncuestasAdapter.ViewHolder, position: Int) {
         val item = items?.get(position)
-        val pendientes = EncuestaBO().query {equalTo("Id", item!!.Id)}
+        val prueba = EncuestaBO().queryAll()
+        val pendientes = EncuestaBO().query {equalTo("EncuestaId", item!!.Id)}
         val texto = item?.Name + "    Pendientes: ("+pendientes.count()+")"
         holder.nombre?.setText(texto)
     }

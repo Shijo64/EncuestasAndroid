@@ -41,7 +41,7 @@ dependencies {
     implementation 'com.android.volley:volley:1.1.1'
     implementation 'com.google.code.gson:gson:2.8.5'
     implementation "com.github.vicpinm:krealmextensions:2.5.0"
-    implementation 'com.github.Shashank02051997:FancyToast-Android:0.1.6'
+    //implementation 'com.github.Shashank02051997:FancyToast-Android:0.1.6'
 
     //Anko
     implementation "org.jetbrains.anko:anko-commons:$anko_version"

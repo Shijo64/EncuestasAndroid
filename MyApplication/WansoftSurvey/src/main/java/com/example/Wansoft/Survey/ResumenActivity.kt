@@ -94,7 +94,10 @@ class ResumenActivity : AppCompatActivity() {
 
                 val manager = ServiceManager()
                 manager.enviarEncuesta(encuestaEnviar, respuestasEnviar, this){
-                    var message = it["MessageType"].toString()
+                    var message = ""
+                    if(it != null) {
+                        message = it?.get("MessageType").toString()
+                    }
                     if(message == "1"){
 
                         val dataManager = DataManager()

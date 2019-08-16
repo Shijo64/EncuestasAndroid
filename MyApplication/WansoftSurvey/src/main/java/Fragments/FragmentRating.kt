@@ -34,7 +34,6 @@ class FragmentRating : Fragment() {
         ratingBar.onRatingBarChangeListener = RatingBar.OnRatingBarChangeListener { ratingBar, rating, fromUser ->
             val activity = getActivity() as EncuestaActivity
             activity.guardarRating(rating)
-            //activity.siguienteButton.isEnabled = true
         }
 
         return vista

@@ -23,6 +23,7 @@ class EncuestasActivity : AppCompatActivity() {
     //var encuestasRecyclerView:RecyclerView? = null
     var adaptador:EncuestasAdapter? = null
     var layoutManager:RecyclerView.LayoutManager? = null
+    var encuestasPorEnviar = mutableListOf<EncuestaBO>()
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -40,6 +41,11 @@ class EncuestasActivity : AppCompatActivity() {
         emptyView.setOnRefreshListener {
             actualizarEncuestas()
         }
+    }
+
+    override fun onResume() {
+        super.onResume()
+        this.getEncuestasPendientes()
     }
 
     override fun onBackPressed() {
@@ -114,8 +120,10 @@ class EncuestasActivity : AppCompatActivity() {
                 val respuestas = EncuestaRespuestas().query { equalTo("idEncuestaBO", encuesta.Id) }
                 val manager = ServiceManager()
                 manager.enviarEncuesta(encuesta, respuestas, this){
-                    EncuestaRespuestas().deleteAll()
-                    EncuestaBO().deleteAll()
+                    if(it != null) {
+                        EncuestaRespuestas().deleteAll()
+                        EncuestaBO().deleteAll()
+                    }
                 }
             }
         }

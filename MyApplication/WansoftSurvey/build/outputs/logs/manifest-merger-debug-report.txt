@@ -8,7 +8,6 @@ MERGED from [com.github.vicpinm:krealmextensions:2.5.0] /Users/arturocalvo/.grad
 MERGED from [io.realm:realm-android-library:5.10.0] /Users/arturocalvo/.gradle/caches/transforms-2/files-2.1/75a0463cac94fc7db86da1d1a012d0d2/AndroidManifest.xml:2:1-10:12
 MERGED from [io.realm:realm-android-kotlin-extensions:5.10.0] /Users/arturocalvo/.gradle/caches/transforms-2/files-2.1/a7d017f51820795c08ba2058c119a603/AndroidManifest.xml:2:1-10:12
 MERGED from [com.android.support:design:28.0.0] /Users/arturocalvo/.gradle/caches/transforms-2/files-2.1/d2b29af0c35f10ea11de9ea8b721daa2/AndroidManifest.xml:17:1-24:12
-MERGED from [com.github.Shashank02051997:FancyToast-Android:0.1.6] /Users/arturocalvo/.gradle/caches/transforms-2/files-2.1/ce479f23084071b15bac2f86228109af/AndroidManifest.xml:2:1-16:12
 MERGED from [org.jetbrains.anko:anko-appcompat-v7:0.10.8] /Users/arturocalvo/.gradle/caches/transforms-2/files-2.1/c4026da7f625915cef33423b089a7126/AndroidManifest.xml:2:1-13:12
 MERGED from [org.jetbrains.anko:anko-appcompat-v7-coroutines:0.10.8] /Users/arturocalvo/.gradle/caches/transforms-2/files-2.1/120e0c29124ea8ba81710c152fdac081/AndroidManifest.xml:2:1-13:12
 MERGED from [com.android.support:preference-v7:28.0.0] /Users/arturocalvo/.gradle/caches/transforms-2/files-2.1/1f204d3729c6cd86c9c5499684f5a7da/AndroidManifest.xml:17:1-22:12
@@ -111,8 +110,6 @@ MERGED from [com.github.vicpinm:krealmextensions:2.5.0] /Users/arturocalvo/.grad
 MERGED from [com.github.vicpinm:krealmextensions:2.5.0] /Users/arturocalvo/.gradle/caches/transforms-2/files-2.1/e3acdc23059001a0df1a5092345f08c6/AndroidManifest.xml:11:5-12:19
 MERGED from [com.android.support:design:28.0.0] /Users/arturocalvo/.gradle/caches/transforms-2/files-2.1/d2b29af0c35f10ea11de9ea8b721daa2/AndroidManifest.xml:22:5-20
 MERGED from [com.android.support:design:28.0.0] /Users/arturocalvo/.gradle/caches/transforms-2/files-2.1/d2b29af0c35f10ea11de9ea8b721daa2/AndroidManifest.xml:22:5-20
-MERGED from [com.github.Shashank02051997:FancyToast-Android:0.1.6] /Users/arturocalvo/.gradle/caches/transforms-2/files-2.1/ce479f23084071b15bac2f86228109af/AndroidManifest.xml:11:5-14:38
-MERGED from [com.github.Shashank02051997:FancyToast-Android:0.1.6] /Users/arturocalvo/.gradle/caches/transforms-2/files-2.1/ce479f23084071b15bac2f86228109af/AndroidManifest.xml:11:5-14:38
 MERGED from [org.jetbrains.anko:anko-appcompat-v7:0.10.8] /Users/arturocalvo/.gradle/caches/transforms-2/files-2.1/c4026da7f625915cef33423b089a7126/AndroidManifest.xml:11:5-20
 MERGED from [org.jetbrains.anko:anko-appcompat-v7:0.10.8] /Users/arturocalvo/.gradle/caches/transforms-2/files-2.1/c4026da7f625915cef33423b089a7126/AndroidManifest.xml:11:5-20
 MERGED from [org.jetbrains.anko:anko-appcompat-v7-coroutines:0.10.8] /Users/arturocalvo/.gradle/caches/transforms-2/files-2.1/120e0c29124ea8ba81710c152fdac081/AndroidManifest.xml:11:5-20
@@ -250,8 +247,6 @@ MERGED from [io.realm:realm-android-kotlin-extensions:5.10.0] /Users/arturocalvo
 MERGED from [io.realm:realm-android-kotlin-extensions:5.10.0] /Users/arturocalvo/.gradle/caches/transforms-2/files-2.1/a7d017f51820795c08ba2058c119a603/AndroidManifest.xml:6:5-8:41
 MERGED from [com.android.support:design:28.0.0] /Users/arturocalvo/.gradle/caches/transforms-2/files-2.1/d2b29af0c35f10ea11de9ea8b721daa2/AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:design:28.0.0] /Users/arturocalvo/.gradle/caches/transforms-2/files-2.1/d2b29af0c35f10ea11de9ea8b721daa2/AndroidManifest.xml:20:5-44
-MERGED from [com.github.Shashank02051997:FancyToast-Android:0.1.6] /Users/arturocalvo/.gradle/caches/transforms-2/files-2.1/ce479f23084071b15bac2f86228109af/AndroidManifest.xml:7:5-9:41
-MERGED from [com.github.Shashank02051997:FancyToast-Android:0.1.6] /Users/arturocalvo/.gradle/caches/transforms-2/files-2.1/ce479f23084071b15bac2f86228109af/AndroidManifest.xml:7:5-9:41
 MERGED from [org.jetbrains.anko:anko-appcompat-v7:0.10.8] /Users/arturocalvo/.gradle/caches/transforms-2/files-2.1/c4026da7f625915cef33423b089a7126/AndroidManifest.xml:7:5-9:41
 MERGED from [org.jetbrains.anko:anko-appcompat-v7:0.10.8] /Users/arturocalvo/.gradle/caches/transforms-2/files-2.1/c4026da7f625915cef33423b089a7126/AndroidManifest.xml:7:5-9:41
 MERGED from [org.jetbrains.anko:anko-appcompat-v7-coroutines:0.10.8] /Users/arturocalvo/.gradle/caches/transforms-2/files-2.1/120e0c29124ea8ba81710c152fdac081/AndroidManifest.xml:7:5-9:41

@@ -20,7 +20,6 @@ import android.net.NetworkInfo
 import android.view.View
 import com.example.myapplication.R
 import com.kaopiz.kprogresshud.KProgressHUD
-import com.shashank.sony.fancytoastlib.FancyToast
 import com.vicpin.krealmextensions.*
 import org.jetbrains.anko.alert
 
@@ -107,7 +106,7 @@ class EncuestaActivity : AppCompatActivity() {
         val transaction = manager.beginTransaction()
 
         val opciones = ArrayList<OpcionesPreguntaModel>(this.pregunta!!.AnswerOptions)
-        val optionalToast = FancyToast.makeText(this,"Es necesario responder la pregunta para poder continuar",FancyToast.LENGTH_LONG,FancyToast.INFO,true);
+        //val optionalToast = FancyToast.makeText(this,"Es necesario responder la pregunta para poder continuar",FancyToast.LENGTH_LONG,FancyToast.INFO,true);
 
         when(this.pregunta!!.QuestionType!!.Description){
             TipoPregunta.ESTRELLA.tipo ->
@@ -131,7 +130,7 @@ class EncuestaActivity : AppCompatActivity() {
                     this.siguienteButton.isEnabled = true
                 }*/
             }
-            TipoPregunta.COMBO.tipo ->
+            /*TipoPregunta.COMBO.tipo ->
             {
                 if(opciones.count() > 0) {
                     val bundle = Bundle()
@@ -152,7 +151,7 @@ class EncuestaActivity : AppCompatActivity() {
                     transaction.replace(controlLayout.id, fragment)
                     transaction.commit()
                 }
-            }
+            }*/
             TipoPregunta.SEGMENTO.tipo ->
             {
                 if(opciones.count() > 0) {
@@ -303,7 +302,10 @@ class EncuestaActivity : AppCompatActivity() {
 
                 val manager = ServiceManager()
                 manager.enviarEncuesta(encuestaEnviar, respuestasEnviar, this){
-                    var message = it["MessageType"].toString()
+                    var message = ""
+                    if(it != null) {
+                        message = it?.get("MessageType").toString()
+                    }
                     if(message == "1"){
 
                         val dataManager = DataManager()
@@ -328,7 +330,7 @@ class EncuestaActivity : AppCompatActivity() {
                     }
                 }
             }else {
-                alert("No hay conexión a internet, la encuesta se guardara para ser enviada despues.") {
+                alert("No hay conexión a internet, la encuesta se guardara para ser enviada después.") {
                     title = "Aviso"
                     positiveButton("Aceptar") {
                         this@EncuestaActivity.noConexionEncuestaPendiente()

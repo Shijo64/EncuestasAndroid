@@ -18,7 +18,7 @@ public final class R {
     public static final class drawable {
         private drawable() {}
 
-        public static final int kprogresshud_spinner = 0x7f07007a;
+        public static final int kprogresshud_spinner = 0x7f070070;
     }
     public static final class id {
         private id() {}
@@ -31,6 +31,6 @@ public final class R {
     public static final class layout {
         private layout() {}
 
-        public static final int kprogresshud_hud = 0x7f0b0042;
+        public static final int kprogresshud_hud = 0x7f0b0041;
     }
 }

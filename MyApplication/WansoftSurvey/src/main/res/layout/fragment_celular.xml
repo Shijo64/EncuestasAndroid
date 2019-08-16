@@ -17,6 +17,7 @@
             android:textColorHint="@android:color/white"
             android:textColorLink="@android:color/white"
             android:singleLine="true"
-            android:imeOptions="actionDone"/>
+            android:imeOptions="actionDone"
+            android:maxLength="10"/>
 
 </FrameLayout>

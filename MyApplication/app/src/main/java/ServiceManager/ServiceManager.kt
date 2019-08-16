@@ -46,7 +46,7 @@ class ServiceManager {
         return true
     }
 
-    fun enviarEncuesta(encuesta:EncuestaBO, respuestas: List<EncuestaRespuestas>, context:Context, callback:(JSONObject) -> Unit){
+    fun enviarEncuesta(encuesta:EncuestaBO, respuestas: List<EncuestaRespuestas>, context:Context, callback:(JSONObject?) -> Unit){
         val queue = Volley.newRequestQueue(context)
         var url = "https://www.wansoft.net/wansoft.web/app/SaveSurveyResponses"
         //val gson = GsonBuilder().registerTypeAdapter(Date::class.java, DateSerializer()).create()
@@ -91,6 +91,7 @@ class ServiceManager {
         }, Response.ErrorListener {
             error ->
             error.printStackTrace()
+            callback(null)
         })
 
         queue.add(request)

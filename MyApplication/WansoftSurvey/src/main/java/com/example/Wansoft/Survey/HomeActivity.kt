@@ -227,8 +227,10 @@ class HomeActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
                 val respuestas = EncuestaRespuestas().query { equalTo("idEncuestaBO", encuesta.Id) }
                 val manager = ServiceManager()
                 manager.enviarEncuesta(encuesta, respuestas, this){
-                    EncuestaRespuestas().deleteAll()
-                    EncuestaBO().deleteAll()
+                    if(it != null) {
+                        EncuestaRespuestas().deleteAll()
+                        EncuestaBO().deleteAll()
+                    }
                 }
             }
         }
@@ -319,7 +321,7 @@ class HomeActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
             }
             R.id.nav_sucursal -> {
                 try {
-                    alert("Al cambiar de sucursal se borrara toda la información de la sucursal actual") {
+                    alert("Al cambiar de sucursal se borrará toda la información de la sucursal actual") {
                         title = "¿Deseas cambiar de sucursal?"
                         positiveButton("Aceptar"){
                             this@HomeActivity.logout()
