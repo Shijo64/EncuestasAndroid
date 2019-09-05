@@ -123,6 +123,7 @@ class EncuestasActivity : AppCompatActivity() {
                     if(it != null) {
                         EncuestaRespuestas().deleteAll()
                         EncuestaBO().deleteAll()
+                        this.adaptador?.notifyDataSetChanged()
                     }
                 }
             }

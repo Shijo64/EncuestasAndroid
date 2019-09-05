@@ -37,12 +37,14 @@ class FechaFragment : Fragment() {
         val formatoVista = SimpleDateFormat("dd-MMM-yyyy")
         val fechaText = vista.findViewById<EditText>(R.id.fechaText)
         val lightFont: Typeface = Typeface.createFromAsset(activity.assets, "fonts/graphik_light.ttf")
-        fechaText.typeface = lightFont
+        val regularFont:Typeface = Typeface.createFromAsset(activity.assets, "fonts/graphik_regular.ttf")
+        fechaText.typeface = regularFont
 
         if(respuesta != ""){
             fechaText.setText(respuesta)
         }else {
-            val fecha = formatoVista.format(currentDate)
+            val formatoGuardar = SimpleDateFormat("yyyy-MM-dd")
+            val fecha = formatoGuardar.format(currentDate)
             fechaText.setText(fecha)
             activity.guardarFecha(fecha)
         }

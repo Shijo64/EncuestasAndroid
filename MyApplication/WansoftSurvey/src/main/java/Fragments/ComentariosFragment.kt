@@ -37,8 +37,12 @@ class ComentariosFragment : Fragment() {
         val respuesta = arguments!!.getString("respuesta")
         val commentTextView = vista.findViewById<MultiAutoCompleteTextView>(R.id.comentarioTextView)
         val lightFont: Typeface = Typeface.createFromAsset(activity.assets, "fonts/graphik_light.ttf")
-        commentTextView.typeface = lightFont
+        val regularFont:Typeface = Typeface.createFromAsset(activity.assets, "fonts/graphik_regular.ttf")
+        commentTextView.typeface = regularFont
 
+        /*if(activity.pregunta?.Optional!! == true && respuesta == ""){
+            activity.guardarComentarios(respuesta)
+        }*/
         if(respuesta != ""){
             commentTextView.setText(respuesta)
         }

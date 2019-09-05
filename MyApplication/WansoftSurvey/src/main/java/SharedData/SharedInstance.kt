@@ -12,4 +12,5 @@ object SharedInstance {
     var fechaOrden = Date()
     var fechaSeleccionada = Date()
     var codigoOpcional = false
+    var barcodeActivo = false
 }

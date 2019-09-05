@@ -35,7 +35,8 @@ class CelularFragment : Fragment() {
         val respuesta = arguments!!.getString("respuesta")
         val celularTextView = vista.findViewById<EditText>(R.id.celularText)
         val lightFont: Typeface = Typeface.createFromAsset(activity.assets, "fonts/graphik_light.ttf")
-        celularTextView.typeface = lightFont
+        val regularFont: Typeface = Typeface.createFromAsset(activity.assets, "fonts/graphik_regular.ttf")
+        celularTextView.typeface = regularFont
 
         if(respuesta != ""){
             celularTextView.setText(respuesta)

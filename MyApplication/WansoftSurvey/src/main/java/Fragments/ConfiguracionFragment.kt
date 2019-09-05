@@ -22,10 +22,17 @@ class ConfiguracionFragment : Fragment() {
     ): View? {
         val vista = inflater.inflate(R.layout.fragment_configuracion, container, false)
         val checkBox = vista.findViewById<CheckBox>(R.id.norden_checkBox)
+        val barcodeCheckBox = vista.findViewById<CheckBox>(R.id.barcode_checkbox)
         if(SharedData.SharedInstance.codigoOpcional){
             checkBox.isChecked = true
         }else{
             checkBox.isChecked = false
+        }
+
+        if(SharedData.SharedInstance.barcodeActivo){
+            barcodeCheckBox.isChecked = true
+        }else{
+            barcodeCheckBox.isChecked = false
         }
 
         val prefs: SharedPreferences = context!!.getSharedPreferences("Preferencias", Context.MODE_PRIVATE)
@@ -38,6 +45,17 @@ class ConfiguracionFragment : Fragment() {
             }else{
                 SharedData.SharedInstance.codigoOpcional = false
                 editor.putBoolean("ordenConfig", false)
+            }
+            editor.commit()
+        }
+
+        barcodeCheckBox.setOnCheckedChangeListener { buttonView, isChecked ->
+            if(isChecked){
+                SharedData.SharedInstance.barcodeActivo = true
+                editor.putBoolean("barcodeScan", true)
+            }else{
+                SharedData.SharedInstance.barcodeActivo = false
+                editor.putBoolean("barcodeScan", false)
             }
             editor.commit()
         }

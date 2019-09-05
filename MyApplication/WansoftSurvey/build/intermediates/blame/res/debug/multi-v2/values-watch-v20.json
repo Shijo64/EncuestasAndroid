@@ -4,7 +4,7 @@
             "outputFile": "/Users/arturocalvo/Wansoft.Apps/MyApplication/WansoftSurvey/build/intermediates/incremental/mergeDebugResources/merged.dir/values-watch-v20/values-watch-v20.xml",
             "map": [
                 {
-                    "source": "/Users/arturocalvo/.gradle/caches/transforms-2/files-2.1/42d897114222802c12a7ac4a0de9d681/res/values-watch-v20/values-watch-v20.xml",
+                    "source": "/Users/arturocalvo/.gradle/caches/transforms-2/files-2.1/12055280175602938b966340b1087088/appcompat-v7-28.0.0/res/values-watch-v20/values-watch-v20.xml",
                     "from": {
                         "startLines": "2,5,8",
                         "startColumns": "4,4,4",

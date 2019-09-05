@@ -4,7 +4,7 @@
             "outputFile": "/Users/arturocalvo/Wansoft.Apps/MyApplication/WansoftSurvey/build/intermediates/incremental/mergeDebugResources/merged.dir/values-sw360dp-v13/values-sw360dp-v13.xml",
             "map": [
                 {
-                    "source": "/Users/arturocalvo/.gradle/caches/transforms-2/files-2.1/1f204d3729c6cd86c9c5499684f5a7da/res/values-sw360dp-v13/values-sw360dp-v13.xml",
+                    "source": "/Users/arturocalvo/.gradle/caches/transforms-2/files-2.1/9e546fc15a36123edb964889318a1830/preference-v7-28.0.0/res/values-sw360dp-v13/values-sw360dp-v13.xml",
                     "from": {
                         "startLines": "2,3",
                         "startColumns": "4,4",

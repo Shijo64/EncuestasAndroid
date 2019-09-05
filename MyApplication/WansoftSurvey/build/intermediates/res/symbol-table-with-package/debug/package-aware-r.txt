@@ -1182,6 +1182,7 @@ id async
 id atrasButton
 id auto
 id background
+id barcode_checkbox
 id barrier
 id before_logo_tv
 id beginning
@@ -1295,6 +1296,7 @@ id nav_acerca
 id nav_configuracion
 id nav_encuestas
 id nav_inicio
+id nav_salir
 id nav_sucursal
 id nav_view
 id navigation_header_container
@@ -1352,9 +1354,8 @@ id search_src_text
 id search_voice_btn
 id seekbar
 id seekbar_value
-id segment1
-id segment2
-id segmentRadioGroup
+id segmentoListView
+id segmentoOpcion
 id select_dialog_listview
 id selected
 id shortcut
@@ -1395,6 +1396,7 @@ id textSpacerNoButtons
 id textSpacerNoTitle
 id textStart
 id textView
+id textView2
 id textView7
 id text_input_password_toggle
 id textinput_counter
@@ -1524,6 +1526,7 @@ layout fragment_resumen
 layout fragment_segmento
 layout fragment_texto
 layout kprogresshud_hud
+layout listview_radio_left
 layout mtrl_layout_snackbar
 layout mtrl_layout_snackbar_include
 layout nav_header_home
@@ -1560,6 +1563,7 @@ layout preference_widget_seekbar_material
 layout preference_widget_switch
 layout preference_widget_switch_compat
 layout resumen_template
+layout segmento_template
 layout select_dialog_item_material
 layout select_dialog_multichoice_material
 layout select_dialog_singlechoice_material

@@ -13,6 +13,7 @@ open class EncuestaRespuestas() : RealmObject(), Parcelable {
     var idPregunta = 0
     var numeroPregunta = 0
     var respuesta = ""
+    var respondida = false
     var arrayRespuestas = RealmList<String>()
 
     constructor(parcel: Parcel) : this() {

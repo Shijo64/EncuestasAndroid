@@ -1,5 +1,6 @@
 package DataManager
 
+import Enums.TipoPregunta
 import Models.*
 import ServiceManager.ServiceManager
 import android.content.Context
@@ -56,5 +57,23 @@ class DataManager {
         }else{
             callback(true)
         }
+    }
+
+
+    fun checkIfAllQuestionsAreValid(questions: MutableList<PreguntaModel>): MutableList<PreguntaModel>{
+        val preguntas = mutableListOf<PreguntaModel>()
+        for(pregunta in questions){
+            if(pregunta.QuestionType?.Description == TipoPregunta.OPCIONMULTIPLE.tipo || pregunta.QuestionType?.Description == TipoPregunta.SEGMENTO.tipo){
+                if(pregunta.AnswerOptions.count() > 0){
+                    preguntas.add(pregunta)
+                }
+            }else{
+                preguntas.add(pregunta)
+            }
+        }
+
+        preguntas.sortBy { it.Order }
+
+        return  preguntas
     }
 }

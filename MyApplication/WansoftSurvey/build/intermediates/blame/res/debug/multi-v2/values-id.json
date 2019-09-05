@@ -4,7 +4,7 @@
             "outputFile": "/Users/arturocalvo/Wansoft.Apps/MyApplication/WansoftSurvey/build/intermediates/incremental/mergeDebugResources/merged.dir/values-id/values-id.xml",
             "map": [
                 {
-                    "source": "/Users/arturocalvo/.gradle/caches/transforms-2/files-2.1/5b842ebf1e7cb518824e8a1931943727/res/values-id/values-id.xml",
+                    "source": "/Users/arturocalvo/.gradle/caches/transforms-2/files-2.1/23b86767dc626f7af78aadcee15d2a2a/zxing-android-embedded-3.6.0/res/values-id/values-id.xml",
                     "from": {
                         "startLines": "2,3,4,5",
                         "startColumns": "4,4,4,4",

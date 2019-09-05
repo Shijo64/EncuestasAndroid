@@ -45,8 +45,12 @@ class ResumenTableAdapter(context:Context, preguntas:List<PreguntaModel>, respue
         if(item!!.arrayRespuestas!!.count() > 0){
             var respuestasSeleccionadas = mutableListOf<String>()
             for(opcion in item.arrayRespuestas){
-                val respuestaOpcion = question.AnswerOptions.first { it.Id == opcion?.toInt() }
-                respuestasSeleccionadas.add(respuestaOpcion.Description)
+                if(opcion != "") {
+                    val respuestaOpcion = question.AnswerOptions.first { it.Id == opcion?.toInt() }
+                    respuestasSeleccionadas.add(respuestaOpcion.Description)
+                }else{
+                    respuestasSeleccionadas.add("")
+                }
             }
             val respuestasString = respuestasSeleccionadas.joinToString()
             holder.respuesta!!.setText(respuestasString)
@@ -63,8 +67,9 @@ class ResumenTableAdapter(context:Context, preguntas:List<PreguntaModel>, respue
 
         init{
             val lightFont: Typeface = Typeface.createFromAsset(context.assets, "fonts/graphik_light.ttf")
-            vista.preguntaText.typeface = lightFont
-            vista.respuestaText.typeface = lightFont
+            val regularFont:Typeface = Typeface.createFromAsset(context.assets, "fonts/graphik_regular.ttf")
+            vista.preguntaText.typeface = regularFont
+            vista.respuestaText.typeface = regularFont
             pregunta = vista.preguntaText
             respuesta = vista.respuestaText
         }

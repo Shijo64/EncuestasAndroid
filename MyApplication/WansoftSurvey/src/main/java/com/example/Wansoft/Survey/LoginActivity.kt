@@ -9,6 +9,7 @@ import android.graphics.Typeface
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import android.support.v7.app.AlertDialog
+import android.view.View
 import com.example.myapplication.R
 import com.kaopiz.kprogresshud.KProgressHUD
 import com.vicpin.krealmextensions.queryFirst

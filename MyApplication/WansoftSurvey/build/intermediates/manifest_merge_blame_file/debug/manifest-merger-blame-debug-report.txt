@@ -1,0 +1,175 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.example.Wansoft.Survey"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="15"
+8-->/Users/arturocalvo/Wansoft.Apps/MyApplication/WansoftSurvey/src/main/AndroidManifest.xml
+9        android:targetSdkVersion="28" />
+9-->/Users/arturocalvo/Wansoft.Apps/MyApplication/WansoftSurvey/src/main/AndroidManifest.xml
+10    <!-- To auto-complete the email text field in the login form with the user's emails -->
+11    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+11-->/Users/arturocalvo/Wansoft.Apps/MyApplication/WansoftSurvey/src/main/AndroidManifest.xml:6:5-70
+11-->/Users/arturocalvo/Wansoft.Apps/MyApplication/WansoftSurvey/src/main/AndroidManifest.xml:6:22-68
+12    <uses-permission android:name="android.permission.READ_PROFILE" />
+12-->/Users/arturocalvo/Wansoft.Apps/MyApplication/WansoftSurvey/src/main/AndroidManifest.xml:7:5-70
+12-->/Users/arturocalvo/Wansoft.Apps/MyApplication/WansoftSurvey/src/main/AndroidManifest.xml:7:22-68
+13    <uses-permission android:name="android.permission.READ_CONTACTS" />
+13-->/Users/arturocalvo/Wansoft.Apps/MyApplication/WansoftSurvey/src/main/AndroidManifest.xml:8:5-71
+13-->/Users/arturocalvo/Wansoft.Apps/MyApplication/WansoftSurvey/src/main/AndroidManifest.xml:8:22-69
+14    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+14-->/Users/arturocalvo/Wansoft.Apps/MyApplication/WansoftSurvey/src/main/AndroidManifest.xml:9:5-78
+14-->/Users/arturocalvo/Wansoft.Apps/MyApplication/WansoftSurvey/src/main/AndroidManifest.xml:9:22-76
+15    <uses-permission android:name="android.permission.INTERNET" />
+15-->/Users/arturocalvo/Wansoft.Apps/MyApplication/WansoftSurvey/src/main/AndroidManifest.xml:10:5-66
+15-->/Users/arturocalvo/Wansoft.Apps/MyApplication/WansoftSurvey/src/main/AndroidManifest.xml:10:22-64
+16    <uses-permission android:name="android.permission.CAMERA" />
+16-->/Users/arturocalvo/Wansoft.Apps/MyApplication/WansoftSurvey/src/main/AndroidManifest.xml:11:5-64
+16-->/Users/arturocalvo/Wansoft.Apps/MyApplication/WansoftSurvey/src/main/AndroidManifest.xml:11:22-62
+17    <uses-permission android:name="android.permission.REORDER_TASKS" />
+17-->/Users/arturocalvo/Wansoft.Apps/MyApplication/WansoftSurvey/src/main/AndroidManifest.xml:12:5-72
+17-->/Users/arturocalvo/Wansoft.Apps/MyApplication/WansoftSurvey/src/main/AndroidManifest.xml:12:22-69
+18
+19    <!-- Don't require camera, as this requires a rear camera. This allows it to work on the Nexus 7 -->
+20    <uses-feature
+20-->[com.journeyapps:zxing-android-embedded:3.6.0] /Users/arturocalvo/.gradle/caches/transforms-2/files-2.1/23b86767dc626f7af78aadcee15d2a2a/zxing-android-embedded-3.6.0/AndroidManifest.xml:25:5-27:36
+21        android:name="android.hardware.camera"
+21-->[com.journeyapps:zxing-android-embedded:3.6.0] /Users/arturocalvo/.gradle/caches/transforms-2/files-2.1/23b86767dc626f7af78aadcee15d2a2a/zxing-android-embedded-3.6.0/AndroidManifest.xml:26:9-47
+22        android:required="false" />
+22-->[com.journeyapps:zxing-android-embedded:3.6.0] /Users/arturocalvo/.gradle/caches/transforms-2/files-2.1/23b86767dc626f7af78aadcee15d2a2a/zxing-android-embedded-3.6.0/AndroidManifest.xml:27:9-33
+23    <uses-feature
+23-->[com.journeyapps:zxing-android-embedded:3.6.0] /Users/arturocalvo/.gradle/caches/transforms-2/files-2.1/23b86767dc626f7af78aadcee15d2a2a/zxing-android-embedded-3.6.0/AndroidManifest.xml:28:5-30:36
+24        android:name="android.hardware.camera.front"
+24-->[com.journeyapps:zxing-android-embedded:3.6.0] /Users/arturocalvo/.gradle/caches/transforms-2/files-2.1/23b86767dc626f7af78aadcee15d2a2a/zxing-android-embedded-3.6.0/AndroidManifest.xml:29:9-53
+25        android:required="false" /> <!-- TODO replace above two with next line after Android 4.2 -->
+25-->[com.journeyapps:zxing-android-embedded:3.6.0] /Users/arturocalvo/.gradle/caches/transforms-2/files-2.1/23b86767dc626f7af78aadcee15d2a2a/zxing-android-embedded-3.6.0/AndroidManifest.xml:30:9-33
+26    <!-- <uses-feature android:name="android.hardware.camera.any"/> -->
+27    <uses-feature
+27-->[com.journeyapps:zxing-android-embedded:3.6.0] /Users/arturocalvo/.gradle/caches/transforms-2/files-2.1/23b86767dc626f7af78aadcee15d2a2a/zxing-android-embedded-3.6.0/AndroidManifest.xml:33:5-35:36
+28        android:name="android.hardware.camera.autofocus"
+28-->[com.journeyapps:zxing-android-embedded:3.6.0] /Users/arturocalvo/.gradle/caches/transforms-2/files-2.1/23b86767dc626f7af78aadcee15d2a2a/zxing-android-embedded-3.6.0/AndroidManifest.xml:34:9-57
+29        android:required="false" />
+29-->[com.journeyapps:zxing-android-embedded:3.6.0] /Users/arturocalvo/.gradle/caches/transforms-2/files-2.1/23b86767dc626f7af78aadcee15d2a2a/zxing-android-embedded-3.6.0/AndroidManifest.xml:35:9-33
+30    <uses-feature
+30-->[com.journeyapps:zxing-android-embedded:3.6.0] /Users/arturocalvo/.gradle/caches/transforms-2/files-2.1/23b86767dc626f7af78aadcee15d2a2a/zxing-android-embedded-3.6.0/AndroidManifest.xml:36:5-38:36
+31        android:name="android.hardware.camera.flash"
+31-->[com.journeyapps:zxing-android-embedded:3.6.0] /Users/arturocalvo/.gradle/caches/transforms-2/files-2.1/23b86767dc626f7af78aadcee15d2a2a/zxing-android-embedded-3.6.0/AndroidManifest.xml:37:9-53
+32        android:required="false" />
+32-->[com.journeyapps:zxing-android-embedded:3.6.0] /Users/arturocalvo/.gradle/caches/transforms-2/files-2.1/23b86767dc626f7af78aadcee15d2a2a/zxing-android-embedded-3.6.0/AndroidManifest.xml:38:9-33
+33    <uses-feature
+33-->[com.journeyapps:zxing-android-embedded:3.6.0] /Users/arturocalvo/.gradle/caches/transforms-2/files-2.1/23b86767dc626f7af78aadcee15d2a2a/zxing-android-embedded-3.6.0/AndroidManifest.xml:39:5-41:36
+34        android:name="android.hardware.screen.landscape"
+34-->[com.journeyapps:zxing-android-embedded:3.6.0] /Users/arturocalvo/.gradle/caches/transforms-2/files-2.1/23b86767dc626f7af78aadcee15d2a2a/zxing-android-embedded-3.6.0/AndroidManifest.xml:40:9-57
+35        android:required="false" />
+35-->[com.journeyapps:zxing-android-embedded:3.6.0] /Users/arturocalvo/.gradle/caches/transforms-2/files-2.1/23b86767dc626f7af78aadcee15d2a2a/zxing-android-embedded-3.6.0/AndroidManifest.xml:41:9-33
+36    <uses-feature
+36-->[com.journeyapps:zxing-android-embedded:3.6.0] /Users/arturocalvo/.gradle/caches/transforms-2/files-2.1/23b86767dc626f7af78aadcee15d2a2a/zxing-android-embedded-3.6.0/AndroidManifest.xml:42:5-44:36
+37        android:name="android.hardware.wifi"
+37-->[com.journeyapps:zxing-android-embedded:3.6.0] /Users/arturocalvo/.gradle/caches/transforms-2/files-2.1/23b86767dc626f7af78aadcee15d2a2a/zxing-android-embedded-3.6.0/AndroidManifest.xml:43:9-45
+38        android:required="false" />
+38-->[com.journeyapps:zxing-android-embedded:3.6.0] /Users/arturocalvo/.gradle/caches/transforms-2/files-2.1/23b86767dc626f7af78aadcee15d2a2a/zxing-android-embedded-3.6.0/AndroidManifest.xml:44:9-33
+39
+40    <application
+40-->/Users/arturocalvo/Wansoft.Apps/MyApplication/WansoftSurvey/src/main/AndroidManifest.xml:14:5-60:19
+41        android:allowBackup="false"
+41-->/Users/arturocalvo/Wansoft.Apps/MyApplication/WansoftSurvey/src/main/AndroidManifest.xml:16:13-40
+42        android:appComponentFactory="android.support.v4.app.CoreComponentFactory"
+42-->[com.android.support:support-compat:28.0.0] /Users/arturocalvo/.gradle/caches/transforms-2/files-2.1/3da881d8db482d42b68f01432e816da7/support-compat-28.0.0/AndroidManifest.xml:22:18-91
+43        android:configChanges="orientation|keyboardHidden|screenSize"
+43-->[gr.pantrif:easy-android-splash-screen:0.0.1] /Users/arturocalvo/.gradle/caches/transforms-2/files-2.1/c0551e13ce77356dcb5e22c016f0a6da/easy-android-splash-screen-0.0.1/AndroidManifest.xml:14:9-70
+44        android:debuggable="true"
+45        android:fullBackupContent="false"
+45-->/Users/arturocalvo/Wansoft.Apps/MyApplication/WansoftSurvey/src/main/AndroidManifest.xml:17:13-46
+46        android:hardwareAccelerated="true"
+46-->/Users/arturocalvo/Wansoft.Apps/MyApplication/WansoftSurvey/src/main/AndroidManifest.xml:23:13-47
+47        android:icon="@mipmap/ic_launcher"
+47-->/Users/arturocalvo/Wansoft.Apps/MyApplication/WansoftSurvey/src/main/AndroidManifest.xml:18:13-47
+48        android:label="@string/app_name"
+48-->/Users/arturocalvo/Wansoft.Apps/MyApplication/WansoftSurvey/src/main/AndroidManifest.xml:19:13-45
+49        android:roundIcon="@mipmap/ic_launcher_round"
+49-->/Users/arturocalvo/Wansoft.Apps/MyApplication/WansoftSurvey/src/main/AndroidManifest.xml:20:13-58
+50        android:supportsRtl="true"
+50-->/Users/arturocalvo/Wansoft.Apps/MyApplication/WansoftSurvey/src/main/AndroidManifest.xml:21:13-39
+51        android:theme="@style/AppTheme" >
+51-->/Users/arturocalvo/Wansoft.Apps/MyApplication/WansoftSurvey/src/main/AndroidManifest.xml:22:13-44
+52        <activity
+52-->/Users/arturocalvo/Wansoft.Apps/MyApplication/WansoftSurvey/src/main/AndroidManifest.xml:24:9-27:53
+53            android:name="com.journeyapps.barcodescanner.CaptureActivity"
+53-->/Users/arturocalvo/Wansoft.Apps/MyApplication/WansoftSurvey/src/main/AndroidManifest.xml:25:17-78
+54            android:clearTaskOnLaunch="true"
+54-->[com.journeyapps:zxing-android-embedded:3.6.0] /Users/arturocalvo/.gradle/caches/transforms-2/files-2.1/23b86767dc626f7af78aadcee15d2a2a/zxing-android-embedded-3.6.0/AndroidManifest.xml:49:13-45
+55            android:screenOrientation="portrait"
+55-->/Users/arturocalvo/Wansoft.Apps/MyApplication/WansoftSurvey/src/main/AndroidManifest.xml:26:17-53
+56            android:stateNotNeeded="true"
+56-->[com.journeyapps:zxing-android-embedded:3.6.0] /Users/arturocalvo/.gradle/caches/transforms-2/files-2.1/23b86767dc626f7af78aadcee15d2a2a/zxing-android-embedded-3.6.0/AndroidManifest.xml:51:13-42
+57            android:theme="@style/zxing_CaptureTheme"
+57-->[com.journeyapps:zxing-android-embedded:3.6.0] /Users/arturocalvo/.gradle/caches/transforms-2/files-2.1/23b86767dc626f7af78aadcee15d2a2a/zxing-android-embedded-3.6.0/AndroidManifest.xml:52:13-54
+58            android:windowSoftInputMode="stateAlwaysHidden" />
+58-->[com.journeyapps:zxing-android-embedded:3.6.0] /Users/arturocalvo/.gradle/caches/transforms-2/files-2.1/23b86767dc626f7af78aadcee15d2a2a/zxing-android-embedded-3.6.0/AndroidManifest.xml:53:13-60
+59        <activity android:name="com.example.Wansoft.Survey.ConfiguracionActivity" >
+59-->/Users/arturocalvo/Wansoft.Apps/MyApplication/WansoftSurvey/src/main/AndroidManifest.xml:28:9-29:20
+59-->/Users/arturocalvo/Wansoft.Apps/MyApplication/WansoftSurvey/src/main/AndroidManifest.xml:28:19-82
+60        </activity>
+61        <activity android:name="com.example.Wansoft.Survey.AcercaDeActivity" >
+61-->/Users/arturocalvo/Wansoft.Apps/MyApplication/WansoftSurvey/src/main/AndroidManifest.xml:30:9-31:20
+61-->/Users/arturocalvo/Wansoft.Apps/MyApplication/WansoftSurvey/src/main/AndroidManifest.xml:30:19-77
+62        </activity>
+63        <activity
+63-->/Users/arturocalvo/Wansoft.Apps/MyApplication/WansoftSurvey/src/main/AndroidManifest.xml:32:9-34:20
+64            android:name="com.example.Wansoft.Survey.LoginActivity"
+64-->/Users/arturocalvo/Wansoft.Apps/MyApplication/WansoftSurvey/src/main/AndroidManifest.xml:32:19-74
+65            android:launchMode="singleInstance" >
+65-->/Users/arturocalvo/Wansoft.Apps/MyApplication/WansoftSurvey/src/main/AndroidManifest.xml:33:9-44
+66        </activity>
+67        <activity android:name="com.example.Wansoft.Survey.ResultActivity" >
+67-->/Users/arturocalvo/Wansoft.Apps/MyApplication/WansoftSurvey/src/main/AndroidManifest.xml:35:9-36:20
+67-->/Users/arturocalvo/Wansoft.Apps/MyApplication/WansoftSurvey/src/main/AndroidManifest.xml:35:19-75
+68        </activity>
+69        <activity android:name="com.example.Wansoft.Survey.ResumenActivity" >
+69-->/Users/arturocalvo/Wansoft.Apps/MyApplication/WansoftSurvey/src/main/AndroidManifest.xml:37:9-38:20
+69-->/Users/arturocalvo/Wansoft.Apps/MyApplication/WansoftSurvey/src/main/AndroidManifest.xml:37:19-76
+70        </activity>
+71        <activity
+71-->/Users/arturocalvo/Wansoft.Apps/MyApplication/WansoftSurvey/src/main/AndroidManifest.xml:39:9-41:20
+72            android:name="com.example.Wansoft.Survey.EncuestaActivity"
+72-->/Users/arturocalvo/Wansoft.Apps/MyApplication/WansoftSurvey/src/main/AndroidManifest.xml:39:19-77
+73            android:launchMode="singleInstance" >
+73-->/Users/arturocalvo/Wansoft.Apps/MyApplication/WansoftSurvey/src/main/AndroidManifest.xml:40:19-54
+74        </activity>
+75        <activity android:name="com.example.Wansoft.Survey.EncuestasActivity" >
+75-->/Users/arturocalvo/Wansoft.Apps/MyApplication/WansoftSurvey/src/main/AndroidManifest.xml:42:9-43:20
+75-->/Users/arturocalvo/Wansoft.Apps/MyApplication/WansoftSurvey/src/main/AndroidManifest.xml:42:19-78
+76        </activity>
+77        <activity
+77-->/Users/arturocalvo/Wansoft.Apps/MyApplication/WansoftSurvey/src/main/AndroidManifest.xml:44:9-50:20
+78            android:name="com.example.Wansoft.Survey.HomeActivity"
+78-->/Users/arturocalvo/Wansoft.Apps/MyApplication/WansoftSurvey/src/main/AndroidManifest.xml:45:17-71
+79            android:label="@string/title_activity_home"
+79-->/Users/arturocalvo/Wansoft.Apps/MyApplication/WansoftSurvey/src/main/AndroidManifest.xml:46:17-60
+80            android:launchMode="singleInstance"
+80-->/Users/arturocalvo/Wansoft.Apps/MyApplication/WansoftSurvey/src/main/AndroidManifest.xml:48:17-52
+81            android:theme="@style/AppTheme.NoActionBar" >
+81-->/Users/arturocalvo/Wansoft.Apps/MyApplication/WansoftSurvey/src/main/AndroidManifest.xml:47:17-60
+82        </activity>
+83        <activity
+83-->/Users/arturocalvo/Wansoft.Apps/MyApplication/WansoftSurvey/src/main/AndroidManifest.xml:51:9-59:20
+84            android:name="com.example.Wansoft.Survey.SplashActivity"
+84-->/Users/arturocalvo/Wansoft.Apps/MyApplication/WansoftSurvey/src/main/AndroidManifest.xml:52:17-73
+85            android:label="@string/app_name" >
+85-->/Users/arturocalvo/Wansoft.Apps/MyApplication/WansoftSurvey/src/main/AndroidManifest.xml:53:17-49
+86            <intent-filter>
+86-->/Users/arturocalvo/Wansoft.Apps/MyApplication/WansoftSurvey/src/main/AndroidManifest.xml:54:13-58:29
+87                <action android:name="android.intent.action.MAIN" />
+87-->/Users/arturocalvo/Wansoft.Apps/MyApplication/WansoftSurvey/src/main/AndroidManifest.xml:55:17-68
+87-->/Users/arturocalvo/Wansoft.Apps/MyApplication/WansoftSurvey/src/main/AndroidManifest.xml:55:25-66
+88
+89                <category android:name="android.intent.category.LAUNCHER" />
+89-->/Users/arturocalvo/Wansoft.Apps/MyApplication/WansoftSurvey/src/main/AndroidManifest.xml:57:17-76
+89-->/Users/arturocalvo/Wansoft.Apps/MyApplication/WansoftSurvey/src/main/AndroidManifest.xml:57:27-74
+90            </intent-filter>
+91        </activity>
+92    </application>
+93
+94</manifest>

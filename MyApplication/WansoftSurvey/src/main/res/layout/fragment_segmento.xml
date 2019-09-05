@@ -3,29 +3,9 @@
              android:layout_width="match_parent"
              android:layout_height="wrap_content"
              tools:context="Fragments.SegmentoFragment">
-    <RadioGroup
+
+    <ListView
+            android:id="@+id/segmentoListView"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:id="@+id/segmentRadioGroup"
-            android:background="#00AAAAAA">
-        <RadioButton
-                android:text="RadioButton"
-                android:layout_width="match_parent"
-                android:textSize="24sp"
-                android:layout_height="wrap_content"
-                android:id="@+id/segment1"
-                android:layout_weight="1"
-                android:textColor="@android:color/white"
-        />
-        //android:typeface="sans" android:textSize="24sp"/>
-        <RadioButton
-                android:text="RadioButton"
-                android:layout_width="match_parent"
-                android:textSize="24sp"
-                android:layout_height="wrap_content"
-                android:id="@+id/segment2"
-                android:layout_weight="1"
-                android:textColor="@android:color/white"/>
-        //android:typeface="sans" android:textSize="24sp"/>
-    </RadioGroup>
+            android:layout_height="match_parent" />
 </FrameLayout>

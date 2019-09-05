@@ -24,5 +24,4 @@
             app:menu="@menu/activity_home_drawer"
             app:itemTextColor="@android:color/black"
     />
-
 </android.support.v4.widget.DrawerLayout>

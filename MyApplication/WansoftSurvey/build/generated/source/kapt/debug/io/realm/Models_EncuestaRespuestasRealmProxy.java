@@ -45,10 +45,11 @@ public class Models_EncuestaRespuestasRealmProxy extends Models.EncuestaRespuest
         long idPreguntaIndex;
         long numeroPreguntaIndex;
         long respuestaIndex;
+        long respondidaIndex;
         long arrayRespuestasIndex;
 
         EncuestaRespuestasColumnInfo(OsSchemaInfo schemaInfo) {
-            super(7);
+            super(8);
             OsObjectSchemaInfo objectSchemaInfo = schemaInfo.getObjectSchemaInfo("EncuestaRespuestas");
             this.IdIndex = addColumnDetails("Id", "Id", objectSchemaInfo);
             this.idEncuestaBOIndex = addColumnDetails("idEncuestaBO", "idEncuestaBO", objectSchemaInfo);
@@ -56,6 +57,7 @@ public class Models_EncuestaRespuestasRealmProxy extends Models.EncuestaRespuest
             this.idPreguntaIndex = addColumnDetails("idPregunta", "idPregunta", objectSchemaInfo);
             this.numeroPreguntaIndex = addColumnDetails("numeroPregunta", "numeroPregunta", objectSchemaInfo);
             this.respuestaIndex = addColumnDetails("respuesta", "respuesta", objectSchemaInfo);
+            this.respondidaIndex = addColumnDetails("respondida", "respondida", objectSchemaInfo);
             this.arrayRespuestasIndex = addColumnDetails("arrayRespuestas", "arrayRespuestas", objectSchemaInfo);
             this.maxColumnIndexValue = objectSchemaInfo.getMaxColumnIndex();
         }
@@ -80,6 +82,7 @@ public class Models_EncuestaRespuestasRealmProxy extends Models.EncuestaRespuest
             dst.idPreguntaIndex = src.idPreguntaIndex;
             dst.numeroPreguntaIndex = src.numeroPreguntaIndex;
             dst.respuestaIndex = src.respuestaIndex;
+            dst.respondidaIndex = src.respondidaIndex;
             dst.arrayRespuestasIndex = src.arrayRespuestasIndex;
             dst.maxColumnIndexValue = src.maxColumnIndexValue;
         }
@@ -248,6 +251,28 @@ public class Models_EncuestaRespuestasRealmProxy extends Models.EncuestaRespuest
     }
 
     @Override
+    @SuppressWarnings("cast")
+    public boolean realmGet$respondida() {
+        proxyState.getRealm$realm().checkIfValid();
+        return (boolean) proxyState.getRow$realm().getBoolean(columnInfo.respondidaIndex);
+    }
+
+    @Override
+    public void realmSet$respondida(boolean value) {
+        if (proxyState.isUnderConstruction()) {
+            if (!proxyState.getAcceptDefaultValue$realm()) {
+                return;
+            }
+            final Row row = proxyState.getRow$realm();
+            row.getTable().setBoolean(columnInfo.respondidaIndex, row.getIndex(), value, true);
+            return;
+        }
+
+        proxyState.getRealm$realm().checkIfValid();
+        proxyState.getRow$realm().setBoolean(columnInfo.respondidaIndex, value);
+    }
+
+    @Override
     public RealmList<String> realmGet$arrayRespuestas() {
         proxyState.getRealm$realm().checkIfValid();
         // use the cached value if available
@@ -287,13 +312,14 @@ public class Models_EncuestaRespuestasRealmProxy extends Models.EncuestaRespuest
     }
 
     private static OsObjectSchemaInfo createExpectedObjectSchemaInfo() {
-        OsObjectSchemaInfo.Builder builder = new OsObjectSchemaInfo.Builder("EncuestaRespuestas", 7, 0);
+        OsObjectSchemaInfo.Builder builder = new OsObjectSchemaInfo.Builder("EncuestaRespuestas", 8, 0);
         builder.addPersistedProperty("Id", RealmFieldType.INTEGER, !Property.PRIMARY_KEY, !Property.INDEXED, Property.REQUIRED);
         builder.addPersistedProperty("idEncuestaBO", RealmFieldType.INTEGER, !Property.PRIMARY_KEY, !Property.INDEXED, Property.REQUIRED);
         builder.addPersistedProperty("idEncuesta", RealmFieldType.INTEGER, !Property.PRIMARY_KEY, !Property.INDEXED, Property.REQUIRED);
         builder.addPersistedProperty("idPregunta", RealmFieldType.INTEGER, !Property.PRIMARY_KEY, !Property.INDEXED, Property.REQUIRED);
         builder.addPersistedProperty("numeroPregunta", RealmFieldType.INTEGER, !Property.PRIMARY_KEY, !Property.INDEXED, Property.REQUIRED);
         builder.addPersistedProperty("respuesta", RealmFieldType.STRING, !Property.PRIMARY_KEY, !Property.INDEXED, Property.REQUIRED);
+        builder.addPersistedProperty("respondida", RealmFieldType.BOOLEAN, !Property.PRIMARY_KEY, !Property.INDEXED, Property.REQUIRED);
         builder.addPersistedValueListProperty("arrayRespuestas", RealmFieldType.STRING_LIST, !Property.REQUIRED);
         return builder.build();
     }
@@ -366,6 +392,13 @@ public class Models_EncuestaRespuestasRealmProxy extends Models.EncuestaRespuest
                 objProxy.realmSet$respuesta((String) json.getString("respuesta"));
             }
         }
+        if (json.has("respondida")) {
+            if (json.isNull("respondida")) {
+                throw new IllegalArgumentException("Trying to set non-nullable field 'respondida' to null.");
+            } else {
+                objProxy.realmSet$respondida((boolean) json.getBoolean("respondida"));
+            }
+        }
         ProxyUtils.setRealmListWithJsonObject(objProxy.realmGet$arrayRespuestas(), json, "arrayRespuestas");
         return obj;
     }
@@ -421,6 +454,13 @@ public class Models_EncuestaRespuestasRealmProxy extends Models.EncuestaRespuest
                 } else {
                     reader.skipValue();
                     objProxy.realmSet$respuesta(null);
+                }
+            } else if (name.equals("respondida")) {
+                if (reader.peek() != JsonToken.NULL) {
+                    objProxy.realmSet$respondida((boolean) reader.nextBoolean());
+                } else {
+                    reader.skipValue();
+                    throw new IllegalArgumentException("Trying to set non-nullable field 'respondida' to null.");
                 }
             } else if (name.equals("arrayRespuestas")) {
                 objProxy.realmSet$arrayRespuestas(ProxyUtils.createRealmListWithJsonStream(java.lang.String.class, reader));
@@ -478,6 +518,7 @@ public class Models_EncuestaRespuestasRealmProxy extends Models.EncuestaRespuest
         builder.addInteger(columnInfo.idPreguntaIndex, realmObjectSource.realmGet$idPregunta());
         builder.addInteger(columnInfo.numeroPreguntaIndex, realmObjectSource.realmGet$numeroPregunta());
         builder.addString(columnInfo.respuestaIndex, realmObjectSource.realmGet$respuesta());
+        builder.addBoolean(columnInfo.respondidaIndex, realmObjectSource.realmGet$respondida());
         builder.addStringList(columnInfo.arrayRespuestasIndex, realmObjectSource.realmGet$arrayRespuestas());
 
         // Create the underlying object and cache it before setting any object/objectlist references
@@ -507,6 +548,7 @@ public class Models_EncuestaRespuestasRealmProxy extends Models.EncuestaRespuest
         if (realmGet$respuesta != null) {
             Table.nativeSetString(tableNativePtr, columnInfo.respuestaIndex, rowIndex, realmGet$respuesta, false);
         }
+        Table.nativeSetBoolean(tableNativePtr, columnInfo.respondidaIndex, rowIndex, ((Models_EncuestaRespuestasRealmProxyInterface) object).realmGet$respondida(), false);
 
         RealmList<java.lang.String> arrayRespuestasList = ((Models_EncuestaRespuestasRealmProxyInterface) object).realmGet$arrayRespuestas();
         if (arrayRespuestasList != null) {
@@ -547,6 +589,7 @@ public class Models_EncuestaRespuestasRealmProxy extends Models.EncuestaRespuest
             if (realmGet$respuesta != null) {
                 Table.nativeSetString(tableNativePtr, columnInfo.respuestaIndex, rowIndex, realmGet$respuesta, false);
             }
+            Table.nativeSetBoolean(tableNativePtr, columnInfo.respondidaIndex, rowIndex, ((Models_EncuestaRespuestasRealmProxyInterface) object).realmGet$respondida(), false);
 
             RealmList<java.lang.String> arrayRespuestasList = ((Models_EncuestaRespuestasRealmProxyInterface) object).realmGet$arrayRespuestas();
             if (arrayRespuestasList != null) {
@@ -582,6 +625,7 @@ public class Models_EncuestaRespuestasRealmProxy extends Models.EncuestaRespuest
         } else {
             Table.nativeSetNull(tableNativePtr, columnInfo.respuestaIndex, rowIndex, false);
         }
+        Table.nativeSetBoolean(tableNativePtr, columnInfo.respondidaIndex, rowIndex, ((Models_EncuestaRespuestasRealmProxyInterface) object).realmGet$respondida(), false);
 
         OsList arrayRespuestasOsList = new OsList(table.getUncheckedRow(rowIndex), columnInfo.arrayRespuestasIndex);
         arrayRespuestasOsList.removeAll();
@@ -626,6 +670,7 @@ public class Models_EncuestaRespuestasRealmProxy extends Models.EncuestaRespuest
             } else {
                 Table.nativeSetNull(tableNativePtr, columnInfo.respuestaIndex, rowIndex, false);
             }
+            Table.nativeSetBoolean(tableNativePtr, columnInfo.respondidaIndex, rowIndex, ((Models_EncuestaRespuestasRealmProxyInterface) object).realmGet$respondida(), false);
 
             OsList arrayRespuestasOsList = new OsList(table.getUncheckedRow(rowIndex), columnInfo.arrayRespuestasIndex);
             arrayRespuestasOsList.removeAll();
@@ -668,6 +713,7 @@ public class Models_EncuestaRespuestasRealmProxy extends Models.EncuestaRespuest
         unmanagedCopy.realmSet$idPregunta(realmSource.realmGet$idPregunta());
         unmanagedCopy.realmSet$numeroPregunta(realmSource.realmGet$numeroPregunta());
         unmanagedCopy.realmSet$respuesta(realmSource.realmGet$respuesta());
+        unmanagedCopy.realmSet$respondida(realmSource.realmGet$respondida());
 
         unmanagedCopy.realmSet$arrayRespuestas(new RealmList<java.lang.String>());
         unmanagedCopy.realmGet$arrayRespuestas().addAll(realmSource.realmGet$arrayRespuestas());
@@ -704,6 +750,10 @@ public class Models_EncuestaRespuestasRealmProxy extends Models.EncuestaRespuest
         stringBuilder.append(",");
         stringBuilder.append("{respuesta:");
         stringBuilder.append(realmGet$respuesta());
+        stringBuilder.append("}");
+        stringBuilder.append(",");
+        stringBuilder.append("{respondida:");
+        stringBuilder.append(realmGet$respondida());
         stringBuilder.append("}");
         stringBuilder.append(",");
         stringBuilder.append("{arrayRespuestas:");

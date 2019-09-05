@@ -41,6 +41,8 @@ class OpcionMultipleAdapter(context:Context ,opcionesSeleccionadas:List<String>,
         holder.nombre?.setText(item?.Description)
         if(this.opcionesSeleccionadas!!.contains(item?.Id.toString())){
             holder.checkBox.isChecked = true
+        }else{
+            holder.checkBox.isChecked = false
         }
     }
 
@@ -56,7 +58,8 @@ class OpcionMultipleAdapter(context:Context ,opcionesSeleccionadas:List<String>,
             this.listener = listener
             vista.setOnClickListener(this)
             val lightFont: Typeface = Typeface.createFromAsset(context.assets, "fonts/graphik_light.ttf")
-            checkBox.typeface = lightFont
+            val regularFont:Typeface = Typeface.createFromAsset(context.assets, "fonts/graphik_regular.ttf")
+            checkBox.typeface = regularFont
             checkBox.setOnClickListener{
                 this.listener?.opcionMultipleSeleccionada((nombre as CheckBox?)!!.text.toString())
                 /*if(checkBox.isChecked == true){

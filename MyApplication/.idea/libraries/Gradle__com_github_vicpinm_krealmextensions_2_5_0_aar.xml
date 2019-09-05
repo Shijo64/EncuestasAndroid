@@ -1,8 +1,8 @@
 <component name="libraryTable">
   <library name="Gradle: com.github.vicpinm:krealmextensions:2.5.0@aar">
     <CLASSES>
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/e3acdc23059001a0df1a5092345f08c6/res" />
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/e3acdc23059001a0df1a5092345f08c6/jars/classes.jar!/" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/e70dac992b474b577df760e8f393d679/krealmextensions-2.5.0/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/e70dac992b474b577df760e8f393d679/krealmextensions-2.5.0/res" />
     </CLASSES>
     <JAVADOC />
     <SOURCES>

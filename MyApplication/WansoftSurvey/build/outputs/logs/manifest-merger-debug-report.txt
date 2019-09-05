@@ -1,80 +1,80 @@
 -- Merging decision tree log ---
 manifest
-ADDED from /Users/arturocalvo/Wansoft.Apps/MyApplication/WansoftSurvey/src/main/AndroidManifest.xml:2:1-58:12
-INJECTED from /Users/arturocalvo/Wansoft.Apps/MyApplication/WansoftSurvey/src/main/AndroidManifest.xml:2:1-58:12
-INJECTED from /Users/arturocalvo/Wansoft.Apps/MyApplication/WansoftSurvey/src/main/AndroidManifest.xml:2:1-58:12
-INJECTED from /Users/arturocalvo/Wansoft.Apps/MyApplication/WansoftSurvey/src/main/AndroidManifest.xml:2:1-58:12
-MERGED from [com.github.vicpinm:krealmextensions:2.5.0] /Users/arturocalvo/.gradle/caches/transforms-2/files-2.1/e3acdc23059001a0df1a5092345f08c6/AndroidManifest.xml:2:1-14:12
-MERGED from [io.realm:realm-android-library:5.10.0] /Users/arturocalvo/.gradle/caches/transforms-2/files-2.1/75a0463cac94fc7db86da1d1a012d0d2/AndroidManifest.xml:2:1-10:12
-MERGED from [io.realm:realm-android-kotlin-extensions:5.10.0] /Users/arturocalvo/.gradle/caches/transforms-2/files-2.1/a7d017f51820795c08ba2058c119a603/AndroidManifest.xml:2:1-10:12
-MERGED from [com.android.support:design:28.0.0] /Users/arturocalvo/.gradle/caches/transforms-2/files-2.1/d2b29af0c35f10ea11de9ea8b721daa2/AndroidManifest.xml:17:1-24:12
-MERGED from [org.jetbrains.anko:anko-appcompat-v7:0.10.8] /Users/arturocalvo/.gradle/caches/transforms-2/files-2.1/c4026da7f625915cef33423b089a7126/AndroidManifest.xml:2:1-13:12
-MERGED from [org.jetbrains.anko:anko-appcompat-v7-coroutines:0.10.8] /Users/arturocalvo/.gradle/caches/transforms-2/files-2.1/120e0c29124ea8ba81710c152fdac081/AndroidManifest.xml:2:1-13:12
-MERGED from [com.android.support:preference-v7:28.0.0] /Users/arturocalvo/.gradle/caches/transforms-2/files-2.1/1f204d3729c6cd86c9c5499684f5a7da/AndroidManifest.xml:17:1-22:12
-MERGED from [gr.pantrif:easy-android-splash-screen:0.0.1] /Users/arturocalvo/.gradle/caches/transforms-2/files-2.1/676f4fb491871e9b47443257de045e1a/AndroidManifest.xml:2:1-19:12
-MERGED from [org.jetbrains.anko:anko-appcompat-v7-commons:0.10.8] /Users/arturocalvo/.gradle/caches/transforms-2/files-2.1/1ebf46aeea7901f649ebf49889a6d53f/AndroidManifest.xml:2:1-13:12
-MERGED from [org.jetbrains.anko:appcompatV7-base:0.10.8] /Users/arturocalvo/.gradle/caches/transforms-2/files-2.1/1a01cd34494beb1d4e4f1b41f822927e/AndroidManifest.xml:2:1-11:12
-MERGED from [com.android.support:appcompat-v7:28.0.0] /Users/arturocalvo/.gradle/caches/transforms-2/files-2.1/42d897114222802c12a7ac4a0de9d681/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support.constraint:constraint-layout:1.1.3] /Users/arturocalvo/.gradle/caches/transforms-2/files-2.1/96723328309c3720d8d598a5b402528f/AndroidManifest.xml:2:1-11:12
-MERGED from [com.journeyapps:zxing-android-embedded:3.6.0] /Users/arturocalvo/.gradle/caches/transforms-2/files-2.1/5b842ebf1e7cb518824e8a1931943727/AndroidManifest.xml:17:1-56:12
-MERGED from [org.jetbrains.anko:anko-support-v4:0.10.8] /Users/arturocalvo/.gradle/caches/transforms-2/files-2.1/98b4ec9df17c14a0fcd3d44e744850cb/AndroidManifest.xml:2:1-13:12
-MERGED from [org.jetbrains.anko:anko-support-v4-commons:0.10.8] /Users/arturocalvo/.gradle/caches/transforms-2/files-2.1/a60b3aeaa5662804deb028c6a360c228/AndroidManifest.xml:2:1-13:12
-MERGED from [org.jetbrains.anko:supportV4-base:0.10.8] /Users/arturocalvo/.gradle/caches/transforms-2/files-2.1/88fc4ffb3f4c635bd64cf38aa4e13655/AndroidManifest.xml:2:1-11:12
-MERGED from [com.android.support:support-v4:28.0.0] /Users/arturocalvo/.gradle/caches/transforms-2/files-2.1/e806c5940eaf03cf515cc80abcf9d013/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:animated-vector-drawable:28.0.0] /Users/arturocalvo/.gradle/caches/transforms-2/files-2.1/697a290c860e39a0dd1ec1f5f127f102/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:support-vector-drawable:28.0.0] /Users/arturocalvo/.gradle/caches/transforms-2/files-2.1/0f2b544e063dc70c7ab16bfc8b53733c/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.volley:volley:1.1.1] /Users/arturocalvo/.gradle/caches/transforms-2/files-2.1/64a6e42db92ec022de8360f5c05c3cef/AndroidManifest.xml:2:1-11:12
-MERGED from [org.jetbrains.anko:anko-sdk25:0.10.8] /Users/arturocalvo/.gradle/caches/transforms-2/files-2.1/b2c3c73fdb780c9224fe5565cd5a145b/AndroidManifest.xml:2:1-13:12
-MERGED from [org.jetbrains.anko:anko-sdk25-coroutines:0.10.8] /Users/arturocalvo/.gradle/caches/transforms-2/files-2.1/0368ab6137fe1cf7c65eb8452f5fd203/AndroidManifest.xml:2:1-13:12
-MERGED from [org.jetbrains.anko:anko-commons:0.10.8] /Users/arturocalvo/.gradle/caches/transforms-2/files-2.1/02c6799a27b10bbbc1a84ab9f4a5ba82/AndroidManifest.xml:2:1-13:12
-MERGED from [com.kaopiz:kprogresshud:1.2.0] /Users/arturocalvo/.gradle/caches/transforms-2/files-2.1/337da620d06633169071f62355227e94/AndroidManifest.xml:2:1-15:12
-MERGED from [io.reactivex.rxjava2:rxandroid:2.0.2] /Users/arturocalvo/.gradle/caches/transforms-2/files-2.1/20a75bfb9fce0ea43e6d675431b3be1c/AndroidManifest.xml:15:1-21:12
-MERGED from [com.android.support:recyclerview-v7:28.0.0] /Users/arturocalvo/.gradle/caches/transforms-2/files-2.1/a15ae0db0bbf5545b869a5a2339f1b63/AndroidManifest.xml:17:1-22:12
-MERGED from [com.getkeepsafe.relinker:relinker:1.3.0] /Users/arturocalvo/.gradle/caches/transforms-2/files-2.1/a84cef27a5f41712062af505d863dae9/AndroidManifest.xml:2:1-7:12
-MERGED from [org.jetbrains.anko:platform-base:0.10.8] /Users/arturocalvo/.gradle/caches/transforms-2/files-2.1/d4f5f0cd736618233b3e7e42dffde54d/AndroidManifest.xml:2:1-11:12
-MERGED from [org.jetbrains.anko:commons-base:0.10.8] /Users/arturocalvo/.gradle/caches/transforms-2/files-2.1/bab9fbe560d36045c80396a7c183468f/AndroidManifest.xml:2:1-11:12
-MERGED from [com.android.support:support-fragment:28.0.0] /Users/arturocalvo/.gradle/caches/transforms-2/files-2.1/49f9e47d930a29a40bf1eb3a5c3e39aa/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:support-core-ui:28.0.0] /Users/arturocalvo/.gradle/caches/transforms-2/files-2.1/27765fef6ada6cda65ef304b00939607/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:support-core-utils:28.0.0] /Users/arturocalvo/.gradle/caches/transforms-2/files-2.1/478c799b3fe72c64d54ff8e961a892ca/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:transition:28.0.0] /Users/arturocalvo/.gradle/caches/transforms-2/files-2.1/711f55a1b88248153f58eb85c2a293ba/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:support-media-compat:28.0.0] /Users/arturocalvo/.gradle/caches/transforms-2/files-2.1/091ad74f2754cc6d7a91cdbb7d050a7f/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:loader:28.0.0] /Users/arturocalvo/.gradle/caches/transforms-2/files-2.1/28fd1c54a635aca920a2e0101e435424/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:viewpager:28.0.0] /Users/arturocalvo/.gradle/caches/transforms-2/files-2.1/a34e4dab982ac9ff67733dbbe11599a6/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:coordinatorlayout:28.0.0] /Users/arturocalvo/.gradle/caches/transforms-2/files-2.1/83122b9a35907ed2d7428a083a4798de/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:drawerlayout:28.0.0] /Users/arturocalvo/.gradle/caches/transforms-2/files-2.1/f217087274c53e7aa9298da6b7d795d8/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:slidingpanelayout:28.0.0] /Users/arturocalvo/.gradle/caches/transforms-2/files-2.1/f8990e57db6b214bca75cbde3cc417ba/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:customview:28.0.0] /Users/arturocalvo/.gradle/caches/transforms-2/files-2.1/0bc94fe701e152898b981d0f7ca80f15/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:swiperefreshlayout:28.0.0] /Users/arturocalvo/.gradle/caches/transforms-2/files-2.1/b2d5222276d6bcfd0f207e1779246dbd/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:asynclayoutinflater:28.0.0] /Users/arturocalvo/.gradle/caches/transforms-2/files-2.1/36dce9ce6101f6b87ef1a7f17b56496e/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:support-compat:28.0.0] /Users/arturocalvo/.gradle/caches/transforms-2/files-2.1/264fa86425af911b26bbec655e0d3895/AndroidManifest.xml:17:1-24:12
-MERGED from [com.android.support:versionedparcelable:28.0.0] /Users/arturocalvo/.gradle/caches/transforms-2/files-2.1/da442373660566dab7e24634e81e1b44/AndroidManifest.xml:17:1-25:12
-MERGED from [com.android.support:cursoradapter:28.0.0] /Users/arturocalvo/.gradle/caches/transforms-2/files-2.1/d4d0656652eec2a21e7ce7e42f773af1/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:cardview-v7:28.0.0] /Users/arturocalvo/.gradle/caches/transforms-2/files-2.1/e233e381f76181027b624ad3f8192804/AndroidManifest.xml:17:1-22:12
-MERGED from [android.arch.lifecycle:runtime:1.1.1] /Users/arturocalvo/.gradle/caches/transforms-2/files-2.1/bf20ae3284c1cbf1419e07a19ad10a48/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:documentfile:28.0.0] /Users/arturocalvo/.gradle/caches/transforms-2/files-2.1/0a15704f07c6123b5c80192deacece6e/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:localbroadcastmanager:28.0.0] /Users/arturocalvo/.gradle/caches/transforms-2/files-2.1/9b7949b6238645c112c840bc6f8df91b/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:print:28.0.0] /Users/arturocalvo/.gradle/caches/transforms-2/files-2.1/9252b04e2b6620dddcf71f9bdcb57def/AndroidManifest.xml:17:1-22:12
-MERGED from [android.arch.lifecycle:viewmodel:1.1.1] /Users/arturocalvo/.gradle/caches/transforms-2/files-2.1/0c057276d93a64511e14311809591f37/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:interpolator:28.0.0] /Users/arturocalvo/.gradle/caches/transforms-2/files-2.1/6948a160a86c283ed945e91c56dddad0/AndroidManifest.xml:17:1-22:12
-MERGED from [android.arch.lifecycle:livedata:1.1.1] /Users/arturocalvo/.gradle/caches/transforms-2/files-2.1/e91f4f05d66f2b97fe3f0a5016f8fec2/AndroidManifest.xml:17:1-22:12
-MERGED from [android.arch.lifecycle:livedata-core:1.1.1] /Users/arturocalvo/.gradle/caches/transforms-2/files-2.1/f11aab9844eae32d379678152c681ee6/AndroidManifest.xml:17:1-22:12
-MERGED from [android.arch.core:runtime:1.1.1] /Users/arturocalvo/.gradle/caches/transforms-2/files-2.1/a17cf131edc86bfa2ffb49f344f1dad9/AndroidManifest.xml:17:1-22:12
-INJECTED from /Users/arturocalvo/Wansoft.Apps/MyApplication/WansoftSurvey/src/main/AndroidManifest.xml:2:1-58:12
-INJECTED from /Users/arturocalvo/Wansoft.Apps/MyApplication/WansoftSurvey/src/main/AndroidManifest.xml:2:1-58:12
-INJECTED from /Users/arturocalvo/Wansoft.Apps/MyApplication/WansoftSurvey/src/main/AndroidManifest.xml:2:1-58:12
+ADDED from /Users/arturocalvo/Wansoft.Apps/MyApplication/WansoftSurvey/src/main/AndroidManifest.xml:2:1-62:12
+INJECTED from /Users/arturocalvo/Wansoft.Apps/MyApplication/WansoftSurvey/src/main/AndroidManifest.xml:2:1-62:12
+INJECTED from /Users/arturocalvo/Wansoft.Apps/MyApplication/WansoftSurvey/src/main/AndroidManifest.xml:2:1-62:12
+INJECTED from /Users/arturocalvo/Wansoft.Apps/MyApplication/WansoftSurvey/src/main/AndroidManifest.xml:2:1-62:12
+MERGED from [com.github.vicpinm:krealmextensions:2.5.0] /Users/arturocalvo/.gradle/caches/transforms-2/files-2.1/e70dac992b474b577df760e8f393d679/krealmextensions-2.5.0/AndroidManifest.xml:2:1-14:12
+MERGED from [io.realm:realm-android-library:5.10.0] /Users/arturocalvo/.gradle/caches/transforms-2/files-2.1/a5ad5ecef427f2c832bf9d2302c3e985/realm-android-library-5.10.0/AndroidManifest.xml:2:1-10:12
+MERGED from [io.realm:realm-android-kotlin-extensions:5.10.0] /Users/arturocalvo/.gradle/caches/transforms-2/files-2.1/518aa14d60980de3fd8d225cc80c46a7/realm-android-kotlin-extensions-5.10.0/AndroidManifest.xml:2:1-10:12
+MERGED from [com.android.support:design:28.0.0] /Users/arturocalvo/.gradle/caches/transforms-2/files-2.1/04343f12619021d581582d921607c834/design-28.0.0/AndroidManifest.xml:17:1-24:12
+MERGED from [org.jetbrains.anko:anko-appcompat-v7:0.10.8] /Users/arturocalvo/.gradle/caches/transforms-2/files-2.1/c434d7f1883a1f1fb8b978f9447b36b7/anko-appcompat-v7-0.10.8/AndroidManifest.xml:2:1-13:12
+MERGED from [org.jetbrains.anko:anko-appcompat-v7-coroutines:0.10.8] /Users/arturocalvo/.gradle/caches/transforms-2/files-2.1/09850e642fbc054166d270bccafc3048/anko-appcompat-v7-coroutines-0.10.8/AndroidManifest.xml:2:1-13:12
+MERGED from [com.android.support:preference-v7:28.0.0] /Users/arturocalvo/.gradle/caches/transforms-2/files-2.1/9e546fc15a36123edb964889318a1830/preference-v7-28.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [gr.pantrif:easy-android-splash-screen:0.0.1] /Users/arturocalvo/.gradle/caches/transforms-2/files-2.1/c0551e13ce77356dcb5e22c016f0a6da/easy-android-splash-screen-0.0.1/AndroidManifest.xml:2:1-19:12
+MERGED from [org.jetbrains.anko:anko-appcompat-v7-commons:0.10.8] /Users/arturocalvo/.gradle/caches/transforms-2/files-2.1/92ec882cd7cb9d2b4b338fc50a3c3f91/anko-appcompat-v7-commons-0.10.8/AndroidManifest.xml:2:1-13:12
+MERGED from [org.jetbrains.anko:appcompatV7-base:0.10.8] /Users/arturocalvo/.gradle/caches/transforms-2/files-2.1/efa870ea8a05db9fd3803605cdd42dfa/appcompatV7-base-0.10.8/AndroidManifest.xml:2:1-11:12
+MERGED from [com.android.support:appcompat-v7:28.0.0] /Users/arturocalvo/.gradle/caches/transforms-2/files-2.1/12055280175602938b966340b1087088/appcompat-v7-28.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support.constraint:constraint-layout:1.1.3] /Users/arturocalvo/.gradle/caches/transforms-2/files-2.1/678fee8b4dc91d730d235408984e6f3e/constraint-layout-1.1.3/AndroidManifest.xml:2:1-11:12
+MERGED from [com.journeyapps:zxing-android-embedded:3.6.0] /Users/arturocalvo/.gradle/caches/transforms-2/files-2.1/23b86767dc626f7af78aadcee15d2a2a/zxing-android-embedded-3.6.0/AndroidManifest.xml:17:1-56:12
+MERGED from [org.jetbrains.anko:anko-support-v4:0.10.8] /Users/arturocalvo/.gradle/caches/transforms-2/files-2.1/9f412384344d691d882fcf94232ce288/anko-support-v4-0.10.8/AndroidManifest.xml:2:1-13:12
+MERGED from [org.jetbrains.anko:anko-support-v4-commons:0.10.8] /Users/arturocalvo/.gradle/caches/transforms-2/files-2.1/d981e4c2d3fc4e1e4fa3020d2e6247eb/anko-support-v4-commons-0.10.8/AndroidManifest.xml:2:1-13:12
+MERGED from [org.jetbrains.anko:supportV4-base:0.10.8] /Users/arturocalvo/.gradle/caches/transforms-2/files-2.1/6ca2c16f1d217915f130a4ec94eda0a5/supportV4-base-0.10.8/AndroidManifest.xml:2:1-11:12
+MERGED from [com.android.support:support-v4:28.0.0] /Users/arturocalvo/.gradle/caches/transforms-2/files-2.1/9b5013070e6935d15da43d115bcb1a24/support-v4-28.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:animated-vector-drawable:28.0.0] /Users/arturocalvo/.gradle/caches/transforms-2/files-2.1/27ba2d21f388c43e37bba3bad3d864c3/animated-vector-drawable-28.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-vector-drawable:28.0.0] /Users/arturocalvo/.gradle/caches/transforms-2/files-2.1/a50aa858602abece8d42848ee02cbd87/support-vector-drawable-28.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.volley:volley:1.1.1] /Users/arturocalvo/.gradle/caches/transforms-2/files-2.1/e06af58c913e345d6540dfab4aa3e1f9/volley-1.1.1/AndroidManifest.xml:2:1-11:12
+MERGED from [org.jetbrains.anko:anko-sdk25:0.10.8] /Users/arturocalvo/.gradle/caches/transforms-2/files-2.1/974ead6a517ad03a3aa3e1ff44748eb1/anko-sdk25-0.10.8/AndroidManifest.xml:2:1-13:12
+MERGED from [org.jetbrains.anko:anko-sdk25-coroutines:0.10.8] /Users/arturocalvo/.gradle/caches/transforms-2/files-2.1/f4c2fa405407332742324cef6a77bf6d/anko-sdk25-coroutines-0.10.8/AndroidManifest.xml:2:1-13:12
+MERGED from [org.jetbrains.anko:anko-commons:0.10.8] /Users/arturocalvo/.gradle/caches/transforms-2/files-2.1/c074edde4921ff5f4e8da20c3ac805b8/anko-commons-0.10.8/AndroidManifest.xml:2:1-13:12
+MERGED from [com.kaopiz:kprogresshud:1.2.0] /Users/arturocalvo/.gradle/caches/transforms-2/files-2.1/2f86377d097b53c69aaa21b33aa60a3a/kprogresshud-1.2.0/AndroidManifest.xml:2:1-15:12
+MERGED from [io.reactivex.rxjava2:rxandroid:2.0.2] /Users/arturocalvo/.gradle/caches/transforms-2/files-2.1/f88728e4b0452735be81a7e715aae82c/rxandroid-2.0.2/AndroidManifest.xml:15:1-21:12
+MERGED from [com.android.support:recyclerview-v7:28.0.0] /Users/arturocalvo/.gradle/caches/transforms-2/files-2.1/a3d7cfdb84a3fb0d744940d7eec77ebf/recyclerview-v7-28.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [com.getkeepsafe.relinker:relinker:1.3.0] /Users/arturocalvo/.gradle/caches/transforms-2/files-2.1/5f90b57cb2c98006995801b508bc9f9d/relinker-1.3.0/AndroidManifest.xml:2:1-7:12
+MERGED from [org.jetbrains.anko:platform-base:0.10.8] /Users/arturocalvo/.gradle/caches/transforms-2/files-2.1/97b1af2ad99f0e5f402c9fb9a47dfe4f/platform-base-0.10.8/AndroidManifest.xml:2:1-11:12
+MERGED from [org.jetbrains.anko:commons-base:0.10.8] /Users/arturocalvo/.gradle/caches/transforms-2/files-2.1/bdcfcdcf7e6c627c30337c2c931db5d1/commons-base-0.10.8/AndroidManifest.xml:2:1-11:12
+MERGED from [com.android.support:support-fragment:28.0.0] /Users/arturocalvo/.gradle/caches/transforms-2/files-2.1/4ecbb0dd9610a1c4db3bfb9271345258/support-fragment-28.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-core-ui:28.0.0] /Users/arturocalvo/.gradle/caches/transforms-2/files-2.1/b2dd35a1e82f930275cc253807e21080/support-core-ui-28.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-core-utils:28.0.0] /Users/arturocalvo/.gradle/caches/transforms-2/files-2.1/fc943371da73f3d03acf65150b5f0849/support-core-utils-28.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:transition:28.0.0] /Users/arturocalvo/.gradle/caches/transforms-2/files-2.1/050e74278536aecda19efbd757028ce8/transition-28.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-media-compat:28.0.0] /Users/arturocalvo/.gradle/caches/transforms-2/files-2.1/5473f30fbdfad06cdcef18f03d8eece1/support-media-compat-28.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:loader:28.0.0] /Users/arturocalvo/.gradle/caches/transforms-2/files-2.1/215edf5ba6cd118914d883a82c139be1/loader-28.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:viewpager:28.0.0] /Users/arturocalvo/.gradle/caches/transforms-2/files-2.1/2ac488ef11968423ef07c817c2e4d7d0/viewpager-28.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:coordinatorlayout:28.0.0] /Users/arturocalvo/.gradle/caches/transforms-2/files-2.1/96cea2ef62866b661db214c438f41f76/coordinatorlayout-28.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:drawerlayout:28.0.0] /Users/arturocalvo/.gradle/caches/transforms-2/files-2.1/f5ab896e8fa19d24cd81447cbed76d06/drawerlayout-28.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:slidingpanelayout:28.0.0] /Users/arturocalvo/.gradle/caches/transforms-2/files-2.1/77d334a0d9aa4c9f3495fc24649c2317/slidingpanelayout-28.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:customview:28.0.0] /Users/arturocalvo/.gradle/caches/transforms-2/files-2.1/2df2dbe96e22f553bf7f52dc02e06c5b/customview-28.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:swiperefreshlayout:28.0.0] /Users/arturocalvo/.gradle/caches/transforms-2/files-2.1/7b8a56c3dee59879c36bff8fa3bd7e97/swiperefreshlayout-28.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:asynclayoutinflater:28.0.0] /Users/arturocalvo/.gradle/caches/transforms-2/files-2.1/f586251bab5e97e269be98c1402e116a/asynclayoutinflater-28.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-compat:28.0.0] /Users/arturocalvo/.gradle/caches/transforms-2/files-2.1/3da881d8db482d42b68f01432e816da7/support-compat-28.0.0/AndroidManifest.xml:17:1-24:12
+MERGED from [com.android.support:versionedparcelable:28.0.0] /Users/arturocalvo/.gradle/caches/transforms-2/files-2.1/bff88836f772839357c61380c7683f22/versionedparcelable-28.0.0/AndroidManifest.xml:17:1-25:12
+MERGED from [com.android.support:cursoradapter:28.0.0] /Users/arturocalvo/.gradle/caches/transforms-2/files-2.1/cafe114e81444566e4d2edda5fd9ddb1/cursoradapter-28.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:cardview-v7:28.0.0] /Users/arturocalvo/.gradle/caches/transforms-2/files-2.1/35f64641e84562e60349c1aaa760db3f/cardview-v7-28.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:runtime:1.1.1] /Users/arturocalvo/.gradle/caches/transforms-2/files-2.1/b8f1e3430a0660eac9294ee2832fec0b/runtime-1.1.1/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:documentfile:28.0.0] /Users/arturocalvo/.gradle/caches/transforms-2/files-2.1/36253c022049322dc5eece58b9338e5f/documentfile-28.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:localbroadcastmanager:28.0.0] /Users/arturocalvo/.gradle/caches/transforms-2/files-2.1/aa5b2000b4a63e190b8d423f64d91414/localbroadcastmanager-28.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:print:28.0.0] /Users/arturocalvo/.gradle/caches/transforms-2/files-2.1/5a0c63e6c4f9c58402134b454928ccbd/print-28.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:viewmodel:1.1.1] /Users/arturocalvo/.gradle/caches/transforms-2/files-2.1/6b265e6497b74eea1ffb0c8c0c588d6d/viewmodel-1.1.1/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:interpolator:28.0.0] /Users/arturocalvo/.gradle/caches/transforms-2/files-2.1/81fcc2f25414809708ca315c4112de67/interpolator-28.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:livedata:1.1.1] /Users/arturocalvo/.gradle/caches/transforms-2/files-2.1/5a8508a3ebeadeb5d4d72ed7b40c4ec3/livedata-1.1.1/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:livedata-core:1.1.1] /Users/arturocalvo/.gradle/caches/transforms-2/files-2.1/649b7bfcd78ed78274e88ba200b50018/livedata-core-1.1.1/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.core:runtime:1.1.1] /Users/arturocalvo/.gradle/caches/transforms-2/files-2.1/ab9e1b75682c5776c78e7ec0fcd26393/runtime-1.1.1/AndroidManifest.xml:17:1-22:12
+INJECTED from /Users/arturocalvo/Wansoft.Apps/MyApplication/WansoftSurvey/src/main/AndroidManifest.xml:2:1-62:12
+INJECTED from /Users/arturocalvo/Wansoft.Apps/MyApplication/WansoftSurvey/src/main/AndroidManifest.xml:2:1-62:12
+INJECTED from /Users/arturocalvo/Wansoft.Apps/MyApplication/WansoftSurvey/src/main/AndroidManifest.xml:2:1-62:12
 	package
 		ADDED from /Users/arturocalvo/Wansoft.Apps/MyApplication/WansoftSurvey/src/main/AndroidManifest.xml:4:11-46
 		INJECTED from /Users/arturocalvo/Wansoft.Apps/MyApplication/WansoftSurvey/src/main/AndroidManifest.xml
 		INJECTED from /Users/arturocalvo/Wansoft.Apps/MyApplication/WansoftSurvey/src/main/AndroidManifest.xml
 	android:versionName
 		INJECTED from /Users/arturocalvo/Wansoft.Apps/MyApplication/WansoftSurvey/src/main/AndroidManifest.xml
-		ADDED from /Users/arturocalvo/Wansoft.Apps/MyApplication/WansoftSurvey/src/main/AndroidManifest.xml:2:1-58:12
+		ADDED from /Users/arturocalvo/Wansoft.Apps/MyApplication/WansoftSurvey/src/main/AndroidManifest.xml:2:1-62:12
 		INJECTED from /Users/arturocalvo/Wansoft.Apps/MyApplication/WansoftSurvey/src/main/AndroidManifest.xml
 	xmlns:tools
 		ADDED from /Users/arturocalvo/Wansoft.Apps/MyApplication/WansoftSurvey/src/main/AndroidManifest.xml:3:11-57
 	android:versionCode
 		INJECTED from /Users/arturocalvo/Wansoft.Apps/MyApplication/WansoftSurvey/src/main/AndroidManifest.xml
-		ADDED from /Users/arturocalvo/Wansoft.Apps/MyApplication/WansoftSurvey/src/main/AndroidManifest.xml:2:1-58:12
+		ADDED from /Users/arturocalvo/Wansoft.Apps/MyApplication/WansoftSurvey/src/main/AndroidManifest.xml:2:1-62:12
 		INJECTED from /Users/arturocalvo/Wansoft.Apps/MyApplication/WansoftSurvey/src/main/AndroidManifest.xml
 	xmlns:android
 		ADDED from /Users/arturocalvo/Wansoft.Apps/MyApplication/WansoftSurvey/src/main/AndroidManifest.xml:2:11-69
@@ -100,255 +100,265 @@ ADDED from /Users/arturocalvo/Wansoft.Apps/MyApplication/WansoftSurvey/src/main/
 		ADDED from /Users/arturocalvo/Wansoft.Apps/MyApplication/WansoftSurvey/src/main/AndroidManifest.xml:10:22-64
 uses-permission#android.permission.CAMERA
 ADDED from /Users/arturocalvo/Wansoft.Apps/MyApplication/WansoftSurvey/src/main/AndroidManifest.xml:11:5-64
-MERGED from [com.journeyapps:zxing-android-embedded:3.6.0] /Users/arturocalvo/.gradle/caches/transforms-2/files-2.1/5b842ebf1e7cb518824e8a1931943727/AndroidManifest.xml:22:5-65
-MERGED from [com.journeyapps:zxing-android-embedded:3.6.0] /Users/arturocalvo/.gradle/caches/transforms-2/files-2.1/5b842ebf1e7cb518824e8a1931943727/AndroidManifest.xml:22:5-65
+MERGED from [com.journeyapps:zxing-android-embedded:3.6.0] /Users/arturocalvo/.gradle/caches/transforms-2/files-2.1/23b86767dc626f7af78aadcee15d2a2a/zxing-android-embedded-3.6.0/AndroidManifest.xml:22:5-65
+MERGED from [com.journeyapps:zxing-android-embedded:3.6.0] /Users/arturocalvo/.gradle/caches/transforms-2/files-2.1/23b86767dc626f7af78aadcee15d2a2a/zxing-android-embedded-3.6.0/AndroidManifest.xml:22:5-65
 	android:name
 		ADDED from /Users/arturocalvo/Wansoft.Apps/MyApplication/WansoftSurvey/src/main/AndroidManifest.xml:11:22-62
+uses-permission#android.permission.REORDER_TASKS
+ADDED from /Users/arturocalvo/Wansoft.Apps/MyApplication/WansoftSurvey/src/main/AndroidManifest.xml:12:5-72
+	android:name
+		ADDED from /Users/arturocalvo/Wansoft.Apps/MyApplication/WansoftSurvey/src/main/AndroidManifest.xml:12:22-69
 application
-ADDED from /Users/arturocalvo/Wansoft.Apps/MyApplication/WansoftSurvey/src/main/AndroidManifest.xml:13:5-56:19
-MERGED from [com.github.vicpinm:krealmextensions:2.5.0] /Users/arturocalvo/.gradle/caches/transforms-2/files-2.1/e3acdc23059001a0df1a5092345f08c6/AndroidManifest.xml:11:5-12:19
-MERGED from [com.github.vicpinm:krealmextensions:2.5.0] /Users/arturocalvo/.gradle/caches/transforms-2/files-2.1/e3acdc23059001a0df1a5092345f08c6/AndroidManifest.xml:11:5-12:19
-MERGED from [com.android.support:design:28.0.0] /Users/arturocalvo/.gradle/caches/transforms-2/files-2.1/d2b29af0c35f10ea11de9ea8b721daa2/AndroidManifest.xml:22:5-20
-MERGED from [com.android.support:design:28.0.0] /Users/arturocalvo/.gradle/caches/transforms-2/files-2.1/d2b29af0c35f10ea11de9ea8b721daa2/AndroidManifest.xml:22:5-20
-MERGED from [org.jetbrains.anko:anko-appcompat-v7:0.10.8] /Users/arturocalvo/.gradle/caches/transforms-2/files-2.1/c4026da7f625915cef33423b089a7126/AndroidManifest.xml:11:5-20
-MERGED from [org.jetbrains.anko:anko-appcompat-v7:0.10.8] /Users/arturocalvo/.gradle/caches/transforms-2/files-2.1/c4026da7f625915cef33423b089a7126/AndroidManifest.xml:11:5-20
-MERGED from [org.jetbrains.anko:anko-appcompat-v7-coroutines:0.10.8] /Users/arturocalvo/.gradle/caches/transforms-2/files-2.1/120e0c29124ea8ba81710c152fdac081/AndroidManifest.xml:11:5-20
-MERGED from [org.jetbrains.anko:anko-appcompat-v7-coroutines:0.10.8] /Users/arturocalvo/.gradle/caches/transforms-2/files-2.1/120e0c29124ea8ba81710c152fdac081/AndroidManifest.xml:11:5-20
-MERGED from [gr.pantrif:easy-android-splash-screen:0.0.1] /Users/arturocalvo/.gradle/caches/transforms-2/files-2.1/676f4fb491871e9b47443257de045e1a/AndroidManifest.xml:12:5-17:19
-MERGED from [gr.pantrif:easy-android-splash-screen:0.0.1] /Users/arturocalvo/.gradle/caches/transforms-2/files-2.1/676f4fb491871e9b47443257de045e1a/AndroidManifest.xml:12:5-17:19
-MERGED from [org.jetbrains.anko:anko-appcompat-v7-commons:0.10.8] /Users/arturocalvo/.gradle/caches/transforms-2/files-2.1/1ebf46aeea7901f649ebf49889a6d53f/AndroidManifest.xml:11:5-20
-MERGED from [org.jetbrains.anko:anko-appcompat-v7-commons:0.10.8] /Users/arturocalvo/.gradle/caches/transforms-2/files-2.1/1ebf46aeea7901f649ebf49889a6d53f/AndroidManifest.xml:11:5-20
-MERGED from [com.android.support.constraint:constraint-layout:1.1.3] /Users/arturocalvo/.gradle/caches/transforms-2/files-2.1/96723328309c3720d8d598a5b402528f/AndroidManifest.xml:9:5-20
-MERGED from [com.android.support.constraint:constraint-layout:1.1.3] /Users/arturocalvo/.gradle/caches/transforms-2/files-2.1/96723328309c3720d8d598a5b402528f/AndroidManifest.xml:9:5-20
-MERGED from [com.journeyapps:zxing-android-embedded:3.6.0] /Users/arturocalvo/.gradle/caches/transforms-2/files-2.1/5b842ebf1e7cb518824e8a1931943727/AndroidManifest.xml:46:5-54:19
-MERGED from [com.journeyapps:zxing-android-embedded:3.6.0] /Users/arturocalvo/.gradle/caches/transforms-2/files-2.1/5b842ebf1e7cb518824e8a1931943727/AndroidManifest.xml:46:5-54:19
-MERGED from [org.jetbrains.anko:anko-support-v4:0.10.8] /Users/arturocalvo/.gradle/caches/transforms-2/files-2.1/98b4ec9df17c14a0fcd3d44e744850cb/AndroidManifest.xml:11:5-20
-MERGED from [org.jetbrains.anko:anko-support-v4:0.10.8] /Users/arturocalvo/.gradle/caches/transforms-2/files-2.1/98b4ec9df17c14a0fcd3d44e744850cb/AndroidManifest.xml:11:5-20
-MERGED from [org.jetbrains.anko:anko-support-v4-commons:0.10.8] /Users/arturocalvo/.gradle/caches/transforms-2/files-2.1/a60b3aeaa5662804deb028c6a360c228/AndroidManifest.xml:11:5-20
-MERGED from [org.jetbrains.anko:anko-support-v4-commons:0.10.8] /Users/arturocalvo/.gradle/caches/transforms-2/files-2.1/a60b3aeaa5662804deb028c6a360c228/AndroidManifest.xml:11:5-20
-MERGED from [com.android.volley:volley:1.1.1] /Users/arturocalvo/.gradle/caches/transforms-2/files-2.1/64a6e42db92ec022de8360f5c05c3cef/AndroidManifest.xml:9:5-20
-MERGED from [com.android.volley:volley:1.1.1] /Users/arturocalvo/.gradle/caches/transforms-2/files-2.1/64a6e42db92ec022de8360f5c05c3cef/AndroidManifest.xml:9:5-20
-MERGED from [org.jetbrains.anko:anko-sdk25:0.10.8] /Users/arturocalvo/.gradle/caches/transforms-2/files-2.1/b2c3c73fdb780c9224fe5565cd5a145b/AndroidManifest.xml:11:5-20
-MERGED from [org.jetbrains.anko:anko-sdk25:0.10.8] /Users/arturocalvo/.gradle/caches/transforms-2/files-2.1/b2c3c73fdb780c9224fe5565cd5a145b/AndroidManifest.xml:11:5-20
-MERGED from [org.jetbrains.anko:anko-sdk25-coroutines:0.10.8] /Users/arturocalvo/.gradle/caches/transforms-2/files-2.1/0368ab6137fe1cf7c65eb8452f5fd203/AndroidManifest.xml:11:5-20
-MERGED from [org.jetbrains.anko:anko-sdk25-coroutines:0.10.8] /Users/arturocalvo/.gradle/caches/transforms-2/files-2.1/0368ab6137fe1cf7c65eb8452f5fd203/AndroidManifest.xml:11:5-20
-MERGED from [org.jetbrains.anko:anko-commons:0.10.8] /Users/arturocalvo/.gradle/caches/transforms-2/files-2.1/02c6799a27b10bbbc1a84ab9f4a5ba82/AndroidManifest.xml:11:5-20
-MERGED from [org.jetbrains.anko:anko-commons:0.10.8] /Users/arturocalvo/.gradle/caches/transforms-2/files-2.1/02c6799a27b10bbbc1a84ab9f4a5ba82/AndroidManifest.xml:11:5-20
-MERGED from [com.kaopiz:kprogresshud:1.2.0] /Users/arturocalvo/.gradle/caches/transforms-2/files-2.1/337da620d06633169071f62355227e94/AndroidManifest.xml:11:5-13:38
-MERGED from [com.kaopiz:kprogresshud:1.2.0] /Users/arturocalvo/.gradle/caches/transforms-2/files-2.1/337da620d06633169071f62355227e94/AndroidManifest.xml:11:5-13:38
-MERGED from [com.android.support:support-compat:28.0.0] /Users/arturocalvo/.gradle/caches/transforms-2/files-2.1/264fa86425af911b26bbec655e0d3895/AndroidManifest.xml:22:5-94
-MERGED from [com.android.support:support-compat:28.0.0] /Users/arturocalvo/.gradle/caches/transforms-2/files-2.1/264fa86425af911b26bbec655e0d3895/AndroidManifest.xml:22:5-94
-MERGED from [com.android.support:versionedparcelable:28.0.0] /Users/arturocalvo/.gradle/caches/transforms-2/files-2.1/da442373660566dab7e24634e81e1b44/AndroidManifest.xml:22:5-23:19
-MERGED from [com.android.support:versionedparcelable:28.0.0] /Users/arturocalvo/.gradle/caches/transforms-2/files-2.1/da442373660566dab7e24634e81e1b44/AndroidManifest.xml:22:5-23:19
+ADDED from /Users/arturocalvo/Wansoft.Apps/MyApplication/WansoftSurvey/src/main/AndroidManifest.xml:14:5-60:19
+MERGED from [com.github.vicpinm:krealmextensions:2.5.0] /Users/arturocalvo/.gradle/caches/transforms-2/files-2.1/e70dac992b474b577df760e8f393d679/krealmextensions-2.5.0/AndroidManifest.xml:11:5-12:19
+MERGED from [com.github.vicpinm:krealmextensions:2.5.0] /Users/arturocalvo/.gradle/caches/transforms-2/files-2.1/e70dac992b474b577df760e8f393d679/krealmextensions-2.5.0/AndroidManifest.xml:11:5-12:19
+MERGED from [com.android.support:design:28.0.0] /Users/arturocalvo/.gradle/caches/transforms-2/files-2.1/04343f12619021d581582d921607c834/design-28.0.0/AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:design:28.0.0] /Users/arturocalvo/.gradle/caches/transforms-2/files-2.1/04343f12619021d581582d921607c834/design-28.0.0/AndroidManifest.xml:22:5-20
+MERGED from [org.jetbrains.anko:anko-appcompat-v7:0.10.8] /Users/arturocalvo/.gradle/caches/transforms-2/files-2.1/c434d7f1883a1f1fb8b978f9447b36b7/anko-appcompat-v7-0.10.8/AndroidManifest.xml:11:5-20
+MERGED from [org.jetbrains.anko:anko-appcompat-v7:0.10.8] /Users/arturocalvo/.gradle/caches/transforms-2/files-2.1/c434d7f1883a1f1fb8b978f9447b36b7/anko-appcompat-v7-0.10.8/AndroidManifest.xml:11:5-20
+MERGED from [org.jetbrains.anko:anko-appcompat-v7-coroutines:0.10.8] /Users/arturocalvo/.gradle/caches/transforms-2/files-2.1/09850e642fbc054166d270bccafc3048/anko-appcompat-v7-coroutines-0.10.8/AndroidManifest.xml:11:5-20
+MERGED from [org.jetbrains.anko:anko-appcompat-v7-coroutines:0.10.8] /Users/arturocalvo/.gradle/caches/transforms-2/files-2.1/09850e642fbc054166d270bccafc3048/anko-appcompat-v7-coroutines-0.10.8/AndroidManifest.xml:11:5-20
+MERGED from [gr.pantrif:easy-android-splash-screen:0.0.1] /Users/arturocalvo/.gradle/caches/transforms-2/files-2.1/c0551e13ce77356dcb5e22c016f0a6da/easy-android-splash-screen-0.0.1/AndroidManifest.xml:12:5-17:19
+MERGED from [gr.pantrif:easy-android-splash-screen:0.0.1] /Users/arturocalvo/.gradle/caches/transforms-2/files-2.1/c0551e13ce77356dcb5e22c016f0a6da/easy-android-splash-screen-0.0.1/AndroidManifest.xml:12:5-17:19
+MERGED from [org.jetbrains.anko:anko-appcompat-v7-commons:0.10.8] /Users/arturocalvo/.gradle/caches/transforms-2/files-2.1/92ec882cd7cb9d2b4b338fc50a3c3f91/anko-appcompat-v7-commons-0.10.8/AndroidManifest.xml:11:5-20
+MERGED from [org.jetbrains.anko:anko-appcompat-v7-commons:0.10.8] /Users/arturocalvo/.gradle/caches/transforms-2/files-2.1/92ec882cd7cb9d2b4b338fc50a3c3f91/anko-appcompat-v7-commons-0.10.8/AndroidManifest.xml:11:5-20
+MERGED from [com.android.support.constraint:constraint-layout:1.1.3] /Users/arturocalvo/.gradle/caches/transforms-2/files-2.1/678fee8b4dc91d730d235408984e6f3e/constraint-layout-1.1.3/AndroidManifest.xml:9:5-20
+MERGED from [com.android.support.constraint:constraint-layout:1.1.3] /Users/arturocalvo/.gradle/caches/transforms-2/files-2.1/678fee8b4dc91d730d235408984e6f3e/constraint-layout-1.1.3/AndroidManifest.xml:9:5-20
+MERGED from [com.journeyapps:zxing-android-embedded:3.6.0] /Users/arturocalvo/.gradle/caches/transforms-2/files-2.1/23b86767dc626f7af78aadcee15d2a2a/zxing-android-embedded-3.6.0/AndroidManifest.xml:46:5-54:19
+MERGED from [com.journeyapps:zxing-android-embedded:3.6.0] /Users/arturocalvo/.gradle/caches/transforms-2/files-2.1/23b86767dc626f7af78aadcee15d2a2a/zxing-android-embedded-3.6.0/AndroidManifest.xml:46:5-54:19
+MERGED from [org.jetbrains.anko:anko-support-v4:0.10.8] /Users/arturocalvo/.gradle/caches/transforms-2/files-2.1/9f412384344d691d882fcf94232ce288/anko-support-v4-0.10.8/AndroidManifest.xml:11:5-20
+MERGED from [org.jetbrains.anko:anko-support-v4:0.10.8] /Users/arturocalvo/.gradle/caches/transforms-2/files-2.1/9f412384344d691d882fcf94232ce288/anko-support-v4-0.10.8/AndroidManifest.xml:11:5-20
+MERGED from [org.jetbrains.anko:anko-support-v4-commons:0.10.8] /Users/arturocalvo/.gradle/caches/transforms-2/files-2.1/d981e4c2d3fc4e1e4fa3020d2e6247eb/anko-support-v4-commons-0.10.8/AndroidManifest.xml:11:5-20
+MERGED from [org.jetbrains.anko:anko-support-v4-commons:0.10.8] /Users/arturocalvo/.gradle/caches/transforms-2/files-2.1/d981e4c2d3fc4e1e4fa3020d2e6247eb/anko-support-v4-commons-0.10.8/AndroidManifest.xml:11:5-20
+MERGED from [com.android.volley:volley:1.1.1] /Users/arturocalvo/.gradle/caches/transforms-2/files-2.1/e06af58c913e345d6540dfab4aa3e1f9/volley-1.1.1/AndroidManifest.xml:9:5-20
+MERGED from [com.android.volley:volley:1.1.1] /Users/arturocalvo/.gradle/caches/transforms-2/files-2.1/e06af58c913e345d6540dfab4aa3e1f9/volley-1.1.1/AndroidManifest.xml:9:5-20
+MERGED from [org.jetbrains.anko:anko-sdk25:0.10.8] /Users/arturocalvo/.gradle/caches/transforms-2/files-2.1/974ead6a517ad03a3aa3e1ff44748eb1/anko-sdk25-0.10.8/AndroidManifest.xml:11:5-20
+MERGED from [org.jetbrains.anko:anko-sdk25:0.10.8] /Users/arturocalvo/.gradle/caches/transforms-2/files-2.1/974ead6a517ad03a3aa3e1ff44748eb1/anko-sdk25-0.10.8/AndroidManifest.xml:11:5-20
+MERGED from [org.jetbrains.anko:anko-sdk25-coroutines:0.10.8] /Users/arturocalvo/.gradle/caches/transforms-2/files-2.1/f4c2fa405407332742324cef6a77bf6d/anko-sdk25-coroutines-0.10.8/AndroidManifest.xml:11:5-20
+MERGED from [org.jetbrains.anko:anko-sdk25-coroutines:0.10.8] /Users/arturocalvo/.gradle/caches/transforms-2/files-2.1/f4c2fa405407332742324cef6a77bf6d/anko-sdk25-coroutines-0.10.8/AndroidManifest.xml:11:5-20
+MERGED from [org.jetbrains.anko:anko-commons:0.10.8] /Users/arturocalvo/.gradle/caches/transforms-2/files-2.1/c074edde4921ff5f4e8da20c3ac805b8/anko-commons-0.10.8/AndroidManifest.xml:11:5-20
+MERGED from [org.jetbrains.anko:anko-commons:0.10.8] /Users/arturocalvo/.gradle/caches/transforms-2/files-2.1/c074edde4921ff5f4e8da20c3ac805b8/anko-commons-0.10.8/AndroidManifest.xml:11:5-20
+MERGED from [com.kaopiz:kprogresshud:1.2.0] /Users/arturocalvo/.gradle/caches/transforms-2/files-2.1/2f86377d097b53c69aaa21b33aa60a3a/kprogresshud-1.2.0/AndroidManifest.xml:11:5-13:38
+MERGED from [com.kaopiz:kprogresshud:1.2.0] /Users/arturocalvo/.gradle/caches/transforms-2/files-2.1/2f86377d097b53c69aaa21b33aa60a3a/kprogresshud-1.2.0/AndroidManifest.xml:11:5-13:38
+MERGED from [com.android.support:support-compat:28.0.0] /Users/arturocalvo/.gradle/caches/transforms-2/files-2.1/3da881d8db482d42b68f01432e816da7/support-compat-28.0.0/AndroidManifest.xml:22:5-94
+MERGED from [com.android.support:support-compat:28.0.0] /Users/arturocalvo/.gradle/caches/transforms-2/files-2.1/3da881d8db482d42b68f01432e816da7/support-compat-28.0.0/AndroidManifest.xml:22:5-94
+MERGED from [com.android.support:versionedparcelable:28.0.0] /Users/arturocalvo/.gradle/caches/transforms-2/files-2.1/bff88836f772839357c61380c7683f22/versionedparcelable-28.0.0/AndroidManifest.xml:22:5-23:19
+MERGED from [com.android.support:versionedparcelable:28.0.0] /Users/arturocalvo/.gradle/caches/transforms-2/files-2.1/bff88836f772839357c61380c7683f22/versionedparcelable-28.0.0/AndroidManifest.xml:22:5-23:19
 	android:appComponentFactory
-		ADDED from [com.android.support:support-compat:28.0.0] /Users/arturocalvo/.gradle/caches/transforms-2/files-2.1/264fa86425af911b26bbec655e0d3895/AndroidManifest.xml:22:18-91
+		ADDED from [com.android.support:support-compat:28.0.0] /Users/arturocalvo/.gradle/caches/transforms-2/files-2.1/3da881d8db482d42b68f01432e816da7/support-compat-28.0.0/AndroidManifest.xml:22:18-91
 	android:supportsRtl
-		ADDED from /Users/arturocalvo/Wansoft.Apps/MyApplication/WansoftSurvey/src/main/AndroidManifest.xml:18:13-39
+		ADDED from /Users/arturocalvo/Wansoft.Apps/MyApplication/WansoftSurvey/src/main/AndroidManifest.xml:21:13-39
 	android:label
-		ADDED from /Users/arturocalvo/Wansoft.Apps/MyApplication/WansoftSurvey/src/main/AndroidManifest.xml:16:13-45
+		ADDED from /Users/arturocalvo/Wansoft.Apps/MyApplication/WansoftSurvey/src/main/AndroidManifest.xml:19:13-45
 	android:hardwareAccelerated
-		ADDED from /Users/arturocalvo/Wansoft.Apps/MyApplication/WansoftSurvey/src/main/AndroidManifest.xml:20:13-47
+		ADDED from /Users/arturocalvo/Wansoft.Apps/MyApplication/WansoftSurvey/src/main/AndroidManifest.xml:23:13-47
+	android:fullBackupContent
+		ADDED from /Users/arturocalvo/Wansoft.Apps/MyApplication/WansoftSurvey/src/main/AndroidManifest.xml:17:13-46
 	android:roundIcon
-		ADDED from /Users/arturocalvo/Wansoft.Apps/MyApplication/WansoftSurvey/src/main/AndroidManifest.xml:17:13-58
+		ADDED from /Users/arturocalvo/Wansoft.Apps/MyApplication/WansoftSurvey/src/main/AndroidManifest.xml:20:13-58
 	android:configChanges
-		ADDED from [gr.pantrif:easy-android-splash-screen:0.0.1] /Users/arturocalvo/.gradle/caches/transforms-2/files-2.1/676f4fb491871e9b47443257de045e1a/AndroidManifest.xml:14:9-70
+		ADDED from [gr.pantrif:easy-android-splash-screen:0.0.1] /Users/arturocalvo/.gradle/caches/transforms-2/files-2.1/c0551e13ce77356dcb5e22c016f0a6da/easy-android-splash-screen-0.0.1/AndroidManifest.xml:14:9-70
 	android:icon
-		ADDED from /Users/arturocalvo/Wansoft.Apps/MyApplication/WansoftSurvey/src/main/AndroidManifest.xml:15:13-47
+		ADDED from /Users/arturocalvo/Wansoft.Apps/MyApplication/WansoftSurvey/src/main/AndroidManifest.xml:18:13-47
 	android:allowBackup
-		ADDED from /Users/arturocalvo/Wansoft.Apps/MyApplication/WansoftSurvey/src/main/AndroidManifest.xml:14:13-39
+		ADDED from /Users/arturocalvo/Wansoft.Apps/MyApplication/WansoftSurvey/src/main/AndroidManifest.xml:16:13-40
+		REJECTED from [gr.pantrif:easy-android-splash-screen:0.0.1] /Users/arturocalvo/.gradle/caches/transforms-2/files-2.1/c0551e13ce77356dcb5e22c016f0a6da/easy-android-splash-screen-0.0.1/AndroidManifest.xml:13:9-35
+		REJECTED from [com.kaopiz:kprogresshud:1.2.0] /Users/arturocalvo/.gradle/caches/transforms-2/files-2.1/2f86377d097b53c69aaa21b33aa60a3a/kprogresshud-1.2.0/AndroidManifest.xml:12:9-35
 	android:theme
-		ADDED from /Users/arturocalvo/Wansoft.Apps/MyApplication/WansoftSurvey/src/main/AndroidManifest.xml:19:13-44
-activity#com.journeyapps.barcodescanner.CaptureActivity
-ADDED from /Users/arturocalvo/Wansoft.Apps/MyApplication/WansoftSurvey/src/main/AndroidManifest.xml:21:9-24:53
-MERGED from [com.journeyapps:zxing-android-embedded:3.6.0] /Users/arturocalvo/.gradle/caches/transforms-2/files-2.1/5b842ebf1e7cb518824e8a1931943727/AndroidManifest.xml:47:9-53:63
-MERGED from [com.journeyapps:zxing-android-embedded:3.6.0] /Users/arturocalvo/.gradle/caches/transforms-2/files-2.1/5b842ebf1e7cb518824e8a1931943727/AndroidManifest.xml:47:9-53:63
-	android:clearTaskOnLaunch
-		ADDED from [com.journeyapps:zxing-android-embedded:3.6.0] /Users/arturocalvo/.gradle/caches/transforms-2/files-2.1/5b842ebf1e7cb518824e8a1931943727/AndroidManifest.xml:49:13-45
-	android:screenOrientation
-		ADDED from /Users/arturocalvo/Wansoft.Apps/MyApplication/WansoftSurvey/src/main/AndroidManifest.xml:23:17-53
-		REJECTED from [com.journeyapps:zxing-android-embedded:3.6.0] /Users/arturocalvo/.gradle/caches/transforms-2/files-2.1/5b842ebf1e7cb518824e8a1931943727/AndroidManifest.xml:50:13-56
-	android:stateNotNeeded
-		ADDED from [com.journeyapps:zxing-android-embedded:3.6.0] /Users/arturocalvo/.gradle/caches/transforms-2/files-2.1/5b842ebf1e7cb518824e8a1931943727/AndroidManifest.xml:51:13-42
-	android:windowSoftInputMode
-		ADDED from [com.journeyapps:zxing-android-embedded:3.6.0] /Users/arturocalvo/.gradle/caches/transforms-2/files-2.1/5b842ebf1e7cb518824e8a1931943727/AndroidManifest.xml:53:13-60
-	android:theme
-		ADDED from [com.journeyapps:zxing-android-embedded:3.6.0] /Users/arturocalvo/.gradle/caches/transforms-2/files-2.1/5b842ebf1e7cb518824e8a1931943727/AndroidManifest.xml:52:13-54
+		ADDED from /Users/arturocalvo/Wansoft.Apps/MyApplication/WansoftSurvey/src/main/AndroidManifest.xml:22:13-44
 	tools:replace
-		ADDED from /Users/arturocalvo/Wansoft.Apps/MyApplication/WansoftSurvey/src/main/AndroidManifest.xml:24:17-50
-	android:name
-		ADDED from /Users/arturocalvo/Wansoft.Apps/MyApplication/WansoftSurvey/src/main/AndroidManifest.xml:22:17-78
-activity#com.example.Wansoft.Survey.ConfiguracionActivity
-ADDED from /Users/arturocalvo/Wansoft.Apps/MyApplication/WansoftSurvey/src/main/AndroidManifest.xml:25:9-26:20
-	android:name
-		ADDED from /Users/arturocalvo/Wansoft.Apps/MyApplication/WansoftSurvey/src/main/AndroidManifest.xml:25:19-82
-activity#com.example.Wansoft.Survey.AcercaDeActivity
-ADDED from /Users/arturocalvo/Wansoft.Apps/MyApplication/WansoftSurvey/src/main/AndroidManifest.xml:27:9-28:20
-	android:name
-		ADDED from /Users/arturocalvo/Wansoft.Apps/MyApplication/WansoftSurvey/src/main/AndroidManifest.xml:27:19-77
-activity#com.example.Wansoft.Survey.LoginActivity
-ADDED from /Users/arturocalvo/Wansoft.Apps/MyApplication/WansoftSurvey/src/main/AndroidManifest.xml:29:9-31:20
-	android:launchMode
-		ADDED from /Users/arturocalvo/Wansoft.Apps/MyApplication/WansoftSurvey/src/main/AndroidManifest.xml:30:9-44
-	android:name
-		ADDED from /Users/arturocalvo/Wansoft.Apps/MyApplication/WansoftSurvey/src/main/AndroidManifest.xml:29:19-74
-activity#com.example.Wansoft.Survey.ResultActivity
-ADDED from /Users/arturocalvo/Wansoft.Apps/MyApplication/WansoftSurvey/src/main/AndroidManifest.xml:32:9-33:20
-	android:name
-		ADDED from /Users/arturocalvo/Wansoft.Apps/MyApplication/WansoftSurvey/src/main/AndroidManifest.xml:32:19-75
-activity#com.example.Wansoft.Survey.ResumenActivity
-ADDED from /Users/arturocalvo/Wansoft.Apps/MyApplication/WansoftSurvey/src/main/AndroidManifest.xml:34:9-35:20
-	android:name
-		ADDED from /Users/arturocalvo/Wansoft.Apps/MyApplication/WansoftSurvey/src/main/AndroidManifest.xml:34:19-76
-activity#com.example.Wansoft.Survey.EncuestaActivity
-ADDED from /Users/arturocalvo/Wansoft.Apps/MyApplication/WansoftSurvey/src/main/AndroidManifest.xml:36:9-38:20
-	android:launchMode
-		ADDED from /Users/arturocalvo/Wansoft.Apps/MyApplication/WansoftSurvey/src/main/AndroidManifest.xml:37:19-54
-	android:name
-		ADDED from /Users/arturocalvo/Wansoft.Apps/MyApplication/WansoftSurvey/src/main/AndroidManifest.xml:36:19-77
-activity#com.example.Wansoft.Survey.EncuestasActivity
-ADDED from /Users/arturocalvo/Wansoft.Apps/MyApplication/WansoftSurvey/src/main/AndroidManifest.xml:39:9-40:20
-	android:name
-		ADDED from /Users/arturocalvo/Wansoft.Apps/MyApplication/WansoftSurvey/src/main/AndroidManifest.xml:39:19-78
-activity#com.example.Wansoft.Survey.HomeActivity
-ADDED from /Users/arturocalvo/Wansoft.Apps/MyApplication/WansoftSurvey/src/main/AndroidManifest.xml:41:9-46:20
-	android:label
-		ADDED from /Users/arturocalvo/Wansoft.Apps/MyApplication/WansoftSurvey/src/main/AndroidManifest.xml:43:17-60
-	android:launchMode
-		ADDED from /Users/arturocalvo/Wansoft.Apps/MyApplication/WansoftSurvey/src/main/AndroidManifest.xml:45:17-52
+		ADDED from /Users/arturocalvo/Wansoft.Apps/MyApplication/WansoftSurvey/src/main/AndroidManifest.xml:15:13-48
+activity#com.journeyapps.barcodescanner.CaptureActivity
+ADDED from /Users/arturocalvo/Wansoft.Apps/MyApplication/WansoftSurvey/src/main/AndroidManifest.xml:24:9-27:53
+MERGED from [com.journeyapps:zxing-android-embedded:3.6.0] /Users/arturocalvo/.gradle/caches/transforms-2/files-2.1/23b86767dc626f7af78aadcee15d2a2a/zxing-android-embedded-3.6.0/AndroidManifest.xml:47:9-53:63
+MERGED from [com.journeyapps:zxing-android-embedded:3.6.0] /Users/arturocalvo/.gradle/caches/transforms-2/files-2.1/23b86767dc626f7af78aadcee15d2a2a/zxing-android-embedded-3.6.0/AndroidManifest.xml:47:9-53:63
+	android:clearTaskOnLaunch
+		ADDED from [com.journeyapps:zxing-android-embedded:3.6.0] /Users/arturocalvo/.gradle/caches/transforms-2/files-2.1/23b86767dc626f7af78aadcee15d2a2a/zxing-android-embedded-3.6.0/AndroidManifest.xml:49:13-45
+	android:screenOrientation
+		ADDED from /Users/arturocalvo/Wansoft.Apps/MyApplication/WansoftSurvey/src/main/AndroidManifest.xml:26:17-53
+		REJECTED from [com.journeyapps:zxing-android-embedded:3.6.0] /Users/arturocalvo/.gradle/caches/transforms-2/files-2.1/23b86767dc626f7af78aadcee15d2a2a/zxing-android-embedded-3.6.0/AndroidManifest.xml:50:13-56
+	android:stateNotNeeded
+		ADDED from [com.journeyapps:zxing-android-embedded:3.6.0] /Users/arturocalvo/.gradle/caches/transforms-2/files-2.1/23b86767dc626f7af78aadcee15d2a2a/zxing-android-embedded-3.6.0/AndroidManifest.xml:51:13-42
+	android:windowSoftInputMode
+		ADDED from [com.journeyapps:zxing-android-embedded:3.6.0] /Users/arturocalvo/.gradle/caches/transforms-2/files-2.1/23b86767dc626f7af78aadcee15d2a2a/zxing-android-embedded-3.6.0/AndroidManifest.xml:53:13-60
 	android:theme
-		ADDED from /Users/arturocalvo/Wansoft.Apps/MyApplication/WansoftSurvey/src/main/AndroidManifest.xml:44:17-60
+		ADDED from [com.journeyapps:zxing-android-embedded:3.6.0] /Users/arturocalvo/.gradle/caches/transforms-2/files-2.1/23b86767dc626f7af78aadcee15d2a2a/zxing-android-embedded-3.6.0/AndroidManifest.xml:52:13-54
+	tools:replace
+		ADDED from /Users/arturocalvo/Wansoft.Apps/MyApplication/WansoftSurvey/src/main/AndroidManifest.xml:27:17-50
 	android:name
-		ADDED from /Users/arturocalvo/Wansoft.Apps/MyApplication/WansoftSurvey/src/main/AndroidManifest.xml:42:17-71
-activity#com.example.Wansoft.Survey.SplashActivity
-ADDED from /Users/arturocalvo/Wansoft.Apps/MyApplication/WansoftSurvey/src/main/AndroidManifest.xml:47:9-55:20
+		ADDED from /Users/arturocalvo/Wansoft.Apps/MyApplication/WansoftSurvey/src/main/AndroidManifest.xml:25:17-78
+activity#com.example.Wansoft.Survey.ConfiguracionActivity
+ADDED from /Users/arturocalvo/Wansoft.Apps/MyApplication/WansoftSurvey/src/main/AndroidManifest.xml:28:9-29:20
+	android:name
+		ADDED from /Users/arturocalvo/Wansoft.Apps/MyApplication/WansoftSurvey/src/main/AndroidManifest.xml:28:19-82
+activity#com.example.Wansoft.Survey.AcercaDeActivity
+ADDED from /Users/arturocalvo/Wansoft.Apps/MyApplication/WansoftSurvey/src/main/AndroidManifest.xml:30:9-31:20
+	android:name
+		ADDED from /Users/arturocalvo/Wansoft.Apps/MyApplication/WansoftSurvey/src/main/AndroidManifest.xml:30:19-77
+activity#com.example.Wansoft.Survey.LoginActivity
+ADDED from /Users/arturocalvo/Wansoft.Apps/MyApplication/WansoftSurvey/src/main/AndroidManifest.xml:32:9-34:20
+	android:launchMode
+		ADDED from /Users/arturocalvo/Wansoft.Apps/MyApplication/WansoftSurvey/src/main/AndroidManifest.xml:33:9-44
+	android:name
+		ADDED from /Users/arturocalvo/Wansoft.Apps/MyApplication/WansoftSurvey/src/main/AndroidManifest.xml:32:19-74
+activity#com.example.Wansoft.Survey.ResultActivity
+ADDED from /Users/arturocalvo/Wansoft.Apps/MyApplication/WansoftSurvey/src/main/AndroidManifest.xml:35:9-36:20
+	android:name
+		ADDED from /Users/arturocalvo/Wansoft.Apps/MyApplication/WansoftSurvey/src/main/AndroidManifest.xml:35:19-75
+activity#com.example.Wansoft.Survey.ResumenActivity
+ADDED from /Users/arturocalvo/Wansoft.Apps/MyApplication/WansoftSurvey/src/main/AndroidManifest.xml:37:9-38:20
+	android:name
+		ADDED from /Users/arturocalvo/Wansoft.Apps/MyApplication/WansoftSurvey/src/main/AndroidManifest.xml:37:19-76
+activity#com.example.Wansoft.Survey.EncuestaActivity
+ADDED from /Users/arturocalvo/Wansoft.Apps/MyApplication/WansoftSurvey/src/main/AndroidManifest.xml:39:9-41:20
+	android:launchMode
+		ADDED from /Users/arturocalvo/Wansoft.Apps/MyApplication/WansoftSurvey/src/main/AndroidManifest.xml:40:19-54
+	android:name
+		ADDED from /Users/arturocalvo/Wansoft.Apps/MyApplication/WansoftSurvey/src/main/AndroidManifest.xml:39:19-77
+activity#com.example.Wansoft.Survey.EncuestasActivity
+ADDED from /Users/arturocalvo/Wansoft.Apps/MyApplication/WansoftSurvey/src/main/AndroidManifest.xml:42:9-43:20
+	android:name
+		ADDED from /Users/arturocalvo/Wansoft.Apps/MyApplication/WansoftSurvey/src/main/AndroidManifest.xml:42:19-78
+activity#com.example.Wansoft.Survey.HomeActivity
+ADDED from /Users/arturocalvo/Wansoft.Apps/MyApplication/WansoftSurvey/src/main/AndroidManifest.xml:44:9-50:20
 	android:label
-		ADDED from /Users/arturocalvo/Wansoft.Apps/MyApplication/WansoftSurvey/src/main/AndroidManifest.xml:49:17-49
+		ADDED from /Users/arturocalvo/Wansoft.Apps/MyApplication/WansoftSurvey/src/main/AndroidManifest.xml:46:17-60
+	android:launchMode
+		ADDED from /Users/arturocalvo/Wansoft.Apps/MyApplication/WansoftSurvey/src/main/AndroidManifest.xml:48:17-52
+	android:theme
+		ADDED from /Users/arturocalvo/Wansoft.Apps/MyApplication/WansoftSurvey/src/main/AndroidManifest.xml:47:17-60
 	android:name
-		ADDED from /Users/arturocalvo/Wansoft.Apps/MyApplication/WansoftSurvey/src/main/AndroidManifest.xml:48:17-73
+		ADDED from /Users/arturocalvo/Wansoft.Apps/MyApplication/WansoftSurvey/src/main/AndroidManifest.xml:45:17-71
+activity#com.example.Wansoft.Survey.SplashActivity
+ADDED from /Users/arturocalvo/Wansoft.Apps/MyApplication/WansoftSurvey/src/main/AndroidManifest.xml:51:9-59:20
+	android:label
+		ADDED from /Users/arturocalvo/Wansoft.Apps/MyApplication/WansoftSurvey/src/main/AndroidManifest.xml:53:17-49
+	android:name
+		ADDED from /Users/arturocalvo/Wansoft.Apps/MyApplication/WansoftSurvey/src/main/AndroidManifest.xml:52:17-73
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from /Users/arturocalvo/Wansoft.Apps/MyApplication/WansoftSurvey/src/main/AndroidManifest.xml:50:13-54:29
+ADDED from /Users/arturocalvo/Wansoft.Apps/MyApplication/WansoftSurvey/src/main/AndroidManifest.xml:54:13-58:29
 action#android.intent.action.MAIN
-ADDED from /Users/arturocalvo/Wansoft.Apps/MyApplication/WansoftSurvey/src/main/AndroidManifest.xml:51:17-68
+ADDED from /Users/arturocalvo/Wansoft.Apps/MyApplication/WansoftSurvey/src/main/AndroidManifest.xml:55:17-68
 	android:name
-		ADDED from /Users/arturocalvo/Wansoft.Apps/MyApplication/WansoftSurvey/src/main/AndroidManifest.xml:51:25-66
+		ADDED from /Users/arturocalvo/Wansoft.Apps/MyApplication/WansoftSurvey/src/main/AndroidManifest.xml:55:25-66
 category#android.intent.category.LAUNCHER
-ADDED from /Users/arturocalvo/Wansoft.Apps/MyApplication/WansoftSurvey/src/main/AndroidManifest.xml:53:17-76
+ADDED from /Users/arturocalvo/Wansoft.Apps/MyApplication/WansoftSurvey/src/main/AndroidManifest.xml:57:17-76
 	android:name
-		ADDED from /Users/arturocalvo/Wansoft.Apps/MyApplication/WansoftSurvey/src/main/AndroidManifest.xml:53:27-74
+		ADDED from /Users/arturocalvo/Wansoft.Apps/MyApplication/WansoftSurvey/src/main/AndroidManifest.xml:57:27-74
 uses-sdk
 INJECTED from /Users/arturocalvo/Wansoft.Apps/MyApplication/WansoftSurvey/src/main/AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from /Users/arturocalvo/Wansoft.Apps/MyApplication/WansoftSurvey/src/main/AndroidManifest.xml
 INJECTED from /Users/arturocalvo/Wansoft.Apps/MyApplication/WansoftSurvey/src/main/AndroidManifest.xml
-MERGED from [com.github.vicpinm:krealmextensions:2.5.0] /Users/arturocalvo/.gradle/caches/transforms-2/files-2.1/e3acdc23059001a0df1a5092345f08c6/AndroidManifest.xml:7:5-9:41
-MERGED from [com.github.vicpinm:krealmextensions:2.5.0] /Users/arturocalvo/.gradle/caches/transforms-2/files-2.1/e3acdc23059001a0df1a5092345f08c6/AndroidManifest.xml:7:5-9:41
-MERGED from [io.realm:realm-android-library:5.10.0] /Users/arturocalvo/.gradle/caches/transforms-2/files-2.1/75a0463cac94fc7db86da1d1a012d0d2/AndroidManifest.xml:6:5-8:41
-MERGED from [io.realm:realm-android-library:5.10.0] /Users/arturocalvo/.gradle/caches/transforms-2/files-2.1/75a0463cac94fc7db86da1d1a012d0d2/AndroidManifest.xml:6:5-8:41
-MERGED from [io.realm:realm-android-kotlin-extensions:5.10.0] /Users/arturocalvo/.gradle/caches/transforms-2/files-2.1/a7d017f51820795c08ba2058c119a603/AndroidManifest.xml:6:5-8:41
-MERGED from [io.realm:realm-android-kotlin-extensions:5.10.0] /Users/arturocalvo/.gradle/caches/transforms-2/files-2.1/a7d017f51820795c08ba2058c119a603/AndroidManifest.xml:6:5-8:41
-MERGED from [com.android.support:design:28.0.0] /Users/arturocalvo/.gradle/caches/transforms-2/files-2.1/d2b29af0c35f10ea11de9ea8b721daa2/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:design:28.0.0] /Users/arturocalvo/.gradle/caches/transforms-2/files-2.1/d2b29af0c35f10ea11de9ea8b721daa2/AndroidManifest.xml:20:5-44
-MERGED from [org.jetbrains.anko:anko-appcompat-v7:0.10.8] /Users/arturocalvo/.gradle/caches/transforms-2/files-2.1/c4026da7f625915cef33423b089a7126/AndroidManifest.xml:7:5-9:41
-MERGED from [org.jetbrains.anko:anko-appcompat-v7:0.10.8] /Users/arturocalvo/.gradle/caches/transforms-2/files-2.1/c4026da7f625915cef33423b089a7126/AndroidManifest.xml:7:5-9:41
-MERGED from [org.jetbrains.anko:anko-appcompat-v7-coroutines:0.10.8] /Users/arturocalvo/.gradle/caches/transforms-2/files-2.1/120e0c29124ea8ba81710c152fdac081/AndroidManifest.xml:7:5-9:41
-MERGED from [org.jetbrains.anko:anko-appcompat-v7-coroutines:0.10.8] /Users/arturocalvo/.gradle/caches/transforms-2/files-2.1/120e0c29124ea8ba81710c152fdac081/AndroidManifest.xml:7:5-9:41
-MERGED from [com.android.support:preference-v7:28.0.0] /Users/arturocalvo/.gradle/caches/transforms-2/files-2.1/1f204d3729c6cd86c9c5499684f5a7da/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:preference-v7:28.0.0] /Users/arturocalvo/.gradle/caches/transforms-2/files-2.1/1f204d3729c6cd86c9c5499684f5a7da/AndroidManifest.xml:20:5-44
-MERGED from [gr.pantrif:easy-android-splash-screen:0.0.1] /Users/arturocalvo/.gradle/caches/transforms-2/files-2.1/676f4fb491871e9b47443257de045e1a/AndroidManifest.xml:8:5-10:41
-MERGED from [gr.pantrif:easy-android-splash-screen:0.0.1] /Users/arturocalvo/.gradle/caches/transforms-2/files-2.1/676f4fb491871e9b47443257de045e1a/AndroidManifest.xml:8:5-10:41
-MERGED from [org.jetbrains.anko:anko-appcompat-v7-commons:0.10.8] /Users/arturocalvo/.gradle/caches/transforms-2/files-2.1/1ebf46aeea7901f649ebf49889a6d53f/AndroidManifest.xml:7:5-9:41
-MERGED from [org.jetbrains.anko:anko-appcompat-v7-commons:0.10.8] /Users/arturocalvo/.gradle/caches/transforms-2/files-2.1/1ebf46aeea7901f649ebf49889a6d53f/AndroidManifest.xml:7:5-9:41
-MERGED from [org.jetbrains.anko:appcompatV7-base:0.10.8] /Users/arturocalvo/.gradle/caches/transforms-2/files-2.1/1a01cd34494beb1d4e4f1b41f822927e/AndroidManifest.xml:7:5-9:41
-MERGED from [org.jetbrains.anko:appcompatV7-base:0.10.8] /Users/arturocalvo/.gradle/caches/transforms-2/files-2.1/1a01cd34494beb1d4e4f1b41f822927e/AndroidManifest.xml:7:5-9:41
-MERGED from [com.android.support:appcompat-v7:28.0.0] /Users/arturocalvo/.gradle/caches/transforms-2/files-2.1/42d897114222802c12a7ac4a0de9d681/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:appcompat-v7:28.0.0] /Users/arturocalvo/.gradle/caches/transforms-2/files-2.1/42d897114222802c12a7ac4a0de9d681/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support.constraint:constraint-layout:1.1.3] /Users/arturocalvo/.gradle/caches/transforms-2/files-2.1/96723328309c3720d8d598a5b402528f/AndroidManifest.xml:5:5-7:41
-MERGED from [com.android.support.constraint:constraint-layout:1.1.3] /Users/arturocalvo/.gradle/caches/transforms-2/files-2.1/96723328309c3720d8d598a5b402528f/AndroidManifest.xml:5:5-7:41
-MERGED from [com.journeyapps:zxing-android-embedded:3.6.0] /Users/arturocalvo/.gradle/caches/transforms-2/files-2.1/5b842ebf1e7cb518824e8a1931943727/AndroidManifest.xml:20:5-44
-MERGED from [com.journeyapps:zxing-android-embedded:3.6.0] /Users/arturocalvo/.gradle/caches/transforms-2/files-2.1/5b842ebf1e7cb518824e8a1931943727/AndroidManifest.xml:20:5-44
-MERGED from [org.jetbrains.anko:anko-support-v4:0.10.8] /Users/arturocalvo/.gradle/caches/transforms-2/files-2.1/98b4ec9df17c14a0fcd3d44e744850cb/AndroidManifest.xml:7:5-9:41
-MERGED from [org.jetbrains.anko:anko-support-v4:0.10.8] /Users/arturocalvo/.gradle/caches/transforms-2/files-2.1/98b4ec9df17c14a0fcd3d44e744850cb/AndroidManifest.xml:7:5-9:41
-MERGED from [org.jetbrains.anko:anko-support-v4-commons:0.10.8] /Users/arturocalvo/.gradle/caches/transforms-2/files-2.1/a60b3aeaa5662804deb028c6a360c228/AndroidManifest.xml:7:5-9:41
-MERGED from [org.jetbrains.anko:anko-support-v4-commons:0.10.8] /Users/arturocalvo/.gradle/caches/transforms-2/files-2.1/a60b3aeaa5662804deb028c6a360c228/AndroidManifest.xml:7:5-9:41
-MERGED from [org.jetbrains.anko:supportV4-base:0.10.8] /Users/arturocalvo/.gradle/caches/transforms-2/files-2.1/88fc4ffb3f4c635bd64cf38aa4e13655/AndroidManifest.xml:7:5-9:41
-MERGED from [org.jetbrains.anko:supportV4-base:0.10.8] /Users/arturocalvo/.gradle/caches/transforms-2/files-2.1/88fc4ffb3f4c635bd64cf38aa4e13655/AndroidManifest.xml:7:5-9:41
-MERGED from [com.android.support:support-v4:28.0.0] /Users/arturocalvo/.gradle/caches/transforms-2/files-2.1/e806c5940eaf03cf515cc80abcf9d013/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-v4:28.0.0] /Users/arturocalvo/.gradle/caches/transforms-2/files-2.1/e806c5940eaf03cf515cc80abcf9d013/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:animated-vector-drawable:28.0.0] /Users/arturocalvo/.gradle/caches/transforms-2/files-2.1/697a290c860e39a0dd1ec1f5f127f102/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:animated-vector-drawable:28.0.0] /Users/arturocalvo/.gradle/caches/transforms-2/files-2.1/697a290c860e39a0dd1ec1f5f127f102/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-vector-drawable:28.0.0] /Users/arturocalvo/.gradle/caches/transforms-2/files-2.1/0f2b544e063dc70c7ab16bfc8b53733c/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-vector-drawable:28.0.0] /Users/arturocalvo/.gradle/caches/transforms-2/files-2.1/0f2b544e063dc70c7ab16bfc8b53733c/AndroidManifest.xml:20:5-44
-MERGED from [com.android.volley:volley:1.1.1] /Users/arturocalvo/.gradle/caches/transforms-2/files-2.1/64a6e42db92ec022de8360f5c05c3cef/AndroidManifest.xml:7:5-43
-MERGED from [com.android.volley:volley:1.1.1] /Users/arturocalvo/.gradle/caches/transforms-2/files-2.1/64a6e42db92ec022de8360f5c05c3cef/AndroidManifest.xml:7:5-43
-MERGED from [org.jetbrains.anko:anko-sdk25:0.10.8] /Users/arturocalvo/.gradle/caches/transforms-2/files-2.1/b2c3c73fdb780c9224fe5565cd5a145b/AndroidManifest.xml:7:5-9:41
-MERGED from [org.jetbrains.anko:anko-sdk25:0.10.8] /Users/arturocalvo/.gradle/caches/transforms-2/files-2.1/b2c3c73fdb780c9224fe5565cd5a145b/AndroidManifest.xml:7:5-9:41
-MERGED from [org.jetbrains.anko:anko-sdk25-coroutines:0.10.8] /Users/arturocalvo/.gradle/caches/transforms-2/files-2.1/0368ab6137fe1cf7c65eb8452f5fd203/AndroidManifest.xml:7:5-9:41
-MERGED from [org.jetbrains.anko:anko-sdk25-coroutines:0.10.8] /Users/arturocalvo/.gradle/caches/transforms-2/files-2.1/0368ab6137fe1cf7c65eb8452f5fd203/AndroidManifest.xml:7:5-9:41
-MERGED from [org.jetbrains.anko:anko-commons:0.10.8] /Users/arturocalvo/.gradle/caches/transforms-2/files-2.1/02c6799a27b10bbbc1a84ab9f4a5ba82/AndroidManifest.xml:7:5-9:41
-MERGED from [org.jetbrains.anko:anko-commons:0.10.8] /Users/arturocalvo/.gradle/caches/transforms-2/files-2.1/02c6799a27b10bbbc1a84ab9f4a5ba82/AndroidManifest.xml:7:5-9:41
-MERGED from [com.kaopiz:kprogresshud:1.2.0] /Users/arturocalvo/.gradle/caches/transforms-2/files-2.1/337da620d06633169071f62355227e94/AndroidManifest.xml:7:5-9:41
-MERGED from [com.kaopiz:kprogresshud:1.2.0] /Users/arturocalvo/.gradle/caches/transforms-2/files-2.1/337da620d06633169071f62355227e94/AndroidManifest.xml:7:5-9:41
-MERGED from [io.reactivex.rxjava2:rxandroid:2.0.2] /Users/arturocalvo/.gradle/caches/transforms-2/files-2.1/20a75bfb9fce0ea43e6d675431b3be1c/AndroidManifest.xml:19:5-43
-MERGED from [io.reactivex.rxjava2:rxandroid:2.0.2] /Users/arturocalvo/.gradle/caches/transforms-2/files-2.1/20a75bfb9fce0ea43e6d675431b3be1c/AndroidManifest.xml:19:5-43
-MERGED from [com.android.support:recyclerview-v7:28.0.0] /Users/arturocalvo/.gradle/caches/transforms-2/files-2.1/a15ae0db0bbf5545b869a5a2339f1b63/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:recyclerview-v7:28.0.0] /Users/arturocalvo/.gradle/caches/transforms-2/files-2.1/a15ae0db0bbf5545b869a5a2339f1b63/AndroidManifest.xml:20:5-44
-MERGED from [com.getkeepsafe.relinker:relinker:1.3.0] /Users/arturocalvo/.gradle/caches/transforms-2/files-2.1/a84cef27a5f41712062af505d863dae9/AndroidManifest.xml:5:5-43
-MERGED from [com.getkeepsafe.relinker:relinker:1.3.0] /Users/arturocalvo/.gradle/caches/transforms-2/files-2.1/a84cef27a5f41712062af505d863dae9/AndroidManifest.xml:5:5-43
-MERGED from [org.jetbrains.anko:platform-base:0.10.8] /Users/arturocalvo/.gradle/caches/transforms-2/files-2.1/d4f5f0cd736618233b3e7e42dffde54d/AndroidManifest.xml:7:5-9:41
-MERGED from [org.jetbrains.anko:platform-base:0.10.8] /Users/arturocalvo/.gradle/caches/transforms-2/files-2.1/d4f5f0cd736618233b3e7e42dffde54d/AndroidManifest.xml:7:5-9:41
-MERGED from [org.jetbrains.anko:commons-base:0.10.8] /Users/arturocalvo/.gradle/caches/transforms-2/files-2.1/bab9fbe560d36045c80396a7c183468f/AndroidManifest.xml:7:5-9:41
-MERGED from [org.jetbrains.anko:commons-base:0.10.8] /Users/arturocalvo/.gradle/caches/transforms-2/files-2.1/bab9fbe560d36045c80396a7c183468f/AndroidManifest.xml:7:5-9:41
-MERGED from [com.android.support:support-fragment:28.0.0] /Users/arturocalvo/.gradle/caches/transforms-2/files-2.1/49f9e47d930a29a40bf1eb3a5c3e39aa/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-fragment:28.0.0] /Users/arturocalvo/.gradle/caches/transforms-2/files-2.1/49f9e47d930a29a40bf1eb3a5c3e39aa/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-core-ui:28.0.0] /Users/arturocalvo/.gradle/caches/transforms-2/files-2.1/27765fef6ada6cda65ef304b00939607/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-core-ui:28.0.0] /Users/arturocalvo/.gradle/caches/transforms-2/files-2.1/27765fef6ada6cda65ef304b00939607/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-core-utils:28.0.0] /Users/arturocalvo/.gradle/caches/transforms-2/files-2.1/478c799b3fe72c64d54ff8e961a892ca/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-core-utils:28.0.0] /Users/arturocalvo/.gradle/caches/transforms-2/files-2.1/478c799b3fe72c64d54ff8e961a892ca/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:transition:28.0.0] /Users/arturocalvo/.gradle/caches/transforms-2/files-2.1/711f55a1b88248153f58eb85c2a293ba/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:transition:28.0.0] /Users/arturocalvo/.gradle/caches/transforms-2/files-2.1/711f55a1b88248153f58eb85c2a293ba/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-media-compat:28.0.0] /Users/arturocalvo/.gradle/caches/transforms-2/files-2.1/091ad74f2754cc6d7a91cdbb7d050a7f/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-media-compat:28.0.0] /Users/arturocalvo/.gradle/caches/transforms-2/files-2.1/091ad74f2754cc6d7a91cdbb7d050a7f/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:loader:28.0.0] /Users/arturocalvo/.gradle/caches/transforms-2/files-2.1/28fd1c54a635aca920a2e0101e435424/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:loader:28.0.0] /Users/arturocalvo/.gradle/caches/transforms-2/files-2.1/28fd1c54a635aca920a2e0101e435424/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:viewpager:28.0.0] /Users/arturocalvo/.gradle/caches/transforms-2/files-2.1/a34e4dab982ac9ff67733dbbe11599a6/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:viewpager:28.0.0] /Users/arturocalvo/.gradle/caches/transforms-2/files-2.1/a34e4dab982ac9ff67733dbbe11599a6/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:coordinatorlayout:28.0.0] /Users/arturocalvo/.gradle/caches/transforms-2/files-2.1/83122b9a35907ed2d7428a083a4798de/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:coordinatorlayout:28.0.0] /Users/arturocalvo/.gradle/caches/transforms-2/files-2.1/83122b9a35907ed2d7428a083a4798de/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:drawerlayout:28.0.0] /Users/arturocalvo/.gradle/caches/transforms-2/files-2.1/f217087274c53e7aa9298da6b7d795d8/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:drawerlayout:28.0.0] /Users/arturocalvo/.gradle/caches/transforms-2/files-2.1/f217087274c53e7aa9298da6b7d795d8/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:slidingpanelayout:28.0.0] /Users/arturocalvo/.gradle/caches/transforms-2/files-2.1/f8990e57db6b214bca75cbde3cc417ba/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:slidingpanelayout:28.0.0] /Users/arturocalvo/.gradle/caches/transforms-2/files-2.1/f8990e57db6b214bca75cbde3cc417ba/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:customview:28.0.0] /Users/arturocalvo/.gradle/caches/transforms-2/files-2.1/0bc94fe701e152898b981d0f7ca80f15/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:customview:28.0.0] /Users/arturocalvo/.gradle/caches/transforms-2/files-2.1/0bc94fe701e152898b981d0f7ca80f15/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:swiperefreshlayout:28.0.0] /Users/arturocalvo/.gradle/caches/transforms-2/files-2.1/b2d5222276d6bcfd0f207e1779246dbd/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:swiperefreshlayout:28.0.0] /Users/arturocalvo/.gradle/caches/transforms-2/files-2.1/b2d5222276d6bcfd0f207e1779246dbd/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:asynclayoutinflater:28.0.0] /Users/arturocalvo/.gradle/caches/transforms-2/files-2.1/36dce9ce6101f6b87ef1a7f17b56496e/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:asynclayoutinflater:28.0.0] /Users/arturocalvo/.gradle/caches/transforms-2/files-2.1/36dce9ce6101f6b87ef1a7f17b56496e/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-compat:28.0.0] /Users/arturocalvo/.gradle/caches/transforms-2/files-2.1/264fa86425af911b26bbec655e0d3895/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-compat:28.0.0] /Users/arturocalvo/.gradle/caches/transforms-2/files-2.1/264fa86425af911b26bbec655e0d3895/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:versionedparcelable:28.0.0] /Users/arturocalvo/.gradle/caches/transforms-2/files-2.1/da442373660566dab7e24634e81e1b44/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:versionedparcelable:28.0.0] /Users/arturocalvo/.gradle/caches/transforms-2/files-2.1/da442373660566dab7e24634e81e1b44/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:cursoradapter:28.0.0] /Users/arturocalvo/.gradle/caches/transforms-2/files-2.1/d4d0656652eec2a21e7ce7e42f773af1/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:cursoradapter:28.0.0] /Users/arturocalvo/.gradle/caches/transforms-2/files-2.1/d4d0656652eec2a21e7ce7e42f773af1/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:cardview-v7:28.0.0] /Users/arturocalvo/.gradle/caches/transforms-2/files-2.1/e233e381f76181027b624ad3f8192804/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:cardview-v7:28.0.0] /Users/arturocalvo/.gradle/caches/transforms-2/files-2.1/e233e381f76181027b624ad3f8192804/AndroidManifest.xml:20:5-44
-MERGED from [android.arch.lifecycle:runtime:1.1.1] /Users/arturocalvo/.gradle/caches/transforms-2/files-2.1/bf20ae3284c1cbf1419e07a19ad10a48/AndroidManifest.xml:20:5-44
-MERGED from [android.arch.lifecycle:runtime:1.1.1] /Users/arturocalvo/.gradle/caches/transforms-2/files-2.1/bf20ae3284c1cbf1419e07a19ad10a48/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:documentfile:28.0.0] /Users/arturocalvo/.gradle/caches/transforms-2/files-2.1/0a15704f07c6123b5c80192deacece6e/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:documentfile:28.0.0] /Users/arturocalvo/.gradle/caches/transforms-2/files-2.1/0a15704f07c6123b5c80192deacece6e/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:localbroadcastmanager:28.0.0] /Users/arturocalvo/.gradle/caches/transforms-2/files-2.1/9b7949b6238645c112c840bc6f8df91b/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:localbroadcastmanager:28.0.0] /Users/arturocalvo/.gradle/caches/transforms-2/files-2.1/9b7949b6238645c112c840bc6f8df91b/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:print:28.0.0] /Users/arturocalvo/.gradle/caches/transforms-2/files-2.1/9252b04e2b6620dddcf71f9bdcb57def/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:print:28.0.0] /Users/arturocalvo/.gradle/caches/transforms-2/files-2.1/9252b04e2b6620dddcf71f9bdcb57def/AndroidManifest.xml:20:5-44
-MERGED from [android.arch.lifecycle:viewmodel:1.1.1] /Users/arturocalvo/.gradle/caches/transforms-2/files-2.1/0c057276d93a64511e14311809591f37/AndroidManifest.xml:20:5-44
-MERGED from [android.arch.lifecycle:viewmodel:1.1.1] /Users/arturocalvo/.gradle/caches/transforms-2/files-2.1/0c057276d93a64511e14311809591f37/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:interpolator:28.0.0] /Users/arturocalvo/.gradle/caches/transforms-2/files-2.1/6948a160a86c283ed945e91c56dddad0/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:interpolator:28.0.0] /Users/arturocalvo/.gradle/caches/transforms-2/files-2.1/6948a160a86c283ed945e91c56dddad0/AndroidManifest.xml:20:5-44
-MERGED from [android.arch.lifecycle:livedata:1.1.1] /Users/arturocalvo/.gradle/caches/transforms-2/files-2.1/e91f4f05d66f2b97fe3f0a5016f8fec2/AndroidManifest.xml:20:5-44
-MERGED from [android.arch.lifecycle:livedata:1.1.1] /Users/arturocalvo/.gradle/caches/transforms-2/files-2.1/e91f4f05d66f2b97fe3f0a5016f8fec2/AndroidManifest.xml:20:5-44
-MERGED from [android.arch.lifecycle:livedata-core:1.1.1] /Users/arturocalvo/.gradle/caches/transforms-2/files-2.1/f11aab9844eae32d379678152c681ee6/AndroidManifest.xml:20:5-44
-MERGED from [android.arch.lifecycle:livedata-core:1.1.1] /Users/arturocalvo/.gradle/caches/transforms-2/files-2.1/f11aab9844eae32d379678152c681ee6/AndroidManifest.xml:20:5-44
-MERGED from [android.arch.core:runtime:1.1.1] /Users/arturocalvo/.gradle/caches/transforms-2/files-2.1/a17cf131edc86bfa2ffb49f344f1dad9/AndroidManifest.xml:20:5-44
-MERGED from [android.arch.core:runtime:1.1.1] /Users/arturocalvo/.gradle/caches/transforms-2/files-2.1/a17cf131edc86bfa2ffb49f344f1dad9/AndroidManifest.xml:20:5-44
+MERGED from [com.github.vicpinm:krealmextensions:2.5.0] /Users/arturocalvo/.gradle/caches/transforms-2/files-2.1/e70dac992b474b577df760e8f393d679/krealmextensions-2.5.0/AndroidManifest.xml:7:5-9:41
+MERGED from [com.github.vicpinm:krealmextensions:2.5.0] /Users/arturocalvo/.gradle/caches/transforms-2/files-2.1/e70dac992b474b577df760e8f393d679/krealmextensions-2.5.0/AndroidManifest.xml:7:5-9:41
+MERGED from [io.realm:realm-android-library:5.10.0] /Users/arturocalvo/.gradle/caches/transforms-2/files-2.1/a5ad5ecef427f2c832bf9d2302c3e985/realm-android-library-5.10.0/AndroidManifest.xml:6:5-8:41
+MERGED from [io.realm:realm-android-library:5.10.0] /Users/arturocalvo/.gradle/caches/transforms-2/files-2.1/a5ad5ecef427f2c832bf9d2302c3e985/realm-android-library-5.10.0/AndroidManifest.xml:6:5-8:41
+MERGED from [io.realm:realm-android-kotlin-extensions:5.10.0] /Users/arturocalvo/.gradle/caches/transforms-2/files-2.1/518aa14d60980de3fd8d225cc80c46a7/realm-android-kotlin-extensions-5.10.0/AndroidManifest.xml:6:5-8:41
+MERGED from [io.realm:realm-android-kotlin-extensions:5.10.0] /Users/arturocalvo/.gradle/caches/transforms-2/files-2.1/518aa14d60980de3fd8d225cc80c46a7/realm-android-kotlin-extensions-5.10.0/AndroidManifest.xml:6:5-8:41
+MERGED from [com.android.support:design:28.0.0] /Users/arturocalvo/.gradle/caches/transforms-2/files-2.1/04343f12619021d581582d921607c834/design-28.0.0/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:design:28.0.0] /Users/arturocalvo/.gradle/caches/transforms-2/files-2.1/04343f12619021d581582d921607c834/design-28.0.0/AndroidManifest.xml:20:5-44
+MERGED from [org.jetbrains.anko:anko-appcompat-v7:0.10.8] /Users/arturocalvo/.gradle/caches/transforms-2/files-2.1/c434d7f1883a1f1fb8b978f9447b36b7/anko-appcompat-v7-0.10.8/AndroidManifest.xml:7:5-9:41
+MERGED from [org.jetbrains.anko:anko-appcompat-v7:0.10.8] /Users/arturocalvo/.gradle/caches/transforms-2/files-2.1/c434d7f1883a1f1fb8b978f9447b36b7/anko-appcompat-v7-0.10.8/AndroidManifest.xml:7:5-9:41
+MERGED from [org.jetbrains.anko:anko-appcompat-v7-coroutines:0.10.8] /Users/arturocalvo/.gradle/caches/transforms-2/files-2.1/09850e642fbc054166d270bccafc3048/anko-appcompat-v7-coroutines-0.10.8/AndroidManifest.xml:7:5-9:41
+MERGED from [org.jetbrains.anko:anko-appcompat-v7-coroutines:0.10.8] /Users/arturocalvo/.gradle/caches/transforms-2/files-2.1/09850e642fbc054166d270bccafc3048/anko-appcompat-v7-coroutines-0.10.8/AndroidManifest.xml:7:5-9:41
+MERGED from [com.android.support:preference-v7:28.0.0] /Users/arturocalvo/.gradle/caches/transforms-2/files-2.1/9e546fc15a36123edb964889318a1830/preference-v7-28.0.0/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:preference-v7:28.0.0] /Users/arturocalvo/.gradle/caches/transforms-2/files-2.1/9e546fc15a36123edb964889318a1830/preference-v7-28.0.0/AndroidManifest.xml:20:5-44
+MERGED from [gr.pantrif:easy-android-splash-screen:0.0.1] /Users/arturocalvo/.gradle/caches/transforms-2/files-2.1/c0551e13ce77356dcb5e22c016f0a6da/easy-android-splash-screen-0.0.1/AndroidManifest.xml:8:5-10:41
+MERGED from [gr.pantrif:easy-android-splash-screen:0.0.1] /Users/arturocalvo/.gradle/caches/transforms-2/files-2.1/c0551e13ce77356dcb5e22c016f0a6da/easy-android-splash-screen-0.0.1/AndroidManifest.xml:8:5-10:41
+MERGED from [org.jetbrains.anko:anko-appcompat-v7-commons:0.10.8] /Users/arturocalvo/.gradle/caches/transforms-2/files-2.1/92ec882cd7cb9d2b4b338fc50a3c3f91/anko-appcompat-v7-commons-0.10.8/AndroidManifest.xml:7:5-9:41
+MERGED from [org.jetbrains.anko:anko-appcompat-v7-commons:0.10.8] /Users/arturocalvo/.gradle/caches/transforms-2/files-2.1/92ec882cd7cb9d2b4b338fc50a3c3f91/anko-appcompat-v7-commons-0.10.8/AndroidManifest.xml:7:5-9:41
+MERGED from [org.jetbrains.anko:appcompatV7-base:0.10.8] /Users/arturocalvo/.gradle/caches/transforms-2/files-2.1/efa870ea8a05db9fd3803605cdd42dfa/appcompatV7-base-0.10.8/AndroidManifest.xml:7:5-9:41
+MERGED from [org.jetbrains.anko:appcompatV7-base:0.10.8] /Users/arturocalvo/.gradle/caches/transforms-2/files-2.1/efa870ea8a05db9fd3803605cdd42dfa/appcompatV7-base-0.10.8/AndroidManifest.xml:7:5-9:41
+MERGED from [com.android.support:appcompat-v7:28.0.0] /Users/arturocalvo/.gradle/caches/transforms-2/files-2.1/12055280175602938b966340b1087088/appcompat-v7-28.0.0/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:appcompat-v7:28.0.0] /Users/arturocalvo/.gradle/caches/transforms-2/files-2.1/12055280175602938b966340b1087088/appcompat-v7-28.0.0/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support.constraint:constraint-layout:1.1.3] /Users/arturocalvo/.gradle/caches/transforms-2/files-2.1/678fee8b4dc91d730d235408984e6f3e/constraint-layout-1.1.3/AndroidManifest.xml:5:5-7:41
+MERGED from [com.android.support.constraint:constraint-layout:1.1.3] /Users/arturocalvo/.gradle/caches/transforms-2/files-2.1/678fee8b4dc91d730d235408984e6f3e/constraint-layout-1.1.3/AndroidManifest.xml:5:5-7:41
+MERGED from [com.journeyapps:zxing-android-embedded:3.6.0] /Users/arturocalvo/.gradle/caches/transforms-2/files-2.1/23b86767dc626f7af78aadcee15d2a2a/zxing-android-embedded-3.6.0/AndroidManifest.xml:20:5-44
+MERGED from [com.journeyapps:zxing-android-embedded:3.6.0] /Users/arturocalvo/.gradle/caches/transforms-2/files-2.1/23b86767dc626f7af78aadcee15d2a2a/zxing-android-embedded-3.6.0/AndroidManifest.xml:20:5-44
+MERGED from [org.jetbrains.anko:anko-support-v4:0.10.8] /Users/arturocalvo/.gradle/caches/transforms-2/files-2.1/9f412384344d691d882fcf94232ce288/anko-support-v4-0.10.8/AndroidManifest.xml:7:5-9:41
+MERGED from [org.jetbrains.anko:anko-support-v4:0.10.8] /Users/arturocalvo/.gradle/caches/transforms-2/files-2.1/9f412384344d691d882fcf94232ce288/anko-support-v4-0.10.8/AndroidManifest.xml:7:5-9:41
+MERGED from [org.jetbrains.anko:anko-support-v4-commons:0.10.8] /Users/arturocalvo/.gradle/caches/transforms-2/files-2.1/d981e4c2d3fc4e1e4fa3020d2e6247eb/anko-support-v4-commons-0.10.8/AndroidManifest.xml:7:5-9:41
+MERGED from [org.jetbrains.anko:anko-support-v4-commons:0.10.8] /Users/arturocalvo/.gradle/caches/transforms-2/files-2.1/d981e4c2d3fc4e1e4fa3020d2e6247eb/anko-support-v4-commons-0.10.8/AndroidManifest.xml:7:5-9:41
+MERGED from [org.jetbrains.anko:supportV4-base:0.10.8] /Users/arturocalvo/.gradle/caches/transforms-2/files-2.1/6ca2c16f1d217915f130a4ec94eda0a5/supportV4-base-0.10.8/AndroidManifest.xml:7:5-9:41
+MERGED from [org.jetbrains.anko:supportV4-base:0.10.8] /Users/arturocalvo/.gradle/caches/transforms-2/files-2.1/6ca2c16f1d217915f130a4ec94eda0a5/supportV4-base-0.10.8/AndroidManifest.xml:7:5-9:41
+MERGED from [com.android.support:support-v4:28.0.0] /Users/arturocalvo/.gradle/caches/transforms-2/files-2.1/9b5013070e6935d15da43d115bcb1a24/support-v4-28.0.0/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-v4:28.0.0] /Users/arturocalvo/.gradle/caches/transforms-2/files-2.1/9b5013070e6935d15da43d115bcb1a24/support-v4-28.0.0/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:28.0.0] /Users/arturocalvo/.gradle/caches/transforms-2/files-2.1/27ba2d21f388c43e37bba3bad3d864c3/animated-vector-drawable-28.0.0/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:28.0.0] /Users/arturocalvo/.gradle/caches/transforms-2/files-2.1/27ba2d21f388c43e37bba3bad3d864c3/animated-vector-drawable-28.0.0/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:28.0.0] /Users/arturocalvo/.gradle/caches/transforms-2/files-2.1/a50aa858602abece8d42848ee02cbd87/support-vector-drawable-28.0.0/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:28.0.0] /Users/arturocalvo/.gradle/caches/transforms-2/files-2.1/a50aa858602abece8d42848ee02cbd87/support-vector-drawable-28.0.0/AndroidManifest.xml:20:5-44
+MERGED from [com.android.volley:volley:1.1.1] /Users/arturocalvo/.gradle/caches/transforms-2/files-2.1/e06af58c913e345d6540dfab4aa3e1f9/volley-1.1.1/AndroidManifest.xml:7:5-43
+MERGED from [com.android.volley:volley:1.1.1] /Users/arturocalvo/.gradle/caches/transforms-2/files-2.1/e06af58c913e345d6540dfab4aa3e1f9/volley-1.1.1/AndroidManifest.xml:7:5-43
+MERGED from [org.jetbrains.anko:anko-sdk25:0.10.8] /Users/arturocalvo/.gradle/caches/transforms-2/files-2.1/974ead6a517ad03a3aa3e1ff44748eb1/anko-sdk25-0.10.8/AndroidManifest.xml:7:5-9:41
+MERGED from [org.jetbrains.anko:anko-sdk25:0.10.8] /Users/arturocalvo/.gradle/caches/transforms-2/files-2.1/974ead6a517ad03a3aa3e1ff44748eb1/anko-sdk25-0.10.8/AndroidManifest.xml:7:5-9:41
+MERGED from [org.jetbrains.anko:anko-sdk25-coroutines:0.10.8] /Users/arturocalvo/.gradle/caches/transforms-2/files-2.1/f4c2fa405407332742324cef6a77bf6d/anko-sdk25-coroutines-0.10.8/AndroidManifest.xml:7:5-9:41
+MERGED from [org.jetbrains.anko:anko-sdk25-coroutines:0.10.8] /Users/arturocalvo/.gradle/caches/transforms-2/files-2.1/f4c2fa405407332742324cef6a77bf6d/anko-sdk25-coroutines-0.10.8/AndroidManifest.xml:7:5-9:41
+MERGED from [org.jetbrains.anko:anko-commons:0.10.8] /Users/arturocalvo/.gradle/caches/transforms-2/files-2.1/c074edde4921ff5f4e8da20c3ac805b8/anko-commons-0.10.8/AndroidManifest.xml:7:5-9:41
+MERGED from [org.jetbrains.anko:anko-commons:0.10.8] /Users/arturocalvo/.gradle/caches/transforms-2/files-2.1/c074edde4921ff5f4e8da20c3ac805b8/anko-commons-0.10.8/AndroidManifest.xml:7:5-9:41
+MERGED from [com.kaopiz:kprogresshud:1.2.0] /Users/arturocalvo/.gradle/caches/transforms-2/files-2.1/2f86377d097b53c69aaa21b33aa60a3a/kprogresshud-1.2.0/AndroidManifest.xml:7:5-9:41
+MERGED from [com.kaopiz:kprogresshud:1.2.0] /Users/arturocalvo/.gradle/caches/transforms-2/files-2.1/2f86377d097b53c69aaa21b33aa60a3a/kprogresshud-1.2.0/AndroidManifest.xml:7:5-9:41
+MERGED from [io.reactivex.rxjava2:rxandroid:2.0.2] /Users/arturocalvo/.gradle/caches/transforms-2/files-2.1/f88728e4b0452735be81a7e715aae82c/rxandroid-2.0.2/AndroidManifest.xml:19:5-43
+MERGED from [io.reactivex.rxjava2:rxandroid:2.0.2] /Users/arturocalvo/.gradle/caches/transforms-2/files-2.1/f88728e4b0452735be81a7e715aae82c/rxandroid-2.0.2/AndroidManifest.xml:19:5-43
+MERGED from [com.android.support:recyclerview-v7:28.0.0] /Users/arturocalvo/.gradle/caches/transforms-2/files-2.1/a3d7cfdb84a3fb0d744940d7eec77ebf/recyclerview-v7-28.0.0/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:recyclerview-v7:28.0.0] /Users/arturocalvo/.gradle/caches/transforms-2/files-2.1/a3d7cfdb84a3fb0d744940d7eec77ebf/recyclerview-v7-28.0.0/AndroidManifest.xml:20:5-44
+MERGED from [com.getkeepsafe.relinker:relinker:1.3.0] /Users/arturocalvo/.gradle/caches/transforms-2/files-2.1/5f90b57cb2c98006995801b508bc9f9d/relinker-1.3.0/AndroidManifest.xml:5:5-43
+MERGED from [com.getkeepsafe.relinker:relinker:1.3.0] /Users/arturocalvo/.gradle/caches/transforms-2/files-2.1/5f90b57cb2c98006995801b508bc9f9d/relinker-1.3.0/AndroidManifest.xml:5:5-43
+MERGED from [org.jetbrains.anko:platform-base:0.10.8] /Users/arturocalvo/.gradle/caches/transforms-2/files-2.1/97b1af2ad99f0e5f402c9fb9a47dfe4f/platform-base-0.10.8/AndroidManifest.xml:7:5-9:41
+MERGED from [org.jetbrains.anko:platform-base:0.10.8] /Users/arturocalvo/.gradle/caches/transforms-2/files-2.1/97b1af2ad99f0e5f402c9fb9a47dfe4f/platform-base-0.10.8/AndroidManifest.xml:7:5-9:41
+MERGED from [org.jetbrains.anko:commons-base:0.10.8] /Users/arturocalvo/.gradle/caches/transforms-2/files-2.1/bdcfcdcf7e6c627c30337c2c931db5d1/commons-base-0.10.8/AndroidManifest.xml:7:5-9:41
+MERGED from [org.jetbrains.anko:commons-base:0.10.8] /Users/arturocalvo/.gradle/caches/transforms-2/files-2.1/bdcfcdcf7e6c627c30337c2c931db5d1/commons-base-0.10.8/AndroidManifest.xml:7:5-9:41
+MERGED from [com.android.support:support-fragment:28.0.0] /Users/arturocalvo/.gradle/caches/transforms-2/files-2.1/4ecbb0dd9610a1c4db3bfb9271345258/support-fragment-28.0.0/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-fragment:28.0.0] /Users/arturocalvo/.gradle/caches/transforms-2/files-2.1/4ecbb0dd9610a1c4db3bfb9271345258/support-fragment-28.0.0/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-ui:28.0.0] /Users/arturocalvo/.gradle/caches/transforms-2/files-2.1/b2dd35a1e82f930275cc253807e21080/support-core-ui-28.0.0/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-ui:28.0.0] /Users/arturocalvo/.gradle/caches/transforms-2/files-2.1/b2dd35a1e82f930275cc253807e21080/support-core-ui-28.0.0/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-utils:28.0.0] /Users/arturocalvo/.gradle/caches/transforms-2/files-2.1/fc943371da73f3d03acf65150b5f0849/support-core-utils-28.0.0/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-utils:28.0.0] /Users/arturocalvo/.gradle/caches/transforms-2/files-2.1/fc943371da73f3d03acf65150b5f0849/support-core-utils-28.0.0/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:transition:28.0.0] /Users/arturocalvo/.gradle/caches/transforms-2/files-2.1/050e74278536aecda19efbd757028ce8/transition-28.0.0/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:transition:28.0.0] /Users/arturocalvo/.gradle/caches/transforms-2/files-2.1/050e74278536aecda19efbd757028ce8/transition-28.0.0/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-media-compat:28.0.0] /Users/arturocalvo/.gradle/caches/transforms-2/files-2.1/5473f30fbdfad06cdcef18f03d8eece1/support-media-compat-28.0.0/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-media-compat:28.0.0] /Users/arturocalvo/.gradle/caches/transforms-2/files-2.1/5473f30fbdfad06cdcef18f03d8eece1/support-media-compat-28.0.0/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:loader:28.0.0] /Users/arturocalvo/.gradle/caches/transforms-2/files-2.1/215edf5ba6cd118914d883a82c139be1/loader-28.0.0/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:loader:28.0.0] /Users/arturocalvo/.gradle/caches/transforms-2/files-2.1/215edf5ba6cd118914d883a82c139be1/loader-28.0.0/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:viewpager:28.0.0] /Users/arturocalvo/.gradle/caches/transforms-2/files-2.1/2ac488ef11968423ef07c817c2e4d7d0/viewpager-28.0.0/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:viewpager:28.0.0] /Users/arturocalvo/.gradle/caches/transforms-2/files-2.1/2ac488ef11968423ef07c817c2e4d7d0/viewpager-28.0.0/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:coordinatorlayout:28.0.0] /Users/arturocalvo/.gradle/caches/transforms-2/files-2.1/96cea2ef62866b661db214c438f41f76/coordinatorlayout-28.0.0/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:coordinatorlayout:28.0.0] /Users/arturocalvo/.gradle/caches/transforms-2/files-2.1/96cea2ef62866b661db214c438f41f76/coordinatorlayout-28.0.0/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:drawerlayout:28.0.0] /Users/arturocalvo/.gradle/caches/transforms-2/files-2.1/f5ab896e8fa19d24cd81447cbed76d06/drawerlayout-28.0.0/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:drawerlayout:28.0.0] /Users/arturocalvo/.gradle/caches/transforms-2/files-2.1/f5ab896e8fa19d24cd81447cbed76d06/drawerlayout-28.0.0/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:slidingpanelayout:28.0.0] /Users/arturocalvo/.gradle/caches/transforms-2/files-2.1/77d334a0d9aa4c9f3495fc24649c2317/slidingpanelayout-28.0.0/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:slidingpanelayout:28.0.0] /Users/arturocalvo/.gradle/caches/transforms-2/files-2.1/77d334a0d9aa4c9f3495fc24649c2317/slidingpanelayout-28.0.0/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:customview:28.0.0] /Users/arturocalvo/.gradle/caches/transforms-2/files-2.1/2df2dbe96e22f553bf7f52dc02e06c5b/customview-28.0.0/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:customview:28.0.0] /Users/arturocalvo/.gradle/caches/transforms-2/files-2.1/2df2dbe96e22f553bf7f52dc02e06c5b/customview-28.0.0/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:swiperefreshlayout:28.0.0] /Users/arturocalvo/.gradle/caches/transforms-2/files-2.1/7b8a56c3dee59879c36bff8fa3bd7e97/swiperefreshlayout-28.0.0/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:swiperefreshlayout:28.0.0] /Users/arturocalvo/.gradle/caches/transforms-2/files-2.1/7b8a56c3dee59879c36bff8fa3bd7e97/swiperefreshlayout-28.0.0/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:asynclayoutinflater:28.0.0] /Users/arturocalvo/.gradle/caches/transforms-2/files-2.1/f586251bab5e97e269be98c1402e116a/asynclayoutinflater-28.0.0/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:asynclayoutinflater:28.0.0] /Users/arturocalvo/.gradle/caches/transforms-2/files-2.1/f586251bab5e97e269be98c1402e116a/asynclayoutinflater-28.0.0/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-compat:28.0.0] /Users/arturocalvo/.gradle/caches/transforms-2/files-2.1/3da881d8db482d42b68f01432e816da7/support-compat-28.0.0/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-compat:28.0.0] /Users/arturocalvo/.gradle/caches/transforms-2/files-2.1/3da881d8db482d42b68f01432e816da7/support-compat-28.0.0/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:versionedparcelable:28.0.0] /Users/arturocalvo/.gradle/caches/transforms-2/files-2.1/bff88836f772839357c61380c7683f22/versionedparcelable-28.0.0/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:versionedparcelable:28.0.0] /Users/arturocalvo/.gradle/caches/transforms-2/files-2.1/bff88836f772839357c61380c7683f22/versionedparcelable-28.0.0/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:cursoradapter:28.0.0] /Users/arturocalvo/.gradle/caches/transforms-2/files-2.1/cafe114e81444566e4d2edda5fd9ddb1/cursoradapter-28.0.0/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:cursoradapter:28.0.0] /Users/arturocalvo/.gradle/caches/transforms-2/files-2.1/cafe114e81444566e4d2edda5fd9ddb1/cursoradapter-28.0.0/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:cardview-v7:28.0.0] /Users/arturocalvo/.gradle/caches/transforms-2/files-2.1/35f64641e84562e60349c1aaa760db3f/cardview-v7-28.0.0/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:cardview-v7:28.0.0] /Users/arturocalvo/.gradle/caches/transforms-2/files-2.1/35f64641e84562e60349c1aaa760db3f/cardview-v7-28.0.0/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:runtime:1.1.1] /Users/arturocalvo/.gradle/caches/transforms-2/files-2.1/b8f1e3430a0660eac9294ee2832fec0b/runtime-1.1.1/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:runtime:1.1.1] /Users/arturocalvo/.gradle/caches/transforms-2/files-2.1/b8f1e3430a0660eac9294ee2832fec0b/runtime-1.1.1/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:documentfile:28.0.0] /Users/arturocalvo/.gradle/caches/transforms-2/files-2.1/36253c022049322dc5eece58b9338e5f/documentfile-28.0.0/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:documentfile:28.0.0] /Users/arturocalvo/.gradle/caches/transforms-2/files-2.1/36253c022049322dc5eece58b9338e5f/documentfile-28.0.0/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:localbroadcastmanager:28.0.0] /Users/arturocalvo/.gradle/caches/transforms-2/files-2.1/aa5b2000b4a63e190b8d423f64d91414/localbroadcastmanager-28.0.0/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:localbroadcastmanager:28.0.0] /Users/arturocalvo/.gradle/caches/transforms-2/files-2.1/aa5b2000b4a63e190b8d423f64d91414/localbroadcastmanager-28.0.0/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:print:28.0.0] /Users/arturocalvo/.gradle/caches/transforms-2/files-2.1/5a0c63e6c4f9c58402134b454928ccbd/print-28.0.0/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:print:28.0.0] /Users/arturocalvo/.gradle/caches/transforms-2/files-2.1/5a0c63e6c4f9c58402134b454928ccbd/print-28.0.0/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:viewmodel:1.1.1] /Users/arturocalvo/.gradle/caches/transforms-2/files-2.1/6b265e6497b74eea1ffb0c8c0c588d6d/viewmodel-1.1.1/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:viewmodel:1.1.1] /Users/arturocalvo/.gradle/caches/transforms-2/files-2.1/6b265e6497b74eea1ffb0c8c0c588d6d/viewmodel-1.1.1/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:interpolator:28.0.0] /Users/arturocalvo/.gradle/caches/transforms-2/files-2.1/81fcc2f25414809708ca315c4112de67/interpolator-28.0.0/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:interpolator:28.0.0] /Users/arturocalvo/.gradle/caches/transforms-2/files-2.1/81fcc2f25414809708ca315c4112de67/interpolator-28.0.0/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata:1.1.1] /Users/arturocalvo/.gradle/caches/transforms-2/files-2.1/5a8508a3ebeadeb5d4d72ed7b40c4ec3/livedata-1.1.1/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata:1.1.1] /Users/arturocalvo/.gradle/caches/transforms-2/files-2.1/5a8508a3ebeadeb5d4d72ed7b40c4ec3/livedata-1.1.1/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata-core:1.1.1] /Users/arturocalvo/.gradle/caches/transforms-2/files-2.1/649b7bfcd78ed78274e88ba200b50018/livedata-core-1.1.1/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata-core:1.1.1] /Users/arturocalvo/.gradle/caches/transforms-2/files-2.1/649b7bfcd78ed78274e88ba200b50018/livedata-core-1.1.1/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.core:runtime:1.1.1] /Users/arturocalvo/.gradle/caches/transforms-2/files-2.1/ab9e1b75682c5776c78e7ec0fcd26393/runtime-1.1.1/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.core:runtime:1.1.1] /Users/arturocalvo/.gradle/caches/transforms-2/files-2.1/ab9e1b75682c5776c78e7ec0fcd26393/runtime-1.1.1/AndroidManifest.xml:20:5-44
 INJECTED from /Users/arturocalvo/Wansoft.Apps/MyApplication/WansoftSurvey/src/main/AndroidManifest.xml
 INJECTED from /Users/arturocalvo/Wansoft.Apps/MyApplication/WansoftSurvey/src/main/AndroidManifest.xml
 	android:targetSdkVersion
@@ -360,38 +370,38 @@ INJECTED from /Users/arturocalvo/Wansoft.Apps/MyApplication/WansoftSurvey/src/ma
 		ADDED from /Users/arturocalvo/Wansoft.Apps/MyApplication/WansoftSurvey/src/main/AndroidManifest.xml
 		INJECTED from /Users/arturocalvo/Wansoft.Apps/MyApplication/WansoftSurvey/src/main/AndroidManifest.xml
 uses-feature#android.hardware.camera
-ADDED from [com.journeyapps:zxing-android-embedded:3.6.0] /Users/arturocalvo/.gradle/caches/transforms-2/files-2.1/5b842ebf1e7cb518824e8a1931943727/AndroidManifest.xml:25:5-27:36
+ADDED from [com.journeyapps:zxing-android-embedded:3.6.0] /Users/arturocalvo/.gradle/caches/transforms-2/files-2.1/23b86767dc626f7af78aadcee15d2a2a/zxing-android-embedded-3.6.0/AndroidManifest.xml:25:5-27:36
 	android:required
-		ADDED from [com.journeyapps:zxing-android-embedded:3.6.0] /Users/arturocalvo/.gradle/caches/transforms-2/files-2.1/5b842ebf1e7cb518824e8a1931943727/AndroidManifest.xml:27:9-33
+		ADDED from [com.journeyapps:zxing-android-embedded:3.6.0] /Users/arturocalvo/.gradle/caches/transforms-2/files-2.1/23b86767dc626f7af78aadcee15d2a2a/zxing-android-embedded-3.6.0/AndroidManifest.xml:27:9-33
 	android:name
-		ADDED from [com.journeyapps:zxing-android-embedded:3.6.0] /Users/arturocalvo/.gradle/caches/transforms-2/files-2.1/5b842ebf1e7cb518824e8a1931943727/AndroidManifest.xml:26:9-47
+		ADDED from [com.journeyapps:zxing-android-embedded:3.6.0] /Users/arturocalvo/.gradle/caches/transforms-2/files-2.1/23b86767dc626f7af78aadcee15d2a2a/zxing-android-embedded-3.6.0/AndroidManifest.xml:26:9-47
 uses-feature#android.hardware.camera.front
-ADDED from [com.journeyapps:zxing-android-embedded:3.6.0] /Users/arturocalvo/.gradle/caches/transforms-2/files-2.1/5b842ebf1e7cb518824e8a1931943727/AndroidManifest.xml:28:5-30:36
+ADDED from [com.journeyapps:zxing-android-embedded:3.6.0] /Users/arturocalvo/.gradle/caches/transforms-2/files-2.1/23b86767dc626f7af78aadcee15d2a2a/zxing-android-embedded-3.6.0/AndroidManifest.xml:28:5-30:36
 	android:required
-		ADDED from [com.journeyapps:zxing-android-embedded:3.6.0] /Users/arturocalvo/.gradle/caches/transforms-2/files-2.1/5b842ebf1e7cb518824e8a1931943727/AndroidManifest.xml:30:9-33
+		ADDED from [com.journeyapps:zxing-android-embedded:3.6.0] /Users/arturocalvo/.gradle/caches/transforms-2/files-2.1/23b86767dc626f7af78aadcee15d2a2a/zxing-android-embedded-3.6.0/AndroidManifest.xml:30:9-33
 	android:name
-		ADDED from [com.journeyapps:zxing-android-embedded:3.6.0] /Users/arturocalvo/.gradle/caches/transforms-2/files-2.1/5b842ebf1e7cb518824e8a1931943727/AndroidManifest.xml:29:9-53
+		ADDED from [com.journeyapps:zxing-android-embedded:3.6.0] /Users/arturocalvo/.gradle/caches/transforms-2/files-2.1/23b86767dc626f7af78aadcee15d2a2a/zxing-android-embedded-3.6.0/AndroidManifest.xml:29:9-53
 uses-feature#android.hardware.camera.autofocus
-ADDED from [com.journeyapps:zxing-android-embedded:3.6.0] /Users/arturocalvo/.gradle/caches/transforms-2/files-2.1/5b842ebf1e7cb518824e8a1931943727/AndroidManifest.xml:33:5-35:36
+ADDED from [com.journeyapps:zxing-android-embedded:3.6.0] /Users/arturocalvo/.gradle/caches/transforms-2/files-2.1/23b86767dc626f7af78aadcee15d2a2a/zxing-android-embedded-3.6.0/AndroidManifest.xml:33:5-35:36
 	android:required
-		ADDED from [com.journeyapps:zxing-android-embedded:3.6.0] /Users/arturocalvo/.gradle/caches/transforms-2/files-2.1/5b842ebf1e7cb518824e8a1931943727/AndroidManifest.xml:35:9-33
+		ADDED from [com.journeyapps:zxing-android-embedded:3.6.0] /Users/arturocalvo/.gradle/caches/transforms-2/files-2.1/23b86767dc626f7af78aadcee15d2a2a/zxing-android-embedded-3.6.0/AndroidManifest.xml:35:9-33
 	android:name
-		ADDED from [com.journeyapps:zxing-android-embedded:3.6.0] /Users/arturocalvo/.gradle/caches/transforms-2/files-2.1/5b842ebf1e7cb518824e8a1931943727/AndroidManifest.xml:34:9-57
+		ADDED from [com.journeyapps:zxing-android-embedded:3.6.0] /Users/arturocalvo/.gradle/caches/transforms-2/files-2.1/23b86767dc626f7af78aadcee15d2a2a/zxing-android-embedded-3.6.0/AndroidManifest.xml:34:9-57
 uses-feature#android.hardware.camera.flash
-ADDED from [com.journeyapps:zxing-android-embedded:3.6.0] /Users/arturocalvo/.gradle/caches/transforms-2/files-2.1/5b842ebf1e7cb518824e8a1931943727/AndroidManifest.xml:36:5-38:36
+ADDED from [com.journeyapps:zxing-android-embedded:3.6.0] /Users/arturocalvo/.gradle/caches/transforms-2/files-2.1/23b86767dc626f7af78aadcee15d2a2a/zxing-android-embedded-3.6.0/AndroidManifest.xml:36:5-38:36
 	android:required
-		ADDED from [com.journeyapps:zxing-android-embedded:3.6.0] /Users/arturocalvo/.gradle/caches/transforms-2/files-2.1/5b842ebf1e7cb518824e8a1931943727/AndroidManifest.xml:38:9-33
+		ADDED from [com.journeyapps:zxing-android-embedded:3.6.0] /Users/arturocalvo/.gradle/caches/transforms-2/files-2.1/23b86767dc626f7af78aadcee15d2a2a/zxing-android-embedded-3.6.0/AndroidManifest.xml:38:9-33
 	android:name
-		ADDED from [com.journeyapps:zxing-android-embedded:3.6.0] /Users/arturocalvo/.gradle/caches/transforms-2/files-2.1/5b842ebf1e7cb518824e8a1931943727/AndroidManifest.xml:37:9-53
+		ADDED from [com.journeyapps:zxing-android-embedded:3.6.0] /Users/arturocalvo/.gradle/caches/transforms-2/files-2.1/23b86767dc626f7af78aadcee15d2a2a/zxing-android-embedded-3.6.0/AndroidManifest.xml:37:9-53
 uses-feature#android.hardware.screen.landscape
-ADDED from [com.journeyapps:zxing-android-embedded:3.6.0] /Users/arturocalvo/.gradle/caches/transforms-2/files-2.1/5b842ebf1e7cb518824e8a1931943727/AndroidManifest.xml:39:5-41:36
+ADDED from [com.journeyapps:zxing-android-embedded:3.6.0] /Users/arturocalvo/.gradle/caches/transforms-2/files-2.1/23b86767dc626f7af78aadcee15d2a2a/zxing-android-embedded-3.6.0/AndroidManifest.xml:39:5-41:36
 	android:required
-		ADDED from [com.journeyapps:zxing-android-embedded:3.6.0] /Users/arturocalvo/.gradle/caches/transforms-2/files-2.1/5b842ebf1e7cb518824e8a1931943727/AndroidManifest.xml:41:9-33
+		ADDED from [com.journeyapps:zxing-android-embedded:3.6.0] /Users/arturocalvo/.gradle/caches/transforms-2/files-2.1/23b86767dc626f7af78aadcee15d2a2a/zxing-android-embedded-3.6.0/AndroidManifest.xml:41:9-33
 	android:name
-		ADDED from [com.journeyapps:zxing-android-embedded:3.6.0] /Users/arturocalvo/.gradle/caches/transforms-2/files-2.1/5b842ebf1e7cb518824e8a1931943727/AndroidManifest.xml:40:9-57
+		ADDED from [com.journeyapps:zxing-android-embedded:3.6.0] /Users/arturocalvo/.gradle/caches/transforms-2/files-2.1/23b86767dc626f7af78aadcee15d2a2a/zxing-android-embedded-3.6.0/AndroidManifest.xml:40:9-57
 uses-feature#android.hardware.wifi
-ADDED from [com.journeyapps:zxing-android-embedded:3.6.0] /Users/arturocalvo/.gradle/caches/transforms-2/files-2.1/5b842ebf1e7cb518824e8a1931943727/AndroidManifest.xml:42:5-44:36
+ADDED from [com.journeyapps:zxing-android-embedded:3.6.0] /Users/arturocalvo/.gradle/caches/transforms-2/files-2.1/23b86767dc626f7af78aadcee15d2a2a/zxing-android-embedded-3.6.0/AndroidManifest.xml:42:5-44:36
 	android:required
-		ADDED from [com.journeyapps:zxing-android-embedded:3.6.0] /Users/arturocalvo/.gradle/caches/transforms-2/files-2.1/5b842ebf1e7cb518824e8a1931943727/AndroidManifest.xml:44:9-33
+		ADDED from [com.journeyapps:zxing-android-embedded:3.6.0] /Users/arturocalvo/.gradle/caches/transforms-2/files-2.1/23b86767dc626f7af78aadcee15d2a2a/zxing-android-embedded-3.6.0/AndroidManifest.xml:44:9-33
 	android:name
-		ADDED from [com.journeyapps:zxing-android-embedded:3.6.0] /Users/arturocalvo/.gradle/caches/transforms-2/files-2.1/5b842ebf1e7cb518824e8a1931943727/AndroidManifest.xml:43:9-45
+		ADDED from [com.journeyapps:zxing-android-embedded:3.6.0] /Users/arturocalvo/.gradle/caches/transforms-2/files-2.1/23b86767dc626f7af78aadcee15d2a2a/zxing-android-embedded-3.6.0/AndroidManifest.xml:43:9-45

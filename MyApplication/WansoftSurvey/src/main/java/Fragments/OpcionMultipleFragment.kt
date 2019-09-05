@@ -14,6 +14,7 @@ import android.view.ViewGroup
 import com.example.Wansoft.Survey.EncuestaActivity
 
 import com.example.myapplication.R
+import org.jetbrains.anko.support.v4.act
 
 
 class OpcionMultipleFragment : Fragment() {
@@ -37,10 +38,15 @@ class OpcionMultipleFragment : Fragment() {
             activity.guardarOpcionMultiple("")
         }*/
 
-        for (opcion in opciones){
+
+        for (opcion in opciones) {
             listaOpciones.add(opcion)
-            if(opcion.Default == true && respuestasSeleccionadas.first() == ""){
-                activity.guardarOpcionMultiple(opcion.Id.toString())
+            if(activity.pregunta?.Optional == true){
+                activity.guardarOpcionMultiple("")
+            }else {
+                if(opcion.Default == true && respuestasSeleccionadas.first() == "") {
+                    activity.guardarOpcionMultiple(opcion.Id.toString())
+                }
             }
         }
 
@@ -61,6 +67,13 @@ class OpcionMultipleFragment : Fragment() {
                 for(seleccion in listaOpciones){
                     if(seleccion.Description == opcion){
                         activity.guardarOpcionMultiple(seleccion.Id.toString())
+                        var resp = seleccion.Id.toString()
+                        if(respuestasSeleccionadas.contains(resp)){
+                            respuestasSeleccionadas.remove(resp)
+                        }else{
+                            respuestasSeleccionadas.add(resp)
+                        }
+                        adaptador?.notifyDataSetChanged()
                     }
                 }
             }
@@ -74,5 +87,22 @@ class OpcionMultipleFragment : Fragment() {
         return vista
     }
 
+    fun updateOpcionMultiple(lista: List<OpcionesPreguntaModel>, respuestas: List<String>, vista: View){
+        val recyclerView = vista.findViewById<RecyclerView>(R.id.opcionMultipleRecyclerView)
+        val activity = getActivity() as EncuestaActivity
+        this.listaOpciones = lista.toMutableList()
+        this.adaptador = OpcionMultipleAdapter(activity, respuestas, this.listaOpciones, object: TablaListener{
+            override fun onClick(vista: View, index: Int) {
+            }
 
+            override fun opcionMultipleSeleccionada(opcion: String) {
+                for(seleccion in listaOpciones){
+                    if(seleccion.Description == opcion){
+                        activity.guardarOpcionMultiple(seleccion.Id.toString())
+                    }
+                }
+            }
+        })
+        recyclerView.adapter = adaptador
+    }
 }

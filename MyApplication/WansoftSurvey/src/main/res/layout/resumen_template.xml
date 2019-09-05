@@ -7,12 +7,12 @@
     <TextView
             android:text="Pregunta"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content" android:id="@+id/preguntaText" android:textSize="24sp"
-            android:textColor="@android:color/white"/>
+            android:layout_height="wrap_content" android:id="@+id/preguntaText" android:textSize="30sp"
+            android:textColor="?attr/colorPrimary"/>
     <TextView
             android:text="Respuesta"
             android:layout_width="match_parent"
             android:layout_height="wrap_content" android:id="@+id/respuestaText"
-            android:textSize="18sp" android:textColor="@android:color/white"
+            android:textSize="24sp" android:textColor="@android:color/white"
     />
 </LinearLayout>

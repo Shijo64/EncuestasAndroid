@@ -29,13 +29,16 @@ class TextoFragment : Fragment() {
         val respuesta = arguments!!.getString("respuesta")
         val textField = vista.findViewById<TextView>(R.id.nombreText)
         val lightFont: Typeface = Typeface.createFromAsset(activity.assets, "fonts/graphik_light.ttf")
-        textField.typeface = lightFont
+        val regularFont: Typeface = Typeface.createFromAsset(activity.assets, "fonts/graphik_regular.ttf")
+        textField.typeface = regularFont
 
+        if(activity.pregunta?.Optional!! == true && respuesta == ""){
+            activity.guardarTexto(respuesta)
+        }
         if(respuesta != ""){
             textField.setText(respuesta)
+            activity.guardarTexto(respuesta)
         }
-
-        activity.guardarTexto(respuesta)
 
         textField.addTextChangedListener(object:TextWatcher{
             override fun afterTextChanged(s: Editable?) {

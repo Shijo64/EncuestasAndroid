@@ -44,6 +44,7 @@ class EncuestaActivity : AppCompatActivity() {
         this.encuesta = intent.getParcelableExtra("Encuesta")
 
         getPreguntas()
+
         if(this.preguntas.count() > 0) {
             setPregunta()
         }else{
@@ -78,22 +79,33 @@ class EncuestaActivity : AppCompatActivity() {
 
             var sorted = this.preguntas.sortedWith(compareBy { it.Order })
             this.preguntas = sorted as MutableList<PreguntaModel>
+            val dataManager = DataManager()
+            this.preguntas = dataManager.checkIfAllQuestionsAreValid(this.preguntas)
+        }else{
+            this.siguienteButton.isEnabled = false
+            alert("La encuesta no cuenta con preguntas, revisa la configuración en el portal") {
+                title = "Aviso"
+                positiveButton("Aceptar"){}
+            }.show().apply {
+                getButton(android.support.v7.app.AlertDialog.BUTTON_POSITIVE)?.let { it.setTextColor(Color.parseColor("#3E4883")) }
+            }
         }
     }
 
     fun setPregunta(){
         val respuestasGuardadas = SharedData.SharedInstance.respuestas
         this.pregunta = this.preguntas[this.currentIndex]
-        val numeroPregunta = this.currentIndex + 1
-        val numeroText = ""+ numeroPregunta + " de " + this.preguntas.count()
         val lightFont:Typeface = Typeface.createFromAsset(assets, "fonts/graphik_light.ttf")
         val regularFont:Typeface = Typeface.createFromAsset(assets, "fonts/graphik_regular.ttf")
         numeroPreguntaText.typeface = lightFont
-        numeroPreguntaText.setText(numeroText)
         preguntaText.typeface = regularFont
-        preguntaText.setText(pregunta!!.Description)
         //val respuesta = EncuestaRespuestas()
         this.respuesta = respuestasGuardadas.find { item -> item.idPregunta == this.pregunta!!.Id }
+
+        val numeroPregunta = this.currentIndex + 1
+        val numeroText = ""+ numeroPregunta + " de " + this.preguntas.count()
+        numeroPreguntaText.setText(numeroText)
+        preguntaText.setText(pregunta!!.Description)
 
         if(this.respuesta == null){
             this.respuesta = EncuestaRespuestas()
@@ -157,16 +169,21 @@ class EncuestaActivity : AppCompatActivity() {
                 if(opciones.count() > 0) {
                     val bundle = Bundle()
                     val fragment = SegmentoFragment()
+                    var respuestaSeleccionada = ""
                     if (this.respuesta!!.respuesta != "") {
                         val respuestaSeleccionada = this.respuesta!!.respuesta
                         bundle.putString("respuesta", respuestaSeleccionada)
                     } else {
-                        var default = opciones.find { it.Default == true }
-                        if (default == null) {
-                            default = opciones.first()
+                        if(this.pregunta?.Optional!!){
+                            respuestaSeleccionada = opciones.get(0).Id.toString()
+                        }else {
+                            var default = opciones.find { it.Default ==  true }
+                            if (default == null) {
+                                default = opciones.first()
+                            }
+                            respuestaSeleccionada = default!!.Id.toString()
                         }
-                        val respuestaSeleccionada = default!!.Id
-                        bundle.putString("respuesta", respuestaSeleccionada.toString())
+                        bundle.putString("respuesta", respuestaSeleccionada)
                     }
                     bundle.putParcelableArrayList("opciones", opciones)
                     fragment.arguments = bundle
@@ -264,109 +281,124 @@ class EncuestaActivity : AppCompatActivity() {
     }
 
     fun siguientePregunta(){
-        this.hideKeyboard(this)
-        if(this.fromResumen){
-            this.progressHud = KProgressHUD.create(this)
-                .setStyle(KProgressHUD.Style.SPIN_INDETERMINATE)
-                .setLabel("Por favor espera")
-                .setDetailsLabel("Enviando encuesta...")
-                .setCancellable(true)
-                .setAnimationSpeed(2)
-                .setDimAmount(0.5f)
 
-            val connectivityManager = this.getSystemService(Context.CONNECTIVITY_SERVICE) as ConnectivityManager
-            val activeNetwork: NetworkInfo? = connectivityManager.activeNetworkInfo
-            val isConnected = activeNetwork?.isConnected
+        var prueba = this.respuesta
 
-            var encuestaEnviar = EncuestaBO()
-            encuestaEnviar.EncuestaId = this.encuesta!!.Id!!
-            encuestaEnviar.Id = encuestaEnviar.idIncrement()
-            encuestaEnviar.nombreEncuesta = this.encuesta!!.Name!!
-            encuestaEnviar.CodigoEncuesta = this.encuesta!!.Name!!
-            encuestaEnviar.Orden = SharedData.SharedInstance.numeroOrden.toInt()
-            encuestaEnviar.FechaOrden = SharedData.SharedInstance.fechaOrden
-
-            var respuestasEnviar = mutableListOf<EncuestaRespuestas>()
-            val respuestas = SharedData.SharedInstance.respuestas.sortedWith(compareBy { it.numeroPregunta })
-            for (respuesta in respuestas){
-                respuesta.idEncuestaBO = encuestaEnviar.Id
-                respuesta.Id = respuesta.idIncrement()
-                respuestasEnviar.add(respuesta)
+        if(this.pregunta?.Optional == false && this.respuesta?.respuesta == ""){
+            alert("Es necesario responder la pregunta para continuar") {
+                title = "Aviso"
+                positiveButton("Aceptar"){}
+            }.show().apply {
+                getButton(android.support.v7.app.AlertDialog.BUTTON_POSITIVE)?.let { it.setTextColor(Color.parseColor("#3E4883")) }
             }
-            respuestasEnviar.saveAll()
+        }else {
+            this.hideKeyboard(this)
+            if(this.fromResumen){
+                this.progressHud = KProgressHUD.create(this)
+                    .setStyle(KProgressHUD.Style.SPIN_INDETERMINATE)
+                    .setLabel("Por favor espera")
+                    .setDetailsLabel("Enviando encuesta...")
+                    .setCancellable(true)
+                    .setAnimationSpeed(2)
+                    .setDimAmount(0.5f)
 
-            encuestaEnviar.save()
+                val connectivityManager = this.getSystemService(Context.CONNECTIVITY_SERVICE) as ConnectivityManager
+                val activeNetwork: NetworkInfo? = connectivityManager.activeNetworkInfo
+                val isConnected = activeNetwork?.isConnected
 
-            if(isConnected != null){
-                this.progressHud.show()
+                var encuestaEnviar = EncuestaBO()
+                encuestaEnviar.EncuestaId = this.encuesta!!.Id!!
+                encuestaEnviar.Id = encuestaEnviar.idIncrement()
+                encuestaEnviar.nombreEncuesta = this.encuesta!!.Name!!
+                encuestaEnviar.CodigoEncuesta = this.encuesta!!.Name!!
+                encuestaEnviar.Orden = SharedData.SharedInstance.numeroOrden.toInt()
+                encuestaEnviar.FechaOrden = SharedData.SharedInstance.fechaOrden
 
-                val manager = ServiceManager()
-                manager.enviarEncuesta(encuestaEnviar, respuestasEnviar, this){
-                    var message = ""
-                    if(it != null) {
-                        message = it?.get("MessageType").toString()
-                    }
-                    if(message == "1"){
+                var respuestasEnviar = mutableListOf<EncuestaRespuestas>()
+                val respuestas = SharedData.SharedInstance.respuestas.sortedWith(compareBy { it.numeroPregunta })
+                for (respuesta in respuestas){
+                    respuesta.idEncuestaBO = encuestaEnviar.Id
+                    respuesta.Id = respuesta.idIncrement()
+                    respuestasEnviar.add(respuesta)
+                }
+                respuestasEnviar.saveAll()
 
-                        val dataManager = DataManager()
-                        dataManager.deleteEncuestaPendiente(encuestaEnviar){
-                            if(it){
-                                this.progressHud.dismiss()
-                                val intent = Intent(this, ResultActivity::class.java)
-                                startActivity(intent)
-                                SharedData.SharedInstance.respuestas = mutableListOf<EncuestaRespuestas>()
-                                SharedData.SharedInstance.numeroOrden = ""
-                                this.finish()
+                encuestaEnviar.save()
+
+                if(isConnected != null){
+                    this.progressHud.show()
+
+                    val manager = ServiceManager()
+                    manager.enviarEncuesta(encuestaEnviar, respuestasEnviar, this){
+                        var message = ""
+                        var messageType = ""
+                        if(it != null) {
+                            messageType = it?.get("MessageType").toString()
+                            message = it?.get("Message").toString()
+                        }
+                        if(messageType == "1"){
+
+                            val dataManager = DataManager()
+                            dataManager.deleteEncuestaPendiente(encuestaEnviar){
+                                if(it){
+                                    this.progressHud.dismiss()
+                                    val intent = Intent(this, ResultActivity::class.java)
+                                    startActivity(intent)
+                                    SharedData.SharedInstance.respuestas = mutableListOf<EncuestaRespuestas>()
+                                    SharedData.SharedInstance.numeroOrden = ""
+                                    this.finish()
+                                }
+                            }
+                        }else{
+                            this.progressHud.dismiss()
+                            alert(message) {
+                                title = "Aviso"
+                                positiveButton("Aceptar"){}
+                            }.show().apply {
+                                getButton(android.support.v7.app.AlertDialog.BUTTON_POSITIVE)?.let { it.setTextColor(Color.parseColor("#3E4883")) }
                             }
                         }
-                    }else{
-                        this.progressHud.dismiss()
-                        alert("Hubo un problema, porfavor intenta de nuevo") {
-                            title = "Aviso"
-                            positiveButton("Aceptar"){}
-                        }.show().apply {
-                            getButton(android.support.v7.app.AlertDialog.BUTTON_POSITIVE)?.let { it.setTextColor(Color.parseColor("#3E4883")) }
-                        }
                     }
-                }
-            }else {
-                alert("No hay conexión a internet, la encuesta se guardara para ser enviada después.") {
-                    title = "Aviso"
-                    positiveButton("Aceptar") {
-                        this@EncuestaActivity.noConexionEncuestaPendiente()
-                    }
-                }.show().apply {
-                    getButton(android.support.v7.app.AlertDialog.BUTTON_POSITIVE)?.let { it.setTextColor(Color.parseColor("#3E4883")) }
-                }
-            }
-        } else if(this.currentIndex < this.preguntas.count() - 1 && this.errorPantalla == false){
-            this.currentIndex = this.currentIndex + 1
-            this.pregunta = this.preguntas[this.currentIndex]
-            setPregunta()
+                }else {
+                    this@EncuestaActivity.noConexionEncuestaPendiente()
+                    /*alert("No hay conexión a internet, la encuesta se guardara para ser enviada después.") {
+                        title = "Aviso"
+                        positiveButton("Aceptar") {
 
-            if(this.currentIndex == this.preguntas.count() - 1){
-                siguienteButton.setText("Resumen")
+                        }
+                    }.show().apply {
+                        getButton(android.support.v7.app.AlertDialog.BUTTON_POSITIVE)?.let { it.setTextColor(Color.parseColor("#3E4883")) }
+                    }*/
+                }
+            } else if(this.currentIndex < this.preguntas.count() - 1 && this.errorPantalla == false){
+                this.currentIndex = this.currentIndex + 1
+                this.pregunta = this.preguntas[this.currentIndex]
+                setPregunta()
+
+                if(this.currentIndex == this.preguntas.count() - 1){
+                    siguienteButton.setText("Resumen")
+                }
+            }else if(this.errorPantalla == false){
+                //MOSTRAR RESUMEN
+                this.currentIndex = this.currentIndex + 1
+                numeroPreguntaText.setText("")
+                preguntaText.setText("Resumen")
+                this.siguienteButton.setText("Enviar")
+                val manager = supportFragmentManager
+                val transaction = manager.beginTransaction()
+                val fragment = ResumenFragment()
+                transaction.replace(controlLayout.id, fragment)
+                transaction.commit()
+                this.fromResumen = true
+                /*val intent = Intent(this, ResumenActivity::class.java)
+                val respuestas = SharedData.SharedInstance.respuestas.sortedWith(compareBy { it.numeroPregunta })
+                val respuestasArray = ArrayList<EncuestaRespuestas>(respuestas)
+                val preguntasArray = ArrayList<PreguntaModel>(this.preguntas)
+                intent.putParcelableArrayListExtra("respuestas", respuestasArray)
+                intent.putParcelableArrayListExtra("preguntas", preguntasArray)
+                intent.putExtra("encuesta", this.encuesta)
+                startActivity(intent)*/
             }
-        }else if(this.errorPantalla == false){
-            //MOSTRAR RESUMEN
-            this.currentIndex = this.currentIndex + 1
-            numeroPreguntaText.setText("")
-            preguntaText.setText("Resumen")
-            this.siguienteButton.setText("Enviar")
-            val manager = supportFragmentManager
-            val transaction = manager.beginTransaction()
-            val fragment = ResumenFragment()
-            transaction.replace(controlLayout.id, fragment)
-            transaction.commit()
-            this.fromResumen = true
-            /*val intent = Intent(this, ResumenActivity::class.java)
-            val respuestas = SharedData.SharedInstance.respuestas.sortedWith(compareBy { it.numeroPregunta })
-            val respuestasArray = ArrayList<EncuestaRespuestas>(respuestas)
-            val preguntasArray = ArrayList<PreguntaModel>(this.preguntas)
-            intent.putParcelableArrayListExtra("respuestas", respuestasArray)
-            intent.putParcelableArrayListExtra("preguntas", preguntasArray)
-            intent.putExtra("encuesta", this.encuesta)
-            startActivity(intent)*/
         }
     }
 
@@ -438,7 +470,15 @@ class EncuestaActivity : AppCompatActivity() {
     }
 
     fun guardarSegmento(respuesta:String){
+        var lista = mutableListOf<String>()
         this.respuesta!!.respuesta = respuesta
+        lista = this.respuesta!!.respuesta.split(",").toMutableList()
+        var listaNew = lista.distinct()
+        if(this.respuesta!!.arrayRespuestas.count() > 0) {
+            this.respuesta!!.arrayRespuestas[0] = listaNew.first()
+        }else{
+            this.respuesta!!.arrayRespuestas.add(listaNew.first())
+        }
         guardarRespuesta(this.respuesta!!)
     }
 
@@ -458,20 +498,33 @@ class EncuestaActivity : AppCompatActivity() {
         for(dato in lista){
             if(dato == ""){
                 lista.remove(dato)
+                this.respuesta?.arrayRespuestas!!.remove(dato)
             }
         }
 
         if(lista.contains(opcion)){
             lista.remove(opcion)
+            this.respuesta?.arrayRespuestas!!.remove(opcion)
             this.respuesta!!.respuesta = lista.joinToString(",")
             guardarRespuesta(this.respuesta!!)
         }else{
             lista.add(opcion)
-            this.respuesta!!.arrayRespuestas.add(opcion)
+            this.respuesta?.arrayRespuestas!!.add(opcion)
             this.respuesta!!.respuesta = lista.joinToString(",")
             guardarRespuesta(this.respuesta!!)
         }
 
+        //this.setPregunta()
+        /*val bundle = Bundle()
+        val fragment = OpcionMultipleFragment()
+        if (this.respuesta!!.respuesta != "") {
+            val respuestaSeleccionada = this.respuesta!!.respuesta
+            bundle.putString("respuesta", respuestaSeleccionada)
+        } else {
+            bundle.putString("respuesta", "")
+        }
+        transaction.replace(controlLayout.id, fragment)
+        transaction.commit()*/
     }
 
     fun guardarComentarios(comentarios:String){

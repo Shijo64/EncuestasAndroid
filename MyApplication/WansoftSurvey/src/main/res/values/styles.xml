@@ -19,5 +19,4 @@
     <style name="CheckStyle">
         <item name="android:buttonTint">#00000f</item>
     </style>
-
 </resources>

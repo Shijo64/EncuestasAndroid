@@ -3,6 +3,7 @@ package com.example.Wansoft.Survey
 import Models.*
 import ServiceManager.ServiceManager
 import android.app.Activity
+import android.app.ActivityManager
 import android.content.Intent
 import android.os.Bundle
 import android.support.design.widget.NavigationView
@@ -70,6 +71,12 @@ class HomeActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
             codigoTextField.isEnabled = true
         }
 
+        if(SharedData.SharedInstance.barcodeActivo == false){
+            codigoButton.visibility = View.INVISIBLE
+        }else{
+            codigoButton.visibility = View.VISIBLE
+        }
+
         /*var toggle = object : ActionBarDrawerToggle(this,
             drawer_layout, toolbar,
             R.string.navigation_drawer_open,
@@ -87,46 +94,7 @@ class HomeActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
 
         val menuButton = findViewById<Button>(R.id.menuButton)
         menuButton.setOnClickListener {
-            /*alert {
-                title = "Title"
-                message = "Message"
-
-                customView {
-                    inputName = editText {
-                        hint = "Código de sucursal:"
-                    }
-                }
-
-                positiveButton("Aceptar"){
-                    drawer_layout.openDrawer(GravityCompat.START)
-                }
-            }.show()*/
-            alert("Introduce el id de sucursal para ingresar a la configuración") {
-                title = "Sucursal"
-                customView {
-                    inputName = editText {
-                        padding = dip(22)
-                        hint = "Código de sucursal:"
-                    }
-                }
-                positiveButton("Aceptar"){
-                    val login = LoginModel().queryFirst()
-                    val codigo = inputName?.text.toString()
-                    if(codigo == login!!.idSucursal) {
-                        drawer_layout.openDrawer(GravityCompat.START)
-                    }else{
-                        alert("Necesitas el id de la sucursal para ingresar a la configuración"){
-                            positiveButton("Aceptar"){}
-                        }.show().apply {
-                            getButton(AlertDialog.BUTTON_POSITIVE)?.let {it.setTextColor(Color.parseColor("#3E4883"))}
-                        }
-                    }
-                }
-                negativeButton("Cancelar"){}
-            }.show().apply {
-                getButton(AlertDialog.BUTTON_POSITIVE)?.let { it.setTextColor(Color.parseColor("#3E4883")) }
-                getButton(AlertDialog.BUTTON_NEGATIVE)?.let { it.setTextColor(Color.parseColor("#FF0000")) }
-            }
+            drawer_layout.openDrawer(GravityCompat.START)
         }
 
         nav_view.setNavigationItemSelectedListener(this)
@@ -172,6 +140,7 @@ class HomeActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
 
     override fun onResume() {
         super.onResume()
+
         codigoTextField.clearFocus()
         this.encuestaSeleccionada = intent.getParcelableExtra("Encuesta")
 
@@ -286,8 +255,6 @@ class HomeActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
     override fun onBackPressed() {
         if (drawer_layout.isDrawerOpen(GravityCompat.START)) {
             drawer_layout.closeDrawer(GravityCompat.START)
-        } else {
-            super.onBackPressed()
         }
     }
 
@@ -307,6 +274,31 @@ class HomeActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
         }
     }
 
+    fun alertaUsuario(callback:(Boolean?, Boolean) -> Unit){
+        alert("Introduce el id de sucursal para ingresar a la configuración") {
+            title = "Sucursal"
+            customView {
+                inputName = editText {
+                    padding = dip(22)
+                    hint = "Código de sucursal:"
+                }
+            }
+            positiveButton("Aceptar"){
+                val login = LoginModel().queryFirst()
+                val codigo = inputName?.text.toString()
+                if(codigo == login!!.idSucursal) {
+                    callback(true, false)
+                }else{
+                    callback(false, false)
+                }
+            }
+            negativeButton("Cancelar"){callback(false, true)}
+        }.show().apply {
+            getButton(AlertDialog.BUTTON_POSITIVE)?.let { it.setTextColor(Color.parseColor("#3E4883")) }
+            getButton(AlertDialog.BUTTON_NEGATIVE)?.let { it.setTextColor(Color.parseColor("#FF0000")) }
+        }
+    }
+
     override fun onNavigationItemSelected(item: MenuItem): Boolean {
         // Handle navigation view item clicks here.
         when (item.itemId) {
@@ -314,39 +306,104 @@ class HomeActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
                 drawer_layout.closeDrawer(GravityCompat.START)
             }
             R.id.nav_encuestas -> {
+                item.setEnabled(false)
                 //Mostrar pantalla de encuestas
-                val intent = Intent(this, EncuestasActivity::class.java)
-                startActivity(intent)
+                this.alertaUsuario(){
+                        result: Boolean?, isCancel: Boolean ->
+                    if(result!!){
+                        item.setEnabled(true)
+                        val intent = Intent(this, EncuestasActivity::class.java)
+                        startActivity(intent)
+                    }else{
+                        item.setEnabled(true)
+                        if(!isCancel) {
+                            alert("Necesitas el id de la sucursal para ver las encuestas") {
+                                positiveButton("Aceptar") {}
+                            }.show().apply {
+                                getButton(AlertDialog.BUTTON_POSITIVE)?.let { it.setTextColor(Color.parseColor("#3E4883")) }
+                            }
+                        }
+                    }
+                }
                 //finish()
             }
             R.id.nav_sucursal -> {
+                item.setEnabled(false)
                 try {
-                    alert("Al cambiar de sucursal se borrará toda la información de la sucursal actual") {
-                        title = "¿Deseas cambiar de sucursal?"
-                        positiveButton("Aceptar"){
-                            this@HomeActivity.logout()
+                    this.alertaUsuario() {
+                            result: Boolean?, isCancel: Boolean ->
+                        if(result!!){
+                            item.setEnabled(true)
+                            alert("Al cambiar de sucursal se borrará toda la información de la sucursal actual") {
+                                title = "¿Deseas cambiar de sucursal?"
+                                positiveButton("Aceptar"){
+                                    this@HomeActivity.logout()
+                                }
+
+                                negativeButton("Cancelar"){}
+                            }.show().apply {
+                                //getButton(AlertDialog.BUTTON_POSITIVE)?.let { it.setBackgroundColor(Color.WHITE) }
+                                getButton(AlertDialog.BUTTON_POSITIVE)?.let { it.setTextColor(Color.parseColor("#3E4883")) }
+                                //getButton(AlertDialog.BUTTON_NEGATIVE)?.let { it.setBackgroundColor(Color.WHITE) }
+                                getButton(AlertDialog.BUTTON_NEGATIVE)?.let { it.setTextColor(Color.parseColor("#FF0000")) }
+                            }
+                        }else{
+                            item.setEnabled(true)
+                            if(!isCancel) {
+                                alert("Necesitas el id de la sucursal para poder cambiar de sucursal") {
+                                    positiveButton("Aceptar") {}
+                                }.show().apply {
+                                    getButton(AlertDialog.BUTTON_POSITIVE)?.let { it.setTextColor(Color.parseColor("#3E4883")) }
+                                }
+                            }
                         }
-
-                        negativeButton("Cancelar"){}
-                    }.show().apply {
-                        //getButton(AlertDialog.BUTTON_POSITIVE)?.let { it.setBackgroundColor(Color.WHITE) }
-                        getButton(AlertDialog.BUTTON_POSITIVE)?.let { it.setTextColor(Color.parseColor("#3E4883")) }
-                        //getButton(AlertDialog.BUTTON_NEGATIVE)?.let { it.setBackgroundColor(Color.WHITE) }
-                        getButton(AlertDialog.BUTTON_NEGATIVE)?.let { it.setTextColor(Color.parseColor("#FF0000")) }
                     }
-
                 }catch(e:Exception){
                     System.out.println(e.localizedMessage)
                 }
             }
             R.id.nav_configuracion -> {
-                val intent = Intent(this, ConfiguracionActivity::class.java)
-                startActivity(intent)
+                item.setEnabled(false)
+                this.alertaUsuario {
+                        result: Boolean?, isCancel: Boolean ->
+                    item.setEnabled(true)
+                    if(result!!){
+                        val intent = Intent(this, ConfiguracionActivity::class.java)
+                        startActivity(intent)
+                        this.finish()
+                    }else{
+                        if(!isCancel) {
+                            alert("Necesitas el id de la sucursal para poder entrar a la configuración") {
+                                positiveButton("Aceptar") {}
+                            }.show().apply {
+                                getButton(AlertDialog.BUTTON_POSITIVE)?.let { it.setTextColor(Color.parseColor("#3E4883")) }
+                            }
+                        }
+                    }
+                }
             }
             R.id.nav_acerca -> {
                 val intent = Intent(this, AcercaDeActivity::class.java)
                 startActivity(intent)
                 //this.finish()
+            }
+            R.id.nav_salir -> {
+                item.setEnabled(false)
+                this.alertaUsuario {
+                    result: Boolean?, isCancel: Boolean ->
+                    item.setEnabled(true)
+                    if(result!!){
+                        finish()
+                    }else{
+                        if(!isCancel){
+                            alert("Necesitas el id de la sucursal para poder cerrar la aplicación") {
+                                positiveButton("Aceptar") {}
+                            }.show().apply {
+                                getButton(AlertDialog.BUTTON_POSITIVE)?.let { it.setTextColor(Color.parseColor("#3E4883")) }
+                            }
+                        }
+                    }
+                }
             }
         }
 

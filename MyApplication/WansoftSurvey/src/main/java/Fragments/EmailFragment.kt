@@ -27,7 +27,8 @@ class EmailFragment : Fragment() {
         val respuesta = arguments!!.getString("respuesta")
         val emailTextView = vista.findViewById<EditText>(R.id.emailText)
         val lightFont: Typeface = Typeface.createFromAsset(activity.assets, "fonts/graphik_light.ttf")
-        emailTextView.typeface = lightFont
+        val regularFont:Typeface = Typeface.createFromAsset(activity.assets, "fonts/graphik_regular.ttf")
+        emailTextView.typeface = regularFont
 
         if(respuesta != ""){
             emailTextView.setText(respuesta)
